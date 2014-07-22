@@ -1,0 +1,45 @@
+<div class="well well-small">
+    <h4>你好，欢迎使用采集系统</h4>
+    <div class="btn-group">
+        <a href="/" class="btn btn-primary btn-mini">前台</a>
+        <a href="/" class="btn btn-primary btn-mini">地图</a>
+        <a href="/" class="btn btn-primary btn-mini">退出</a>
+    </div>
+</div>
+
+<div class="accordion" id="accordionMenu">
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseMenu1">
+                <b>信息采集</b>
+            </a>
+        </div>
+        <div id="collapseMenu1" class="accordion-body collapse in">
+            <ul class="nav nav-tabs nav-stacked" style="text-indent: 14px;">
+                <li><a href="{:U('Index/index')}">采集列表</a></li>
+                <li><a href="{:U('Index/add')}" >添加采集</a></li>
+                <li><a href="{:U('Index/collect_list')}">采集记录</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseMenu2">
+                <b>文章列表</b>
+            </a>
+        </div>
+        <div id="collapseMenu2" class="accordion-body collapse">
+            <ul class="nav nav-tabs nav-stacked" style="text-indent: 14px;">
+                <li><a href="{:U('article/index')}" >文章列表</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="well well-small">
+    <h4>其他</h4>
+    <p>
+        <small><a href="javascript:;" target="_blank">下载地址</a></small>
+    </p>
+</div>

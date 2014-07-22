@@ -1,0 +1,39 @@
+/*
+ * 鼠标悬停图片样式
+ * 根据bootstrap框架重构
+ * author：zy
+ * email: 1016366921@qq.com
+*/ 
+.adipoli-wrapper
+{
+    margin:auto;
+    position:relative;
+    display: inline-block;
+}
+.adipoli-wrapper>img
+{
+    position: absolute;
+    z-index: 1; 
+}
+.adipoli-before
+{
+    position: absolute;
+    z-index: 5;
+}
+.adipoli-after
+{
+    position: absolute;
+    z-index: 10;
+}
+.adipoli-slice {
+    display:block;
+    position:absolute;
+    z-index:15;
+    height:100%;
+}
+.adipoli-box
+{
+    display:block;
+    position:absolute;
+    z-index:15;
+}

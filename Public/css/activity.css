@@ -1,0 +1,40 @@
+/*
+ * 活动页面样式
+ * 根据bootstrap框架重构
+ * author：zy
+ * email: 1016366921@qq.com
+*/
+/*头部*/
+.nav-logo{ margin: 0px; padding: 0px;}
+#header .top{height: 24px;line-height: 24px;}
+
+/*list内容*/
+.activitylist{padding:0px; margin: 0px;margin-right: 20px;}
+.activitylist .listhead{font-family: 'microsoft yahei'; font-size: 16px; position: relative;margin-bottom: 20px;}
+.activitylist .listhead ul{border-bottom: 1px solid #dae6ec;}
+.activitylist .listhead li.active>a,.activitylist .listhead li.active>a:hover{border:0;background-color: #dae6ec;}
+.activitylist .listhead li > a,.activitylist .listhead li > a:hover{border:0;}
+.activitylist .listhead li > a:hover{background-color: #dae6ec;}
+.activitylist .listhead li.first>a,.activitylist .listhead li.first>a:hover{border:0;background-color: #39b3d7; color: #fff;}
+.activitylist .listhead li a{color: #23729e;}
+.activitylist .alllist{position: absolute; top: 0px; right: 20px; font-size: 14px; height: 42px; line-height: 42px;}
+.activitylist .alllist a{color: #23729e;}
+.activitylist .listcontent{margin: 0px; padding: 0px;}
+.activitylist .img-author{margin-top: 10px; margin-right: 10px;}
+.activitylist .img-author img{height: 45px; line-height: 45px;}
+.activitylist .activity{padding-bottom: 25px;}
+.activitylist .activity h5{font-size: 16px;}
+.activitylist .activity-title{font-size: 14px; color: #9c9c9c;font-family:Georgia,"Kai","Kaiti SC","KaiTi","BiauKai",serif;}
+.activitylist .activity-title span{margin-right: 10px;}
+
+/*查找、寻求活动*/
+.activity-form ul{border-bottom: 1px solid #dae6ec;}
+.activity-form li.active>a,.activity-form li.active>a:hover{border:0;background-color: #39b3d7; color: #fff;}
+.activity-form li > a,.activity-form li > a:hover{border:0;}
+.activity-form li > a:hover{background-color: #dae6ec;}
+.activity-form,.ask-form{padding: 0px; margin: 0px;}
+.activity-form .search-form,.activity-form .ask-form{ padding: 20px 10px 0px 10px; display: inline-block; width: 100%;}
+.activity-form .search-form input{ width: 70%; display: inherit;}
+.activity-form .search-form .input-group-btn{ display: inline;}
+.activity-form .ask-form .yellowbtn{border-radius:0px;}
+.activity-form .ask-form .yellowbtn:hover{background-color: #fe9f00!important; }

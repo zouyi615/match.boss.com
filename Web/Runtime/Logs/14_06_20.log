@@ -1,0 +1,2620 @@
+[ 2014-06-20T14:07:44+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004219s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: block D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: tags D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.103643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.016060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016240s ]
+
+[ 2014-06-20T14:14:50+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003340s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: block D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: tags D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001783s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002005s ]
+
+[ 2014-06-20T14:15:28+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003997s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: block D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: tags D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002188s ]
+
+[ 2014-06-20T14:16:55+08:00 ] 192.168.50.4 /index.php/Home/Index/getOdds
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003443s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001710s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002037s ]
+
+[ 2014-06-20T14:17:10+08:00 ] 192.168.50.4 /index.php/Home/Index/test.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001756s ]
+
+[ 2014-06-20T14:17:30+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002985s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: block D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: tags D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000695s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001328s ]
+
+[ 2014-06-20T14:18:37+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004330s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: block D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: tags D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001867s ]
+
+[ 2014-06-20T14:18:46+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003319s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: block D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: tags D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001553s ]
+
+[ 2014-06-20T14:18:47+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001768s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: block D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: tags D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000722s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2014-06-20T14:19:41+08:00 ] 192.168.50.4 /index.php/Home/Index/test.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001731s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2014-06-20T14:19:48+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002711s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: block D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: tags D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001862s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001834s ]
+
+[ 2014-06-20T14:19:56+08:00 ] 192.168.50.4 /index.php/Home/Index/test.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001836s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001322s ]
+
+[ 2014-06-20T14:20:25+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003040s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: block D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: tags D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001601s ]
+
+[ 2014-06-20T14:20:25+08:00 ] 192.168.50.4 /index.php/Home/Index/test.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003290s ]
+
+[ 2014-06-20T14:20:41+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002645s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: block D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: tags D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002238s ]
+
+[ 2014-06-20T14:20:42+08:00 ] 192.168.50.4 /index.php/Home/Index/test.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002760s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001467s ]
+
+[ 2014-06-20T14:20:55+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002758s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: block D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: tags D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001557s ]
+
+[ 2014-06-20T14:20:55+08:00 ] 192.168.50.4 /index.php/Home/Index/test.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001753s ]
+
+[ 2014-06-20T14:21:14+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: block D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: tags D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2014-06-20T14:21:14+08:00 ] 192.168.50.4 /index.php/Home/Index/test.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001329s ]
+
+[ 2014-06-20T14:26:57+08:00 ] 192.168.50.4 /index.php/Home/Index/test.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002670s ]
+ERR: 非法操作:test
+
+[ 2014-06-20T14:26:59+08:00 ] 192.168.50.4 /index.php/Home/Index/test.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001956s ]
+ERR: 非法操作:test
+
+[ 2014-06-20T14:27:26+08:00 ] 192.168.50.4 /index.php/Home/Index/test.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004309s ]
+
+[ 2014-06-20T14:27:39+08:00 ] 192.168.50.4 /index.php/Home/Index/test.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002639s ]
+ERR: 非法操作:test
+
+[ 2014-06-20T14:27:41+08:00 ] 192.168.50.4 /index.php/Home/Index/test.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002052s ]
+ERR: 非法操作:test
+
+[ 2014-06-20T14:27:42+08:00 ] 192.168.50.4 /index.php/Home/Index/test.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001875s ]
+ERR: 非法操作:test
+
+[ 2014-06-20T14:28:12+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003034s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: block D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: tags D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001595s ]
+
+[ 2014-06-20T14:28:12+08:00 ] 192.168.50.4 /index.php/Home/Index/test.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001652s ]
+
+[ 2014-06-20T18:16:36+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.058708s ]
+
+[ 2014-06-20T18:16:50+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.047565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.047764s ]
+
+[ 2014-06-20T18:31:20+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.005565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002054s ]
+
+[ 2014-06-20T18:35:57+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003413s ]
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 18 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 1: parser error : Start tag expected, '&lt;' not found D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 18 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: content D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 18 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: ^ D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 18 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002242s ]
+
+[ 2014-06-20T18:36:18+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001277s ]
+
+[ 2014-06-20T18:37:51+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001965s ]
+
+[ 2014-06-20T18:39:30+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002997s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002322s ]
+
+[ 2014-06-20T18:39:38+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001360s ]
+
+[ 2014-06-20T18:39:40+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001345s ]
+
+[ 2014-06-20T19:11:24+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002182s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002446s ]
+
+[ 2014-06-20T19:12:07+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001190s ]
+
+[ 2014-06-20T19:12:27+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001818s ]
+
+[ 2014-06-20T19:12:31+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001360s ]
+
+[ 2014-06-20T19:15:48+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002036s ]
+
+[ 2014-06-20T19:34:44+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001942s ]
+
+[ 2014-06-20T19:36:29+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002120s ]
+NOTIC: [8] Undefined variable: matcharr D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001425s ]
+
+[ 2014-06-20T19:36:40+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001995s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 22 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 22 行.
+NOTIC: [8] Undefined variable: matcharr D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001726s ]
+
+[ 2014-06-20T19:36:51+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002685s ]
+NOTIC: [8] Undefined variable: matcharr D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001923s ]
+
+[ 2014-06-20T19:37:02+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001467s ]
+NOTIC: [8] Undefined variable: matcharr D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001549s ]
+
+[ 2014-06-20T19:37:07+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001999s ]
+NOTIC: [8] Undefined variable: matcharr D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001678s ]
+
+[ 2014-06-20T19:37:23+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.007450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007664s ]
+
+[ 2014-06-20T19:37:43+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001695s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001394s ]
+
+[ 2014-06-20T19:41:31+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003659s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 48 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.198933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.199115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.010864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001791s ]
+
+[ 2014-06-20T19:49:31+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002634s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001584s ]
+
+[ 2014-06-20T19:49:51+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002854s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001903s ]
+
+[ 2014-06-20T19:51:27+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002662s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001943s ]
+
+[ 2014-06-20T19:52:28+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002955s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 48 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001767s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001728s ]
+
+[ 2014-06-20T19:57:21+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002678s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+
+[ 2014-06-20T19:57:51+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003219s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 48 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003081s ]
+
+[ 2014-06-20T19:59:23+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003491s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 48 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002309s ]
+
+[ 2014-06-20T19:59:46+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005666s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 48 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.070779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001675s ]
+
+[ 2014-06-20T19:59:56+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002774s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 48 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.026669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002111s ]
+
+[ 2014-06-20T20:00:02+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 48 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001692s ]
+
+[ 2014-06-20T20:07:17+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002663s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 59 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.041455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002228s ]
+
+[ 2014-06-20T20:10:21+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002654s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 59 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002167s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002381s ]
+
+[ 2014-06-20T20:11:50+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003255s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 59 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.035241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001628s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001823s ]
+
+[ 2014-06-20T20:12:13+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002651s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 49 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 50 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 52 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 53 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: vo D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 55 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 59 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.037996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001599s ]
+
+[ 2014-06-20T20:13:23+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002622s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 59 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001627s ]
+
+[ 2014-06-20T20:14:09+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001724s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 59 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001914s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000998s ]
+
+[ 2014-06-20T20:14:29+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002666s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000566s ]
+
+[ 2014-06-20T20:14:44+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 59 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001732s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001738s ]
+
+[ 2014-06-20T20:18:12+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002688s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 59 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001847s ]
+
+[ 2014-06-20T20:18:35+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003662s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 59 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001644s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001665s ]
+
+[ 2014-06-20T20:19:08+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002616s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 59 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001645s ]
+
+[ 2014-06-20T20:25:12+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002706s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 60 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001676s ]
+
+[ 2014-06-20T20:26:42+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 60 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002117s ]
+
+[ 2014-06-20T20:26:53+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002911s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 60 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001525s ]
+
+[ 2014-06-20T20:32:16+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002626s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 60 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001718s ]
+
+[ 2014-06-20T20:32:33+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 60 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001878s ]
+
+[ 2014-06-20T20:33:04+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001750s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 60 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001912s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001053s ]
+
+[ 2014-06-20T20:34:20+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001622s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 60 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000884s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001013s ]
+
+[ 2014-06-20T20:34:49+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002760s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 60 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001729s ]
+
+[ 2014-06-20T20:35:47+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002744s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022785s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001601s ]
+
+[ 2014-06-20T20:37:45+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003916s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001648s ]
+
+[ 2014-06-20T20:38:32+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003632s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002166s ]
+
+[ 2014-06-20T20:39:11+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006233s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001833s ]
+
+[ 2014-06-20T20:39:19+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001515s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2014-06-20T20:42:57+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004351s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002009s ]
+
+[ 2014-06-20T20:44:11+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003238s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001609s ]
+
+[ 2014-06-20T20:46:37+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002986s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001565s ]
+
+[ 2014-06-20T20:46:39+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002717s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000656s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001853s ]
+
+[ 2014-06-20T20:47:42+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002635s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001725s ]
+
+[ 2014-06-20T20:50:49+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002603s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001570s ]
+
+[ 2014-06-20T20:52:22+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002238s ]
+
+[ 2014-06-20T20:53:10+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003228s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001720s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002867s ]
+
+[ 2014-06-20T20:53:38+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002632s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001713s ]
+
+[ 2014-06-20T20:53:48+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001680s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2014-06-20T20:54:30+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002679s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001579s ]
+
+[ 2014-06-20T20:55:35+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002896s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001525s ]
+
+[ 2014-06-20T20:55:43+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001228s ]
+
+[ 2014-06-20T20:55:57+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002225s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001225s ]
+
+[ 2014-06-20T20:56:17+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002650s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001859s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001525s ]
+
+[ 2014-06-20T20:56:33+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001819s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000881s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2014-06-20T20:56:40+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001508s ]
+
+[ 2014-06-20T20:57:09+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001009s ]
+
+[ 2014-06-20T21:00:02+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002634s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002307s ]
+
+[ 2014-06-20T21:00:48+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002059s ]
+
+[ 2014-06-20T21:01:03+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002642s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003745s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003971s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004693s ]
+
+[ 2014-06-20T21:01:19+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005845s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.030121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001772s ]
+
+[ 2014-06-20T21:01:48+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001553s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2014-06-20T21:04:04+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002632s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 66 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009770s ]
+
+[ 2014-06-20T21:04:48+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003375s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 66 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001773s ]
+
+[ 2014-06-20T21:05:00+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001944s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 66 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2014-06-20T21:05:04+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001436s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 66 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2014-06-20T21:05:19+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003665s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 66 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001532s ]
+
+[ 2014-06-20T21:05:39+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001526s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000523s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 66 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001699s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2014-06-20T21:05:47+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002647s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 66 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001766s ]
+
+[ 2014-06-20T21:06:06+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002233s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 66 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001175s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001338s ]
+
+[ 2014-06-20T21:06:19+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002657s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 66 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001501s ]
+
+[ 2014-06-20T21:06:57+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000757s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 67 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.031247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003666s ]
+
+[ 2014-06-20T21:07:18+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002604s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 67 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001692s ]
+
+[ 2014-06-20T21:07:25+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002689s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 67 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003222s ]
+
+[ 2014-06-20T21:07:56+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003384s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 67 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002821s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002994s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001570s ]
+
+[ 2014-06-20T21:08:17+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001635s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 67 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000902s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2014-06-20T21:08:24+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003753s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 67 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001598s ]
+
+[ 2014-06-20T21:08:33+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001595s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 67 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001960s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001180s ]
+
+[ 2014-06-20T21:08:47+08:00 ] 192.168.50.4 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001553s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 67 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000880s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002860s ]
+
