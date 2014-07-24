@@ -182,11 +182,28 @@ $.match.box = {
 //公用函数
 $.namespace('pub.fun');
 $.pub.fun = {
+	//判断obj是否为空
 	isEmptyObj: function(obj){
 		for(var name in obj){
 		return false; 
 		} 
 		return true; 
+	},
+	//html显示
+	tpl: function(o, def){
+		def = def === undefined ? '' : def;
+		return this.replace(/\{\$([^$\}]+?)\}/g, function(all, ns){
+			ns = ns.trim().split('.');
+			var prop = o;
+			try{
+				while(ns.length){
+					prop = prop[ns.shift()];
+				}
+			}catch(e){
+				prop = def;
+			}
+			return prop === undefined ? def : prop;
+		});
 	}
 };
 $(document).ready(function(){
