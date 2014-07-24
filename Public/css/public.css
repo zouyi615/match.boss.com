@@ -1,0 +1,38 @@
+/*
+ * 全局模板样式
+ * 根据bootstrap框架重构
+ * author：zy
+ * email: 1016366921@qq.com
+*/
+body{font-family:"微软雅黑","黑体","Microsoft YaHei",SimHei; margin:6px;}
+/*body{font-family: Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","楷体","楷体_GB2312",serif;}*/
+.container{}
+.font12{font-size: 12px;}
+.height20{height: 20px;}
+.lightyellow{color:#FEC764;}
+a{color:#2b2b2b;}
+.fontkt{font-family: Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","楷体","楷体_GB2312",serif;}
+.red{color:red;}
+
+/* 弹出样式 */
+body{position: relative;}
+.main{position: relative;}
+.operate{position: absolute; bottom: 50px;}
+.mod-rate{background: #fff;  padding:30px 20px; }
+.operate th,.operate td{text-align: center;}
+.tips{width:0;height:0;border-width:100px 0px 0px 100px;border-style:solid;border-color:transparent transparent transparent #563d7c;margin:0px auto;position:fixed; bottom: 0px;left:0px; cursor: pointer;}	
+.tips a{font-size: 40px; color: #fff; position: absolute; bottom: -4px; left: -94px;}
+.tips_con{opacity:1; border:1px solid #333; width:400px; height: auto; display: none; position:fixed; left: 0px; bottom:0px;}
+
+/* 比赛列表样式 */
+.match-list th,.match-list td{text-align:center;vertical-align:middle; *vertical-align:middle;}
+.match-list td.tobox{vertical-align:middle; color:red; cursor:pointer;}
+.match-list td.tobox a{color:red;}
+/* 比赛详细赛事 */
+.mod-inmoney{font-size:12px;position: relative;display: block !important;}
+.mod-inmoney a{color:red; text-decoration:underline;}
+.mod-inmoney .input-sm{height: 26px;padding: 5px 2px;}
+.mod-inmoney th{text-align: center;}
+
+
+

@@ -1,0 +1,13 @@
+.btn:focus, a:focus {outline:0;}
+h1, h2, h3, h4, .masthead p, .subhead p, .marketing h2, .lead, .brand
+{
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+    font-weight: normal;
+}
+.accordion-heading{
+    background-color: #f5f5f5;
+    outline: 0;
+}
+.accordion-body .nav li a{
+    border-left: 0; border-right: 0; border-radius: 0;
+}

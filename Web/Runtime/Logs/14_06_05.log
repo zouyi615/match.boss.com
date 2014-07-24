@@ -1,0 +1,1371 @@
+[ 2014-06-05T12:31:03+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004201s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 467 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 1987 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [8] Undefined variable: hj D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\match.boss.com\Web\Home\Controller\IndexController.class.php 第 19 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002030s ]
+
+[ 2014-06-05T12:31:50+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001574s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 467 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 1987 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001367s ]
+
+[ 2014-06-05T13:35:38+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005328s ]
+NOTIC: [8] iconv() [<a href='function.iconv'>function.iconv</a>]: Detected an illegal character in input string D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\QueryList.class.php 第 41 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: htmlParseEntityRef: expecting ';' in Entity, line: 8 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: htmlParseEntityRef: expecting ';' in Entity, line: 8 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: htmlParseEntityRef: expecting ';' in Entity, line: 10 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: htmlParseEntityRef: expecting ';' in Entity, line: 10 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID aAllEvents already defined in Entity, line: 97 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID a24HourEvent already defined in Entity, line: 97 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: AttValue: &quot; expected in Entity, line: 253 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Couldn't find end of Start Tag a in Entity, line: 253 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.013805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014029s ]
+
+[ 2014-06-05T13:38:45+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004085s ]
+NOTIC: [8] iconv() [<a href='function.iconv'>function.iconv</a>]: Detected an illegal character in input string D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\QueryList.class.php 第 41 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: htmlParseEntityRef: expecting ';' in Entity, line: 8 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: htmlParseEntityRef: expecting ';' in Entity, line: 8 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: htmlParseEntityRef: expecting ';' in Entity, line: 10 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: htmlParseEntityRef: expecting ';' in Entity, line: 10 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID aAllEvents already defined in Entity, line: 97 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID a24HourEvent already defined in Entity, line: 97 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: AttValue: &quot; expected in Entity, line: 253 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Couldn't find end of Start Tag a in Entity, line: 253 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002167s ]
+
+[ 2014-06-05T13:39:22+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002019s ]
+NOTIC: [8] iconv() [<a href='function.iconv'>function.iconv</a>]: Detected an illegal character in input string D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\QueryList.class.php 第 41 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: htmlParseEntityRef: expecting ';' in Entity, line: 8 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: htmlParseEntityRef: expecting ';' in Entity, line: 8 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: htmlParseEntityRef: expecting ';' in Entity, line: 10 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: htmlParseEntityRef: expecting ';' in Entity, line: 10 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID aAllEvents already defined in Entity, line: 97 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID a24HourEvent already defined in Entity, line: 97 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: AttValue: &quot; expected in Entity, line: 253 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Couldn't find end of Start Tag a in Entity, line: 253 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001562s ]
+
+[ 2014-06-05T14:20:01+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003609s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 467 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 1987 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002902s ]
+
+[ 2014-06-05T14:20:11+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002761s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 467 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 1987 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002096s ]
+
+[ 2014-06-05T14:21:53+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003239s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 467 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 1987 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001637s ]
+
+[ 2014-06-05T14:22:19+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008131s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 467 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 1987 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002210s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002471s ]
+
+[ 2014-06-05T14:23:18+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002754s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 467 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 1987 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003011s ]
+
+[ 2014-06-05T17:39:34+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004343s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Web/Home/View/Default/Index/top.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Think\Template.class.php 第 687 行.
+NOTIC: [2] file_get_contents(./Web/Home/View/Default/Index/nav.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Think\Template.class.php 第 687 行.
+NOTIC: [2] file_get_contents(./Web/Home/View/Default/Index/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Think\Template.class.php 第 687 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000336s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000530s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.169636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.169848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.010267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010470s ]
+
+[ 2014-06-05T17:43:47+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002870s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001647s ]
+
+[ 2014-06-05T17:45:51+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003824s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002138s ]
+
+[ 2014-06-05T17:50:17+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.006134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007258s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000300s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000496s ]
+NOTIC: [8] Undefined variable: list D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 41 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001815s ]
+
+[ 2014-06-05T17:50:31+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003121s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001799s ]
+
+[ 2014-06-05T17:51:02+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003259s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\match.boss.com\Web\Runtime\Cache\Home\bc0144a4fd1292e6da37880e61825715.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001816s ]
+
+[ 2014-06-05T17:52:48+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003393s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002013s ]
+
+[ 2014-06-05T17:54:28+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004866s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002470s ]
+
+[ 2014-06-05T17:54:44+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.006775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008198s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001507s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001665s ]
+
+[ 2014-06-05T17:56:23+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002188s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001513s ]
+
+[ 2014-06-05T17:57:20+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003664s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002850s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001930s ]
+
+[ 2014-06-05T17:57:30+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003671s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001771s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001814s ]
+
+[ 2014-06-05T18:02:25+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003523s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Input is not proper UTF-8, indicate encoding ! in Entity, line: 5 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [8] Use of undefined constant GBK - assumed 'GBK' D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\QueryList.class.php 第 70 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001991s ]
+
+[ 2014-06-05T18:02:38+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003604s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Input is not proper UTF-8, indicate encoding ! in Entity, line: 5 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001855s ]
+
+[ 2014-06-05T18:02:43+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001876s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Input is not proper UTF-8, indicate encoding ! in Entity, line: 5 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2014-06-05T18:04:18+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003757s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002342s ]
+
+[ 2014-06-05T18:04:40+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003841s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Input is not proper UTF-8, indicate encoding ! in Entity, line: 5 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001651s ]
+
+[ 2014-06-05T18:04:41+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002924s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Input is not proper UTF-8, indicate encoding ! in Entity, line: 5 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002083s ]
+
+[ 2014-06-05T18:04:45+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002850s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Input is not proper UTF-8, indicate encoding ! in Entity, line: 5 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001646s ]
+
+[ 2014-06-05T18:04:45+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003043s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Input is not proper UTF-8, indicate encoding ! in Entity, line: 5 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001863s ]
+
+[ 2014-06-05T18:04:49+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004140s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Input is not proper UTF-8, indicate encoding ! in Entity, line: 5 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001648s ]
+
+[ 2014-06-05T18:04:50+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001792s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001008s ]
+
+[ 2014-06-05T18:04:51+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000993s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005231s ]
+
+[ 2014-06-05T18:04:52+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002006s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2014-06-05T18:04:54+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004071s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001688s ]
+
+[ 2014-06-05T18:04:55+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002046s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2014-06-05T18:04:57+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001706s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001090s ]
+
+[ 2014-06-05T18:05:01+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001817s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001019s ]
+
+[ 2014-06-05T18:05:05+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002467s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014130s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2014-06-05T18:05:12+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001608s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000991s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001149s ]
+
+[ 2014-06-05T18:20:28+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005050s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001977s ]
+
+[ 2014-06-05T18:20:31+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002916s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001789s ]
+
+[ 2014-06-05T18:20:49+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001741s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001495s ]
+
+[ 2014-06-05T18:20:51+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003347s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.037668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.004133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003074s ]
+
+[ 2014-06-05T18:20:54+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002235s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000872s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001219s ]
+
+[ 2014-06-05T18:20:55+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003092s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002849s ]
+
+[ 2014-06-05T18:21:02+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004996s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001984s ]
+
+[ 2014-06-05T18:21:16+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002119s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.026604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001109s ]
+
+[ 2014-06-05T18:21:23+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001722s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Input is not proper UTF-8, indicate encoding ! in Entity, line: 5 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001144s ]
+
+[ 2014-06-05T18:21:25+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001997s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001168s ]
+
+[ 2014-06-05T18:21:29+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001714s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000371s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001465s ]
+
+[ 2014-06-05T18:21:32+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002019s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001239s ]
+
+[ 2014-06-05T18:21:35+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002920s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001957s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002108s ]
+
+[ 2014-06-05T18:21:42+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002323s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001135s ]
+
+[ 2014-06-05T18:21:45+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001684s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001559s ]
+
+[ 2014-06-05T18:21:49+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002370s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
+
+[ 2014-06-05T18:21:51+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001886s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001448s ]
+
+[ 2014-06-05T18:21:53+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003385s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002399s ]
+
+[ 2014-06-05T18:22:27+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001914s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Input is not proper UTF-8, indicate encoding ! in Entity, line: 5 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000402s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2014-06-05T18:22:40+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003034s ]
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : span in Entity, line: 227 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID toploginbox already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID login_close already defined in Entity, line: 423 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: error parsing attribute name in Entity, line: 468 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Unexpected end tag : a in Entity, line: 2031 D:\wamp\www\match.boss.com\Resource\ThinkPHP\Library\Org\JAE\phpQuery\phpQuery\DOMDocumentWrapper.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002048s ]
+
