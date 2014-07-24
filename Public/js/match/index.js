@@ -43,6 +43,11 @@ $.index.ui.box = {
 			$.cookie('rebate', rebate);
 			_T.dosub();
 		});
+		//监听鼠标滚动
+		$(window).scroll(function(){
+			var scrollTop = $(window).scrollTop();
+			$.match.box.scrollTop(scrollTop);
+		});
 	},
 	defaultVal:function(){
 		//设置默认返还率，投注，回报
@@ -56,8 +61,7 @@ $.index.ui.box = {
 	},
 	dosub:function(){
 		var form = $('#dosubform');
-		form.submit();
-	
+		form.submit();	
 	}
 };
 //比赛列表
@@ -69,7 +73,7 @@ $.match.box = {
 		this.mlist = {};
 		this.prolist = {};
 		this.bindEvent();
-		//this.readCookie();
+		this.readCookie();
 	},
 	bindEvent: function(){
 		var _T = this;
@@ -83,8 +87,7 @@ $.match.box = {
 			_T.mlist['vs'] = $(this).parent().attr('vs'); //对阵信息
 			_T.mlist['rate'] = $(this).parent().attr('rate'); //赔率
 			_T.countDetail(); //计算下注金额
-			_T.showDetail(); //显示下注详情
-			$.cookie('match.box.mlist', JSON.stringify(_T.mlist));
+			_T.showDetail(); //显示下注详情			
 		});
 		//清空
 		$('#clear').click(function(){
@@ -98,20 +101,23 @@ $.match.box = {
 			_T.showDetail(); //显示下注详情
 		});
 		//保存方案
-		$('#savepro').click(function(){
-			//console.log(JSON.stringify(_T.prolist),JSON.parse(JSON.stringify(_T.prolist)));
+		$('#savepro').click(function(){			
 			if(!$.pub.fun.isEmptyObj(_T.mlist)){
 				_T.prolist[_T.mlist.mid] = _T.mlist;
-				_T.showProList(); //显示保存方案
-				$.cookie('match.box.prolist', JSON.stringify(_T.prolist));
-			}			
-			console.log(_T.prolist);
+				_T.showProList(); //显示保存方案				
+			}
 		});
 		//清空方案
 		$('#clearpro').click(function(){
 			_T.prolist = {};
 			_T.showProList();
 			$.cookie('match.box.prolist','');
+		});
+		//删除方案
+		$('#tableProList a.del').live('click',function(){
+			var mid = $(this).attr('data-mid');			
+			_T.prolist = $.pub.fun.removeObj(_T.prolist,'mid',mid);
+			_T.showProList();
 		});
 	},
 	//计算下注金额
@@ -123,43 +129,69 @@ $.match.box = {
 		rebate = _T.mlist.rebate;
 		prize = (s1*s2*betmoney).toFixed(2); 
 		_T.mlist['prize'] = prize; //预计奖金
-		s3 = _T.mlist.s3; 
+		s3 = _T.mlist.s3;
+		s4 = _T.mlist.s4; 
 		in1 = ((betmoney - rebate)/(s3-1)).toFixed(2);			
 		_T.mlist['in1'] = in1; //首场下注金额
 		in2 = (prize+rebate-betmoney-in1).toFixed(2);
 		_T.mlist['in2'] = in2; //末场下注金额
-		profit = 3000;
+		profit = (in2*s4+rebate-betmoney-in1-in2).toFixed(2); 
 		_T.mlist['profit'] = profit; //盈利	
 	},
 	//显示下注详情
 	showDetail: function(){
-		var _T = this, tabcompute = $('#tableCompute'), area = ['s1','s2','betmoney','prize','rebate','in1','s3','s4','profit','in2'];
-		console.log(this.mlist);
+		var _T = this, tableDetail = $('#tableDetail'), area = ['s1','s2','betmoney','prize','rebate','in1','s3','s4','profit','in2'];
 		if(!$.pub.fun.isEmptyObj(this.mlist)){
 			//标示对阵
-			tabcompute.find('input#mid').val(_T.mlist.mid);
-			tabcompute.find('input#rnrate').val(_T.mlist.rate);
-			tabcompute.find('td.vs').html(_T.mlist.mid+'-'+_T.mlist.vs+'('+_T.mlist.rate+')');
+			tableDetail.find('input#mid').val(_T.mlist.mid);
+			tableDetail.find('input#rnrate').val(_T.mlist.rate);
+			tableDetail.find('td.vs').html(_T.mlist.mid+'-'+_T.mlist.vs+'('+_T.mlist.rate+')');
 			//填充值
-			$.each(area,function(i,e){				
+			$.each(area,function(i,e){
 				if(_T.mlist[e]){
-					tabcompute.find('input[name="'+e+'"]').val(_T.mlist[e]);
+					tableDetail.find('input[name="'+e+'"]').val(_T.mlist[e]);
 				}
 			});
 		}else{
 			//清空数据
-			tabcompute.find('input#mid').val('');
-			tabcompute.find('input#rnrate').val('');
-			tabcompute.find('td.vs').html('');
+			tableDetail.find('input#mid').val('');
+			tableDetail.find('input#rnrate').val('');
+			tableDetail.find('td.vs').html('');
 			//填充空值
 			$.each(area,function(i,e){				
-				tabcompute.find('input[name="'+e+'"]').val('');
+				tableDetail.find('input[name="'+e+'"]').val('');
 			});
 		}
+		//JSON.stringify(_T.prolist)json转字符串写cookie
+		$.cookie('match.box.mlist', JSON.stringify(_T.mlist)); 
 	},
 	//显示保存方案
 	showProList: function(){
-	
+		var _T = this, html = [], tableProList = $('#tableProList'),
+			str = '<tr class="danger"><td colspan="5">{$vs}</td><td><a href="javascript:;" class="del" data-mid="{$mid}">删除</a>&nbsp;&nbsp;<a href="javascript:;" calss="mod" data-mid="{$mid}">修改</a></td></tr>'+
+				'<tr><th colspan="2">水位1</th><th>下注</th><th>预计</th><th>返利</th><th class="red">1下注金额</th></tr>'+
+				'<tr><td>{$s1}</td><td>{$s2}</td><td>{$betmoney}</td><td>{$prize}</td><td>{$rebate}</td><td>{$in1}</td></tr>'+
+				'<tr><th>水位2</th><th>水位3</th><th><font color="red">X</font>&nbsp;&nbsp;<font color="red">X</font></th><th>V&nbsp;&nbsp;V</th><th>V&nbsp;&nbsp;<font color="red">X</font></th><th class="red">2下注金额</th></tr>'+
+				'<tr><td>{$s3}</td><td>{$s4}</td><td>0.00</td><td>0.00</td><td>{$profit}</td><td>{$in2}</td></tr>';
+		$.each(_T.prolist,function(i,e){
+			html.push($.pub.fun.tpl(str,{				
+				mid: i,
+				vs: i+'-'+e.vs+'('+e.rate+')',
+				s1: e.s1,
+				s2: e.s2,
+				s3: e.s3,
+				s4: e.s4,
+				betmoney: e.betmoney,
+				prize: e.prize,
+				rebate: e.rebate,
+				profit: e.profit,
+				in1: e.in1,
+				in2: e.in2
+			}));
+		});
+		tableProList.html(html.join(''));
+		//JSON.stringify(_T.prolist)json转字符串写cookie
+		$.cookie('match.box.prolist', JSON.stringify(_T.prolist));
 	},
 	//第一次加载读取cookie
 	readCookie: function(){
@@ -178,6 +210,9 @@ $.match.box = {
 			}		
 		});		
 	},
+	scrollTop: function(top){
+		$('#tableDetail').animate({"top":top},0);	
+	}
 };
 //公用函数
 $.namespace('pub.fun');
@@ -190,9 +225,9 @@ $.pub.fun = {
 		return true; 
 	},
 	//html显示
-	tpl: function(o, def){
+	tpl: function(s, o, def){
 		def = def === undefined ? '' : def;
-		return this.replace(/\{\$([^$\}]+?)\}/g, function(all, ns){
+		return s.replace(/\{\$([^$\}]+?)\}/g, function(all, ns){
 			ns = ns.trim().split('.');
 			var prop = o;
 			try{
@@ -204,9 +239,37 @@ $.pub.fun = {
 			}
 			return prop === undefined ? def : prop;
 		});
+	},
+	//从对象数组中删除属性为objPropery，值为objValue元素的对象
+	//arrPerson数组对象,objPropery对象的属性,objValue对象的值
+	removeObj: function(arrPerson,objPropery,objValue){
+		var arr = {};
+		$.each(arrPerson,function(i,cur){
+			if(cur[objPropery] != objValue){
+				arr[cur[objPropery]] = cur;
+			}
+		});
+		return arr;
+		// $.grep(arrPerson, function(cur,i){
+			// cur[objPropery] != objValue;
+		// });
+	},
+	//从对象数组中获取属性为objPropery，值为objValue元素的对象
+	//arrPerson数组对象,objPropery对象的属性,objValue对象的值
+	getObj: function(arrPerson,objPropery,objValue){
+		var arr = {};
+		$.each(arrPerson,function(i,cur){
+			if(cur[objPropery] == objValue){
+				arr[cur[objPropery]] = cur;
+			}
+		});
+		return arr;
+		// return $.grep(arrPerson, function(cur,i){
+			// return cur[objPropery] == objValue;
+		// });
 	}
 };
 $(document).ready(function(){
 	$.index.ui.box.index();
-	$.match.box.index();
+	$.match.box.index();			
 });
