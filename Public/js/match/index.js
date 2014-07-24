@@ -11,6 +11,23 @@ $.namespace = function() {
 	}    
 	return o;
 };
+//全局变量设置
+$.extend($.sysini,{
+	C:function(k,v){
+		if(arguments.length == 1){
+			if($.isString(k)){
+				return $.sysini[k]
+			} else {
+				$.extend($.sysini, k)
+			}
+		}else{
+			$.sysini[k] = v
+		}
+	}
+});
+//$.C('expires',60);
+//expires: 1*60*60*1000, //cookie过期时间
+
 //UI控制器
 $.namespace('index.ui.box');
 $.index.ui.box = {
@@ -102,7 +119,7 @@ $.match.box = {
 		});
 		//保存方案
 		$('#savepro').click(function(){			
-			if(!$.pub.fun.isEmptyObj(_T.mlist)){
+			if(!$.pub.isEmptyObj(_T.mlist)){
 				_T.prolist[_T.mlist.mid] = _T.mlist;
 				_T.showProList(); //显示保存方案				
 			}
@@ -116,7 +133,7 @@ $.match.box = {
 		//删除方案
 		$('#tableProList a.del').live('click',function(){
 			var mid = $(this).attr('data-mid');			
-			_T.prolist = $.pub.fun.removeObj(_T.prolist,'mid',mid);
+			_T.prolist = $.pub.removeObj(_T.prolist,'mid',mid);
 			_T.showProList();
 		});
 	},
@@ -141,7 +158,7 @@ $.match.box = {
 	//显示下注详情
 	showDetail: function(){
 		var _T = this, tableDetail = $('#tableDetail'), area = ['s1','s2','betmoney','prize','rebate','in1','s3','s4','profit','in2'];
-		if(!$.pub.fun.isEmptyObj(this.mlist)){
+		if(!$.pub.isEmptyObj(this.mlist)){
 			//标示对阵
 			tableDetail.find('input#mid').val(_T.mlist.mid);
 			tableDetail.find('input#rnrate').val(_T.mlist.rate);
@@ -174,7 +191,7 @@ $.match.box = {
 				'<tr><th>水位2</th><th>水位3</th><th><font color="red">X</font>&nbsp;&nbsp;<font color="red">X</font></th><th>V&nbsp;&nbsp;V</th><th>V&nbsp;&nbsp;<font color="red">X</font></th><th class="red">2下注金额</th></tr>'+
 				'<tr><td>{$s3}</td><td>{$s4}</td><td>0.00</td><td>0.00</td><td>{$profit}</td><td>{$in2}</td></tr>';
 		$.each(_T.prolist,function(i,e){
-			html.push($.pub.fun.tpl(str,{				
+			html.push($.pub.tpl(str,{
 				mid: i,
 				vs: i+'-'+e.vs+'('+e.rate+')',
 				s1: e.s1,
@@ -215,8 +232,8 @@ $.match.box = {
 	}
 };
 //公用函数
-$.namespace('pub.fun');
-$.pub.fun = {
+$.namespace('pub');
+$.pub = {
 	//判断obj是否为空
 	isEmptyObj: function(obj){
 		for(var name in obj){
