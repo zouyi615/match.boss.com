@@ -54,7 +54,7 @@
 				</colgroup>
 				<tbody>
 					<?php $k = 0; if(isset($comMatchArr) && is_array($comMatchArr)){ foreach($comMatchArr as $key=>$val){ ?>
-						<tr class="data" id="m<?php echo $key; ?>" mid="m<?php echo $key; ?>" data="<?php echo '{s1:'.$val['m1']['win'].',s2:'.$val['m2']['win'].',s3:'.$val['m1']['sp'].',s4:'.$val['m2']['sp'].'}'; ?>" vs="<?php echo '['.$val['m1']['homesxname'].'vs'.$val['m1']['awaysxname'].']/['.$val['m2']['homesxname'].'vs'.$val['m2']['awaysxname'].']'; ?>" rate="<?php echo $val['rnrate']; ?>">
+						<tr class="data" id="m<?php echo $key; ?>" mid="m<?php echo $key+1; ?>" data="<?php echo '{s1:'.$val['m1']['win'].',s2:'.$val['m2']['win'].',s3:'.$val['m1']['sp'].',s4:'.$val['m2']['sp'].'}'; ?>" vs="<?php echo '['.$val['m1']['homesxname'].'vs'.$val['m1']['awaysxname'].']/['.$val['m2']['homesxname'].'vs'.$val['m2']['awaysxname'].']'; ?>" rate="<?php echo $val['rnrate']; ?>">
 							<td rowspan="2" class="tobox"><?php echo $key+1; ?></td>
 							<td><?php echo $val['m1']['matchtime']; ?></td>
 							<td><?php echo $val['m1']['league']; ?></td>
@@ -123,6 +123,7 @@
 						<button type="button" class="btn btn-default btn-sm" id="clearpro">清空方案</button>
 						<input type="hidden" name="mid" id="mid" value="">
 						<input type="hidden" name="rnrate" id="rnrate" value="">
+						<input type="hidden" name="vs" id="vs" value="">
 						</td>
 					</tr>
 				</tbody>
