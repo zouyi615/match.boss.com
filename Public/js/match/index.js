@@ -1,32 +1,48 @@
-﻿//namespace命名空间
-$.namespace = function() {
-	var a=arguments, o=null, i, j, d;    
-	for(i=0; i<a.length; i=i+1){        
-		d=a[i].split(".");        
-		o=jQuery;        
-		for (j=(d[0] == "jQuery") ? 1 : 0; j<d.length; j=j+1) {            
-			o[d[j]]=o[d[j]] || {};            
-			o=o[d[j]];        
-		}    
-	}    
-	return o;
-};
-//全局变量设置
-$.extend($.sysini,{
+﻿//jquery扩展
+$.extend({
+	//命名空间
+	namespace:function(){		
+		var a = arguments, o = null, i, j, d;    
+		for(i = 0; i < a.length; i = i+1){
+			d = a[i].split(".");
+			o = jQuery;
+			for(j = (d[0] == "jQuery") ? 1 : 0; j < d.length; j = j+1){
+				o[d[j]] = o[d[j]] || {};
+				o = o[d[j]];
+	        }
+	    }
+	    return o;
+	},
+	//全局变量设置	
 	C:function(k,v){
 		if(arguments.length == 1){
-			if($.isString(k)){
-				return $.sysini[k]
-			} else {
-				$.extend($.sysini, k)
-			}
+			if($.data(window,k))
+				return $.data(window,k);
+			else
+				return '';					
 		}else{
-			$.sysini[k] = v
+			$.data(window,k,v);
 		}
+	},
+	//重构html
+	tpl: function(s, o, def){
+		def = def === undefined ? '' : def;
+		return s.replace(/\{\$([^$\}]+?)\}/g, function(all, ns){
+			ns = ns.trim().split('.');
+			var prop = o;
+			try{
+				while(ns.length){
+					prop = prop[ns.shift()];
+				}
+			}catch(e){
+				prop = def;
+			}
+			return prop === undefined ? def : prop;
+		});
 	}
 });
-//$.C('expires',60);
-//expires: 1*60*60*1000, //cookie过期时间
+//全局变量设置
+$.C('expires',1*60*60*1000); //cookie过期时间
 
 //UI控制器
 $.namespace('index.ui.box');
@@ -51,7 +67,7 @@ $.index.ui.box = {
 		//cookie设置返还率
 		$('#setrn').click(function(){
 			var rnrate = $('#rnrate').val();
-			$.cookie('rnrate', rnrate);			
+			$.cookie('rnrate', rnrate, $.C('expires'));			
 		});
 		//设置下注和返利
 		$('#dosub').click(function(){
@@ -90,7 +106,7 @@ $.match.box = {
 		this.mlist = {};
 		this.prolist = {};
 		this.bindEvent();
-		this.readCookie();
+		//this.readCookie();
 	},
 	bindEvent: function(){
 		var _T = this;
@@ -136,6 +152,15 @@ $.match.box = {
 			_T.prolist = $.pub.removeObj(_T.prolist,'mid',mid);
 			_T.showProList();
 		});
+		//修改方案
+		$('#tableProList a.mod').live('click',function(){
+			console.log(this,2);
+			// var mid = $(this).attr('data-mid');			
+			// //_T.mlist = $.pub.getObj(_T.prolist,'mid',mid);
+			// var ml = $.pub.getObj(_T.prolist,'mid',mid);
+			// console.log(ml);
+			// _T.showDetail();
+		});
 	},
 	//计算下注金额
 	countDetail: function(){
@@ -180,7 +205,7 @@ $.match.box = {
 			});
 		}
 		//JSON.stringify(_T.prolist)json转字符串写cookie
-		$.cookie('match.box.mlist', JSON.stringify(_T.mlist)); 
+		$.cookie('match.box.mlist', JSON.stringify(_T.mlist), $.C('expires')); 
 	},
 	//显示保存方案
 	showProList: function(){
@@ -191,7 +216,7 @@ $.match.box = {
 				'<tr><th>水位2</th><th>水位3</th><th><font color="red">X</font>&nbsp;&nbsp;<font color="red">X</font></th><th>V&nbsp;&nbsp;V</th><th>V&nbsp;&nbsp;<font color="red">X</font></th><th class="red">2下注金额</th></tr>'+
 				'<tr><td>{$s3}</td><td>{$s4}</td><td>0.00</td><td>0.00</td><td>{$profit}</td><td>{$in2}</td></tr>';
 		$.each(_T.prolist,function(i,e){
-			html.push($.pub.tpl(str,{
+			html.push($.tpl(str,{
 				mid: i,
 				vs: i+'-'+e.vs+'('+e.rate+')',
 				s1: e.s1,
@@ -208,7 +233,7 @@ $.match.box = {
 		});
 		tableProList.html(html.join(''));
 		//JSON.stringify(_T.prolist)json转字符串写cookie
-		$.cookie('match.box.prolist', JSON.stringify(_T.prolist));
+		$.cookie('match.box.prolist', JSON.stringify(_T.prolist), $.C('expires'));
 	},
 	//第一次加载读取cookie
 	readCookie: function(){
@@ -237,7 +262,7 @@ $.pub = {
 	//判断obj是否为空
 	isEmptyObj: function(obj){
 		for(var name in obj){
-		return false; 
+			return false; 
 		} 
 		return true; 
 	},
