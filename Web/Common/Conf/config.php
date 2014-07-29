@@ -2,6 +2,8 @@
 return array(
 	//调试配置
     'SHOW_ERROR_MSG' => true,
+	//是否记录日志
+	'LOG_RECORD' => false,
     //系统配置
     'DEFAULT_THEME' => 'Default', //当前主题
     'DB_FIELDS_CACHE' => false, //模型不缓存数据表字段

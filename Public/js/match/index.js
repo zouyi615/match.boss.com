@@ -101,12 +101,12 @@ $.index.ui.box = {
 $.namespace('match.box');
 $.match.box = {
 	index: function(){
-		this.betmoney = $('#matching').attr('data-betmoney');
-		this.rebate = $('#matching').attr('data-rebate');
+		this.betmoney = parseFloat($('#matching').attr('data-betmoney'));
+		this.rebate = parseFloat($('#matching').attr('data-rebate'));
 		this.mlist = {};
 		this.prolist = {};
 		this.bindEvent();
-		//this.readCookie();
+		this.readCookie();
 	},
 	bindEvent: function(){
 		var _T = this;
@@ -130,7 +130,7 @@ $.match.box = {
 		});
 		//重新计算
 		$('#recount').click(function(){
-			
+			_T.reCountDetail();	 //重新获取表单值，重新计算		
 			_T.showDetail(); //显示下注详情
 		});
 		//保存方案
@@ -154,13 +154,25 @@ $.match.box = {
 		});
 		//修改方案
 		$('#tableProList a.mod').live('click',function(){
-			console.log(this,2);
-			// var mid = $(this).attr('data-mid');			
-			// //_T.mlist = $.pub.getObj(_T.prolist,'mid',mid);
-			// var ml = $.pub.getObj(_T.prolist,'mid',mid);
-			// console.log(ml);
-			// _T.showDetail();
+			var mid = $(this).attr('data-mid'), ml;
+			ml = $.pub.getObj(_T.prolist,'mid',mid);
+			_T.mlist = ml[mid];
+			_T.showDetail();
 		});
+	},
+	//重新计算
+	reCountDetail: function(){
+		var s1, s2, s3, s4, betmoney, rebate, mid, vs, rate, tableDetail = $('#tableDetail');
+		this.mlist['s1'] = parseFloat(tableDetail.find('input[name="s1"]').val());
+		this.mlist['s2'] = parseFloat(tableDetail.find('input[name="s2"]').val());
+		this.mlist['s3'] = parseFloat(tableDetail.find('input[name="s3"]').val());
+		this.mlist['s4'] = parseFloat(tableDetail.find('input[name="s4"]').val());
+		this.mlist['betmoney'] = parseFloat(tableDetail.find('input[name="betmoney"]').val());
+		this.mlist['rebate'] = parseFloat(tableDetail.find('input[name="rebate"]').val());
+		this.mlist['mid'] = tableDetail.find('input[name="mid"]').val();
+		this.mlist['vs'] = tableDetail.find('input[name="vs"]').val();
+		this.mlist['rate'] = tableDetail.find('input[name="rnrate"]').val();		
+		this.countDetail();
 	},
 	//计算下注金额
 	countDetail: function(){
@@ -187,6 +199,7 @@ $.match.box = {
 			//标示对阵
 			tableDetail.find('input#mid').val(_T.mlist.mid);
 			tableDetail.find('input#rnrate').val(_T.mlist.rate);
+			tableDetail.find('input#vs').val(_T.mlist.vs);
 			tableDetail.find('td.vs').html(_T.mlist.mid+'-'+_T.mlist.vs+'('+_T.mlist.rate+')');
 			//填充值
 			$.each(area,function(i,e){
@@ -205,12 +218,13 @@ $.match.box = {
 			});
 		}
 		//JSON.stringify(_T.prolist)json转字符串写cookie
-		$.cookie('match.box.mlist', JSON.stringify(_T.mlist), $.C('expires')); 
+		$.cookie('match.box.mlist', JSON.stringify(_T.mlist), $.C('expires'));
+		console.log(this.mlist);		
 	},
 	//显示保存方案
 	showProList: function(){
 		var _T = this, html = [], tableProList = $('#tableProList'),
-			str = '<tr class="danger"><td colspan="5">{$vs}</td><td><a href="javascript:;" class="del" data-mid="{$mid}">删除</a>&nbsp;&nbsp;<a href="javascript:;" calss="mod" data-mid="{$mid}">修改</a></td></tr>'+
+			str = '<tr class="danger"><td colspan="5">{$vs}</td><td><a href="javascript:;" class="del" data-mid="{$mid}">删除</a>&nbsp;&nbsp;<a href="javascript:;" class="mod" data-mid="{$mid}">修改</a></td></tr>'+
 				'<tr><th colspan="2">水位1</th><th>下注</th><th>预计</th><th>返利</th><th class="red">1下注金额</th></tr>'+
 				'<tr><td>{$s1}</td><td>{$s2}</td><td>{$betmoney}</td><td>{$prize}</td><td>{$rebate}</td><td>{$in1}</td></tr>'+
 				'<tr><th>水位2</th><th>水位3</th><th><font color="red">X</font>&nbsp;&nbsp;<font color="red">X</font></th><th>V&nbsp;&nbsp;V</th><th>V&nbsp;&nbsp;<font color="red">X</font></th><th class="red">2下注金额</th></tr>'+
