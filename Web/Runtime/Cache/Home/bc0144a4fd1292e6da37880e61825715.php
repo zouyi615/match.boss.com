@@ -49,7 +49,7 @@
 										<td><?php echo $m['awaysxname']; ?></td>
 										<td><?php echo $m['win']; ?></td>
 										<td><?php echo $m['sp']; ?></td>
-										<td><?php echo sprintf("%.6f",1/(1/$m['win']+1/$m['sp'])); ?></td>										
+										<td><?php echo sprintf("%.6f",1/(1/$m['win']+1/$m['sp'])); ?></td>
 									</tr>		
 					<?php } } } } ?>												
 				</tbody>

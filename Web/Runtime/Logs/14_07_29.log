@@ -1,0 +1,1166 @@
+[ 2014-07-29T18:00:58+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.012949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.034253s ]
+
+[ 2014-07-29T18:01:06+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.029345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029537s ]
+
+[ 2014-07-29T18:04:20+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003326s ]
+
+[ 2014-07-29T18:04:37+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001882s ]
+
+[ 2014-07-29T18:52:44+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002643s ]
+NOTIC: [2] Missing argument 1 for Jcpublic::getMatchData(), called in D:\wamp\www\match.boss.com\Web\Home\Controller\MatchController.class.php on line 18 and defined D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 3 行.
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 9 行.
+NOTIC: [2] file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Filename cannot be empty D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 9 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002141s ]
+
+[ 2014-07-29T18:53:54+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001590s ]
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002329s ]
+
+[ 2014-07-29T18:55:09+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002583s ]
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002217s ]
+
+[ 2014-07-29T19:11:43+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002674s ]
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 69 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 69 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 69 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001893s ]
+
+[ 2014-07-29T19:11:54+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003043s ]
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 69 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 69 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 69 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001385s ]
+
+[ 2014-07-29T19:11:55+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001642s ]
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 69 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 69 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 69 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001337s ]
+
+[ 2014-07-29T19:11:58+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001468s ]
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 70 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 70 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 70 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001333s ]
+
+[ 2014-07-29T19:12:25+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001642s ]
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 49 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001939s ]
+
+[ 2014-07-29T19:14:17+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003348s ]
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001940s ]
+
+[ 2014-07-29T19:14:29+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001925s ]
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001317s ]
+
+[ 2014-07-29T19:15:22+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 42 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 54 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001469s ]
+
+[ 2014-07-29T19:16:22+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002544s ]
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 44 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: rq D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 56 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001923s ]
+
+[ 2014-07-29T19:18:12+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002366s ]
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002072s ]
+
+[ 2014-07-29T19:20:54+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002474s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 32 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002351s ]
+
+[ 2014-07-29T19:21:10+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001470s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 32 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001419s ]
+
+[ 2014-07-29T19:21:12+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001512s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 32 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001482s ]
+
+[ 2014-07-29T19:21:16+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001554s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 32 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 47 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001534s ]
+
+[ 2014-07-29T19:22:14+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001694s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 33 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001375s ]
+
+[ 2014-07-29T19:22:28+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001906s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 33 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002019s ]
+
+[ 2014-07-29T19:22:53+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001935s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 33 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+
+[ 2014-07-29T19:23:00+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002472s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 33 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+
+[ 2014-07-29T19:23:11+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001577s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 33 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+
+[ 2014-07-29T19:23:15+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002305s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 33 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+
+[ 2014-07-29T19:23:23+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002032s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 33 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+
+[ 2014-07-29T19:23:32+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 33 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+
+[ 2014-07-29T19:23:45+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002343s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 33 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+
+[ 2014-07-29T19:24:32+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001720s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 32 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+
+[ 2014-07-29T19:25:36+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003297s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 32 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+
+[ 2014-07-29T19:26:32+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001799s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 32 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 48 行.
+
+[ 2014-07-29T19:32:36+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002682s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 32 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 66 行.
+
+[ 2014-07-29T19:34:17+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002601s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002005s ]
+
+[ 2014-07-29T19:37:04+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004032s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 29 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 70 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 62 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 70 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 70 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001989s ]
+
+[ 2014-07-29T19:38:00+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002558s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 28 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 61 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001318s ]
+
+[ 2014-07-29T19:39:05+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004290s ]
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 28 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 63 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001870s ]
+
+[ 2014-07-29T19:48:23+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003911s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 10 行.
+
+[ 2014-07-29T19:48:42+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005572s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 10 行.
+
+[ 2014-07-29T19:49:24+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 10 行.
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 29 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002599s ]
+
+[ 2014-07-29T19:50:05+08:00 ] 192.168.50.4 /index.php/Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 10 行.
+NOTIC: [8] Undefined variable: count_active D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 29 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+NOTIC: [8] Undefined variable: now D:\wamp\www\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001564s ]
+

@@ -1,20 +1,14 @@
 <?php
 class Jcpublic{
-	public function getMatchData($playtype='',$sdate='',$gggroup=1){
-		$ret = array('match'=>array(), 'league'=>array(), 'count'=>array('all'=>0, 'end'=>0, 'rq'=>0, 'norq'=>0));
+	
+	public function getMatchData($playtype='spf',$ggtype='2'){
+		header("content-type:text/html; charset=utf-8");
+		$ret = array('match'=>array(), 'league'=>array());
 		$count_end  = 0; //已截止场数
 		$count_rq   = 0; //让球场数
 		$count_norq = 0;
-
-		if(empty($sdate)){
-		    $now = true;
-		    $fn = 'http://trade.500.com/static/public/jczq/xml/match/match.xml'; //当前赛程
-		}else{
-		    $now = false;
-		    $fn = 'http://trade.500.com/static/public/jczq/xml/hisdata/'.date('Y/md',strtotime($sdate)).'/match.xml'; //历史赛程
-		}
-
-		$content = @file_get_contents($fn);
+		$url = $url?$url:'http://trade.500.com/static/public/jczq/xml/match/match.xml';
+		$content = @file_get_contents($url);
 		$xml = @simplexml_load_string($content);
 		if($xml){
 	    	$lea = $xml->xpath('//leagues/league');
@@ -23,84 +17,98 @@ class Jcpublic{
 		    }
 		    $matchdates = $xml->xpath('//matches/matchdate');
 			$count_all = count($matchdates);
-			//$arr_endtime = getVsEndTime($sdate,$gggroup);
-			$k=0;
+			$arrPl = $this->getPL($playtype,$ggtype);
 			foreach($matchdates as $key=>$date){
-				$k = date('Ymd',strtotime($date['date']));
-				$dat = $date->xpath('match');
-				$ret['match'][$k]['title'] = $date['date'].' '.$date['dayofweek'];
-				$ret['match'][$k]['date'] = substr($ret['match'][$k]['title'],0,10);
-	            $ret['match'][$k]['show'] = 1;
-				$ret['match'][$k]['data'] = array();			
-				$count_dayend = 0;
-	            $count_active = 0;
-
+				$dat = $date->xpath('match');				
+				$title = $date['date'].' '.$date['dayofweek'];
+				$date = date('Ymd',strtotime($date['date']));
 	            foreach($dat as $da){
-	            	$id = intval($da['id']);
-	            	$isshow = $da['isshow'];
+	            	$id = isset($da['id'])?strval($da['id']):'';
+	            	$isshow = isset($da['isshow'])?(string)$da['isshow']:'';
 	            	if($isshow || !$now){
 				    	$count_active++;	
-				    	$rangqiu = isset($da['rangqiu'])?$da['rangqiu']:0;
-				    	$rq = intval(strval($rangqiu));
-				    	$matchnum = isset($da['matchnum'])?$da['matchnum']:'';
+				    	$rq = isset($da['rangqiu'])?strval($da['rangqiu']):0;
+						if($rq != 1) continue; //只获取让1球的比赛
+				    	$matchnum = isset($da['matchnum'])?strval($da['matchnum']):'';
+						$league = isset($da['league'])?strval($da['league']):'';
+						$simpleleague = isset($da['simpleleague'])?strval($da['simpleleague']):'';
+						$homename = isset($da['homename'])?strval($da['homename']):'';
+						$homesxname = isset($da['homesxname'])?strval($da['homesxname']):'';						
+						$awayname = isset($da['awayname'])?strval($da['awayname']):'';
+						$awaysxname = isset($da['awaysxname'])?strval($da['awaysxname']):'';
 				    	$processname = $this->changweekstr($matchnum);
-				    	$processdate = isset($da['matchnumdate'])?$da['matchnumdate']:'';
-						$ret['match'][$k]['data'][$id] = $da;
-						$ret['match'][$k]['data'][$id]['rangqiu'] = $rq;
-					    $ret['match'][$k]['data'][$id]['isshow'] = (string)$isshow;
-					    $ret['match'][$k]['data'][$id]['matchnum'] = (string)$matchnum;
-					    $ret['match'][$k]['data'][$id]['processname'] = (string)$processname;						
-					    $ret['match'][$k]['data'][$id]['processdate'] = (string)$processdate;
-					    $ret['match'][$k]['data'][$id]['matchtime'] = $da['matchdate'].' '.$da['matchtime'];					    
-					    if($now && strtotime($ret['match'][$k]['data'][$id]['matchtime'])<time()){ //已截止
-					        $count_dayend++;
-					        $count_end++;
-					        $ret['match'][$k]['data'][$id]['end'] = 1;
+				    	$processdate = isset($da['matchnumdate'])?strval($da['matchnumdate']):'';
+						$matchdate = isset($da['matchdate'])?strval($da['matchdate']):'';
+						$matchtime = isset($da['matchtime'])?strval($da['matchtime']):'';
+						$endtime = isset($da['endtime'])?strval($da['endtime']):'';
+						$matchnumdate = isset($da['matchnumdate'])?strval($da['matchnumdate']):'';
+						//$ret['match'][$k][$id] = $da;
+						$ret['match'][$id]['id'] = $id;
+						$ret['match'][$id]['rangqiu'] = $rq;
+					    $ret['match'][$id]['isshow'] = $isshow;
+					    $ret['match'][$id]['matchnum'] = $matchnum;
+						$ret['match'][$id]['league'] = $league;
+						$ret['match'][$id]['simpleleague'] = $simpleleague;
+						$ret['match'][$id]['homename'] = $homename;
+						$ret['match'][$id]['homesxname'] = $homesxname;
+						$ret['match'][$id]['awayname'] = $awayname;
+						$ret['match'][$id]['awaysxname'] = $awaysxname;
+					    $ret['match'][$id]['processname'] = $processname;						
+					    $ret['match'][$id]['processdate'] = $processdate;
+						$ret['match'][$id]['matchdate'] = $matchdate;
+						$ret['match'][$id]['matchtime'] = $matchdate.' '.$matchtime;
+						$ret['match'][$id]['endtime'] = $endtime;
+						$ret['match'][$id]['matchnumdate'] = $matchnumdate;	
+						$ret['match'][$id]['title'] = $title;	
+						$ret['match'][$id]['date'] = $date;								
+					    if($now && strtotime($matchdate.$matchtime)<time()){ //已截止
+					        $ret['match'][$id]['end'] = 1;
 					    }else{
-					        $ret['match'][$k]['data'][$id]['end'] = 0;
-					        if($rq==0){
-					            $count_norq++;
-					        }else{
-					            $count_rq++;
-					        }
+					        $ret['match'][$id]['end'] = 0;
 					    }
-				    }
+				    }					
 	            }
-	            $allend = 0;
-				if($count_active == $count_dayend){
-				    $allend = 1;
-				    $count_end = $count_end-$count_dayend;
-				}
-				$ret['match'][$k]['allend'] = $allend;
-				$ret['match'][$k]['show'] = $ret['match'][$k]['allend'] == 1?0:1;
-				$ret['match'][$k]['count_dayend'] = $count_dayend;
-			    if(!$ret['match'][$k]['data']){
-			        unset($ret['match'][$k]);
+			    if(!$ret['match']){
+			        unset($ret['match']);
 			    }
-			}
-
-			//如果所有天的场次都截止了，打开最后一天的场次
-			$isallend = 1;
-			if($ret['match']){
-				foreach($ret['match'] as $kk=>$v){
-					if($v['allend'] == 0){
-						$isallend = 0;
-						break;
-					}
-			    }
-			    if($isallend == 1){
-			    	$ret['match'][$kk]['show'] = 1;
-			    }
-			    
-			    $ret['count'] = array('all'=>$count_all,'end'=>$count_end,'rq'=>$count_rq,'norq'=>$count_norq);
 			}			
 		}
 		$today = date("Y-m-d",time());
 		ksort($ret['match']);
-		return $ret;
+		var_dump($ret['match']);
+		//return $ret;
 	}
 
-
+	/**
+	 * 获取所有比赛最新赔率
+	 */
+	public function getPL($playType='spf',$ggType=2){		
+		$peilvs = array();
+		$fn = 'http://trade.500.com/static/public/jczq/xml/pl/pl_'.$playType.'_'.$ggType.'.xml';
+		$xml = @simplexml_load_string(@file_get_contents($fn));
+		if($xml){
+			if(in_array($playType,array('spf','nspf'))){
+				$ms = $xml->xpath('//m');
+				foreach($ms as $m){
+					$id = intval($m['id']);
+					$peilvs[$id] = $m->row[0];
+				}
+			}else{
+				$ms = $xml->xpath('//m');
+				foreach($ms as $m){
+					$tmparr = array();
+					foreach($nodes as $n){
+						$tmparr[] = floatval(strval($m[$n]));
+					}
+					$id = intval($m['id']);
+					$peilvs[$id] = $m;
+					$peilvs[$id]['odds'] = implode(',',$tmparr);
+				}
+			}
+		}
+		var_dump($peilvs);
+		return $peilvs;
+	}
 
 	/**
 	 * 2022换成周二022
@@ -169,5 +177,26 @@ class Jcpublic{
 		$newstr = $weekstr.mb_substr($week,2,5,'utf-8');
 		return $newstr;
 	}
+	//curl请求
+	public function curl($url,$host = ""){
+        set_time_limit(0);         
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL,$url); // 要访问的地址
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);  // 对认证证书来源的检查
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false); // 从证书中检查SSL加密算法是否存在
+        curl_setopt($ch,CURLOPT_RETURNTRANSFER,1); // 获取的信息以文件流的形式返回                    
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION,1);// 使用自动跳转    
+        curl_setopt($ch, CURLOPT_HEADER, 0);  // 显示返回的Header区域内容    
+        curl_setopt($ch,CURLOPT_USERAGENT,"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)");   // 模拟用户使用的浏览器
+        curl_setopt($ch,CURLOPT_HTTPHEADER,array(
+            "User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; TheWorld)",
+            "Accept-Language: en",
+            "Host:".$host
+        ));
+        curl_setopt($ch, CURLOPT_REFERER, "http://".$host);
+        $content = curl_exec($ch);
+        curl_close($ch);
+        return $content;
+    }
 }
 ?>
