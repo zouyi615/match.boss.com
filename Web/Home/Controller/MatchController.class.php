@@ -1,29 +1,41 @@
 <?php
-//¶ÔÕó´¦ÀíÀàÎÄ¼þ
+//å¯¹é˜µå¤„ç†ç±»æ–‡ä»¶
 namespace Home\Controller;
 use Think\Controller;
 class MatchController extends Controller {
-	//²ÎÊý
-	public $xmlUrl = 'http://trade.500.com/static/public/jczq/xml/match/match.xml'; //¶ÔÕóxml
-	public $xmlspfpl = 'http://trade.500.com/static/public/jczq/xml/pl/pl_spf_2.xml'; //ÈÃÇòÊ¤Æ½¸ºÅâÂÊ
-	//´¦Àíº¯Êý
+	//å‚æ•°
+	public $xmlUrl = 'http://trade.500.com/static/public/jczq/xml/match/match.xml'; //å¯¹é˜µxml
+	public $xmlspfpl = 'http://trade.500.com/static/public/jczq/xml/pl/pl_spf_2.xml'; //è®©çƒèƒœå¹³è´Ÿèµ”çŽ‡
+	//å¤„ç†å‡½æ•°
 	public function index(){
-		var_dump($this->xmlUrl);
-		$this->getXml();
+		
 	}
-	//»ñÈ¡xmlÊý¾Ý
+	//èŽ·å–xmlæ•°æ®
 	public function getXml(){
+		header("Content-type:text/html;charset=UTF-8");
 		import('Libs.Trade.Jcpublic');
         $jc = new \Jcpublic();
-        $xml = $jc->getMatchData();	
-		var_dump($xml);
+        $match = $jc->getMatchData();
+		$m = M('match');
+		$rs = $m->addAll($match['match']);
+		if($rs){
+			echo "é˜Ÿé˜µä¿å­˜æˆåŠŸï¼";
+		}else{
+			echo "å¯¹é˜µä¿å­˜å¤±è´¥ï¼";
+		}
+		exit;
+		//var_dump(strtotime('2014-07-30 01:30'));
 	}
-
+	//èŽ·å–èµ”çŽ‡
+	public function getPl(){
+		header("Content-type:text/html;charset=UTF-8");
+		$m = M('match');
+		$list = $m->getField('id,rangqiu,league,homename,awayname,win,matchtime,date');
+		if($list){
+			
+		}
+		var_dump($list);
+	
+	
+	}
 }
-
-/*http://sports1.im.fun88.com/OddsDisplay/websync?token=13868823&src=js&AspxAutoDetectCookieSupport=1
-http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsDataByMatchIds?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=0&UserTimeZone=-480&Language=1&FilterDay=1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=1&OddsPageCode=0&ViewType=2&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0&MatchIds=1807356&MatchIds=1807359&LastRefreshTime=
-http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=0&UserTimeZone=-480&Language=1&FilterDay=1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=1&OddsPageCode=0&ViewType=2&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0
-http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=0&UserTimeZone=-480&Language=1&FilterDay=1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=0&OddsPageCode=0&ViewType=2&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0
-
-http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetTemplate2	*/

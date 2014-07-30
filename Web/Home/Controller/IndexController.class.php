@@ -173,11 +173,11 @@ class IndexController extends Controller {
     public function index(){
         header("Content-type:text/html;charset=UTF-8");   
         import('Libs.Trade.Jcpublic');
-        $jc = new \Jcpublic();
+        //$jc = new \Jcpublic();
         //$match = $jc->getMatchData();			
 		//var_dump($match);exit;
         $this->assign('match',$this->match);
-        $this->display('index');        
+        $this->display('index');
     }
 
     public function matching(){
@@ -199,6 +199,7 @@ class IndexController extends Controller {
 			$m1 = $v[0]; $m2 = $v[1];
 			$rnrate = strval(sprintf("%.6f",$match[$m1]['rnrate']+$match[$m2]['rnrate'])); //返还率			
 			if($rnrate < $irate) continue; //设置赔率值
+			
 			$comMatchArr[$key]['rnrate'] = $rnrate; //返还率
 			$comMatchArr[$key]['m1'] = $match[$m1];
 			$comMatchArr[$key]['m2'] = $match[$m2];			

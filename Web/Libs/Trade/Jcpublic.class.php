@@ -17,18 +17,25 @@ class Jcpublic{
 		    }
 		    $matchdates = $xml->xpath('//matches/matchdate');
 			$count_all = count($matchdates);
-			$arrPl = $this->getPL($playtype,$ggtype);
+			$arrPl = $this->getPL($playtype,$ggtype); //var_dump($arrPl);
+			$i = 0;
 			foreach($matchdates as $key=>$date){
 				$dat = $date->xpath('match');				
 				$title = $date['date'].' '.$date['dayofweek'];
 				$date = date('Ymd',strtotime($date['date']));
 	            foreach($dat as $da){
+					$win = '';
 	            	$id = isset($da['id'])?strval($da['id']):'';
 	            	$isshow = isset($da['isshow'])?(string)$da['isshow']:'';
 	            	if($isshow || !$now){
 				    	$count_active++;	
 				    	$rq = isset($da['rangqiu'])?strval($da['rangqiu']):0;
-						if($rq != 1) continue; //只获取让1球的比赛
+						if(abs($rq) != 1) continue; //只获取让1球的比赛
+						if($rq == 1){
+							$win = isset($arrPl[$id]['lost'])?strval($arrPl[$id]['lost']):'';
+						}elseif($rq == -1){
+							$win = isset($arrPl[$id]['win'])?strval($arrPl[$id]['win']):'';
+						}						
 				    	$matchnum = isset($da['matchnum'])?strval($da['matchnum']):'';
 						$league = isset($da['league'])?strval($da['league']):'';
 						$simpleleague = isset($da['simpleleague'])?strval($da['simpleleague']):'';
@@ -42,30 +49,31 @@ class Jcpublic{
 						$matchtime = isset($da['matchtime'])?strval($da['matchtime']):'';
 						$endtime = isset($da['endtime'])?strval($da['endtime']):'';
 						$matchnumdate = isset($da['matchnumdate'])?strval($da['matchnumdate']):'';
-						//$ret['match'][$k][$id] = $da;
-						$ret['match'][$id]['id'] = $id;
-						$ret['match'][$id]['rangqiu'] = $rq;
-					    $ret['match'][$id]['isshow'] = $isshow;
-					    $ret['match'][$id]['matchnum'] = $matchnum;
-						$ret['match'][$id]['league'] = $league;
-						$ret['match'][$id]['simpleleague'] = $simpleleague;
-						$ret['match'][$id]['homename'] = $homename;
-						$ret['match'][$id]['homesxname'] = $homesxname;
-						$ret['match'][$id]['awayname'] = $awayname;
-						$ret['match'][$id]['awaysxname'] = $awaysxname;
-					    $ret['match'][$id]['processname'] = $processname;						
-					    $ret['match'][$id]['processdate'] = $processdate;
-						$ret['match'][$id]['matchdate'] = $matchdate;
-						$ret['match'][$id]['matchtime'] = $matchdate.' '.$matchtime;
-						$ret['match'][$id]['endtime'] = $endtime;
-						$ret['match'][$id]['matchnumdate'] = $matchnumdate;	
-						$ret['match'][$id]['title'] = $title;	
-						$ret['match'][$id]['date'] = $date;								
+						$ret['match'][$i]['id'] = $id;
+						$ret['match'][$i]['rangqiu'] = $rq;
+					    $ret['match'][$i]['isshow'] = $isshow;
+					    $ret['match'][$i]['matchnum'] = $matchnum;
+						$ret['match'][$i]['league'] = $league;
+						$ret['match'][$i]['simpleleague'] = $simpleleague;
+						$ret['match'][$i]['homename'] = $homename;
+						$ret['match'][$i]['homesxname'] = $homesxname;
+						$ret['match'][$i]['awayname'] = $awayname;
+						$ret['match'][$i]['awaysxname'] = $awaysxname;
+						$ret['match'][$i]['win'] = $win;
+					    $ret['match'][$i]['processname'] = $processname;						
+					    $ret['match'][$i]['processdate'] = $processdate;
+						$ret['match'][$i]['matchdate'] = $matchdate;
+						$ret['match'][$i]['matchtime'] = $matchdate.' '.$matchtime;
+						$ret['match'][$i]['endtime'] = $endtime;
+						$ret['match'][$i]['matchnumdate'] = $matchnumdate;	
+						$ret['match'][$i]['title'] = $title;	
+						$ret['match'][$i]['date'] = $date;								
 					    if($now && strtotime($matchdate.$matchtime)<time()){ //已截止
-					        $ret['match'][$id]['end'] = 1;
+					        $ret['match'][$i]['end'] = 1;
 					    }else{
-					        $ret['match'][$id]['end'] = 0;
+					        $ret['match'][$i]['end'] = 0;
 					    }
+						$i++;
 				    }					
 	            }
 			    if(!$ret['match']){
@@ -75,8 +83,7 @@ class Jcpublic{
 		}
 		$today = date("Y-m-d",time());
 		ksort($ret['match']);
-		var_dump($ret['match']);
-		//return $ret;
+		return $ret;
 	}
 
 	/**
@@ -106,7 +113,6 @@ class Jcpublic{
 				}
 			}
 		}
-		var_dump($peilvs);
 		return $peilvs;
 	}
 
