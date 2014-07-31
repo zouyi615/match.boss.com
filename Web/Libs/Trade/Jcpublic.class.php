@@ -115,7 +115,44 @@ class Jcpublic{
 		}
 		return $peilvs;
 	}
+	
+	//从n个字符串中取m个字符的所有组合
+	public function getCombine($arr,$m = 2){
+		$result = array();
+		if($m ==1){
+		   return $arr;
+		}
+		if(empty($arr)){
+			return $arr;
+		}
+		if($m == count($arr)){
+			$result[] = implode(',' , $arr);
+			return $result;
+		}
+		$temp_firstelement = $arr[0];
+		unset($arr[0]);
+		$arr = array_values($arr);
+		$temp_list1 = $this->getCombine($arr, ($m-1));
+		foreach ($temp_list1 as $s){
+			$s = $temp_firstelement.','.$s;
+			$result[] = $s; 
+		}
+		unset($temp_list1);
+		$temp_list2 = $this->getCombine($arr, $m);
+		foreach($temp_list2 as $s){
+			$result[] = $s;
+		}    
+		unset($temp_list2);
+		return $result;
+	}
 
+	//获取时间到毫秒
+	function mic_time(){
+		$mictime = microtime();
+		$arr_time = explode(' ', $mictime);
+		$mtime = intval($arr_time[0]*1000);
+		return date("mdHis").$mtime;
+	}
 	/**
 	 * 2022换成周二022
 	 */

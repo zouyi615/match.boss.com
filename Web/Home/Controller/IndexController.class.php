@@ -178,10 +178,21 @@ class IndexController extends Controller {
 		//var_dump($match);exit;
         $this->assign('match',$this->match);
         $this->display('index');
+		//test
+		// $arr = array();
+		// for($i=0;$i<300;$i++){
+			// $arr[] = $i;
+		// }		
+		// $jc = new \Jcpublic();
+		// $t1 = $jc->mic_time();
+		// $r = $jc->getCombine($arr);
+		// $t2 = $jc->mic_time();		
+		// var_dump($r,$t2,$t1,$t2-$t1,floatval($t2)-floatval($t1));
     }
 
     public function matching(){
 		header("Content-type:text/html;charset=UTF-8");
+		$jc = new \Jcpublic();
 		$irate = I('param.rnrate','2.00','htmlspecialchars'); //用户设置赔率
 		$betmoney = I('param.betmoney','10000','htmlspecialchars'); //用户下注金额
 		$rebate = I('param.rebate','5000','htmlspecialchars'); //用户返还金额
@@ -193,7 +204,7 @@ class IndexController extends Controller {
 		foreach($match as $key=>$val){
 			$midArr[] = $val['id'];
 		}
-		$rscom = $this->getCombine($midArr,2);
+		$rscom = $jc->getCombine($midArr,2);
 		foreach($rscom as $key=>$val){
 			$v = explode(',',$val);
 			$m1 = $v[0]; $m2 = $v[1];
@@ -210,35 +221,7 @@ class IndexController extends Controller {
 		$this->assign('rebate',$rebate);
 		$this->display('matching');
     }
-	//从n个字符串中取m个字符的所有组合
-	public function getCombine($arr,$m){
-		$result = array();
-		if($m ==1){
-		   return $arr;
-		}
-		if(empty($arr)){
-			return $arr;
-		}
-		if($m == count($arr)){
-			$result[] = implode(',' , $arr);
-			return $result;
-		}
-		$temp_firstelement = $arr[0];
-		unset($arr[0]);
-		$arr = array_values($arr);
-		$temp_list1 = $this->getCombine($arr, ($m-1));
-		foreach ($temp_list1 as $s){
-			$s = $temp_firstelement.','.$s;
-			$result[] = $s; 
-		}
-		unset($temp_list1);
-		$temp_list2 = $this->getCombine($arr, $m);
-		foreach($temp_list2 as $s){
-			$result[] = $s;
-		}    
-		unset($temp_list2);
-		return $result;
-	}
+	
 	//二维数组排序
 	function array2_sort($arr,$key,$order=SORT_ASC,$type=SORT_REGULAR){		
 		foreach ($arr as $kk => $vv){
@@ -330,4 +313,5 @@ class IndexController extends Controller {
         curl_close($ch);
         return $content;
     }
+
 }

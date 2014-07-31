@@ -1,0 +1,183 @@
+[ 2014-07-31T17:02:04+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.012840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.037832s ]
+
+[ 2014-07-31T17:02:13+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+
+[ 2014-07-31T17:06:46+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002410s ]
+
+[ 2014-07-31T17:06:47+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+
+[ 2014-07-31T17:06:49+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+
+[ 2014-07-31T17:06:49+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001547s ]
+
+[ 2014-07-31T17:06:50+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001986s ]
+
+[ 2014-07-31T17:06:50+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.005260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007651s ]
+
+[ 2014-07-31T17:06:50+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001589s ]
+
+[ 2014-07-31T17:10:09+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002324s ]
+
+[ 2014-07-31T17:11:17+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.063011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.234177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.145024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.145286s ]
+
+[ 2014-07-31T17:12:08+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001267s ]
+
+[ 2014-07-31T17:13:54+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001836s ]
+
+[ 2014-07-31T17:14:05+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001902s ]
+
+[ 2014-07-31T17:14:06+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001973s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2014-07-31T17:14:24+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001315s ]
+
+[ 2014-07-31T17:14:26+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001338s ]
+
+[ 2014-07-31T17:14:44+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001325s ]
+
+[ 2014-07-31T17:15:08+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001380s ]
+
+[ 2014-07-31T17:15:51+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001243s ]
+
+[ 2014-07-31T17:15:52+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001785s ]
+
+[ 2014-07-31T17:16:01+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001727s ]
+
+[ 2014-07-31T17:16:12+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001766s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001777s ]
+
+[ 2014-07-31T17:16:32+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001343s ]
+
+[ 2014-07-31T17:16:53+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002488s ]
+
+[ 2014-07-31T17:17:10+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003963s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002312s ]
+
+[ 2014-07-31T17:27:59+08:00 ] 192.168.50.4 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002010s ]
+
