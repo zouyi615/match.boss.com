@@ -7,7 +7,7 @@ class Jcpublic{
 		$count_end  = 0; //已截止场数
 		$count_rq   = 0; //让球场数
 		$count_norq = 0;
-		$url = $url?$url:'http://trade.500.com/static/public/jczq/xml/match/match.xml';
+		$url = 'http://trade.500.com/static/public/jczq/xml/match/match.xml';
 		$content = @file_get_contents($url);
 		$xml = @simplexml_load_string($content);
 		if($xml){
@@ -35,7 +35,7 @@ class Jcpublic{
 							$win = isset($arrPl[$id]['lost'])?strval($arrPl[$id]['lost']):'';
 						}elseif($rq == -1){
 							$win = isset($arrPl[$id]['win'])?strval($arrPl[$id]['win']):'';
-						}						
+						}
 				    	$matchnum = isset($da['matchnum'])?strval($da['matchnum']):'';
 						$league = isset($da['league'])?strval($da['league']):'';
 						$simpleleague = isset($da['simpleleague'])?strval($da['simpleleague']):'';
@@ -74,7 +74,7 @@ class Jcpublic{
 					        $ret['match'][$i]['end'] = 0;
 					    }
 						$i++;
-				    }					
+				    }
 	            }
 			    if(!$ret['match']){
 			        unset($ret['match']);
@@ -114,7 +114,7 @@ class Jcpublic{
 			}
 		}
 		return $peilvs;
-	}
+	}	
 	
 	//从n个字符串中取m个字符的所有组合
 	public function getCombine($arr,$m = 2){

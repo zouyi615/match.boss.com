@@ -181,3 +181,918 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.001779s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002010s ]
 
+[ 2014-07-31T22:27:13+08:00 ] 127.0.0.1 /Home/Index/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+ERR: 非法操作:getsp
+
+[ 2014-07-31T22:27:40+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001383s ]
+
+[ 2014-07-31T22:33:06+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+
+[ 2014-07-31T22:33:07+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+
+[ 2014-07-31T22:33:24+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001025s ]
+
+[ 2014-07-31T22:33:39+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001353s ]
+
+[ 2014-07-31T22:34:54+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2014-07-31T22:34:59+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000900s ]
+
+[ 2014-07-31T22:37:00+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2014-07-31T22:37:17+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000944s ]
+
+[ 2014-07-31T22:56:21+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+NOTIC: [8] Undefined variable: sp D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 49 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001223s ]
+
+[ 2014-07-31T22:56:38+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002166s ]
+NOTIC: [8] Undefined offset: 4 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2014-07-31T22:56:52+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+NOTIC: [8] Undefined offset: 4 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 56 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001068s ]
+
+[ 2014-07-31T22:57:26+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+NOTIC: [8] Undefined offset: 4 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2014-07-31T22:57:49+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+NOTIC: [8] Undefined offset: 4 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2014-07-31T22:58:13+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+NOTIC: [8] Undefined offset: 0 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 54 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 54 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2014-07-31T22:58:34+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+NOTIC: [8] Undefined offset: 4 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 56 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2014-07-31T22:58:51+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+NOTIC: [8] Undefined index: d D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 53 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000922s ]
+
+[ 2014-07-31T22:59:04+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+NOTIC: [8] Trying to get property of non-object D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 53 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2014-07-31T22:59:10+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+NOTIC: [8] Undefined offset: 4 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 56 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2014-07-31T22:59:37+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001581s ]
+NOTIC: [8] Undefined offset: 4 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 56 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2014-07-31T23:00:31+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+NOTIC: [8] Undefined offset: 4 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2014-07-31T23:00:40+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+NOTIC: [8] Undefined offset: 4 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 56 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2014-07-31T23:00:43+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2014-07-31T23:00:44+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+
+[ 2014-07-31T23:00:51+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002280s ]
+NOTIC: [8] Undefined offset: 4 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 56 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002562s ]
+
+[ 2014-07-31T23:01:15+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 68 行.
+NOTIC: [8] Undefined offset: 5 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 62 行.
+NOTIC: [8] Undefined offset: 5 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 63 行.
+NOTIC: [8] Undefined offset: 6 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 64 行.
+NOTIC: [8] Undefined offset: 6 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 65 行.
+NOTIC: [8] Undefined offset: 7 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 66 行.
+NOTIC: [8] Undefined offset: 10 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 68 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 68 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 68 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 68 行.
+NOTIC: [8] Undefined offset: 5 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 62 行.
+NOTIC: [8] Undefined offset: 5 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 63 行.
+NOTIC: [8] Undefined offset: 6 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 64 行.
+NOTIC: [8] Undefined offset: 6 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 65 行.
+NOTIC: [8] Undefined offset: 7 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 66 行.
+NOTIC: [8] Undefined offset: 10 D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 68 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 68 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001435s ]
+
+[ 2014-07-31T23:02:18+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001733s ]
+
+[ 2014-07-31T23:02:30+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+NOTIC: [8] Undefined index: d D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 53 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2014-07-31T23:02:32+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2014-07-31T23:02:52+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+NOTIC: [8] Undefined index: d D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 53 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2014-07-31T23:05:33+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+NOTIC: [8] Undefined index: d D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 53 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001105s ]
+
+[ 2014-07-31T23:05:33+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+
+[ 2014-07-31T23:05:33+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+
+[ 2014-07-31T23:05:33+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+
+[ 2014-07-31T23:05:33+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+
+[ 2014-07-31T23:05:33+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+
+[ 2014-07-31T23:05:41+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+NOTIC: [8] Undefined index: d D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 53 行.
+
+[ 2014-07-31T23:05:48+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+
+[ 2014-07-31T23:07:50+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2014-07-31T23:11:59+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000922s ]
+
+[ 2014-07-31T23:12:04+08:00 ] 127.0.0.1 /Home/Match/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000993s ]
+
+[ 2014-07-31T23:13:20+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2014-07-31T23:14:23+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002794s ]
+
+[ 2014-07-31T23:16:28+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2014-07-31T23:17:18+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2014-07-31T23:18:15+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+NOTIC: [8] Undefined index: d D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2014-07-31T23:18:18+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+NOTIC: [8] Undefined index: d D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2014-07-31T23:18:20+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2014-07-31T23:20:19+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001160s ]
+
+[ 2014-07-31T23:20:25+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2014-07-31T23:20:48+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2014-07-31T23:21:50+08:00 ] 127.0.0.1 /Home/Match/getXml.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+NOTIC: [8] Undefined variable: url D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 10 行.
+NOTIC: [8] Undefined variable: count_active D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+ERR: 1062:Duplicate entry '78765' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match` (`id`,`rangqiu`,`isshow`,`matchnum`,`league`,`simpleleague`,`homename`,`homesxname`,`awayname`,`awaysxname`,`win`,`processname`,`processdate`,`matchdate`,`matchtime`,`endtime`,`matchnumdate`,`title`,`date`,`end`) VALUES (78753,'-1',1,'周四001','欧罗巴联�\�','欧联','阿斯塔纳','阿斯�\�','AIK索尔�\�','索尔�\�','4.85','4001','2014-07-31','2014-07-31','2014-07-31 22:00','2014-07-31 21:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78754,'-1',1,'周四002','欧罗巴联�\�','欧联','埃尔夫斯�\�','埃尔�\�','哈夫纳夫约杜�\�','哈夫�\�','2.35','4002','2014-07-31','2014-08-01','2014-08-01 00:00','2014-07-31 23:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78755,'1',1,'周四003','欧罗巴联�\�','欧联','特伦�\�','特伦�\�','赫尔�\�','赫尔�\�','3.35','4003','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78756,'1',1,'周四004','欧罗巴联�\�','欧联','博莱斯拉�\�','博莱�\�','里昂','�\�  �\�','3.45','4004','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78757,'-1',1,'周四005','欧罗巴联�\�','欧联','IFK哥德�\�','哥德�\�','里奥阿维','里奥�\�','4.65','4005','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78759,'1',1,'周四007','欧罗巴联�\�','欧联','布鲁马波卡纳','布鲁�\�','都灵','�\�  �\�','2.08','4007','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78760,'-1',1,'周四008','欧罗巴联�\�','欧联','卡拉比克体育','卡拉�\�','罗森博格','罗森�\�','4.15','4008','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78761,'-1',1,'周四009','欧罗巴联�\�','欧联','布鲁�\�','布鲁�\�','布隆德比','布隆�\�','2.80','4009','2014-07-31','2014-08-01','2014-08-01 02:30','2014-08-01 02:29','2014-07-31','2014-07-31 星期�\�','20140731',0),(78762,'-1',1,'周四010','欧罗巴联�\�','欧联','美因�\�','美因�\�','特里波利海星','特海�\�','1.68','4010','2014-07-31','2014-08-01','2014-08-01 02:30','2014-08-01 02:29','2014-07-31','2014-07-31 星期�\�','20140731',0),(78763,'-1',1,'周四011','欧罗巴联�\�','欧联','皇家社会','�\�  �\�','阿伯�\�','阿伯�\�','1.73','4011','2014-07-31','2014-08-01','2014-08-01 02:30','2014-08-01 02:29','2014-07-31','2014-07-31 星期�\�','20140731',0),(78764,'-1',1,'周四012','欧罗巴联�\�','欧联','圣约翰斯�\�','圣约�\�','特尔纳瓦斯巴�\�','特尔�\�','4.55','4012','2014-07-31','2014-08-01','2014-08-01 02:45','2014-08-01 02:44','2014-07-31','2014-07-31 星期�\�','20140731',0),(78765,'-1',1,'周四013','巴西�\�','巴西�\�','科里蒂巴','科里�\�','派桑�\�','帕桑�\�','1.90','4013','2014-07-31','2014-08-01','2014-08-01 08:00','2014-08-01 07:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78767,'-1',1,'周五001','挪威超级联赛','挪超','利勒斯特罗姆','利勒�\�','布兰','�\�  �\�','2.70','5001','2014-08-01','2014-08-02','2014-08-02 01:00','2014-08-02 00:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78768,'-1',1,'周五002','法国乙级联赛','法乙','阿尔�\�','阿尔�\�','阿雅克肖','阿雅�\�','4.60','5002','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78769,'-1',1,'周五003','法国乙级联赛','法乙','欧塞�\�','欧塞�\�','勒阿弗尔','阿弗�\�','4.35','5003','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78770,'-1',1,'周五004','法国乙级联赛','法乙','阿雅克肖GFCO','阿雅GF','瓦朗谢纳','瓦朗�\�','5.50','5004','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78771,'-1',1,'周五005','法国乙级联赛','法乙','南锡','�\�  �\�','第戎','�\�  �\�','3.60','5005','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78772,'-1',1,'周五006','法国乙级联赛','法乙','尼姆','�\�  �\�','昂热','�\�  �\�','4.20','5006','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78773,'-1',1,'周五007','法国乙级联赛','法乙','拉瓦�\�','拉瓦�\�','尼奥�\�','尼奥�\�','4.45','5007','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78774,'-1',1,'周五008','法国乙级联赛','法乙','图尔','�\� �\�','克雷泰伊','克雷�\�','3.65','5008','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78775,'1',1,'周五009','法国乙级联赛','法乙','沙托�\�','沙托�\�','特鲁�\�','特鲁�\�','4.95','5009','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78776,'-1',1,'周五010','德国乙级联赛','德乙','杜塞尔多�\�','杜塞�\�','不伦瑞克','不伦�\�','3.80','5010','2014-08-01','2014-08-02','2014-08-02 02:30','2014-08-02 02:29','2014-08-01','2014-08-01 星期�\�','20140801',0),(78779,'-1',1,'周五013','美国职业大联�\�','美职�\�','堪萨斯城竞技','肯萨�\�','费城联合','费城�\�','2.60','5013','2014-08-01','2014-08-02','2014-08-02 08:00','2014-08-02 07:59','2014-08-01','2014-08-01 星期�\�','20140801',0)
+
+[ 2014-07-31T23:21:56+08:00 ] 127.0.0.1 /Home/Match/getXml.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+NOTIC: [8] Undefined variable: url D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 10 行.
+NOTIC: [8] Undefined variable: count_active D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+ERR: 1062:Duplicate entry '78765' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match` (`id`,`rangqiu`,`isshow`,`matchnum`,`league`,`simpleleague`,`homename`,`homesxname`,`awayname`,`awaysxname`,`win`,`processname`,`processdate`,`matchdate`,`matchtime`,`endtime`,`matchnumdate`,`title`,`date`,`end`) VALUES (78753,'-1',1,'周四001','欧罗巴联�\�','欧联','阿斯塔纳','阿斯�\�','AIK索尔�\�','索尔�\�','4.85','4001','2014-07-31','2014-07-31','2014-07-31 22:00','2014-07-31 21:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78754,'-1',1,'周四002','欧罗巴联�\�','欧联','埃尔夫斯�\�','埃尔�\�','哈夫纳夫约杜�\�','哈夫�\�','2.35','4002','2014-07-31','2014-08-01','2014-08-01 00:00','2014-07-31 23:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78755,'1',1,'周四003','欧罗巴联�\�','欧联','特伦�\�','特伦�\�','赫尔�\�','赫尔�\�','3.35','4003','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78756,'1',1,'周四004','欧罗巴联�\�','欧联','博莱斯拉�\�','博莱�\�','里昂','�\�  �\�','3.45','4004','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78757,'-1',1,'周四005','欧罗巴联�\�','欧联','IFK哥德�\�','哥德�\�','里奥阿维','里奥�\�','4.65','4005','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78759,'1',1,'周四007','欧罗巴联�\�','欧联','布鲁马波卡纳','布鲁�\�','都灵','�\�  �\�','2.08','4007','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78760,'-1',1,'周四008','欧罗巴联�\�','欧联','卡拉比克体育','卡拉�\�','罗森博格','罗森�\�','4.15','4008','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78761,'-1',1,'周四009','欧罗巴联�\�','欧联','布鲁�\�','布鲁�\�','布隆德比','布隆�\�','2.80','4009','2014-07-31','2014-08-01','2014-08-01 02:30','2014-08-01 02:29','2014-07-31','2014-07-31 星期�\�','20140731',0),(78762,'-1',1,'周四010','欧罗巴联�\�','欧联','美因�\�','美因�\�','特里波利海星','特海�\�','1.68','4010','2014-07-31','2014-08-01','2014-08-01 02:30','2014-08-01 02:29','2014-07-31','2014-07-31 星期�\�','20140731',0),(78763,'-1',1,'周四011','欧罗巴联�\�','欧联','皇家社会','�\�  �\�','阿伯�\�','阿伯�\�','1.73','4011','2014-07-31','2014-08-01','2014-08-01 02:30','2014-08-01 02:29','2014-07-31','2014-07-31 星期�\�','20140731',0),(78764,'-1',1,'周四012','欧罗巴联�\�','欧联','圣约翰斯�\�','圣约�\�','特尔纳瓦斯巴�\�','特尔�\�','4.55','4012','2014-07-31','2014-08-01','2014-08-01 02:45','2014-08-01 02:44','2014-07-31','2014-07-31 星期�\�','20140731',0),(78765,'-1',1,'周四013','巴西�\�','巴西�\�','科里蒂巴','科里�\�','派桑�\�','帕桑�\�','1.90','4013','2014-07-31','2014-08-01','2014-08-01 08:00','2014-08-01 07:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78767,'-1',1,'周五001','挪威超级联赛','挪超','利勒斯特罗姆','利勒�\�','布兰','�\�  �\�','2.70','5001','2014-08-01','2014-08-02','2014-08-02 01:00','2014-08-02 00:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78768,'-1',1,'周五002','法国乙级联赛','法乙','阿尔�\�','阿尔�\�','阿雅克肖','阿雅�\�','4.60','5002','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78769,'-1',1,'周五003','法国乙级联赛','法乙','欧塞�\�','欧塞�\�','勒阿弗尔','阿弗�\�','4.35','5003','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78770,'-1',1,'周五004','法国乙级联赛','法乙','阿雅克肖GFCO','阿雅GF','瓦朗谢纳','瓦朗�\�','5.50','5004','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78771,'-1',1,'周五005','法国乙级联赛','法乙','南锡','�\�  �\�','第戎','�\�  �\�','3.60','5005','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78772,'-1',1,'周五006','法国乙级联赛','法乙','尼姆','�\�  �\�','昂热','�\�  �\�','4.20','5006','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78773,'-1',1,'周五007','法国乙级联赛','法乙','拉瓦�\�','拉瓦�\�','尼奥�\�','尼奥�\�','4.45','5007','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78774,'-1',1,'周五008','法国乙级联赛','法乙','图尔','�\� �\�','克雷泰伊','克雷�\�','3.65','5008','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78775,'1',1,'周五009','法国乙级联赛','法乙','沙托�\�','沙托�\�','特鲁�\�','特鲁�\�','4.95','5009','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78776,'-1',1,'周五010','德国乙级联赛','德乙','杜塞尔多�\�','杜塞�\�','不伦瑞克','不伦�\�','3.80','5010','2014-08-01','2014-08-02','2014-08-02 02:30','2014-08-02 02:29','2014-08-01','2014-08-01 星期�\�','20140801',0),(78779,'-1',1,'周五013','美国职业大联�\�','美职�\�','堪萨斯城竞技','肯萨�\�','费城联合','费城�\�','2.60','5013','2014-08-01','2014-08-02','2014-08-02 08:00','2014-08-02 07:59','2014-08-01','2014-08-01 星期�\�','20140801',0)
+
+[ 2014-07-31T23:22:52+08:00 ] 127.0.0.1 /Home/Match/getXml.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+NOTIC: [8] Undefined variable: url D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 10 行.
+NOTIC: [8] Undefined variable: count_active D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+ERR: 1062:Duplicate entry '78765' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match` (`id`,`rangqiu`,`isshow`,`matchnum`,`league`,`simpleleague`,`homename`,`homesxname`,`awayname`,`awaysxname`,`win`,`processname`,`processdate`,`matchdate`,`matchtime`,`endtime`,`matchnumdate`,`title`,`date`,`end`) VALUES (78753,'-1',1,'周四001','欧罗巴联�\�','欧联','阿斯塔纳','阿斯�\�','AIK索尔�\�','索尔�\�','4.85','4001','2014-07-31','2014-07-31','2014-07-31 22:00','2014-07-31 21:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78754,'-1',1,'周四002','欧罗巴联�\�','欧联','埃尔夫斯�\�','埃尔�\�','哈夫纳夫约杜�\�','哈夫�\�','2.35','4002','2014-07-31','2014-08-01','2014-08-01 00:00','2014-07-31 23:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78755,'1',1,'周四003','欧罗巴联�\�','欧联','特伦�\�','特伦�\�','赫尔�\�','赫尔�\�','3.35','4003','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78756,'1',1,'周四004','欧罗巴联�\�','欧联','博莱斯拉�\�','博莱�\�','里昂','�\�  �\�','3.45','4004','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78757,'-1',1,'周四005','欧罗巴联�\�','欧联','IFK哥德�\�','哥德�\�','里奥阿维','里奥�\�','4.65','4005','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78759,'1',1,'周四007','欧罗巴联�\�','欧联','布鲁马波卡纳','布鲁�\�','都灵','�\�  �\�','2.08','4007','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78760,'-1',1,'周四008','欧罗巴联�\�','欧联','卡拉比克体育','卡拉�\�','罗森博格','罗森�\�','4.15','4008','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78761,'-1',1,'周四009','欧罗巴联�\�','欧联','布鲁�\�','布鲁�\�','布隆德比','布隆�\�','2.80','4009','2014-07-31','2014-08-01','2014-08-01 02:30','2014-08-01 02:29','2014-07-31','2014-07-31 星期�\�','20140731',0),(78762,'-1',1,'周四010','欧罗巴联�\�','欧联','美因�\�','美因�\�','特里波利海星','特海�\�','1.68','4010','2014-07-31','2014-08-01','2014-08-01 02:30','2014-08-01 02:29','2014-07-31','2014-07-31 星期�\�','20140731',0),(78763,'-1',1,'周四011','欧罗巴联�\�','欧联','皇家社会','�\�  �\�','阿伯�\�','阿伯�\�','1.73','4011','2014-07-31','2014-08-01','2014-08-01 02:30','2014-08-01 02:29','2014-07-31','2014-07-31 星期�\�','20140731',0),(78764,'-1',1,'周四012','欧罗巴联�\�','欧联','圣约翰斯�\�','圣约�\�','特尔纳瓦斯巴�\�','特尔�\�','4.55','4012','2014-07-31','2014-08-01','2014-08-01 02:45','2014-08-01 02:44','2014-07-31','2014-07-31 星期�\�','20140731',0),(78765,'-1',1,'周四013','巴西�\�','巴西�\�','科里蒂巴','科里�\�','派桑�\�','帕桑�\�','1.90','4013','2014-07-31','2014-08-01','2014-08-01 08:00','2014-08-01 07:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78767,'-1',1,'周五001','挪威超级联赛','挪超','利勒斯特罗姆','利勒�\�','布兰','�\�  �\�','2.70','5001','2014-08-01','2014-08-02','2014-08-02 01:00','2014-08-02 00:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78768,'-1',1,'周五002','法国乙级联赛','法乙','阿尔�\�','阿尔�\�','阿雅克肖','阿雅�\�','4.60','5002','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78769,'-1',1,'周五003','法国乙级联赛','法乙','欧塞�\�','欧塞�\�','勒阿弗尔','阿弗�\�','4.35','5003','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78770,'-1',1,'周五004','法国乙级联赛','法乙','阿雅克肖GFCO','阿雅GF','瓦朗谢纳','瓦朗�\�','5.50','5004','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78771,'-1',1,'周五005','法国乙级联赛','法乙','南锡','�\�  �\�','第戎','�\�  �\�','3.60','5005','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78772,'-1',1,'周五006','法国乙级联赛','法乙','尼姆','�\�  �\�','昂热','�\�  �\�','4.20','5006','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78773,'-1',1,'周五007','法国乙级联赛','法乙','拉瓦�\�','拉瓦�\�','尼奥�\�','尼奥�\�','4.45','5007','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78774,'-1',1,'周五008','法国乙级联赛','法乙','图尔','�\� �\�','克雷泰伊','克雷�\�','3.65','5008','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78775,'1',1,'周五009','法国乙级联赛','法乙','沙托�\�','沙托�\�','特鲁�\�','特鲁�\�','4.95','5009','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78776,'-1',1,'周五010','德国乙级联赛','德乙','杜塞尔多�\�','杜塞�\�','不伦瑞克','不伦�\�','3.80','5010','2014-08-01','2014-08-02','2014-08-02 02:30','2014-08-02 02:29','2014-08-01','2014-08-01 星期�\�','20140801',0),(78779,'-1',1,'周五013','美国职业大联�\�','美职�\�','堪萨斯城竞技','肯萨�\�','费城联合','费城�\�','2.60','5013','2014-08-01','2014-08-02','2014-08-02 08:00','2014-08-02 07:59','2014-08-01','2014-08-01 星期�\�','20140801',0)
+
+[ 2014-07-31T23:23:11+08:00 ] 127.0.0.1 /Home/Match/getXml.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+NOTIC: [8] Undefined variable: url D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 10 行.
+NOTIC: [8] Undefined variable: count_active D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+ERR: 1062:Duplicate entry '78765' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match` (`id`,`rangqiu`,`isshow`,`matchnum`,`league`,`simpleleague`,`homename`,`homesxname`,`awayname`,`awaysxname`,`win`,`processname`,`processdate`,`matchdate`,`matchtime`,`endtime`,`matchnumdate`,`title`,`date`,`end`) VALUES (78753,'-1',1,'周四001','欧罗巴联�\�','欧联','阿斯塔纳','阿斯�\�','AIK索尔�\�','索尔�\�','4.85','4001','2014-07-31','2014-07-31','2014-07-31 22:00','2014-07-31 21:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78754,'-1',1,'周四002','欧罗巴联�\�','欧联','埃尔夫斯�\�','埃尔�\�','哈夫纳夫约杜�\�','哈夫�\�','2.35','4002','2014-07-31','2014-08-01','2014-08-01 00:00','2014-07-31 23:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78755,'1',1,'周四003','欧罗巴联�\�','欧联','特伦�\�','特伦�\�','赫尔�\�','赫尔�\�','3.35','4003','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78756,'1',1,'周四004','欧罗巴联�\�','欧联','博莱斯拉�\�','博莱�\�','里昂','�\�  �\�','3.45','4004','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78757,'-1',1,'周四005','欧罗巴联�\�','欧联','IFK哥德�\�','哥德�\�','里奥阿维','里奥�\�','4.65','4005','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78759,'1',1,'周四007','欧罗巴联�\�','欧联','布鲁马波卡纳','布鲁�\�','都灵','�\�  �\�','2.08','4007','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78760,'-1',1,'周四008','欧罗巴联�\�','欧联','卡拉比克体育','卡拉�\�','罗森博格','罗森�\�','4.15','4008','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78761,'-1',1,'周四009','欧罗巴联�\�','欧联','布鲁�\�','布鲁�\�','布隆德比','布隆�\�','2.80','4009','2014-07-31','2014-08-01','2014-08-01 02:30','2014-08-01 02:29','2014-07-31','2014-07-31 星期�\�','20140731',0),(78762,'-1',1,'周四010','欧罗巴联�\�','欧联','美因�\�','美因�\�','特里波利海星','特海�\�','1.68','4010','2014-07-31','2014-08-01','2014-08-01 02:30','2014-08-01 02:29','2014-07-31','2014-07-31 星期�\�','20140731',0),(78763,'-1',1,'周四011','欧罗巴联�\�','欧联','皇家社会','�\�  �\�','阿伯�\�','阿伯�\�','1.73','4011','2014-07-31','2014-08-01','2014-08-01 02:30','2014-08-01 02:29','2014-07-31','2014-07-31 星期�\�','20140731',0),(78764,'-1',1,'周四012','欧罗巴联�\�','欧联','圣约翰斯�\�','圣约�\�','特尔纳瓦斯巴�\�','特尔�\�','4.55','4012','2014-07-31','2014-08-01','2014-08-01 02:45','2014-08-01 02:44','2014-07-31','2014-07-31 星期�\�','20140731',0),(78765,'-1',1,'周四013','巴西�\�','巴西�\�','科里蒂巴','科里�\�','派桑�\�','帕桑�\�','1.90','4013','2014-07-31','2014-08-01','2014-08-01 08:00','2014-08-01 07:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78767,'-1',1,'周五001','挪威超级联赛','挪超','利勒斯特罗姆','利勒�\�','布兰','�\�  �\�','2.70','5001','2014-08-01','2014-08-02','2014-08-02 01:00','2014-08-02 00:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78768,'-1',1,'周五002','法国乙级联赛','法乙','阿尔�\�','阿尔�\�','阿雅克肖','阿雅�\�','4.60','5002','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78769,'-1',1,'周五003','法国乙级联赛','法乙','欧塞�\�','欧塞�\�','勒阿弗尔','阿弗�\�','4.35','5003','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78770,'-1',1,'周五004','法国乙级联赛','法乙','阿雅克肖GFCO','阿雅GF','瓦朗谢纳','瓦朗�\�','5.50','5004','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78771,'-1',1,'周五005','法国乙级联赛','法乙','南锡','�\�  �\�','第戎','�\�  �\�','3.60','5005','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78772,'-1',1,'周五006','法国乙级联赛','法乙','尼姆','�\�  �\�','昂热','�\�  �\�','4.20','5006','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78773,'-1',1,'周五007','法国乙级联赛','法乙','拉瓦�\�','拉瓦�\�','尼奥�\�','尼奥�\�','4.45','5007','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78774,'-1',1,'周五008','法国乙级联赛','法乙','图尔','�\� �\�','克雷泰伊','克雷�\�','3.65','5008','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78775,'1',1,'周五009','法国乙级联赛','法乙','沙托�\�','沙托�\�','特鲁�\�','特鲁�\�','4.95','5009','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78776,'-1',1,'周五010','德国乙级联赛','德乙','杜塞尔多�\�','杜塞�\�','不伦瑞克','不伦�\�','3.80','5010','2014-08-01','2014-08-02','2014-08-02 02:30','2014-08-02 02:29','2014-08-01','2014-08-01 星期�\�','20140801',0),(78779,'-1',1,'周五013','美国职业大联�\�','美职�\�','堪萨斯城竞技','肯萨�\�','费城联合','费城�\�','2.60','5013','2014-08-01','2014-08-02','2014-08-02 08:00','2014-08-02 07:59','2014-08-01','2014-08-01 星期�\�','20140801',0)
+
+[ 2014-07-31T23:24:47+08:00 ] 127.0.0.1 /Home/Match/getXml.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+NOTIC: [8] Undefined variable: url D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 10 行.
+NOTIC: [8] Undefined variable: count_active D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+ERR: 1062:Duplicate entry '78765' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match` (`id`,`rangqiu`,`isshow`,`matchnum`,`league`,`simpleleague`,`homename`,`homesxname`,`awayname`,`awaysxname`,`win`,`processname`,`processdate`,`matchdate`,`matchtime`,`endtime`,`matchnumdate`,`title`,`date`,`end`) VALUES (78753,'-1',1,'周四001','欧罗巴联�\�','欧联','阿斯塔纳','阿斯�\�','AIK索尔�\�','索尔�\�','4.85','4001','2014-07-31','2014-07-31','2014-07-31 22:00','2014-07-31 21:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78754,'-1',1,'周四002','欧罗巴联�\�','欧联','埃尔夫斯�\�','埃尔�\�','哈夫纳夫约杜�\�','哈夫�\�','2.35','4002','2014-07-31','2014-08-01','2014-08-01 00:00','2014-07-31 23:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78755,'1',1,'周四003','欧罗巴联�\�','欧联','特伦�\�','特伦�\�','赫尔�\�','赫尔�\�','3.35','4003','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78756,'1',1,'周四004','欧罗巴联�\�','欧联','博莱斯拉�\�','博莱�\�','里昂','�\�  �\�','3.45','4004','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78757,'-1',1,'周四005','欧罗巴联�\�','欧联','IFK哥德�\�','哥德�\�','里奥阿维','里奥�\�','4.65','4005','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78759,'1',1,'周四007','欧罗巴联�\�','欧联','布鲁马波卡纳','布鲁�\�','都灵','�\�  �\�','2.08','4007','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78760,'-1',1,'周四008','欧罗巴联�\�','欧联','卡拉比克体育','卡拉�\�','罗森博格','罗森�\�','4.15','4008','2014-07-31','2014-08-01','2014-08-01 01:00','2014-08-01 00:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78761,'-1',1,'周四009','欧罗巴联�\�','欧联','布鲁�\�','布鲁�\�','布隆德比','布隆�\�','2.80','4009','2014-07-31','2014-08-01','2014-08-01 02:30','2014-08-01 02:29','2014-07-31','2014-07-31 星期�\�','20140731',0),(78762,'-1',1,'周四010','欧罗巴联�\�','欧联','美因�\�','美因�\�','特里波利海星','特海�\�','1.68','4010','2014-07-31','2014-08-01','2014-08-01 02:30','2014-08-01 02:29','2014-07-31','2014-07-31 星期�\�','20140731',0),(78763,'-1',1,'周四011','欧罗巴联�\�','欧联','皇家社会','�\�  �\�','阿伯�\�','阿伯�\�','1.73','4011','2014-07-31','2014-08-01','2014-08-01 02:30','2014-08-01 02:29','2014-07-31','2014-07-31 星期�\�','20140731',0),(78764,'-1',1,'周四012','欧罗巴联�\�','欧联','圣约翰斯�\�','圣约�\�','特尔纳瓦斯巴�\�','特尔�\�','4.55','4012','2014-07-31','2014-08-01','2014-08-01 02:45','2014-08-01 02:44','2014-07-31','2014-07-31 星期�\�','20140731',0),(78765,'-1',1,'周四013','巴西�\�','巴西�\�','科里蒂巴','科里�\�','派桑�\�','帕桑�\�','1.90','4013','2014-07-31','2014-08-01','2014-08-01 08:00','2014-08-01 07:59','2014-07-31','2014-07-31 星期�\�','20140731',0),(78767,'-1',1,'周五001','挪威超级联赛','挪超','利勒斯特罗姆','利勒�\�','布兰','�\�  �\�','2.70','5001','2014-08-01','2014-08-02','2014-08-02 01:00','2014-08-02 00:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78768,'-1',1,'周五002','法国乙级联赛','法乙','阿尔�\�','阿尔�\�','阿雅克肖','阿雅�\�','4.60','5002','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78769,'-1',1,'周五003','法国乙级联赛','法乙','欧塞�\�','欧塞�\�','勒阿弗尔','阿弗�\�','4.35','5003','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78770,'-1',1,'周五004','法国乙级联赛','法乙','阿雅克肖GFCO','阿雅GF','瓦朗谢纳','瓦朗�\�','5.50','5004','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78771,'-1',1,'周五005','法国乙级联赛','法乙','南锡','�\�  �\�','第戎','�\�  �\�','3.60','5005','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78772,'-1',1,'周五006','法国乙级联赛','法乙','尼姆','�\�  �\�','昂热','�\�  �\�','4.20','5006','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78773,'-1',1,'周五007','法国乙级联赛','法乙','拉瓦�\�','拉瓦�\�','尼奥�\�','尼奥�\�','4.45','5007','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78774,'-1',1,'周五008','法国乙级联赛','法乙','图尔','�\� �\�','克雷泰伊','克雷�\�','3.65','5008','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78775,'1',1,'周五009','法国乙级联赛','法乙','沙托�\�','沙托�\�','特鲁�\�','特鲁�\�','4.95','5009','2014-08-01','2014-08-02','2014-08-02 02:00','2014-08-02 01:59','2014-08-01','2014-08-01 星期�\�','20140801',0),(78776,'-1',1,'周五010','德国乙级联赛','德乙','杜塞尔多�\�','杜塞�\�','不伦瑞克','不伦�\�','3.80','5010','2014-08-01','2014-08-02','2014-08-02 02:30','2014-08-02 02:29','2014-08-01','2014-08-01 星期�\�','20140801',0),(78779,'-1',1,'周五013','美国职业大联�\�','美职�\�','堪萨斯城竞技','肯萨�\�','费城联合','费城�\�','2.60','5013','2014-08-01','2014-08-02','2014-08-02 08:00','2014-08-02 07:59','2014-08-01','2014-08-01 星期�\�','20140801',0)
+
+[ 2014-07-31T23:25:30+08:00 ] 127.0.0.1 /Home/Match/getXml.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+NOTIC: [8] Undefined variable: url D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 10 行.
+NOTIC: [8] Undefined variable: count_active D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+
+[ 2014-07-31T23:26:42+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+NOTIC: [8] Undefined index: d D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2014-07-31T23:26:42+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+
+[ 2014-07-31T23:26:42+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+
+[ 2014-07-31T23:27:12+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+
+[ 2014-07-31T23:27:38+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001310s ]
+
+[ 2014-07-31T23:41:39+08:00 ] 127.0.0.1 /Home/Match/getXml.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+NOTIC: [8] Undefined variable: count_active D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+
+[ 2014-07-31T23:45:48+08:00 ] 127.0.0.1 /Home/Match/getXml.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+NOTIC: [8] Undefined variable: count_active D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+ERR: 1136:Column count doesn't match value count at row 2
+ [ SQL语句 ] : INSERT INTO `peilv` (`id`) VALUES (78753),(),('4.85'),('20140731'),(78754),(),('2.35'),('20140731'),(78755),(),('3.35'),('20140731'),(78756),(),('3.45'),('20140731'),(78757),(),('4.65'),('20140731'),(78759),(),('2.08'),('20140731'),(78760),(),('4.15'),('20140731'),(78761),(),('2.80'),('20140731'),(78762),(),('1.62'),('20140731'),(78763),(),('1.73'),('20140731'),(78764),(),('4.55'),('20140731'),(78765),(),('1.90'),('20140731'),(78767),(),('2.73'),('20140801'),(78768),(),('4.60'),('20140801'),(78769),(),('4.35'),('20140801'),(78770),(),('5.50'),('20140801'),(78771),(),('3.60'),('20140801'),(78772),(),('4.20'),('20140801'),(78773),(),('4.45'),('20140801'),(78774),(),('3.65'),('20140801'),(78775),(),('4.95'),('20140801'),(78776),(),('3.80'),('20140801'),(78779),(),('2.60'),('20140801')
+
+[ 2014-07-31T23:46:11+08:00 ] 127.0.0.1 /Home/Match/getXml.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+NOTIC: [8] Undefined variable: count_active D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+ERR: 1136:Column count doesn't match value count at row 2
+ [ SQL语句 ] : INSERT INTO `peilv` (`id`) VALUES (78753),(),('4.85'),('20140731'),(78754),(),('2.35'),('20140731'),(78755),(),('3.35'),('20140731'),(78756),(),('3.45'),('20140731'),(78757),(),('4.65'),('20140731'),(78759),(),('2.08'),('20140731'),(78760),(),('4.15'),('20140731'),(78761),(),('2.80'),('20140731'),(78762),(),('1.62'),('20140731'),(78763),(),('1.73'),('20140731'),(78764),(),('4.55'),('20140731'),(78765),(),('1.90'),('20140731'),(78767),(),('2.73'),('20140801'),(78768),(),('4.60'),('20140801'),(78769),(),('4.35'),('20140801'),(78770),(),('5.50'),('20140801'),(78771),(),('3.60'),('20140801'),(78772),(),('4.20'),('20140801'),(78773),(),('4.45'),('20140801'),(78774),(),('3.65'),('20140801'),(78775),(),('4.95'),('20140801'),(78776),(),('3.80'),('20140801'),(78779),(),('2.60'),('20140801')
+
+[ 2014-07-31T23:46:29+08:00 ] 127.0.0.1 /Home/Match/getXml.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+NOTIC: [8] Undefined variable: count_active D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+
+[ 2014-07-31T23:47:00+08:00 ] 127.0.0.1 /Home/Match/getXml.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+NOTIC: [8] Undefined variable: count_active D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+
+[ 2014-07-31T23:52:17+08:00 ] 127.0.0.1 /Home/Match/getXml.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+NOTIC: [8] Undefined variable: count_active D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+
+[ 2014-07-31T23:58:14+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000922s ]
+
+[ 2014-07-31T23:58:17+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2014-07-31T23:58:19+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2014-07-31T23:58:20+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+NOTIC: [8] Undefined index: d D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 72 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2014-07-31T23:58:22+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2014-07-31T23:58:25+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+NOTIC: [8] Undefined index: d D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 72 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2014-07-31T23:58:42+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2014-07-31T23:58:55+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2014-07-31T23:59:09+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2014-07-31T23:59:26+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+NOTIC: [8] Undefined index: d D:\phpserver\match.boss.com\Web\Home\Controller\MatchController.class.php 第 73 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2014-07-31T23:59:27+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+

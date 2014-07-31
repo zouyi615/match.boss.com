@@ -1,0 +1,573 @@
+[ 2014-08-01T00:06:04+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001339s ]
+
+[ 2014-08-01T00:11:07+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001562s ]
+
+[ 2014-08-01T00:11:34+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2014-08-01T00:15:00+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001067s ]
+
+[ 2014-08-01T00:16:45+08:00 ] 127.0.0.1 /Home/Match/getXml.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001497s ]
+NOTIC: [8] Undefined variable: count_active D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+
+[ 2014-08-01T00:18:25+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2014-08-01T00:18:29+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000952s ]
+
+[ 2014-08-01T00:18:48+08:00 ] 127.0.0.1 /Home/Match/getSp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2014-08-01T00:22:49+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004800s ]
+
+[ 2014-08-01T00:23:40+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001128s ]
+
+[ 2014-08-01T00:24:04+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2014-08-01T00:24:23+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2014-08-01T00:25:31+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
+
+[ 2014-08-01T00:27:31+08:00 ] 127.0.0.1 /Home/Match/getXml.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+NOTIC: [8] Undefined variable: count_active D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+
+[ 2014-08-01T00:37:20+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+
+[ 2014-08-01T00:38:07+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+
+[ 2014-08-01T00:38:19+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001039s ]
+
+[ 2014-08-01T00:38:50+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000865s ]
+
+[ 2014-08-01T00:39:26+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2014-08-01T00:44:53+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2014-08-01T00:45:45+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001300s ]
+
+[ 2014-08-01T00:46:05+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2014-08-01T00:46:29+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+NOTIC: [8] Undefined variable: set D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\phpserver\match.boss.com\Resource\ThinkPHP\Library\Think\Db.class.php 第 284 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 0 )' at line 1
+ [ SQL语句 ] : UPDATE `peilv` SET  WHERE ( `id` = 0 )
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000837s ]
+
+[ 2014-08-01T00:47:58+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001291s ]
+
+[ 2014-08-01T00:51:59+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2014-08-01T00:54:53+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
