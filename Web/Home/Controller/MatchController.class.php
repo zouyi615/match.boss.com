@@ -6,11 +6,11 @@ class MatchController extends Controller {
 	//参数
 	public $xmlUrl = 'http://trade.500.com/static/public/jczq/xml/match/match.xml'; //对阵xml
 	public $xmlspfpl = 'http://trade.500.com/static/public/jczq/xml/pl/pl_spf_2.xml'; //让球胜平负赔率
-	public $spUrl = 'http://sb.imsportsbook.com/Fun88/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=1&UserTimeZone=-480&Language=1&FilterDay=1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=1&OddsPageCode=0&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0'; 
-	public $spHost = 'sb.imsportsbook.com'; //抓取赔率域名
+	//public $spUrl = 'http://sb.imsportsbook.com/Fun88/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=1&UserTimeZone=-480&Language=1&FilterDay=1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=1&OddsPageCode=0&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0'; 
+	//public $spHost = 'sb.imsportsbook.com'; //抓取赔率域名
 	//外围网站赔率
-	//public $spUrl = 'http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2';
-	//public $spHost = 'sports1.im.fun88.com'; //抓取赔率域名
+	public $spUrl = 'http://sb.imsportsbook.com/Fun88/OddsDisplay/Sportsbook/GetOddsData2';
+	public $spHost = 'sb.imsportsbook.com'; //抓取赔率域名
 	//处理函数
 	public function index(){
 		///Date(1406815200000)/
