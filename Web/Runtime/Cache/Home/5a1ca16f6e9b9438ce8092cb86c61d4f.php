@@ -13,11 +13,26 @@
 		<script type="text/javascript" src="/Public/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="/Public/js/jquery.cookie.js"></script>		
 		<script type="text/javascript" src="/Public/js/match/index.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$.matadmin.box.index();
+		});
+		</script>
 	</head>
 	<body>	
 	<!-- 头部 -->
 	<div class="header">
-		
+		<div class="alert alert-warning alert-dismissible fade in" role="alert" id="alert-warning" style="display:none;">
+			<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+			<div class="content">&nbsp;</div>
+		</div>
+		<blockquote>
+			<h4>
+				<strong>外围场次主客队匹配管理</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="javascript:;" id="getallsp" data-url="<?php echo U('Match/getXml');?>"><span class="label label-danger">重新载入所有场次&nbsp;<span class="glyphicon glyphicon-download"></span></span></a>
+				<a href="javascript:;" id="upallsp" data-url="<?php echo U('Match/getPl');?>"><span class="label label-success">更新所有匹配场次&nbsp;<span class="glyphicon glyphicon-refresh"></span></span></a>
+			</h4>			
+		</blockquote>		
 	</div>
 	<!--  内容  -->
 	<div class="container-fluid">
@@ -26,7 +41,7 @@
 			<!-- 显示比赛列表 -->
 			<div class="col-xs-12 match-list">
 				<!--<p><button type="button" class="btn btn-danger">已关注球队</button></p>-->				
-				<table class="table table-bordered table-hover table-condensed">
+				<table class="table table-bordered table-hover table-condensed" id="allsptab">
 				<thead>
 					<tr class="danger">
 						<th>编号</th>
@@ -43,9 +58,23 @@
 						<th>是否匹配</th>
 					</tr>
 				</thead>
+				<colgroup>
+					<col width="6%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="4%">
+					<col width="4%">
+					<col width="12%">
+					<col width="12%">
+					<col width="6%">
+					<col width="10%">
+					<col width="10%">
+					<col width="6%">
+				</colgroup>
 				<tbody>
 					<?php if($rsMat && is_array($rsMat)){ foreach($rsMat as $k=>$m){ ?>
-						<tr class="data" id="<?php echo $m['id']; ?>">
+						<tr class="data" id="<?php echo $m['id']; ?>" ismod="0">
 							<td><?php echo $m['id']; ?></td>
 							<td><?php echo $m['matchnum'].'<br>'.$m['matchtime']; ?></td>
 							<td><?php echo $m['league']; ?></td>
@@ -55,55 +84,15 @@
 							<td><?php echo $m['leagueCh']; ?></td>
 							<td><?php echo $m['homenameCh'].'<br>'.$m['awaynameCh']; ?></td>
 							<td><?php echo $m['sp']; ?></td>
-							<td><?php echo $m['homenamesp']; ?></td>
-							<td><?php echo $m['awaynamesp']; ?></td>
-							<td><?php echo $m['isoffset']; ?></td>
+							<td class="homesp" data-homesp="<?php echo $m['homenamesp']; ?>"><?php echo $m['homenamesp']; ?></td>
+							<td class="awaysp" data-awaysp="<?php echo $m['awaynamesp']; ?>"><?php echo $m['awaynamesp']; ?></td>
+							<td class="offset" data-offset="<?php echo $m['isoffset']; ?>"><?php echo $m['isoffset']==1?'<span class="label label-success">匹配</span>':'<span class="label label-warning">不匹配</span>'; ?></td>
 						</tr>		
 					<?php } } ?>												
 				</tbody>
-				</table>	
-			</div>
-			<!-- 操作区域 -->
-			<div class="tips_con rows" id="tips_con">
-				<!-- 修改下注金额 -->
-				<!--
-				<div class="mod-inmoney col-xs-8">
-					<table class="table table-bordered table-hover table-condensed">
-						<tr class="danger"><th colspan="2">水位1</th><th>下注</th><th>预计</th><th>返利</th><th>1下注金额</th></tr>
-						<tr><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td></tr>
-						<tr class="danger"><th>水位2</th><th>水位3</th><th><font color="red">X</font>&nbsp;&nbsp;<font color="red">X</font></th><th>V&nbsp;&nbsp;V</th><th>V&nbsp;&nbsp;<font color="red">X</font></th><th>2下注金额</th></tr>
-						<tr><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td></tr>
-						<tr><td colspan="6"><button type="button" class="btn btn-default">修改</button></td></tr>
-					</table>
-				</div>
-				-->
-				<!-- 修改匹配值 -->
-				<div class="mod-rate col-xs-12">
-					<form action="<?php echo U('Index/matching');?>" method="POST" target="_blank" id="dosubform">
-					<table class="table table-bordered table-hover table-condensed">
-						<tr class="danger">
-							<th colspan="4">返还率修改</th>
-						</tr>
-						<tr>
-							<td colspan="3"><input type="text" name="rnrate" id="rnrate" class="form-control"></td>
-							<td><button type="button" class="btn btn-default" id="setrn">设置</button></td>
-						</tr>
-						<tr class="danger">
-							<th colspan="4">计算值修改</th>
-						</tr>
-						<tr>
-							<td>下注</td>
-							<td><input type="text" name="betmoney" id="betmoney" class="form-control"></td>
-							<td>返利</td>
-							<td><input type="text" name="rebate" id="rebate" class="form-control"></td>
-						</tr>
-						<tr>
-							<td colspan="4" align="right"><button type="button" class="btn btn-default" id="dosub">提交</button></td>
-						</tr>
-					</table>
-					</form>
-				</div>
-			</div>			
+				</table>
+				<input type="hidden" id="modupurl" value="<?php echo U('MatAdmin/modUp');?>">
+			</div>		
 		</div>
 	</div>
 	<!-- 底部 -->

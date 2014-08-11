@@ -13,6 +13,11 @@
 		<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="__PUBLIC__/js/jquery.cookie.js"></script>		
 		<script type="text/javascript" src="__PUBLIC__/js/match/index.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){				
+				$.match.box.index();
+			});		
+		</script>
 	</head>
 	<body>		
 	<!--  内容  -->
@@ -24,8 +29,7 @@
 		<!-- 主体内容 -->
 		<div class="row main">
 			<!-- 显示比赛列表 -->
-			<div class="col-xs-8 match-list" id="matchList">
-				<!--<p><button type="button" class="btn btn-danger">已关注球队</button></p>-->				
+			<div class="col-xs-8 match-list" id="matchList">			
 				<table class="table table-bordered table-hover table-condensed" id="matching" data-betmoney="{$betmoney}" data-rebate="{$rebate}">
 				<thead>
 					<tr class="danger">
@@ -141,9 +145,6 @@
 			</div>			
 		</div>
 	</div>
-	<!-- <div class="tips" id="tips">		
-		<a href="javascript:;"><span class="glyphicon glyphicon-resize-full"></span></a>
-	</div>	 -->
 	<!-- 底部 -->
 </body>
 </html>

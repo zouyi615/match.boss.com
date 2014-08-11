@@ -192,6 +192,7 @@ class IndexController extends Controller {
 
     public function matching(){
 		header("Content-type:text/html;charset=UTF-8");
+		import('Libs.Trade.Jcpublic');
 		$jc = new \Jcpublic();
 		$irate = I('param.rnrate','2.00','htmlspecialchars'); //用户设置赔率
 		$betmoney = I('param.betmoney','10000','htmlspecialchars'); //用户下注金额

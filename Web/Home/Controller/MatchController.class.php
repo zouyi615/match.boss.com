@@ -6,9 +6,11 @@ class MatchController extends Controller {
 	//参数
 	public $xmlUrl = 'http://trade.500.com/static/public/jczq/xml/match/match.xml'; //对阵xml
 	public $xmlspfpl = 'http://trade.500.com/static/public/jczq/xml/pl/pl_spf_2.xml'; //让球胜平负赔率
-	//public $spUrl = 'http://sb.imsportsbook.com/Fun88/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=1&UserTimeZone=-480&Language=1&FilterDay=1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=1&OddsPageCode=0&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0'; //外围网站赔率
-	public $spUrl = 'http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2';
-	public $spHost = 'sports1.im.fun88.com'; //抓取赔率域名
+	public $spUrl = 'http://sb.imsportsbook.com/Fun88/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=1&UserTimeZone=-480&Language=1&FilterDay=1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=1&OddsPageCode=0&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0'; 
+	public $spHost = 'sb.imsportsbook.com'; //抓取赔率域名
+	//外围网站赔率
+	//public $spUrl = 'http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2';
+	//public $spHost = 'sports1.im.fun88.com'; //抓取赔率域名
 	//处理函数
 	public function index(){
 		///Date(1406815200000)/
@@ -61,7 +63,7 @@ class MatchController extends Controller {
 		//获取数据库信息
 		$m = M('match');
 		$p = M('peilv');
-		$mInfo = $m->getField('id,rangqiu,league,homename,awayname,matchtime');
+		$mInfo = $m->getField('id,rangqiu,league,homename,awayname,matchtime,isoffset,homenamesp,awaynamesp');
 		$i = 0;
 		if($mInfo){
 			foreach($mInfo as $key=>$val){
@@ -77,9 +79,9 @@ class MatchController extends Controller {
 				$newplArr[$i]['issp'] = 0;//判断是否有外围赔率
 				//匹配外围赔率
 				if($plArr_sp){					
-					foreach($plArr_sp as $val_sp){
+					foreach($plArr_sp as $val_sp){						
 						//兼容模式，优先从设置的外围主客队名匹配。其次再匹配比赛名称
-						if(($val['homenamesp'] && $val['homenamesp'] == $val_sp['homenameCh'] && $val['awaynamesp'] && $val['awaynamesp'] == $val_sp['awaynameCh']) || $val_sp['matchtime'] == strtotime($val['matchtime'])){
+						if(($val['isoffset'] == '1' && $val['homenamesp'] && $val['homenamesp'] == $val_sp['homenameCh'] && $val['awaynamesp'] && $val['awaynamesp'] == $val_sp['awaynameCh']) || ($val['isoffset'] == '0' && $val_sp['matchtime'] == strtotime($val['matchtime']))){
 							$newplArr[$i]['issp'] = 1;//有外围赔率,标记为1
 							$newplArr[$i]['sid'] = $val_sp['sid'];
 							$newplArr[$i]['sp'] = $val_sp['sp'];
@@ -91,7 +93,18 @@ class MatchController extends Controller {
 							$newplArr[$i]['awaynameCh'] = $val_sp['awaynameCh'];
 							$newplArr[$i]['rangqiusp'] = $val_sp['rangqiu'];
 							$newplArr[$i]['matchtime'] = $val_sp['matchtime'];
-							$p->field(array('id','sid','rangqiusp','leagueEn','leagueCh','homenameEn','homenameCh','awaynameEn','awaynameCh','sp'))->save($newplArr[$i]);							
+							$p->field(array('id','sid','rangqiusp','leagueEn','leagueCh','homenameEn','homenameCh','awaynameEn','awaynameCh','sp'))->save($newplArr[$i]);
+						}else{
+							$newplArr[$i]['sid'] = '';
+							$newplArr[$i]['sp'] = '';
+							$newplArr[$i]['leagueEn'] = '';
+							$newplArr[$i]['leagueCh'] = '';
+							$newplArr[$i]['homenameEn'] = '';
+							$newplArr[$i]['homenameCh'] = '';
+							$newplArr[$i]['awaynameEn'] = '';
+							$newplArr[$i]['awaynameCh'] = '';
+							$newplArr[$i]['rangqiusp'] = 0;
+							$p->field(array('id','sid','rangqiusp','leagueEn','leagueCh','homenameEn','homenameCh','awaynameEn','awaynameCh','sp'))->save($newplArr[$i]);
 						}
 					}
 				}

@@ -571,3 +571,69 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.000770s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
 
+[ 2014-08-01T20:58:05+08:00 ] 127.0.0.1 /Home/Match/getXml.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+NOTIC: [8] Undefined variable: count_active D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 31 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+NOTIC: [8] Undefined variable: now D:\phpserver\match.boss.com\Web\Libs\Trade\Jcpublic.class.php 第 71 行.
+
+[ 2014-08-01T20:58:20+08:00 ] 127.0.0.1 /Home/Match/getPl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+

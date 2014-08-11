@@ -13,6 +13,11 @@
 		<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="__PUBLIC__/js/jquery.cookie.js"></script>		
 		<script type="text/javascript" src="__PUBLIC__/js/match/index.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$.index.ui.box.index();
+		});
+		</script>
 	</head>
 	<body>	
 	<!-- 头部 -->
@@ -71,18 +76,6 @@
 			</div>
 			<!-- 操作区域 -->
 			<div class="tips_con rows" id="tips_con">
-				<!-- 修改下注金额 -->
-				<!--
-				<div class="mod-inmoney col-xs-8">
-					<table class="table table-bordered table-hover table-condensed">
-						<tr class="danger"><th colspan="2">水位1</th><th>下注</th><th>预计</th><th>返利</th><th>1下注金额</th></tr>
-						<tr><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td></tr>
-						<tr class="danger"><th>水位2</th><th>水位3</th><th><font color="red">X</font>&nbsp;&nbsp;<font color="red">X</font></th><th>V&nbsp;&nbsp;V</th><th>V&nbsp;&nbsp;<font color="red">X</font></th><th>2下注金额</th></tr>
-						<tr><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td></tr>
-						<tr><td colspan="6"><button type="button" class="btn btn-default">修改</button></td></tr>
-					</table>
-				</div>
-				-->
 				<!-- 修改匹配值 -->
 				<div class="mod-rate col-xs-12">
 					<form action="{:U('Index/matching')}" method="POST" target="_blank" id="dosubform">

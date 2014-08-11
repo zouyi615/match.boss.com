@@ -22,7 +22,9 @@ body{position: relative;}
 .tips{width:0;height:0;border-width:100px 0px 0px 100px;border-style:solid;border-color:transparent transparent transparent #563d7c;margin:0px auto;position:fixed; bottom: 0px;left:0px; cursor: pointer;}	
 .tips a{font-size: 40px; color: #fff; position: absolute; bottom: -4px; left: -94px;}
 .tips_con{opacity:1; border:1px solid #333; width:400px; height: auto; display: none; position:fixed; left: 0px; bottom:0px;}
-
+/* 头部样式 */
+.header a,.header a:hover{text-decoration:none;}
+.header blockquote{padding: 1px 10px;}
 /* 比赛列表样式 */
 .match-list th,.match-list td{text-align:center;vertical-align:middle; *vertical-align:middle;}
 .match-list td.tobox{vertical-align:middle; color:red; cursor:pointer;}
@@ -35,6 +37,9 @@ body{position: relative;}
 .mod-inmoney th{text-align: center;}
 .mod-inmoney .tableDetail{position: relative;top: 0px; background:#9C4242; color:#fff}
 .mod-inmoney .tableProList{text-align: center;}
+/* 主客队匹配管理 */
+td.homesp,td.awaysp,td.offset{-moz-user-select: none;-webkit-user-select: none;-webkit-user-select: none; cursor:pointer;}
+
 
 
 

@@ -44,7 +44,89 @@ $.extend({
 //全局变量设置
 $.C('expires',1*60*60*1000); //cookie过期时间
 
-//UI控制器
+//后台设置匹配场次
+$.namespace('matadmin.box');
+$.matadmin.box = {
+	index:function(){
+		this.bindEvent();
+	
+	},
+	bindEvent:function(){
+		var _T = this;
+		//重新载入所有场次
+		$('#getallsp').click(function(){
+			var url = $(this).attr('data-url'), warning = $('#alert-warning');
+			$.post(url,function(data, textStatus){
+				if(textStatus == 'success'){
+					warning.hide();
+					location.reload();
+				}else{					
+					warning.find('.content').html('<strong>警告！</strong>重新载入所有场次，请重新载入！').parent().show();
+				}
+			});
+		});
+		//更新所有场次
+		$('#upallsp').click(function(){
+			var url = $(this).attr('data-url'), warning = $('#alert-warning');
+			console.log(url,warning);
+			$.post(url,function(data, textStatus){				
+				if(textStatus == 'success'){
+					warning.hide();
+					location.reload();
+				}else{					
+					warning.find('.content').html('<strong>警告！</strong>更新匹配场次失败，请重新更新！').parent().show();
+				}
+			});
+		});
+		//修改主、客队匹配
+		$('#allsptab tr.data').dblclick(function(){
+			var ismod = $(this).attr('ismod');
+			if(ismod == '0'){
+				_T.modUi(this);
+			}else{
+				_T.modUp(this);
+			}
+		});
+		//切换是否匹配
+		$('#allsptab tr.data>td.offset').click(function(){
+			var T = this, offset = $(this).attr('data-offset'), mid = $(this).parent().attr('id'), url = $('#modupurl').val(), warning = $('#alert-warning'), homesp = $(this).parent().find('td.homesp').attr('data-homesp'), awaysp = $(this).parent().find('td.awaysp').attr('data-awaysp');
+			offset = offset == '0'?'1':'0';
+			offstr = offset == '0'?'<span class="label label-warning">不匹配</span>':'<span class="label label-success">匹配</span>';
+			para = { mid: mid, homesp: homesp, awaysp: awaysp, offset: offset };
+			$.post(url, para, function(data, textStatus){
+				if(data != 'ok'){
+					warning.find('.content').html('<strong>警告！</strong>'+data).parent().show();
+				}else{
+					warning.hide();
+					$(T).attr('data-offset',offset).html(offstr);		
+				}
+			});
+		});
+	},
+	//修改主客队
+	modUi:function(T){
+		var homesp = $(T).find('td.homesp'), awaysp = $(T).find('td.awaysp'), offset = $(T).find('td.offset');
+		$(T).attr('ismod','1'); //修改标记值
+		homesp.html('<input type="text" class="form-control input-sm" name="homesp" value="'+homesp.attr('data-homesp')+'">');
+		awaysp.html('<input type="text" class="form-control input-sm" name="awaysp" value="'+awaysp.attr('data-awaysp')+'">');
+	},
+	//保存主客队修改
+	modUp:function(T){
+		var mid = $(T).attr('id'), homesp = $(T).find('td.homesp input').val(), awaysp = $(T).find('td.awaysp input').val(), offset = $(T).find('td.offset').attr('data-offset'), url = $('#modupurl').val(), warning = $('#alert-warning'), para;
+		$(T).attr('ismod','0'); //修改标记值
+		$(T).find('td.homesp').attr('data-homesp',homesp).html(homesp);
+		$(T).find('td.awaysp').attr('data-awaysp',awaysp).html(awaysp);
+		para = { mid: mid, homesp: homesp, awaysp: awaysp, offset: offset };
+		$.post(url, para, function(data, textStatus){
+			if(data != 'ok'){
+				warning.find('.content').html('<strong>警告！</strong>'+data).parent().show();
+			}else{
+				warning.hide();
+			}
+		});
+	}
+};
+//首页设置赔率和返还率
 $.namespace('index.ui.box');
 $.index.ui.box = {
 	index:function(){
@@ -325,7 +407,3 @@ $.pub = {
 		// });
 	}
 };
-$(document).ready(function(){
-	$.index.ui.box.index();
-	$.match.box.index();			
-});
