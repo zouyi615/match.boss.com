@@ -27,6 +27,7 @@ body{position: relative;}
 .match-list th,.match-list td{text-align:center;vertical-align:middle; *vertical-align:middle;}
 .match-list td.tobox{vertical-align:middle; color:red; cursor:pointer;}
 .match-list td.tobox a{color:red;}
+.match-list .table > tbody > tr > td{vertical-align:middle; *vertical-align:middle;}
 /* 比赛详细赛事 */
 .mod-inmoney{font-size:12px;position: relative;display: block !important;}
 .mod-inmoney a{color:blue; text-decoration:underline;}

@@ -1,0 +1,66 @@
+﻿[ 2014-08-11T14:44:21+08:00 ] 192.168.50.4 /index.php/Home/Match/getPl.html
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.83',`leagueEn`='Sweden Allsvenskan',`leagueCh`='瑞典超级联赛',`homenameEn`='BK Hacken',`homenameCh`='哈肯',`awaynameEn`='IF Elfsborg',`awaynameCh`='艾夫斯堡',`rangqi`=0,`matchtime`=1407776700 WHERE ( `sid` = 1812809 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.74',`leagueEn`='Club Friendly',`leagueCh`='俱乐部友谊赛',`homenameEn`='Napoli',`homenameCh`='那不勒斯',`awaynameEn`='Paris Saint Germain',`awaynameCh`='巴黎圣日耳曼',`rangqi`=0,`matchtime`=1407780000 WHERE ( `sid` = 1817239 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.64',`leagueEn`='Germany Bundesliga 2',`leagueCh`='德国乙级联赛',`homenameEn`='SpVgg Greuther Furth',`homenameCh`='格雷特霍夫',`awaynameEn`='FC Nurnberg',`awaynameCh`='纽伦堡',`rangqi`=0,`matchtime`=1407780900 WHERE ( `sid` = 1812211 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.98',`leagueEn`='Germany Bundesliga 2 - Specials',`leagueCh`='德国乙级联赛 - 特别投注',`homenameEn`='SpVgg Greuther Furth - To Kick Off',`homenameCh`='格雷特霍夫先开球',`awaynameEn`='FC Nurnberg - To Kick Off',`awaynameCh`='纽伦堡先开球',`rangqi`=0,`matchtime`=1407780900 WHERE ( `sid` = 1814987 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.78',`leagueEn`='England Conference South',`leagueCh`='英格兰足协南部联赛',`homenameEn`='Farnborough FC',`homenameCh`='法保罗夫',`awaynameEn`='Weston Super Mare AFC',`awaynameCh`='维斯顿',`rangqi`=0,`matchtime`=1407782700 WHERE ( `sid` = 1816666 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='1.35',`leagueEn`='Argentina Primera Division',`leagueCh`='阿根廷甲级联赛',`homenameEn`='Arsenal de Sarandi',`homenameCh`='沙兰迪兵工厂',`awaynameEn`='Club Estudiantes de La Plata',`awaynameCh`='大学生',`rangqi`=0,`matchtime`=1407790800 WHERE ( `sid` = 1812233 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='1.07',`leagueEn`='Argentina Primera Division',`leagueCh`='阿根廷甲级联赛',`homenameEn`='Club Atletico Tigre',`homenameCh`='堤格雷',`awaynameEn`='CA Velez Sarsfield',`awaynameCh`='萨斯菲尔德',`rangqi`=0,`matchtime`=1407799800 WHERE ( `sid` = 1812234 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.74',`leagueEn`='Japan J-League Division 1',`leagueCh`='日本职业甲级联赛',`homenameEn`='Hiroshima  Sanfrecce',`homenameCh`='广岛三箭',`awaynameEn`='Sagan Tosu',`awaynameCh`='鸟栖沙根',`rangqi`=0,`matchtime`=1407751200 WHERE ( `sid` = 1815841 )
+
+[ 2014-08-11T14:48:08+08:00 ] 192.168.50.4 /index.php/Home/Match/getPl.html
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.83',`leagueEn`='Sweden Allsvenskan',`leagueCh`='瑞典超级联赛',`homenameEn`='BK Hacken',`homenameCh`='哈肯',`awaynameEn`='IF Elfsborg',`awaynameCh`='艾夫斯堡',`rangqi`=0,`matchtime`=1407776700 WHERE ( `sid` = 1812809 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.73',`leagueEn`='Club Friendly',`leagueCh`='俱乐部友谊赛',`homenameEn`='Napoli',`homenameCh`='那不勒斯',`awaynameEn`='Paris Saint Germain',`awaynameCh`='巴黎圣日耳曼',`rangqi`=0,`matchtime`=1407780000 WHERE ( `sid` = 1817239 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.64',`leagueEn`='Germany Bundesliga 2',`leagueCh`='德国乙级联赛',`homenameEn`='SpVgg Greuther Furth',`homenameCh`='格雷特霍夫',`awaynameEn`='FC Nurnberg',`awaynameCh`='纽伦堡',`rangqi`=0,`matchtime`=1407780900 WHERE ( `sid` = 1812211 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.98',`leagueEn`='Germany Bundesliga 2 - Specials',`leagueCh`='德国乙级联赛 - 特别投注',`homenameEn`='SpVgg Greuther Furth - To Kick Off',`homenameCh`='格雷特霍夫先开球',`awaynameEn`='FC Nurnberg - To Kick Off',`awaynameCh`='纽伦堡先开球',`rangqi`=0,`matchtime`=1407780900 WHERE ( `sid` = 1814987 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.78',`leagueEn`='England Conference South',`leagueCh`='英格兰足协南部联赛',`homenameEn`='Farnborough FC',`homenameCh`='法保罗夫',`awaynameEn`='Weston Super Mare AFC',`awaynameCh`='维斯顿',`rangqi`=0,`matchtime`=1407782700 WHERE ( `sid` = 1816666 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='1.35',`leagueEn`='Argentina Primera Division',`leagueCh`='阿根廷甲级联赛',`homenameEn`='Arsenal de Sarandi',`homenameCh`='沙兰迪兵工厂',`awaynameEn`='Club Estudiantes de La Plata',`awaynameCh`='大学生',`rangqi`=0,`matchtime`=1407790800 WHERE ( `sid` = 1812233 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='1.07',`leagueEn`='Argentina Primera Division',`leagueCh`='阿根廷甲级联赛',`homenameEn`='Club Atletico Tigre',`homenameCh`='堤格雷',`awaynameEn`='CA Velez Sarsfield',`awaynameCh`='萨斯菲尔德',`rangqi`=0,`matchtime`=1407799800 WHERE ( `sid` = 1812234 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.74',`leagueEn`='Japan J-League Division 1',`leagueCh`='日本职业甲级联赛',`homenameEn`='Hiroshima  Sanfrecce',`homenameCh`='广岛三箭',`awaynameEn`='Sagan Tosu',`awaynameCh`='鸟栖沙根',`rangqi`=0,`matchtime`=1407751200 WHERE ( `sid` = 1815841 )
+
+[ 2014-08-11T14:49:45+08:00 ] 192.168.50.4 /index.php/Home/Match/getPl.html
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.83',`leagueEn`='Sweden Allsvenskan',`leagueCh`='瑞典超级联赛',`homenameEn`='BK Hacken',`homenameCh`='哈肯',`awaynameEn`='IF Elfsborg',`awaynameCh`='艾夫斯堡',`rangqi`=0,`matchtime`=1407776700 WHERE ( `sid` = 1812809 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.73',`leagueEn`='Club Friendly',`leagueCh`='俱乐部友谊赛',`homenameEn`='Napoli',`homenameCh`='那不勒斯',`awaynameEn`='Paris Saint Germain',`awaynameCh`='巴黎圣日耳曼',`rangqi`=0,`matchtime`=1407780000 WHERE ( `sid` = 1817239 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.64',`leagueEn`='Germany Bundesliga 2',`leagueCh`='德国乙级联赛',`homenameEn`='SpVgg Greuther Furth',`homenameCh`='格雷特霍夫',`awaynameEn`='FC Nurnberg',`awaynameCh`='纽伦堡',`rangqi`=0,`matchtime`=1407780900 WHERE ( `sid` = 1812211 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.98',`leagueEn`='Germany Bundesliga 2 - Specials',`leagueCh`='德国乙级联赛 - 特别投注',`homenameEn`='SpVgg Greuther Furth - To Kick Off',`homenameCh`='格雷特霍夫先开球',`awaynameEn`='FC Nurnberg - To Kick Off',`awaynameCh`='纽伦堡先开球',`rangqi`=0,`matchtime`=1407780900 WHERE ( `sid` = 1814987 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.78',`leagueEn`='England Conference South',`leagueCh`='英格兰足协南部联赛',`homenameEn`='Farnborough FC',`homenameCh`='法保罗夫',`awaynameEn`='Weston Super Mare AFC',`awaynameCh`='维斯顿',`rangqi`=0,`matchtime`=1407782700 WHERE ( `sid` = 1816666 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='1.35',`leagueEn`='Argentina Primera Division',`leagueCh`='阿根廷甲级联赛',`homenameEn`='Arsenal de Sarandi',`homenameCh`='沙兰迪兵工厂',`awaynameEn`='Club Estudiantes de La Plata',`awaynameCh`='大学生',`rangqi`=0,`matchtime`=1407790800 WHERE ( `sid` = 1812233 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='1.07',`leagueEn`='Argentina Primera Division',`leagueCh`='阿根廷甲级联赛',`homenameEn`='Club Atletico Tigre',`homenameCh`='堤格雷',`awaynameEn`='CA Velez Sarsfield',`awaynameCh`='萨斯菲尔德',`rangqi`=0,`matchtime`=1407799800 WHERE ( `sid` = 1812234 )
+ERR: 1054:Unknown column 'rangqi' in 'field list'
+ [ SQL语句 ] : UPDATE `match_sp` SET `sp`='0.74',`leagueEn`='Japan J-League Division 1',`leagueCh`='日本职业甲级联赛',`homenameEn`='Hiroshima  Sanfrecce',`homenameCh`='广岛三箭',`awaynameEn`='Sagan Tosu',`awaynameCh`='鸟栖沙根',`rangqi`=0,`matchtime`=1407751200 WHERE ( `sid` = 1815841 )
+
+[ 2014-08-11T16:03:53+08:00 ] 192.168.50.4 /index.php/Home/MatAdmin/getSp.html?debug=1
+ERR: 非法操作:getsp
+
+[ 2014-08-11T16:03:57+08:00 ] 192.168.50.4 /index.php/Home/MatAdmin/index.html?debug=1
+ERR: 模板不存在:./Web/Home/View/Default/MatAdmin/index.html
+
+[ 2014-08-11T17:33:05+08:00 ] 192.168.50.4 /index.php/Home/MatAdmin/index.html?debug=1
+ERR: 模板不存在:./Web/Home/View/Default/MatAdmin/index.html
+
+[ 2014-08-11T17:33:18+08:00 ] 192.168.50.4 /index.php/Home/MatAdmin/index.html?debug=1
+ERR: 模板不存在:./Web/Home/View/Default/MatAdmin/index.html
+

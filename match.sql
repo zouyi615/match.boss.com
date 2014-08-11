@@ -40,7 +40,7 @@ CREATE TABLE `match` (
   `date` varchar(30) CHARACTER SET utf8 NOT NULL,
   `end` int(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of match
@@ -83,7 +83,7 @@ CREATE TABLE `match_sp` (
   `sp` varchar(10) CHARACTER SET utf8 NOT NULL,
   `matchtime` varchar(30) CHARACTER SET utf8 NOT NULL,
   PRIMARY KEY (`sid`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of match_sp
@@ -101,7 +101,7 @@ CREATE TABLE `peilv` (
   `sp` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '0' COMMENT '外围赔率',
   `date` varchar(30) CHARACTER SET utf8 NOT NULL COMMENT '日期',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of peilv
