@@ -24,7 +24,7 @@ body{position: relative;}
 .tips_con{opacity:1; border:1px solid #333; width:400px; height: auto; display: none; position:fixed; left: 0px; bottom:0px;}
 /* 头部样式 */
 .header a,.header a:hover{text-decoration:none;}
-.header blockquote{padding: 1px 10px;}
+.header blockquote{padding: 2px 10px 10px 10px;}
 /* 比赛列表样式 */
 .match-list th,.match-list td{text-align:center;vertical-align:middle; *vertical-align:middle;}
 .match-list td.tobox{vertical-align:middle; color:red; cursor:pointer;}

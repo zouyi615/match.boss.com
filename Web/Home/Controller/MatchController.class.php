@@ -9,8 +9,8 @@ class MatchController extends Controller {
 	//public $spUrl = 'http://sb.imsportsbook.com/Fun88/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=1&UserTimeZone=-480&Language=1&FilterDay=1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=1&OddsPageCode=0&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0'; 
 	//public $spHost = 'sb.imsportsbook.com'; //抓取赔率域名
 	//外围网站赔率
-	public $spUrl = 'http://sb.imsportsbook.com/Fun88/OddsDisplay/Sportsbook/GetOddsData2';
-	public $spHost = 'sb.imsportsbook.com'; //抓取赔率域名
+	public $spUrl = 'http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2';
+	public $spHost = 'sports1.im.fun88.com'; //抓取赔率域名
 	//处理函数
 	public function index(){
 		///Date(1406815200000)/
@@ -28,7 +28,7 @@ class MatchController extends Controller {
 		if($match){
 			$m = M('match');
 			$m->where('1')->delete();
-			$rs = $m->addAll($match['match']);	
+			$rs = $m->addAll($match['match']);
 			if($rs){
 				$pl_tab = array();
 				foreach($match['match'] as $key=>$val){
@@ -57,13 +57,15 @@ class MatchController extends Controller {
 		import('Libs.Trade.Jcpublic');
         $jc = new \Jcpublic();		
 		//获取竞彩赔率
-		$plArr = $jc->getPL();
-		//获取外围赔率
-		$plArr_sp = $this->getSp();
+		$plArr = $jc->getPL();		
 		//获取数据库信息
 		$m = M('match');
 		$p = M('peilv');
+		$ms = M('match_sp');
 		$mInfo = $m->getField('id,rangqiu,league,homename,awayname,matchtime,isoffset,homenamesp,awaynamesp');
+		//获取外围赔率
+		$plArr_sp1 = $ms->getField('sid,rangqiusp,leagueEn,leagueCh,homenameEn,homenameCh,awaynameEn,awaynameCh,sp,matchtime');
+		//var_dump($plArr_sp1);
 		$i = 0;
 		if($mInfo){
 			foreach($mInfo as $key=>$val){
@@ -78,8 +80,8 @@ class MatchController extends Controller {
 				}
 				$newplArr[$i]['issp'] = 0;//判断是否有外围赔率
 				//匹配外围赔率
-				if($plArr_sp){					
-					foreach($plArr_sp as $val_sp){						
+				if($plArr_sp1){					
+					foreach($plArr_sp1 as $val_sp){						
 						//兼容模式，优先从设置的外围主客队名匹配。其次再匹配比赛名称
 						if(($val['isoffset'] == '1' && $val['homenamesp'] && $val['homenamesp'] == $val_sp['homenameCh'] && $val['awaynamesp'] && $val['awaynamesp'] == $val_sp['awaynameCh']) || ($val['isoffset'] == '0' && $val_sp['matchtime'] == strtotime($val['matchtime']))){
 							$newplArr[$i]['issp'] = 1;//有外围赔率,标记为1
@@ -91,10 +93,11 @@ class MatchController extends Controller {
 							$newplArr[$i]['homenameCh'] = $val_sp['homenameCh'];
 							$newplArr[$i]['awaynameEn'] = $val_sp['awaynameEn'];
 							$newplArr[$i]['awaynameCh'] = $val_sp['awaynameCh'];
-							$newplArr[$i]['rangqiusp'] = $val_sp['rangqiu'];
+							$newplArr[$i]['rangqiusp'] = $val_sp['rangqiusp'];
 							$newplArr[$i]['matchtime'] = $val_sp['matchtime'];
-							$p->field(array('id','sid','rangqiusp','leagueEn','leagueCh','homenameEn','homenameCh','awaynameEn','awaynameCh','sp'))->save($newplArr[$i]);
-						}else{
+							$newplArr[$i]['ismatch'] = 1;
+							$p->field(array('id','sid','sp','ismatch'))->save($newplArr[$i]);
+						}elseif($val['isoffset'] == '1'){
 							$newplArr[$i]['sid'] = '';
 							$newplArr[$i]['sp'] = '';
 							$newplArr[$i]['leagueEn'] = '';
@@ -104,18 +107,19 @@ class MatchController extends Controller {
 							$newplArr[$i]['awaynameEn'] = '';
 							$newplArr[$i]['awaynameCh'] = '';
 							$newplArr[$i]['rangqiusp'] = 0;
-							$p->field(array('id','sid','rangqiusp','leagueEn','leagueCh','homenameEn','homenameCh','awaynameEn','awaynameCh','sp'))->save($newplArr[$i]);
+							$newplArr[$i]['ismatch'] = 0;
+							$p->field(array('id','sid','sp','ismatch'))->save($newplArr[$i]);
 						}
 					}
 				}
 				$i++;
 			}
 		}
-		var_dump($newplArr);	
+		var_dump($newplArr);
 	}
-
-	//获取外围赔率
-	public function getSp(){
+	
+	//获取外围赔率1
+	public function getSp1(){
 		header("Content-type:text/html;charset=UTF-8");
 		import('Libs.Trade.Jcpublic');
 		$jc = new \Jcpublic();		
@@ -124,8 +128,8 @@ class MatchController extends Controller {
 		$legEn = $legCh = $homename = $awayname = $sp = $matchtime = '';
 		$ptr = '/Date\((.*)\)/';		
 		$spMatch = array();
-		$i = 0;	
-		//var_dump($spJson,$spArr['d']);		
+		$ms = M('match_sp');
+		$i = 0;		
 		if($spArr['d']){
 			foreach($spArr['d'] as $key=>$val){				
 				$match = $val[4];
@@ -144,7 +148,9 @@ class MatchController extends Controller {
 								preg_match($ptr,$v[7],$matchtime);
 								$spMatch[$i]['matchtime'] = intval(substr($matchtime[1],0,10));
 								$spMatch[$i]['sp'] = $m[6][4];
-								$spMatch[$i]['rangqiu'] = 0;
+								$spMatch[$i]['rangqiusp'] = 0;
+								$add = $ms->data($spMatch[$i])->add();
+								$up = $ms->field(array('sid','rangqiusp','leagueEn','leagueCh','homenameEn','homenameCh','awaynameEn','awaynameCh','sp','matchtime'))->save($spMatch[$i]);								
 								$i++;
 							}else{
 								continue;
@@ -154,8 +160,9 @@ class MatchController extends Controller {
 				}						
 			}		
 		}
-		//var_dump($spMatch); 
-		return $spMatch;
+		if(!$spMatch){
+			echo '获取赔率sp1失败！'; exit;
+		}
 	}
 	
 }

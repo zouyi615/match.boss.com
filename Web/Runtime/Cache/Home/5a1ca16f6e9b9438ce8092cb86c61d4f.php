@@ -26,12 +26,17 @@
 			<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
 			<div class="content">&nbsp;</div>
 		</div>
-		<blockquote>
+		<blockquote>			
 			<h4>
 				<strong>外围场次主客队匹配管理</strong>&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="javascript:;" id="getallsp" data-url="<?php echo U('Match/getXml');?>"><span class="label label-danger">重新载入所有场次&nbsp;<span class="glyphicon glyphicon-download"></span></span></a>
-				<a href="javascript:;" id="upallsp" data-url="<?php echo U('Match/getPl');?>"><span class="label label-success">更新所有匹配场次&nbsp;<span class="glyphicon glyphicon-refresh"></span></span></a>
-			</h4>			
+				<a href="javascript:;" id="upallsp" data-url="<?php echo U('Match/getPl');?>"><span class="label label-success">更新匹配场次&nbsp;<span class="glyphicon glyphicon-refresh"></span></span></a>						
+			</h4>
+			<p>
+				<a href="javascript:;" id="getallxml" data-url="<?php echo U('Match/getXml');?>"><span class="label label-danger">重新载入竞彩xml&nbsp;<span class="glyphicon glyphicon-download"></span></span></a>
+				<a href="javascript:;" id="getallsp1" data-url="<?php echo U('Match/getSp1');?>"><span class="label label-danger">更新外围数据1&nbsp;</span></a>
+				<a href="<?php echo U('MatAdmin/showSpLs');?>" target="_blank"><span class="label label-info">查看外围数据1<span class="glyphicon glyphicon-tag"></span></span></a>
+			</p>
+			<p class="fontkt"><small>双击行可以修改主客队匹配值</small></p>
 		</blockquote>		
 	</div>
 	<!--  内容  -->
@@ -86,7 +91,7 @@
 							<td><?php echo $m['sp']; ?></td>
 							<td class="homesp" data-homesp="<?php echo $m['homenamesp']; ?>"><?php echo $m['homenamesp']; ?></td>
 							<td class="awaysp" data-awaysp="<?php echo $m['awaynamesp']; ?>"><?php echo $m['awaynamesp']; ?></td>
-							<td class="offset" data-offset="<?php echo $m['isoffset']; ?>"><?php echo $m['isoffset']==1?'<span class="label label-success">匹配</span>':'<span class="label label-warning">不匹配</span>'; ?></td>
+							<td class="offset" data-offset="<?php echo $m['isoffset']; ?>" title="先填写主客队再开启匹配"><?php echo $m['isoffset']==1?'<span class="label label-success">匹配</span>':'<span class="label label-warning">不匹配</span>'; ?></td>
 						</tr>		
 					<?php } } ?>												
 				</tbody>

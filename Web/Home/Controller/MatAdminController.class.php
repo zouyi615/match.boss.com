@@ -6,10 +6,18 @@ class MatAdminController extends Controller {
     public function index(){
         header("Content-type:text/html;charset=UTF-8"); 
 		$m = M('match');
-		$rsMat = $m->join('peilv ON match.id = peilv.id')->select();
+		$rsMat = $m->join('peilv ON match.id = peilv.id')->join('LEFT JOIN match_sp ON match_sp.sid = peilv.sid')->select();
         $this->assign('rsMat',$rsMat);
         $this->display();
     }
+	//显示外围数据列表
+	public function showSpLs(){
+		header("Content-type:text/html;charset=UTF-8"); 
+		$ms = M('match_sp');
+		$spLs = $ms->order('matchtime')->select();
+        $this->assign('spLs',$spLs);
+        $this->display();
+	}
 	//更新单条竞彩、外围匹配数据
 	public function modUp(){
 		header("Content-type:text/html;charset=UTF-8"); 
@@ -28,10 +36,10 @@ class MatAdminController extends Controller {
 		$arr['awaynamesp'] = $awaysp;
 		$arr['isoffset'] = $offset;
 		$rs = $m->field(array('id','homenamesp','awaynamesp','isoffset'))->save($arr);
-		if($rs){
-			echo 'ok'; exit;
-		}else{
+		if($rs === false){
 			echo '匹配数据更新错误！'; exit;
+		}else{
+			echo 'ok'; exit;			
 		}
 	}
 

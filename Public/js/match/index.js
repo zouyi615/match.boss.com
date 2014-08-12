@@ -52,29 +52,41 @@ $.matadmin.box = {
 	
 	},
 	bindEvent:function(){
-		var _T = this;
-		//重新载入所有场次
-		$('#getallsp').click(function(){
-			var url = $(this).attr('data-url'), warning = $('#alert-warning');
-			$.post(url,function(data, textStatus){
-				if(textStatus == 'success'){
-					warning.hide();
-					location.reload();
-				}else{					
-					warning.find('.content').html('<strong>警告！</strong>重新载入所有场次，请重新载入！').parent().show();
-				}
-			});
-		});
-		//更新所有场次
+		var _T = this, warning = $('#alert-warning');		
+		//更新匹配场次
 		$('#upallsp').click(function(){
-			var url = $(this).attr('data-url'), warning = $('#alert-warning');
-			console.log(url,warning);
+			var url = $(this).attr('data-url');
+			warning.find('.content').html('<strong>提示！</strong>正在更新数据...').parent().show();
 			$.post(url,function(data, textStatus){				
 				if(textStatus == 'success'){
 					warning.hide();
 					location.reload();
 				}else{					
 					warning.find('.content').html('<strong>警告！</strong>更新匹配场次失败，请重新更新！').parent().show();
+				}
+			});
+		});
+		//重新载入竞彩xml
+		$('#getallxml').click(function(){
+			var url = $(this).attr('data-url');
+			warning.find('.content').html('<strong>提示！</strong>正在更新数据...').parent().show();
+			$.post(url,function(data, textStatus){
+				if(textStatus == 'success'){
+					warning.hide();					
+				}else{					
+					warning.find('.content').html('<strong>警告！</strong>重新载入所有场次失败，请重新载入！').parent().show();
+				}
+			});
+		});
+		//重新载入竞彩xml
+		$('#getallsp1').click(function(){
+			var url = $(this).attr('data-url');
+			warning.find('.content').html('<strong>提示！</strong>正在更新数据...').parent().show();
+			$.post(url,function(data, textStatus){
+				if(textStatus == 'success'){
+					warning.hide();					
+				}else{					
+					warning.find('.content').html('<strong>警告！</strong>重新载入所有场次失败，请重新载入！').parent().show();
 				}
 			});
 		});
