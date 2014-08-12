@@ -79,7 +79,7 @@ class MatchController extends Controller {
 					$p->field(array('id','win'))->save($newplArr[$i]);
 				}
 				$newplArr[$i]['issp'] = 0;//判断是否有外围赔率
-				//匹配外围赔率
+				//匹配外围赔率				
 				if($plArr_sp1){					
 					foreach($plArr_sp1 as $val_sp){						
 						//兼容模式，优先从设置的外围主客队名匹配。其次再匹配比赛名称
@@ -95,8 +95,9 @@ class MatchController extends Controller {
 							$newplArr[$i]['awaynameCh'] = $val_sp['awaynameCh'];
 							$newplArr[$i]['rangqiusp'] = $val_sp['rangqiusp'];
 							$newplArr[$i]['matchtime'] = $val_sp['matchtime'];
-							$newplArr[$i]['ismatch'] = 1;
-							$p->field(array('id','sid','sp','ismatch'))->save($newplArr[$i]);
+							$newplArr[$i]['ismatch'] = 1;							
+							$rr = $p->field(array('id','sid','sp','ismatch'))->save($newplArr[$i]);
+							break;
 						}elseif($val['isoffset'] == '1'){
 							$newplArr[$i]['sid'] = '';
 							$newplArr[$i]['sp'] = '';
