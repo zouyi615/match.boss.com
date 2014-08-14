@@ -2,6 +2,7 @@
 namespace Home\Controller;
 use Think\Controller;
 class MatAdminController extends Controller {
+	public $out = array("code"=>-100,"msg"=>"");
 	//获取抓取数据列表
     public function index(){
         header("Content-type:text/html;charset=UTF-8"); 
@@ -27,20 +28,20 @@ class MatAdminController extends Controller {
 		$homesp = I('param.homesp','','htmlspecialchars'); //匹配主队
 		$awaysp = I('param.awaysp','','htmlspecialchars'); //匹配客队
 		$offset = I('param.offset','','htmlspecialchars'); //是否匹配
-		if($mid == '') {echo '所选场次错误！'; exit;}
-		if($homesp == '') {echo '请填写匹配主队！'; exit;}
-		if($awaysp == '') {echo '请填写匹配客队！'; exit;}
-		if($offset == '') {echo '是否匹配错误！'; exit;}
+		if($mid == ''){$this->out['msg'] = '所选场次错误！&mid='.$mid; echo json_encode($this->out); exit;}
 		$arr['id'] = $mid;
-		$arr['homenamesp'] = $homesp;
-		$arr['awaynamesp'] = $awaysp;
-		$arr['isoffset'] = $offset;
-		$rs = $m->field(array('id','homenamesp','awaynamesp','isoffset'))->save($arr);
+		if($homesp != '') $arr['homenamesp'] = $homesp;
+		if($awaysp != '') $arr['awaynamesp'] = $awaysp;
+		if($offset != '') $arr['isoffset'] = $offset;
+		$rs = $m->field(array_keys($arr))->save($arr);
 		if($rs === false){
-			echo '匹配数据更新错误！'; exit;
+			$this->out['msg'] = '匹配数据更新错误！';
 		}else{
-			echo 'ok'; exit;			
+			$this->out['code'] = 100;
+			$this->out['msg'] = 'suc';
+			$this->out['info'] = $arr;
 		}
+		echo json_encode($this->out); exit;
 	}
 
 }

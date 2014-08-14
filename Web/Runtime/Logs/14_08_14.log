@@ -1,0 +1,128 @@
+[ 2014-08-14T15:13:57+08:00 ] 192.168.50.4 /Home/Match/getSp1.html
+ERR: 1062:Duplicate entry '1817228' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817228,'Sweden Allsvenskan','瑞典超级联赛','Mjallby AIF','米亚尔比','IFK Norrkoping','IFK诺科平',1408035600,'1.11',0)
+ERR: 1062:Duplicate entry '1817231' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817231,'Sweden Allsvenskan','瑞典超级联赛','Halmstads BK','咸史泰斯','BK Hacken','哈肯',1408035600,'1.17',0)
+ERR: 1062:Duplicate entry '1817229' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817229,'Sweden Allsvenskan','瑞典超级联赛','Helsingborgs IF','希尔星堡','IF Elfsborg','艾夫斯堡',1408035900,'1.28',0)
+ERR: 1062:Duplicate entry '1817096' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817096,'Russia Premier League','俄罗斯超级联赛','FC Krasnodar','克拉斯诺达尔','Spartak Moscow','莫斯科斯巴达',1408035600,'0.93',0)
+ERR: 1062:Duplicate entry '1819175' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819175,'Russia Premier League - Specials','俄罗斯超级联赛 - 特别投注','FC Krasnodar - No. of Corners','克拉斯诺达尔 - 角球总数','Spartak Moscow - No. of Corners','莫斯科斯巴达 - 角球总数',1408035600,'0.69',0)
+
+[ 2014-08-14T15:15:37+08:00 ] 192.168.50.4 /Home/Match/getSp1.html
+ERR: 1062:Duplicate entry '1817228' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817228,'Sweden Allsvenskan','瑞典超级联赛','Mjallby AIF','米亚尔比','IFK Norrkoping','IFK诺科平',1408035600,'1.11',0)
+ERR: 1062:Duplicate entry '1817231' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817231,'Sweden Allsvenskan','瑞典超级联赛','Halmstads BK','咸史泰斯','BK Hacken','哈肯',1408035600,'1.17',0)
+ERR: 1062:Duplicate entry '1817229' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817229,'Sweden Allsvenskan','瑞典超级联赛','Helsingborgs IF','希尔星堡','IF Elfsborg','艾夫斯堡',1408035900,'1.28',0)
+ERR: 1062:Duplicate entry '1817096' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817096,'Russia Premier League','俄罗斯超级联赛','FC Krasnodar','克拉斯诺达尔','Spartak Moscow','莫斯科斯巴达',1408035600,'0.93',0)
+ERR: 1062:Duplicate entry '1819175' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819175,'Russia Premier League - Specials','俄罗斯超级联赛 - 特别投注','FC Krasnodar - No. of Corners','克拉斯诺达尔 - 角球总数','Spartak Moscow - No. of Corners','莫斯科斯巴达 - 角球总数',1408035600,'0.69',0)
+
+[ 2014-08-14T15:17:09+08:00 ] 192.168.50.4 /Home/Match/getSp1.html
+ERR: 1062:Duplicate entry '1817228' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817228,'Sweden Allsvenskan','瑞典超级联赛','Mjallby AIF','米亚尔比','IFK Norrkoping','IFK诺科平',1408035600,'1.11',0)
+ERR: 1062:Duplicate entry '1817231' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817231,'Sweden Allsvenskan','瑞典超级联赛','Halmstads BK','咸史泰斯','BK Hacken','哈肯',1408035600,'1.17',0)
+ERR: 1062:Duplicate entry '1817229' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817229,'Sweden Allsvenskan','瑞典超级联赛','Helsingborgs IF','希尔星堡','IF Elfsborg','艾夫斯堡',1408035900,'1.28',0)
+ERR: 1062:Duplicate entry '1817096' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817096,'Russia Premier League','俄罗斯超级联赛','FC Krasnodar','克拉斯诺达尔','Spartak Moscow','莫斯科斯巴达',1408035600,'0.93',0)
+ERR: 1062:Duplicate entry '1819175' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819175,'Russia Premier League - Specials','俄罗斯超级联赛 - 特别投注','FC Krasnodar - No. of Corners','克拉斯诺达尔 - 角球总数','Spartak Moscow - No. of Corners','莫斯科斯巴达 - 角球总数',1408035600,'0.69',0)
+
+[ 2014-08-14T16:28:27+08:00 ] 192.168.50.4 /Home/Match/getSp1.html
+ERR: 1062:Duplicate entry '1817228' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817228,'Sweden Allsvenskan','瑞典超级联赛','Mjallby AIF','米亚尔比','IFK Norrkoping','IFK诺科平',1408035600,'1.05',0)
+ERR: 1062:Duplicate entry '1817231' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817231,'Sweden Allsvenskan','瑞典超级联赛','Halmstads BK','咸史泰斯','BK Hacken','哈肯',1408035600,'1.21',0)
+ERR: 1062:Duplicate entry '1817229' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817229,'Sweden Allsvenskan','瑞典超级联赛','Helsingborgs IF','希尔星堡','IF Elfsborg','艾夫斯堡',1408035900,'1.28',0)
+ERR: 1062:Duplicate entry '1817096' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817096,'Russia Premier League','俄罗斯超级联赛','FC Krasnodar','克拉斯诺达尔','Spartak Moscow','莫斯科斯巴达',1408035600,'0.93',0)
+ERR: 1062:Duplicate entry '1819175' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819175,'Russia Premier League - Specials','俄罗斯超级联赛 - 特别投注','FC Krasnodar - No. of Corners','克拉斯诺达尔 - 角球总数','Spartak Moscow - No. of Corners','莫斯科斯巴达 - 角球总数',1408035600,'0.69',0)
+
+[ 2014-08-14T17:23:22+08:00 ] 192.168.50.4 /Home/Match/getSp1.html
+ERR: 1062:Duplicate entry '1817228' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817228,'Sweden Allsvenskan','瑞典超级联赛','Mjallby AIF','米亚尔比','IFK Norrkoping','IFK诺科平',1408035600,'1.07',0)
+ERR: 1062:Duplicate entry '1817231' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817231,'Sweden Allsvenskan','瑞典超级联赛','Halmstads BK','咸史泰斯','BK Hacken','哈肯',1408035600,'1.21',0)
+ERR: 1062:Duplicate entry '1817229' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817229,'Sweden Allsvenskan','瑞典超级联赛','Helsingborgs IF','希尔星堡','IF Elfsborg','艾夫斯堡',1408035900,'1.28',0)
+ERR: 1062:Duplicate entry '1819213' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819213,'Sweden Allsvenskan - Specials','瑞典超级联赛 - 特别投注','Mjallby AIF - No. of Corners','米亚尔比 - 角球总数','IFK Norrkoping - No. of Corners','IFK诺科平 - 角球总数',1408035600,'0.71',0)
+ERR: 1062:Duplicate entry '1819214' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819214,'Sweden Allsvenskan - Specials','瑞典超级联赛 - 特别投注','Halmstads BK - No. of Corners','咸史泰斯 - 角球总数','BK Hacken - No. of Corners','哈肯 - 角球总数',1408035600,'0.79',0)
+ERR: 1062:Duplicate entry '1819216' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819216,'Sweden Allsvenskan - Specials','瑞典超级联赛 - 特别投注','Helsingborgs IF - No. of Corners','希尔星堡 - 角球总数','IF Elfsborg - No. of Corners','艾夫斯堡 - 角球总数',1408035900,'0.91',0)
+ERR: 1062:Duplicate entry '1817096' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817096,'Russia Premier League','俄罗斯超级联赛','FC Krasnodar','克拉斯诺达尔','Spartak Moscow','莫斯科斯巴达',1408035600,'0.93',0)
+ERR: 1062:Duplicate entry '1819175' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819175,'Russia Premier League - Specials','俄罗斯超级联赛 - 特别投注','FC Krasnodar - No. of Corners','克拉斯诺达尔 - 角球总数','Spartak Moscow - No. of Corners','莫斯科斯巴达 - 角球总数',1408035600,'0.69',0)
+ERR: 1062:Duplicate entry '1819159' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819159,'Iran Pro League','伊朗超级联赛','Rah  Ahan','拉亚汉','Foolad Khuzestan FC','弗兰候萨斯坦',1408023000,'0.94',0)
+
+[ 2014-08-14T17:49:10+08:00 ] 192.168.50.4 /Home/Match/getSp1.html
+ERR: 1062:Duplicate entry '1817228' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817228,'Sweden Allsvenskan','瑞典超级联赛','Mjallby AIF','米亚尔比','IFK Norrkoping','IFK诺科平',1408035600,'1.07',0)
+ERR: 1062:Duplicate entry '1817231' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817231,'Sweden Allsvenskan','瑞典超级联赛','Halmstads BK','咸史泰斯','BK Hacken','哈肯',1408035600,'1.21',0)
+ERR: 1062:Duplicate entry '1817229' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817229,'Sweden Allsvenskan','瑞典超级联赛','Helsingborgs IF','希尔星堡','IF Elfsborg','艾夫斯堡',1408035900,'1.28',0)
+ERR: 1062:Duplicate entry '1819213' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819213,'Sweden Allsvenskan - Specials','瑞典超级联赛 - 特别投注','Mjallby AIF - No. of Corners','米亚尔比 - 角球总数','IFK Norrkoping - No. of Corners','IFK诺科平 - 角球总数',1408035600,'0.71',0)
+ERR: 1062:Duplicate entry '1819214' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819214,'Sweden Allsvenskan - Specials','瑞典超级联赛 - 特别投注','Halmstads BK - No. of Corners','咸史泰斯 - 角球总数','BK Hacken - No. of Corners','哈肯 - 角球总数',1408035600,'0.79',0)
+ERR: 1062:Duplicate entry '1819216' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819216,'Sweden Allsvenskan - Specials','瑞典超级联赛 - 特别投注','Helsingborgs IF - No. of Corners','希尔星堡 - 角球总数','IF Elfsborg - No. of Corners','艾夫斯堡 - 角球总数',1408035900,'0.91',0)
+ERR: 1062:Duplicate entry '1817096' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817096,'Russia Premier League','俄罗斯超级联赛','FC Krasnodar','克拉斯诺达尔','Spartak Moscow','莫斯科斯巴达',1408035600,'0.93',0)
+ERR: 1062:Duplicate entry '1819175' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819175,'Russia Premier League - Specials','俄罗斯超级联赛 - 特别投注','FC Krasnodar - No. of Corners','克拉斯诺达尔 - 角球总数','Spartak Moscow - No. of Corners','莫斯科斯巴达 - 角球总数',1408035600,'0.69',0)
+ERR: 1062:Duplicate entry '1819159' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819159,'Iran Pro League','伊朗超级联赛','Rah  Ahan','拉亚汉','Foolad Khuzestan FC','弗兰候萨斯坦',1408023000,'0.94',0)
+
+[ 2014-08-14T17:49:18+08:00 ] 192.168.50.4 /Home/Match/getSp1.html
+ERR: 1062:Duplicate entry '1817228' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817228,'Sweden Allsvenskan','瑞典超级联赛','Mjallby AIF','米亚尔比','IFK Norrkoping','IFK诺科平',1408035600,'1.07',0)
+ERR: 1062:Duplicate entry '1817231' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817231,'Sweden Allsvenskan','瑞典超级联赛','Halmstads BK','咸史泰斯','BK Hacken','哈肯',1408035600,'1.21',0)
+ERR: 1062:Duplicate entry '1817229' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817229,'Sweden Allsvenskan','瑞典超级联赛','Helsingborgs IF','希尔星堡','IF Elfsborg','艾夫斯堡',1408035900,'1.28',0)
+ERR: 1062:Duplicate entry '1819213' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819213,'Sweden Allsvenskan - Specials','瑞典超级联赛 - 特别投注','Mjallby AIF - No. of Corners','米亚尔比 - 角球总数','IFK Norrkoping - No. of Corners','IFK诺科平 - 角球总数',1408035600,'0.71',0)
+ERR: 1062:Duplicate entry '1819214' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819214,'Sweden Allsvenskan - Specials','瑞典超级联赛 - 特别投注','Halmstads BK - No. of Corners','咸史泰斯 - 角球总数','BK Hacken - No. of Corners','哈肯 - 角球总数',1408035600,'0.79',0)
+ERR: 1062:Duplicate entry '1819216' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819216,'Sweden Allsvenskan - Specials','瑞典超级联赛 - 特别投注','Helsingborgs IF - No. of Corners','希尔星堡 - 角球总数','IF Elfsborg - No. of Corners','艾夫斯堡 - 角球总数',1408035900,'0.91',0)
+ERR: 1062:Duplicate entry '1817096' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817096,'Russia Premier League','俄罗斯超级联赛','FC Krasnodar','克拉斯诺达尔','Spartak Moscow','莫斯科斯巴达',1408035600,'0.93',0)
+ERR: 1062:Duplicate entry '1819175' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819175,'Russia Premier League - Specials','俄罗斯超级联赛 - 特别投注','FC Krasnodar - No. of Corners','克拉斯诺达尔 - 角球总数','Spartak Moscow - No. of Corners','莫斯科斯巴达 - 角球总数',1408035600,'0.69',0)
+ERR: 1062:Duplicate entry '1819159' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819159,'Iran Pro League','伊朗超级联赛','Rah  Ahan','拉亚汉','Foolad Khuzestan FC','弗兰候萨斯坦',1408023000,'0.94',0)
+
+[ 2014-08-14T17:49:52+08:00 ] 192.168.50.4 /Home/Match/getSp1.html
+ERR: 1062:Duplicate entry '1817228' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817228,'Sweden Allsvenskan','瑞典超级联赛','Mjallby AIF','米亚尔比','IFK Norrkoping','IFK诺科平',1408035600,'1.07',0)
+ERR: 1062:Duplicate entry '1817231' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817231,'Sweden Allsvenskan','瑞典超级联赛','Halmstads BK','咸史泰斯','BK Hacken','哈肯',1408035600,'1.21',0)
+ERR: 1062:Duplicate entry '1817229' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817229,'Sweden Allsvenskan','瑞典超级联赛','Helsingborgs IF','希尔星堡','IF Elfsborg','艾夫斯堡',1408035900,'1.28',0)
+ERR: 1062:Duplicate entry '1819213' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819213,'Sweden Allsvenskan - Specials','瑞典超级联赛 - 特别投注','Mjallby AIF - No. of Corners','米亚尔比 - 角球总数','IFK Norrkoping - No. of Corners','IFK诺科平 - 角球总数',1408035600,'0.71',0)
+ERR: 1062:Duplicate entry '1819214' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819214,'Sweden Allsvenskan - Specials','瑞典超级联赛 - 特别投注','Halmstads BK - No. of Corners','咸史泰斯 - 角球总数','BK Hacken - No. of Corners','哈肯 - 角球总数',1408035600,'0.79',0)
+ERR: 1062:Duplicate entry '1819216' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819216,'Sweden Allsvenskan - Specials','瑞典超级联赛 - 特别投注','Helsingborgs IF - No. of Corners','希尔星堡 - 角球总数','IF Elfsborg - No. of Corners','艾夫斯堡 - 角球总数',1408035900,'0.91',0)
+ERR: 1062:Duplicate entry '1817096' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1817096,'Russia Premier League','俄罗斯超级联赛','FC Krasnodar','克拉斯诺达尔','Spartak Moscow','莫斯科斯巴达',1408035600,'0.93',0)
+ERR: 1062:Duplicate entry '1819175' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819175,'Russia Premier League - Specials','俄罗斯超级联赛 - 特别投注','FC Krasnodar - No. of Corners','克拉斯诺达尔 - 角球总数','Spartak Moscow - No. of Corners','莫斯科斯巴达 - 角球总数',1408035600,'0.69',0)
+ERR: 1062:Duplicate entry '1819159' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtime`,`sp`,`rangqiusp`) VALUES (1819159,'Iran Pro League','伊朗超级联赛','Rah  Ahan','拉亚汉','Foolad Khuzestan FC','弗兰候萨斯坦',1408023000,'1.00',0)
+

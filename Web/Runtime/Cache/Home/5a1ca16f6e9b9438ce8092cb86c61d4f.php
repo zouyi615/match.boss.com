@@ -64,8 +64,8 @@
 					</tr>
 				</thead>
 				<colgroup>
-					<col width="6%">
-					<col width="10%">
+					<col width="4%">
+					<col width="12%">
 					<col width="10%">
 					<col width="10%">
 					<col width="4%">
@@ -81,13 +81,13 @@
 					<?php if($rsMat && is_array($rsMat)){ foreach($rsMat as $k=>$m){ ?>
 						<tr class="data" id="<?php echo $m['id']; ?>" ismod="0">
 							<td><?php echo $m['id']; ?></td>
-							<td><?php echo $m['matchnum'].'<br>'.$m['matchtime']; ?></td>
+							<td><?php echo $m['matchnum'].'<br>'.date('Y/m/d H:i:s',$m['matchtime']); ?></td>
 							<td><?php echo $m['league']; ?></td>
-							<td><?php echo $m['homename'].'<br>'.$m['awayname']; ?></td>
+							<td><?php echo $m['homename'].'<br>（'.$m['awayname'].'）'; ?></td>
 							<td><?php echo $m['rangqiu']; ?></td>
 							<td><?php echo $m['win']; ?></td>
 							<td><?php echo $m['leagueCh']; ?></td>
-							<td><?php echo $m['homenameCh'].'<br>'.$m['awaynameCh']; ?></td>
+							<td><?php echo $m['homenameCh']; ?><br><?php echo $m['awaynameCh']?'（'.$m['awaynameCh'].'）':''; ?></td>
 							<td><?php echo $m['sp']; ?></td>
 							<td class="homesp" data-homesp="<?php echo $m['homenamesp']; ?>"><?php echo $m['homenamesp']; ?></td>
 							<td class="awaysp" data-awaysp="<?php echo $m['awaynamesp']; ?>"><?php echo $m['awaynamesp']; ?></td>

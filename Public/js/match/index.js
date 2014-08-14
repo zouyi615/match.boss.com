@@ -43,13 +43,44 @@ $.extend({
 });
 //全局变量设置
 $.C('expires',1*60*60*1000); //cookie过期时间
+//web_alert页面告警框(i:页面绑定ID;t:告警类型(warning);c:告警内容)
+/*$.namespace('dlg');
+$.dlg = {
+	//初始化绑定ID
+	index: function(i,t,c){
+		$(i).html()
+	},
+	//告警框
+	alert: function(t, c){
+	
+	
+	}
 
-//后台设置匹配场次
+	<div class="alert alert-warning alert-dismissible fade in" role="alert" id="alert-warning" style="display:none;">
+		<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+		<div class="content">&nbsp;</div>
+	</div>
+	html.push($.tpl(str,{
+				mid: i,
+				vs: i+'-'+e.vs+'('+e.rate+')',
+				s1: e.s1,
+				s2: e.s2,
+				s3: e.s3,
+				s4: e.s4,
+				betmoney: e.betmoney,
+				prize: e.prize,
+				rebate: e.rebate,
+				profit: e.profit,
+				in1: e.in1,
+				in2: e.in2
+			}));
+};*/
+
+//后台设置匹配场次 /Home/MatAdmin/index.html
 $.namespace('matadmin.box');
 $.matadmin.box = {
 	index:function(){
-		this.bindEvent();
-	
+		this.bindEvent();	
 	},
 	bindEvent:function(){
 		var _T = this, warning = $('#alert-warning');		
@@ -71,22 +102,25 @@ $.matadmin.box = {
 			var url = $(this).attr('data-url');
 			warning.find('.content').html('<strong>提示！</strong>正在更新数据...').parent().show();
 			$.post(url,function(data, textStatus){
-				if(textStatus == 'success'){
-					warning.hide();					
-				}else{					
-					warning.find('.content').html('<strong>警告！</strong>重新载入所有场次失败，请重新载入！').parent().show();
+				var res = $.parseJSON(data);
+				if(res.code < 0){
+					warning.find('.content').html('<strong>警告！</strong>'+res.msg).parent().show();
+				}else{
+					warning.hide();	
+					location.reload();
 				}
 			});
 		});
-		//重新载入竞彩xml
+		//更新外围数据sp1
 		$('#getallsp1').click(function(){
 			var url = $(this).attr('data-url');
 			warning.find('.content').html('<strong>提示！</strong>正在更新数据...').parent().show();
 			$.post(url,function(data, textStatus){
-				if(textStatus == 'success'){
-					warning.hide();					
-				}else{					
-					warning.find('.content').html('<strong>警告！</strong>重新载入所有场次失败，请重新载入！').parent().show();
+				var res = $.parseJSON(data);
+				if(res.code < 0){
+					warning.find('.content').html('<strong>警告！</strong>'+res.msg).parent().show();
+				}else{
+					warning.hide();	
 				}
 			});
 		});
@@ -106,8 +140,9 @@ $.matadmin.box = {
 			offstr = offset == '0'?'<span class="label label-warning">不匹配</span>':'<span class="label label-success">匹配</span>';
 			para = { mid: mid, homesp: homesp, awaysp: awaysp, offset: offset };
 			$.post(url, para, function(data, textStatus){
-				if(data != 'ok'){
-					warning.find('.content').html('<strong>警告！</strong>'+data).parent().show();
+				var res = $.parseJSON(data);
+				if(res.code < 0){
+					warning.find('.content').html('<strong>警告！</strong>'+res.msg).parent().show();
 				}else{
 					warning.hide();
 					$(T).attr('data-offset',offset).html(offstr);		
@@ -130,11 +165,36 @@ $.matadmin.box = {
 		$(T).find('td.awaysp').attr('data-awaysp',awaysp).html(awaysp);
 		para = { mid: mid, homesp: homesp, awaysp: awaysp, offset: offset };
 		$.post(url, para, function(data, textStatus){
-			if(data != 'ok'){
-				warning.find('.content').html('<strong>警告！</strong>'+data).parent().show();
+			var res = $.parseJSON(data);
+			if(res.code < 0){
+				warning.find('.content').html('<strong>警告！</strong>'+res.msg).parent().show();
 			}else{
-				warning.hide();
+				warning.hide();		
 			}
+		});
+	}
+};
+//外围数据列表 /Home/MatAdmin/showSpLs.html
+$.namespace('showspls.box');
+$.showspls.box = {
+	index:function(){
+		this.bindEvent();	
+	},
+	bindEvent:function(){
+		var _T = this, warning = $('#alert-warning');				
+		//更新外围数据sp
+		$('#getsp').click(function(){
+			var url = $(this).attr('data-url');
+			warning.find('.content').html('<strong>提示！</strong>正在更新数据...').parent().show();
+			$.post(url,function(data, textStatus){
+				var res = $.parseJSON(data);
+				if(res.code < 0){
+					warning.find('.content').html('<strong>警告！</strong>'+res.msg).parent().show();
+				}else{
+					warning.hide();	
+					location.reload();
+				}
+			});
 		});
 	}
 };

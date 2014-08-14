@@ -64,8 +64,8 @@
 					</tr>
 				</thead>
 				<colgroup>
-					<col width="6%">
-					<col width="10%">
+					<col width="4%">
+					<col width="12%">
 					<col width="10%">
 					<col width="10%">
 					<col width="4%">
@@ -84,13 +84,13 @@
 					</php>
 						<tr class="data" id="<php>echo $m['id'];</php>" ismod="0">
 							<td><php>echo $m['id'];</php></td>
-							<td><php>echo $m['matchnum'].'<br>'.$m['matchtime'];</php></td>
+							<td><php>echo $m['matchnum'].'<br>'.date('Y/m/d H:i:s',$m['matchtime']);</php></td>
 							<td><php>echo $m['league'];</php></td>
-							<td><php>echo $m['homename'].'<br>'.$m['awayname'];</php></td>
+							<td><php>echo $m['homename'].'<br>（'.$m['awayname'].'）';</php></td>
 							<td><php>echo $m['rangqiu'];</php></td>
 							<td><php>echo $m['win'];</php></td>
 							<td><php>echo $m['leagueCh'];</php></td>
-							<td><php>echo $m['homenameCh'].'<br>'.$m['awaynameCh'];</php></td>
+							<td><php>echo $m['homenameCh'];</php><br><php>echo $m['awaynameCh']?'（'.$m['awaynameCh'].'）':'';</php></td>
 							<td><php>echo $m['sp'];</php></td>
 							<td class="homesp" data-homesp="<php>echo $m['homenamesp'];</php>"><php>echo $m['homenamesp'];</php></td>
 							<td class="awaysp" data-awaysp="<php>echo $m['awaynamesp'];</php>"><php>echo $m['awaynamesp'];</php></td>
