@@ -28,7 +28,8 @@
 		</div>
 		<blockquote>			
 			<h4>
-				<strong>外围数据列表</strong>&nbsp;&nbsp;&nbsp;&nbsp;	
+				<strong>外围数据列表</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="javascript:;" id="clearsp" data-url="<?php echo U('Match/clearSp1');?>"><span class="label label-danger">清空外围数据&nbsp;<span class="glyphicon glyphicon-trash"></span></span></a>
 				<a href="javascript:;" id="getsp" data-url="<?php echo U('Match/getSp1');?>"><span class="label label-success">更新外围数据&nbsp;<span class="glyphicon glyphicon-refresh"></span></span></a>
 			</h4>
 		</blockquote>		
@@ -71,7 +72,7 @@
 					<?php if($spLs && is_array($spLs)){ foreach($spLs as $k=>$m){ ?>
 						<tr class="data" id="<?php echo $m['id']; ?>" ismod="0">
 							<td><?php echo $m['sid']; ?></td>
-							<td><?php echo date('Y/m/d H:i:s',$m['matchtime']); ?></td>
+							<td><?php echo date('Y/m/d H:i:s',$m['matchtimesp']); ?></td>
 							<td><?php echo $m['rangqiusp']; ?></td>
 							<td><?php echo $m['leagueEn']; ?></td>
 							<td><?php echo $m['leagueCh']; ?></td>

@@ -39,6 +39,10 @@ $.extend({
 			}
 			return prop === undefined ? def : prop;
 		});
+	},
+	//确认弹窗
+	confirm: function(c){
+		return confirm(c);
 	}
 });
 //全局变量设置
@@ -80,47 +84,50 @@ $.dlg = {
 $.namespace('matadmin.box');
 $.matadmin.box = {
 	index:function(){
-		this.bindEvent();	
+		this.bindEvent();
+		this.autoUp();		
 	},
 	bindEvent:function(){
-		var _T = this, warning = $('#alert-warning');		
-		//更新匹配场次
-		$('#upallsp').click(function(){
-			var url = $(this).attr('data-url');
-			warning.find('.content').html('<strong>提示！</strong>正在更新数据...').parent().show();
-			$.post(url,function(data, textStatus){				
-				if(textStatus == 'success'){
-					warning.hide();
-					location.reload();
-				}else{					
-					warning.find('.content').html('<strong>警告！</strong>更新匹配场次失败，请重新更新！').parent().show();
-				}
-			});
-		});
+		var _T = this, warning = $('#alert-warning').find('.content');		
 		//重新载入竞彩xml
 		$('#getallxml').click(function(){
 			var url = $(this).attr('data-url');
-			warning.find('.content').html('<strong>提示！</strong>正在更新数据...').parent().show();
-			$.post(url,function(data, textStatus){
-				var res = $.parseJSON(data);
-				if(res.code < 0){
-					warning.find('.content').html('<strong>警告！</strong>'+res.msg).parent().show();
-				}else{
-					warning.hide();	
-					location.reload();
-				}
-			});
+			if($.confirm("确定重新载入竞彩xml数据？该功能清空当前匹配的竞彩数据，请谨慎操作！")){
+				warning.html('<strong>提示！</strong>正在载入数据...');
+				$.post(url,function(data, textStatus){
+					var res = $.parseJSON(data);
+					if(res.code < 0){
+						warning.html('<strong>警告！</strong>'+res.msg);
+					}else{
+						warning.html('&nbsp;');	
+						location.reload();
+					}
+				});
+			}
 		});
 		//更新外围数据sp1
 		$('#getallsp1').click(function(){
 			var url = $(this).attr('data-url');
-			warning.find('.content').html('<strong>提示！</strong>正在更新数据...').parent().show();
+			warning.html('<strong>提示！</strong>正在更新外围数据sp1...');
 			$.post(url,function(data, textStatus){
 				var res = $.parseJSON(data);
 				if(res.code < 0){
-					warning.find('.content').html('<strong>警告！</strong>'+res.msg).parent().show();
+					warning.html('<strong>警告！</strong>'+res.msg);
 				}else{
-					warning.hide();	
+					warning.html('&nbsp;');	
+				}
+			});
+		});
+		//更新匹配场次
+		$('#upallsp').click(function(){
+			var url = $(this).attr('data-url');
+			warning.html('<strong>提示！</strong>正在更新匹配场次...');
+			$.post(url,function(data, textStatus){				
+				if(textStatus == 'success'){
+					warning.html('&nbsp;');	
+					location.reload();
+				}else{					
+					warning.html('<strong>警告！</strong>更新匹配场次失败，请重新更新！');
 				}
 			});
 		});
@@ -135,19 +142,28 @@ $.matadmin.box = {
 		});
 		//切换是否匹配
 		$('#allsptab tr.data>td.offset').click(function(){
-			var T = this, offset = $(this).attr('data-offset'), mid = $(this).parent().attr('id'), url = $('#modupurl').val(), warning = $('#alert-warning'), homesp = $(this).parent().find('td.homesp').attr('data-homesp'), awaysp = $(this).parent().find('td.awaysp').attr('data-awaysp');
+			var T = this, offset = $(this).attr('data-offset'), mid = $(this).parent().attr('id'), url = $('#modupurl').val(), homesp = $(this).parent().find('td.homesp').attr('data-homesp'), awaysp = $(this).parent().find('td.awaysp').attr('data-awaysp');
 			offset = offset == '0'?'1':'0';
 			offstr = offset == '0'?'<span class="label label-warning">不匹配</span>':'<span class="label label-success">匹配</span>';
 			para = { mid: mid, homesp: homesp, awaysp: awaysp, offset: offset };
+			warning.html('<strong>提示！</strong>正在切换，请稍后...');
 			$.post(url, para, function(data, textStatus){
 				var res = $.parseJSON(data);
 				if(res.code < 0){
-					warning.find('.content').html('<strong>警告！</strong>'+res.msg).parent().show();
+					warning.html('<strong>警告！</strong>'+res.msg);
 				}else{
-					warning.hide();
+					warning.html('&nbsp;');	
 					$(T).attr('data-offset',offset).html(offstr);		
 				}
 			});
+		});
+		//开始更新数据
+		$('#autoup').click(function(){
+			_T.autoUp();
+		});
+		//停止更新数据
+		$('#stopup').click(function(){
+			_T.stopUp();
 		});
 	},
 	//修改主客队
@@ -159,19 +175,32 @@ $.matadmin.box = {
 	},
 	//保存主客队修改
 	modUp:function(T){
-		var mid = $(T).attr('id'), homesp = $(T).find('td.homesp input').val(), awaysp = $(T).find('td.awaysp input').val(), offset = $(T).find('td.offset').attr('data-offset'), url = $('#modupurl').val(), warning = $('#alert-warning'), para;
+		var mid = $(T).attr('id'), homesp = $(T).find('td.homesp input').val(), awaysp = $(T).find('td.awaysp input').val(), offset = $(T).find('td.offset').attr('data-offset'), url = $('#modupurl').val(), warning = $('#alert-warning').find('.content'), para;
 		$(T).attr('ismod','0'); //修改标记值
 		$(T).find('td.homesp').attr('data-homesp',homesp).html(homesp);
 		$(T).find('td.awaysp').attr('data-awaysp',awaysp).html(awaysp);
 		para = { mid: mid, homesp: homesp, awaysp: awaysp, offset: offset };
+		warning.html('<strong>提示！</strong>正在保存修改，请稍后...');
 		$.post(url, para, function(data, textStatus){
 			var res = $.parseJSON(data);
 			if(res.code < 0){
-				warning.find('.content').html('<strong>警告！</strong>'+res.msg).parent().show();
+				warning.html('<strong>警告！</strong>'+res.msg);
 			}else{
-				warning.hide();		
+				warning.html('&nsbp;'+res.msg);		
 			}
 		});
+	},
+	//自动更新
+	autoUp:function(){
+		clearInterval(this.u_sp1);
+		clearInterval(this.u_allm);
+		this.u_sp1 = setInterval(function(){$("#getallsp1").trigger("click");},2000);
+		this.u_allm = setInterval(function(){$("#upallsp").trigger("click");},5000);
+	},
+	//停止自动更新
+	stopUp:function(){
+		clearInterval(this.u_sp1);
+		clearInterval(this.u_allm);
 	}
 };
 //外围数据列表 /Home/MatAdmin/showSpLs.html
@@ -182,6 +211,22 @@ $.showspls.box = {
 	},
 	bindEvent:function(){
 		var _T = this, warning = $('#alert-warning');				
+		//清空外围数据
+		$('#clearsp').click(function(){
+			var url = $(this).attr('data-url');
+			if($.confirm("确定清空外围数据？该功能将删除外围数据，请谨慎操作！")){
+				warning.find('.content').html('<strong>提示！</strong>正在清空数据...').parent().show();
+				$.post(url,function(data, textStatus){
+					var res = $.parseJSON(data);
+					if(res.code < 0){
+						warning.find('.content').html('<strong>警告！</strong>'+res.msg).parent().show();
+					}else{
+						warning.hide();	
+						location.reload();
+					}
+				});
+			}
+		});
 		//更新外围数据sp
 		$('#getsp').click(function(){
 			var url = $(this).attr('data-url');
@@ -198,7 +243,8 @@ $.showspls.box = {
 		});
 	}
 };
-//首页设置赔率和返还率
+
+//首页设置赔率和返还率 /Home/Index/index.html
 $.namespace('index.ui.box');
 $.index.ui.box = {
 	index:function(){
@@ -229,12 +275,7 @@ $.index.ui.box = {
 			$.cookie('betmoney', betmoney);
 			$.cookie('rebate', rebate);
 			_T.dosub();
-		});
-		//监听鼠标滚动
-		$(window).scroll(function(){
-			var scrollTop = $(window).scrollTop();
-			$.match.box.scrollTop(scrollTop);
-		});
+		});		
 	},
 	defaultVal:function(){
 		//设置默认返还率，投注，回报
@@ -251,7 +292,8 @@ $.index.ui.box = {
 		form.submit();	
 	}
 };
-//比赛列表
+
+//计算比赛列表  /Home/Index/matching.html
 $.namespace('match.box');
 $.match.box = {
 	index: function(){
@@ -264,6 +306,11 @@ $.match.box = {
 	},
 	bindEvent: function(){
 		var _T = this;
+		//监听鼠标滚动
+		$(window).scroll(function(){
+			var scrollTop = $(window).scrollTop();
+			$.match.box.scrollTop(scrollTop);
+		});
 		//显示详情
 		$('#matching').find('td.tobox').on('click',function(){
 			var s1, s2, s3, s4, vs, rate, prize, profit, in1, in2, rebate = _T.rebate, betmoney = _T.betmoney;
@@ -378,7 +425,7 @@ $.match.box = {
 	//显示保存方案
 	showProList: function(){
 		var _T = this, html = [], tableProList = $('#tableProList'),
-			str = '<tr class="danger"><td colspan="5">{$vs}</td><td><a href="javascript:;" class="del" data-mid="{$mid}">删除</a>&nbsp;&nbsp;<a href="javascript:;" class="mod" data-mid="{$mid}">修改</a></td></tr>'+
+			str = '<tr class="danger"><td colspan="5" class="left">{$vs}</td><td><a href="javascript:;" class="del" data-mid="{$mid}">删除</a>&nbsp;&nbsp;<a href="javascript:;" class="mod" data-mid="{$mid}">修改</a></td></tr>'+
 				'<tr><th colspan="2">水位1</th><th>下注</th><th>预计</th><th>返利</th><th class="red">1下注金额</th></tr>'+
 				'<tr><td>{$s1}</td><td>{$s2}</td><td>{$betmoney}</td><td>{$prize}</td><td>{$rebate}</td><td>{$in1}</td></tr>'+
 				'<tr><th>水位2</th><th>水位3</th><th><font color="red">X</font>&nbsp;&nbsp;<font color="red">X</font></th><th>V&nbsp;&nbsp;V</th><th>V&nbsp;&nbsp;<font color="red">X</font></th><th class="red">2下注金额</th></tr>'+
@@ -434,22 +481,6 @@ $.pub = {
 		} 
 		return true; 
 	},
-	//html显示
-	tpl: function(s, o, def){
-		def = def === undefined ? '' : def;
-		return s.replace(/\{\$([^$\}]+?)\}/g, function(all, ns){
-			ns = ns.trim().split('.');
-			var prop = o;
-			try{
-				while(ns.length){
-					prop = prop[ns.shift()];
-				}
-			}catch(e){
-				prop = def;
-			}
-			return prop === undefined ? def : prop;
-		});
-	},
 	//从对象数组中删除属性为objPropery，值为objValue元素的对象
 	//arrPerson数组对象,objPropery对象的属性,objValue对象的值
 	removeObj: function(arrPerson,objPropery,objValue){
@@ -460,9 +491,6 @@ $.pub = {
 			}
 		});
 		return arr;
-		// $.grep(arrPerson, function(cur,i){
-			// cur[objPropery] != objValue;
-		// });
 	},
 	//从对象数组中获取属性为objPropery，值为objValue元素的对象
 	//arrPerson数组对象,objPropery对象的属性,objValue对象的值
@@ -474,8 +502,5 @@ $.pub = {
 			}
 		});
 		return arr;
-		// return $.grep(arrPerson, function(cur,i){
-			// return cur[objPropery] == objValue;
-		// });
 	}
 };

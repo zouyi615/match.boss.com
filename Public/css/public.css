@@ -26,17 +26,20 @@ body{position: relative;}
 .header a,.header a:hover{text-decoration:none;}
 .header blockquote{padding: 2px 10px 10px 10px;}
 /* 比赛列表样式 */
+.match-list{position:relative;}
 .match-list th,.match-list td{text-align:center;vertical-align:middle; *vertical-align:middle;}
 .match-list td.tobox{vertical-align:middle; color:red; cursor:pointer;}
 .match-list td.tobox a{color:red;}
 .match-list .table > tbody > tr > td{vertical-align:middle; *vertical-align:middle;}
+.setbox{position:fixed;bottom: 0px;right:0px;}
 /* 比赛详细赛事 */
 .mod-inmoney{font-size:12px;position: relative;display: block !important;}
 .mod-inmoney a{color:blue; text-decoration:underline;}
 .mod-inmoney .input-sm{height: 26px;padding: 5px 2px;}
 .mod-inmoney th{text-align: center;}
 .mod-inmoney .tableDetail{position: relative;top: 0px; background:#9C4242; color:#fff}
-.mod-inmoney .tableProList{text-align: center;}
+.mod-inmoney .tableProList td{text-align: center;}
+.mod-inmoney .tableProList .left{text-align: left;}
 /* 主客队匹配管理 */
 td.homesp,td.awaysp,td.offset{-moz-user-select: none;-webkit-user-select: none;-webkit-user-select: none; cursor:pointer;}
 

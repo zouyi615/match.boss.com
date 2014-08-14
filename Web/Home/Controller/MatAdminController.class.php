@@ -7,7 +7,7 @@ class MatAdminController extends Controller {
     public function index(){
         header("Content-type:text/html;charset=UTF-8"); 
 		$m = M('match');
-		$rsMat = $m->join('peilv ON match.id = peilv.id')->join('LEFT JOIN match_sp ON match_sp.sid = peilv.sid')->select();
+		$rsMat = $m->join('peilv ON match.id = peilv.id')->join('LEFT JOIN match_sp ON match_sp.sid = peilv.sid')->order('peilv.ismatch desc,match.matchtime')->select();
         $this->assign('rsMat',$rsMat);
         $this->display();
     }
@@ -15,7 +15,7 @@ class MatAdminController extends Controller {
 	public function showSpLs(){
 		header("Content-type:text/html;charset=UTF-8"); 
 		$ms = M('match_sp');
-		$spLs = $ms->order('matchtime')->select();
+		$spLs = $ms->order('matchtimesp')->select();
         $this->assign('spLs',$spLs);
         $this->display();
 	}

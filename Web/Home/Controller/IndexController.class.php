@@ -170,26 +170,36 @@ class IndexController extends Controller {
 			)
 		)
 	);
+	//首页加载匹配对阵
     public function index(){
-        header("Content-type:text/html;charset=UTF-8");   
-        import('Libs.Trade.Jcpublic');
-        //$jc = new \Jcpublic();
-        //$match = $jc->getMatchData();			
-		//var_dump($match);exit;
-        $this->assign('match',$this->match);
+        header("Content-type:text/html;charset=UTF-8");  	
+		$match = $this->queryMatch();
+		$match = $this->array2_sort($match,'rnrate',SORT_DESC,SORT_STRING); //二维数组排序
+        $this->assign('match',$match);
         $this->display('index');
-		//test
-		// $arr = array();
-		// for($i=0;$i<300;$i++){
-			// $arr[] = $i;
-		// }		
-		// $jc = new \Jcpublic();
-		// $t1 = $jc->mic_time();
-		// $r = $jc->getCombine($arr);
-		// $t2 = $jc->mic_time();		
-		// var_dump($r,$t2,$t1,$t2-$t1,floatval($t2)-floatval($t1));
-    }
-
+    }	
+	//查询数据库获取匹配match
+	public function queryMatch(){
+		header("Content-type:text/html;charset=UTF-8");   
+		$p = M('peilv');
+		$match = array();
+		$rs = $p->field('peilv.id,peilv.win,peilv.sp,match.matchnum,match.league,match.homename,match.awayname,match.matchtime,match.rangqiu,match.isshow')->join('`match` ON peilv.id = match.id')->where('peilv.ismatch=1')->select();
+		if($rs){
+			foreach($rs as $key=>$val){
+				$k = $val['id'];
+				$match[$k] = $val;
+				$match[$k]['rnrate'] = sprintf("%.6f",1/(1/$val['win']+1/$val['sp']));
+			}			
+		}
+		return $match;
+	}
+	//ajax加载匹配对阵
+	public function getAjaxMatch(){
+		$match = $this->queryMatch();
+		$match = $this->array2_sort($match,'rnrate',SORT_DESC,SORT_STRING); //二维数组排序
+		echo json_encode($match);
+	}
+	//计算匹配
     public function matching(){
 		header("Content-type:text/html;charset=UTF-8");
 		import('Libs.Trade.Jcpublic');
@@ -198,9 +208,8 @@ class IndexController extends Controller {
 		$betmoney = I('param.betmoney','10000','htmlspecialchars'); //用户下注金额
 		$rebate = I('param.rebate','5000','htmlspecialchars'); //用户返还金额
 		$match = $comMatchArr = array(); 
-		//$match = $this->array_sort($this->match['match'],'date|data/matchtime',SORT_ASC,SORT_STRING);
-		//$match = $this->array2_sort($this->match['match']['20140717']['data'],'matchtime',SORT_ASC,SORT_STRING);
-		$match = $this->match['match']['20140717']['data'];
+		//$match = $this->match['match']['20140717']['data']; //test
+		$match = $this->queryMatch();
 		$midArr = array();
 		foreach($match as $key=>$val){
 			$midArr[] = $val['id'];

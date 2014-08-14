@@ -22,7 +22,7 @@
 	<body>	
 	<!-- 头部 -->
 	<div class="header">
-		<div class="alert alert-warning alert-dismissible fade in" role="alert" id="alert-warning" style="display:none;">
+		<div class="alert alert-warning alert-dismissible fade in" role="alert" id="alert-warning">
 			<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
 			<div class="content">&nbsp;</div>
 		</div>
@@ -33,8 +33,12 @@
 			</h4>
 			<p>
 				<a href="javascript:;" id="getallxml" data-url="<?php echo U('Match/getXml');?>"><span class="label label-danger">重新载入竞彩xml&nbsp;<span class="glyphicon glyphicon-download"></span></span></a>
-				<a href="javascript:;" id="getallsp1" data-url="<?php echo U('Match/getSp1');?>"><span class="label label-danger">更新外围数据1&nbsp;</span></a>
-				<a href="<?php echo U('MatAdmin/showSpLs');?>" target="_blank"><span class="label label-info">查看外围数据1<span class="glyphicon glyphicon-tag"></span></span></a>
+				<a href="javascript:;" id="getallsp1" data-url="<?php echo U('Match/getSp1');?>"><span class="label label-info">更新外围数据1&nbsp;<span class="glyphicon glyphicon-refresh"></span></span></a>
+				<a href="<?php echo U('MatAdmin/showSpLs');?>" target="_blank"><span class="label label-info">查看外围数据1<span class="glyphicon glyphicon-tag"></span></span></a>				
+			</p>
+			<p>
+				<a href="javascript:;" id="autoup"><span class="label label-default">更新&nbsp;<span class="glyphicon glyphicon-play"></span></span></a>
+				<a href="javascript:;" id="stopup"><span class="label label-default">停止&nbsp;<span class="glyphicon glyphicon-stop"></span></span></a>
 			</p>
 			<p class="fontkt"><small>双击行可以修改主客队匹配值</small></p>
 		</blockquote>		
@@ -81,7 +85,7 @@
 					<?php if($rsMat && is_array($rsMat)){ foreach($rsMat as $k=>$m){ ?>
 						<tr class="data" id="<?php echo $m['id']; ?>" ismod="0">
 							<td><?php echo $m['id']; ?></td>
-							<td><?php echo $m['matchnum'].'<br>'.date('Y/m/d H:i:s',$m['matchtime']); ?></td>
+							<td><?php echo $m['matchnum'].'<br>'.$m['matchtime']; ?></td>
 							<td><?php echo $m['league']; ?></td>
 							<td><?php echo $m['homename'].'<br>（'.$m['awayname'].'）'; ?></td>
 							<td><?php echo $m['rangqiu']; ?></td>
