@@ -48,6 +48,13 @@
 							</span>
 						</th>
 					</tr>
+					<tr>
+						<td colspan="10">
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 51%"><span class="sr-only">45% Complete</span></div>
+						</div>
+						</td>
+					</tr>
 				</thead>
 				<colgroup>
 					<col width="5%">
@@ -61,9 +68,9 @@
 					<col width="10%">
 					<col width="">
 				</colgroup>
-				<tbody id="mlist_show">
+				<tbody id="mlist_show">					
 					<?php $k = 0; if(isset($comMatchArr) && is_array($comMatchArr)){ foreach($comMatchArr as $key=>$val){ $sp1 = $sp_r1 = $nt1 = $sp2 = $sp_r2 = $nt2 = ''; if($val['t1'] == 'bet365'){ $sp1 = $val['m1']['b']; $sp_r1 = $val['m1']['bet_r']; $nt1 = '(bet365)'; }elseif($val['t1'] == 'hg'){ $sp1 = $val['m1']['h']; $sp_r1 = $val['m1']['hg_r']; $nt1 = '(皇冠)'; } if($val['t2'] == 'bet365'){ $sp2 = $val['m2']['b']; $sp_r2 = $val['m2']['bet_r']; $nt2 = '(bet365)'; }elseif($val['t2'] == 'hg'){ $sp2 = $val['m2']['h']; $sp_r2 = $val['m2']['hg_r']; $nt2 = '(皇冠)'; } ?>
-						<tr class="data" id="m<?php echo $key; ?>" mid="m<?php echo $key+1; ?>" data="<?php echo '{s1:'.$val['m1']['w'].',s2:'.$val['m2']['w'].',s3:'.$sp1.',s4:'.$sp2.'}'; ?>" vs="<?php echo '['.$val['m1']['homename'].'vs'.$val['m1']['awayname'].']/['.$val['m2']['homename'].'vs'.$val['m2']['awayname'].']'; ?>" rate="<?php echo $val['rnrate']; ?>">
+						<tr class="data" id="m<?php echo $key+1; ?>" mid="m<?php echo $key+1; ?>" data="<?php echo '{s1:'.$val['m1']['w'].',s2:'.$val['m2']['w'].',s3:'.$val['op1'].',s4:'.$val['op2'].'}'; ?>" vs="<?php echo '['.$val['m1']['homename'].'vs'.$val['m1']['awayname'].']/['.$val['m2']['homename'].'vs'.$val['m2']['awayname'].']'; ?>" rate="<?php echo $val['rnrate']; ?>">
 							<td rowspan="2" class="tobox"><a href="javascript:;"><?php echo $key+1; ?></a></td>
 							<td><?php echo $val['m1']['id']; ?></td>
 							<td><?php echo $val['m1']['matchtime']; ?></td>
@@ -71,8 +78,8 @@
 							<td><?php echo $val['m1']['homename']; ?></td>
 							<td><?php echo $val['m1']['awayname']; ?></td>
 							<td><?php echo $val['m1']['w']; ?></td>
-							<td><?php echo $sp1.$nt1; ?></td>
-							<td><?php echo $sp_r1; ?></td>
+							<td><?php echo $val['op1'].'('.$val['t1'].')'; ?></td>
+							<td><?php echo $val['op_r1']; ?></td>
 							<td rowspan="2" class="tobox"><?php echo $val['rnrate']; ?>&nbsp;<a href="javascript:;">详情</a></td>					
 						</tr>
 						<tr class="data" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
@@ -82,8 +89,8 @@
 							<td><?php echo $val['m2']['homename']; ?></td>
 							<td><?php echo $val['m2']['awayname']; ?></td>
 							<td><?php echo $val['m2']['w']; ?></td>
-							<td><?php echo $sp2.$nt2; ?></td>
-							<td><?php echo $sp_r2; ?></td>
+							<td><?php echo $val['op2'].'('.$val['t2'].')'; ?></td>
+							<td><?php echo $val['op_r2']; ?></td>
 						</tr>
 					<?php } } ?>												
 				</tbody>

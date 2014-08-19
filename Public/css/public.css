@@ -33,6 +33,7 @@ body{position: relative;}
 .match-list .table > tbody > tr > td{vertical-align:middle; *vertical-align:middle;}
 .setbox{position:fixed;bottom: 0px;right:0px;}
 .match-list .relup{vertical-align:middle; cursor:pointer;}
+.match-list .progress{margin: 0px; height:6px;}
 /* 比赛详细赛事 */
 .mod-inmoney{font-size:12px;position: relative;display: block !important;}
 .mod-inmoney a{color:blue; text-decoration:underline;}

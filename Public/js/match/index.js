@@ -96,7 +96,7 @@ $.admin.box = {
 				warning.html('<strong>提示！</strong>正在载入数据...');
 				$.post(url,function(data, textStatus){
 					var res = $.parseJSON(data);
-					if(res.code < 0){
+					if(res){
 						warning.html('<strong>警告！</strong>'+res.msg);
 					}else{
 						warning.html('&nbsp;');	
@@ -284,10 +284,12 @@ $.index.ui.box = {
 $.namespace('match.box');
 $.match.box = {
 	index: function(){
+		this.list = '';
+		this.mlist = {};		
+		this.prolist = {};
 		this.betmoney = parseFloat($('#matching').attr('data-betmoney'));
 		this.rebate = parseFloat($('#matching').attr('data-rebate'));
-		this.mlist = {};
-		this.prolist = {};
+		
 		this.bindEvent();
 		this.readCookie();
 	},
@@ -300,18 +302,7 @@ $.match.box = {
 		});
 		//ajax刷新
 		$('#relup').click(function(){
-			var url = $(this).attr('data-url'), rnrate = $('#matching').attr('data-irate'), para;
-			para = {rnrate:rnrate};
-			$.post(url, para, function(data, textStatus){
-				var res = $.parseJSON(data);
-				console.log(data,res); return false;
-				if(res.code < 0){
-					warning.html('<strong>警告！</strong>'+res.msg);
-				}else{
-					warning.html('&nbsp;');	
-					$(T).attr('data-offset',offset).html(offstr);		
-				}
-			});
+			_T.getAjaxList();
 		});
 		//显示详情
 		$('#matching').find('td.tobox').on('click',function(){
@@ -362,6 +353,53 @@ $.match.box = {
 			_T.mlist = ml[mid];
 			_T.showDetail();
 		});
+	},
+	//ajax获取list
+	getAjaxList: function(){
+		var url = $('#relup').attr('data-url'), rnrate = $('#matching').attr('data-irate'), para;
+		$.post(url, {rnrate:rnrate}, function(data, textStatus){
+			var list = $.parseJSON(data);
+			if(list){
+				//刷新成功
+				_T.list = list;
+				_T.createList();					
+			}else{
+				
+			}
+		});
+	},
+	//ajax刷新比赛列表
+	createList: function(){
+		var list = this.list, html = [], listTable = $('#mlist_show'), 
+			strhtml = '<tr class="data" id="m{$key}" mid="m{$key}" data="{$data}" vs="{$vs}" rate="{$rnrate}">'+
+						'<td rowspan="2" class="tobox"><a href="javascript:;">{$key+1}</a></td><td>{$m1_id}</td><td>{$m1_matchtime}</td><td>{$m1_simpleleague}</td><td>{$m1_homename}</td><td>{$m1_awayname}</td><td>{$m1_w}</td><td>{$m1_op}</td><td>{$m1_op_r}</td><td rowspan="2" class="tobox">{$rnrate}&nbsp;<a href="javascript:;">详情</a></td></tr>'+
+					  '<tr class="data">'+
+						'<td>{$m2_id}</td><td>{$m2_matchtime}</td><td>{$m2_simpleleague}</td><td>{$m2_homename}</td><td>{$m2_awayname}</td><td>{$m2_w}</td><td>{$m2_op}</td><td>{$m2_op_r}</td></tr>';
+		$.each(list,function(i,e){
+			html.push($.tpl(strhtml,{
+				key: i+1,
+				data: '{s1:'+e.m1.w+',s2:'+e.m2.w+',s3:'+e.op1+',s4:'+e.op1+'}',
+				vs: '['+e.m1.homename+'vs'+e.m1.awayname+']/['+e.m2.homename+'vs'+e.m2.awayname+']',
+				rnrate: e.rnrate,
+				m1_id: e.m1.id,
+				m1_matchtime: e.m1.matchtime,
+				m1_simpleleague: e.m1.simpleleague,
+				m1_homename: e.m1.homename,
+				m1_awayname: e.m1.awayname,
+				m1_w: e.m1.w,
+				m1_op: e.op1+'('+e.t1+')',
+				m1_op_r: e.op_r1,
+				m2_id: e.m2.id,
+				m2_matchtime: e.m2.matchtime,
+				m2_simpleleague: e.m2.simpleleague,
+				m2_homename: e.m2.homename,
+				m2_awayname: e.m2.awayname,
+				m2_w: e.m2.w,
+				m2_op: e.op2+'('+e.t2+')',
+				m2_op_r: e.op_r2				
+			}));			
+		});
+		listTable.html(html.join(''));
 	},
 	//重新计算
 	reCountDetail: function(){

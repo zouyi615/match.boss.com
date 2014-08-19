@@ -171,9 +171,10 @@ class IndexController extends Controller {
 		)
 	);
 	public function test(){
-		$t1 = '2014-08-16 00:00:00';
-		$t2 = '2014-08-16 08:00:00';
-		var_dump(time(),strtotime("+30 minutes"),strtotime("+30 minutes")-time());
+		// $t1 = '2014-08-16 00:00:00';
+		// $t2 = '2014-08-16 08:00:00';
+		// var_dump(time(),strtotime("+30 minutes"),strtotime("+30 minutes")-time());
+		$this->display();
 	}
 	//首页加载匹配对阵
     public function index(){
@@ -231,7 +232,7 @@ class IndexController extends Controller {
 		foreach($match as $key=>$val){
 			$midArr[] = $val['id'];
 		}
-		$rscom = $jc->getCombine($midArr,2);  
+		$rscom = $jc->getCombine($midArr,2);
 		$i = 0;
 		foreach($rscom as $key=>$val){
 			$v = explode(',',$val);
@@ -241,50 +242,28 @@ class IndexController extends Controller {
 			if($timediff > 8*60*60){
 				continue;
 			}
-			//bet365 / bet365
-			if($match[$m1]['bet_r']&&$match[$m2]['bet_r']){
-				$rnrate = strval(sprintf("%.6f",$match[$m1]['bet_r']+$match[$m2]['bet_r'])); //bet365返还率			
-				if($rnrate < $irate) continue; //计算返还率<设置赔率值
-				$comMatchArr[$i]['rnrate'] = $rnrate; //返还率
-				$comMatchArr[$i]['t1'] = 'bet365';
-				$comMatchArr[$i]['t2'] = 'bet365';
-				$comMatchArr[$i]['m1'] = $match[$m1];
-				$comMatchArr[$i]['m2'] = $match[$m2];
-				$i++;
-			}
-			//bet365 / hg
-			if($match[$m1]['bet_r']&&$match[$m2]['hg_r']){
-				$rnrate = strval(sprintf("%.6f",$match[$m1]['bet_r']+$match[$m2]['hg_r'])); //bet365返还率			
-				if($rnrate < $irate) continue; //计算返还率<设置赔率值
-				$comMatchArr[$i]['rnrate'] = $rnrate; //返还率
-				$comMatchArr[$i]['t1'] = 'bet365';
-				$comMatchArr[$i]['t2'] = 'hg';
-				$comMatchArr[$i]['m1'] = $match[$m1];
-				$comMatchArr[$i]['m2'] = $match[$m2];
-				$i++;
-			}
-			//hg / bet365
-			if($match[$m1]['bet_r']&&$match[$m2]['hg_r']){
-				$rnrate = strval(sprintf("%.6f",$match[$m1]['hg_r']+$match[$m2]['bet_r'])); //bet365返还率			
-				if($rnrate < $irate) continue; //计算返还率<设置赔率值
-				$comMatchArr[$i]['rnrate'] = $rnrate; //返还率
-				$comMatchArr[$i]['t1'] = 'hg';
-				$comMatchArr[$i]['t2'] = 'bet365';
-				$comMatchArr[$i]['m1'] = $match[$m1];
-				$comMatchArr[$i]['m2'] = $match[$m2];
-				$i++;
-			}
-			//hg / hg
-			if($match[$m1]['hg_r']&&$match[$m2]['hg_r']){
-				$rnrate = strval(sprintf("%.6f",$match[$m1]['hg_r']+$match[$m2]['hg_r'])); //bet365返还率			
-				if($rnrate < $irate) continue; //计算返还率<设置赔率值
-				$comMatchArr[$i]['rnrate'] = $rnrate; //返还率
-				$comMatchArr[$i]['t1'] = 'hg';
-				$comMatchArr[$i]['t2'] = 'hg';
-				$comMatchArr[$i]['m1'] = $match[$m1];
-				$comMatchArr[$i]['m2'] = $match[$m2];
-				$i++;
-			}	
+			$arr = array('bet365','hg');
+			$name_arr = array('bet365'=>'bet365','hg'=>'皇冠');
+			$op_arr = array('bet365'=>'b','hg'=>'h'); //赔率字段
+			$op_r_arr = array('bet365'=>'bet_r','hg'=>'hg_r'); //返还率字段
+			foreach($arr as $v1){
+				foreach($arr as $v2){
+					if($match[$m1][$op_r_arr[$v1]]&&$match[$m2][$op_r_arr[$v2]]){
+						$rnrate = strval(sprintf("%.6f",$match[$m1][$op_r_arr[$v1]]+$match[$m2][$op_r_arr[$v2]])); //bet365返还率
+						if($rnrate < $irate) continue; //计算返还率<设置赔率值
+						$comMatchArr[$i]['rnrate'] = $rnrate; //返还率
+						$comMatchArr[$i]['t1'] = $name_arr[$v1];
+						$comMatchArr[$i]['t2'] = $name_arr[$v2];
+						$comMatchArr[$i]['op1'] = $match[$m1][$op_arr[$v1]];
+						$comMatchArr[$i]['op2'] = $match[$m2][$op_arr[$v2]];
+						$comMatchArr[$i]['op_r1'] = $match[$m1][$op_r_arr[$v1]];
+						$comMatchArr[$i]['op_r2'] = $match[$m2][$op_r_arr[$v2]];
+						$comMatchArr[$i]['m1'] = $match[$m1];
+						$comMatchArr[$i]['m2'] = $match[$m2];						
+						$i++;
+					}
+				}
+			}			
 		}
 		$comMatchArr = $this->array2_sort($comMatchArr,'rnrate',SORT_DESC,SORT_STRING);
 		return $comMatchArr;
