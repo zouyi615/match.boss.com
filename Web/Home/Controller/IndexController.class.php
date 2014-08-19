@@ -196,11 +196,12 @@ class IndexController extends Controller {
 				$bet_r = $hg_r = 0;
 				$id = $val['id'];
 				$rq = $val['rq'];
-				if($rq == "1"){
+				if($rq == "-1"){
 					$w = isset($val['f'])?$val['f']:'';
-				}elseif($rq == "-1"){
+				}elseif($rq == "1"){
 					$w = isset($val['s'])?$val['s']:'';
 				}
+				if(!$w) continue;
 				$b = $this->getMin($val['bet365']);  //bet365赔率最小值	
 				if($b){				
 					$bet_r = sprintf("%.6f",1/(1/$w+1/$b)); //计算bet365匹配回报率
@@ -208,14 +209,15 @@ class IndexController extends Controller {
 				$h = $this->getMin($val['hg']); //皇冠欧赔赔率最小值
 				if($h){				
 					$hg_r = sprintf("%.6f",1/(1/$w+1/$h)); //计算皇冠欧赔回报率
-				}				
+				}
+				if(!$b && !$h) continue;
 				$match[$id] = $val;
 				$match[$id]['w'] = $w; //竞彩受让方赔率
 				$match[$id]['b'] = $b; //bet365赔率最小值
 				$match[$id]['h'] = $h; //皇冠欧赔赔率最小值
 				$match[$id]['bet_r'] = $bet_r;
 				$match[$id]['hg_r'] = $hg_r;
-				$match[$id]['rate'] = sprintf("%.6f",($bet_r+$hg_r)/2);
+				$match[$id]['rate'] = sprintf("%.6f",($bet_r+$hg_r)/2);				
 			}			
 		}
 		return $match;
@@ -225,7 +227,8 @@ class IndexController extends Controller {
 		header("Content-type:text/html;charset=UTF-8");
 		import('Libs.Trade.Jcpublic');
 		$jc = new \Jcpublic();
-		$irate = I('param.rnrate','','htmlspecialchars'); //用户设置赔率		
+		$irate = I('param.rnrate','','htmlspecialchars'); //用户设置赔率
+		$topnum = I('param.topnum','0','htmlspecialchars'); //获取最大显示数目		
 		$match = $comMatchArr = array(); 
 		$match = $this->queryMatch(); 
 		$midArr = array();
@@ -249,6 +252,9 @@ class IndexController extends Controller {
 			foreach($arr as $v1){
 				foreach($arr as $v2){
 					if($match[$m1][$op_r_arr[$v1]]&&$match[$m2][$op_r_arr[$v2]]){
+						if($topnum && $i >= $topnum){
+							break;
+						}
 						$rnrate = strval(sprintf("%.6f",$match[$m1][$op_r_arr[$v1]]+$match[$m2][$op_r_arr[$v2]])); //bet365返还率
 						if($rnrate < $irate) continue; //计算返还率<设置赔率值
 						$comMatchArr[$i]['rnrate'] = $rnrate; //返还率
@@ -259,8 +265,8 @@ class IndexController extends Controller {
 						$comMatchArr[$i]['op_r1'] = $match[$m1][$op_r_arr[$v1]];
 						$comMatchArr[$i]['op_r2'] = $match[$m2][$op_r_arr[$v2]];
 						$comMatchArr[$i]['m1'] = $match[$m1];
-						$comMatchArr[$i]['m2'] = $match[$m2];						
-						$i++;
+						$comMatchArr[$i]['m2'] = $match[$m2];
+						$i++;						
 					}
 				}
 			}			

@@ -14,8 +14,9 @@
 		<script type="text/javascript" src="/Public/js/jquery.cookie.js"></script>		
 		<script type="text/javascript" src="/Public/js/match/index.js"></script>
 		<script type="text/javascript">
-			$(document).ready(function(){				
-				$.match.box.index();
+			$(document).ready(function(){
+				$.bar.init(); //进度条
+				$.match.box.index(); //match处理
 			});		
 		</script>
 	</head>
@@ -50,8 +51,8 @@
 					</tr>
 					<tr>
 						<td colspan="10">
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 51%"><span class="sr-only">45% Complete</span></div>
+						<div class="progress" id="progress">
+							<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
 						</div>
 						</td>
 					</tr>
@@ -64,9 +65,9 @@
 					<col width="14%">
 					<col width="14%">
 					<col width="6%">
+					<col width="11%">
 					<col width="10%">
-					<col width="10%">
-					<col width="">
+					<col width="12%">
 				</colgroup>
 				<tbody id="mlist_show">					
 					<?php $k = 0; if(isset($comMatchArr) && is_array($comMatchArr)){ foreach($comMatchArr as $key=>$val){ $sp1 = $sp_r1 = $nt1 = $sp2 = $sp_r2 = $nt2 = ''; if($val['t1'] == 'bet365'){ $sp1 = $val['m1']['b']; $sp_r1 = $val['m1']['bet_r']; $nt1 = '(bet365)'; }elseif($val['t1'] == 'hg'){ $sp1 = $val['m1']['h']; $sp_r1 = $val['m1']['hg_r']; $nt1 = '(皇冠)'; } if($val['t2'] == 'bet365'){ $sp2 = $val['m2']['b']; $sp_r2 = $val['m2']['bet_r']; $nt2 = '(bet365)'; }elseif($val['t2'] == 'hg'){ $sp2 = $val['m2']['h']; $sp_r2 = $val['m2']['hg_r']; $nt2 = '(皇冠)'; } ?>

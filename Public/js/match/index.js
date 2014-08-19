@@ -79,7 +79,41 @@ $.dlg = {
 				in2: e.in2
 			}));
 };*/
-
+//进度条
+$.namespace('bar');
+$.bar = {
+	init: function(){
+		this.bar = $('#progress');
+		this.val = 0;
+	},
+	process: function(t){
+		var _T = this;
+		t = t === undefined ? 1000 : t;
+		this.val += 10; console.log(this.val);
+		if(this.val >= 99){
+			this.val = 99;
+			clearTimeout(this.ct);
+		}
+		this.bar.find('div.progress-bar').css({"width":this.val+"%"}).attr('aria-valuenow',this.val);		
+		this.ct = setTimeout(function(){
+			_T.process();
+		},t);	
+	},
+	stop: function(){
+		clearTimeout(this.ct);
+	},
+	end: function(){
+		var _T = this;
+		clearTimeout(this.ct);
+		this.val = 100;
+		this.bar.find('div.progress-bar').css({"width":this.val+"%"}).attr('aria-valuenow',this.val);
+		setTimeout(function(){
+			_T.val = 0;
+			_T.bar.find('div.progress-bar').css({"width":_T.val+"%"}).attr('aria-valuenow',_T.val);
+		},2000);
+		
+	}
+};
 //后台设置匹配场次 /Home/Admin/index.html
 $.namespace('admin.box');
 $.admin.box = {
@@ -251,14 +285,10 @@ $.index.ui.box = {
 				}
 			});		
 		});
-		//cookie设置返还率
-		$('#setrn').click(function(){
-			var rnrate = $('#rnrate').val();
-			$.cookie('rnrate', rnrate, $.C('expires'));			
-		});
-		//设置下注和返利
+		//设置返还率、下注、返利、显示记录条数
 		$('#dosub').click(function(){
-			var betmoney = $('#betmoney').val(), rebate = $('#rebate').val();
+			var rnrate = $('#rnrate').val(), betmoney = $('#betmoney').val(), rebate = $('#rebate').val();
+			$.cookie('rnrate', rnrate, $.C('expires'));
 			$.cookie('betmoney', betmoney);
 			$.cookie('rebate', rebate);
 			_T.dosub();
@@ -356,15 +386,17 @@ $.match.box = {
 	},
 	//ajax获取list
 	getAjaxList: function(){
-		var url = $('#relup').attr('data-url'), rnrate = $('#matching').attr('data-irate'), para;
+		var _T = this, url = $('#relup').attr('data-url'), rnrate = $('#matching').attr('data-irate'), para;
+		$.bar.process();
 		$.post(url, {rnrate:rnrate}, function(data, textStatus){
 			var list = $.parseJSON(data);
-			if(list){
-				//刷新成功
+			if(textStatus == "success"){
+				//刷新成功			
 				_T.list = list;
-				_T.createList();					
+				_T.createList();
+				$.bar.end();				
 			}else{
-				
+				$.bar.stop();
 			}
 		});
 	},
@@ -372,7 +404,7 @@ $.match.box = {
 	createList: function(){
 		var list = this.list, html = [], listTable = $('#mlist_show'), 
 			strhtml = '<tr class="data" id="m{$key}" mid="m{$key}" data="{$data}" vs="{$vs}" rate="{$rnrate}">'+
-						'<td rowspan="2" class="tobox"><a href="javascript:;">{$key+1}</a></td><td>{$m1_id}</td><td>{$m1_matchtime}</td><td>{$m1_simpleleague}</td><td>{$m1_homename}</td><td>{$m1_awayname}</td><td>{$m1_w}</td><td>{$m1_op}</td><td>{$m1_op_r}</td><td rowspan="2" class="tobox">{$rnrate}&nbsp;<a href="javascript:;">详情</a></td></tr>'+
+						'<td rowspan="2" class="tobox"><a href="javascript:;">{$key}</a></td><td>{$m1_id}</td><td>{$m1_matchtime}</td><td>{$m1_simpleleague}</td><td>{$m1_homename}</td><td>{$m1_awayname}</td><td>{$m1_w}</td><td>{$m1_op}</td><td>{$m1_op_r}</td><td rowspan="2" class="tobox">{$rnrate}&nbsp;<a href="javascript:;">详情</a></td></tr>'+
 					  '<tr class="data">'+
 						'<td>{$m2_id}</td><td>{$m2_matchtime}</td><td>{$m2_simpleleague}</td><td>{$m2_homename}</td><td>{$m2_awayname}</td><td>{$m2_w}</td><td>{$m2_op}</td><td>{$m2_op_r}</td></tr>';
 		$.each(list,function(i,e){
@@ -464,7 +496,7 @@ $.match.box = {
 	//显示保存方案
 	showProList: function(){
 		var _T = this, html = [], tableProList = $('#tableProList'),
-			str = '<tr class="danger"><td colspan="5" class="left">{$vs}</td><td><a href="javascript:;" class="del" data-mid="{$mid}">删除</a>&nbsp;&nbsp;<a href="javascript:;" class="mod" data-mid="{$mid}">修改</a></td></tr>'+
+			str = '<tr class="danger"><td colspan="5" class="left">{$vs}</td><td width="18%"><a href="javascript:;" class="del" data-mid="{$mid}">删除</a>&nbsp;&nbsp;<a href="javascript:;" class="mod" data-mid="{$mid}">修改</a></td></tr>'+
 				'<tr><th colspan="2">水位1</th><th>下注</th><th>预计</th><th>返利</th><th class="red">1下注金额</th></tr>'+
 				'<tr><td>{$s1}</td><td>{$s2}</td><td>{$betmoney}</td><td>{$prize}</td><td>{$rebate}</td><td>{$in1}</td></tr>'+
 				'<tr><th>水位2</th><th>水位3</th><th><font color="red">X</font>&nbsp;&nbsp;<font color="red">X</font></th><th>V&nbsp;&nbsp;V</th><th>V&nbsp;&nbsp;<font color="red">X</font></th><th class="red">2下注金额</th></tr>'+
