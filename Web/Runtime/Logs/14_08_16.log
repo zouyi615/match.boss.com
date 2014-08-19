@@ -1,0 +1,16 @@
+[ 2014-08-16T01:56:04+08:00 ] 127.0.0.1 /
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : SELECT * FROM m_pl p LEFT JOIN m_match m ON p.id = m.id  WHERE ( p.ismatch=1,m.end=0 ) 
+
+[ 2014-08-16T02:06:05+08:00 ] 127.0.0.1 /Home/MatAdmin/modUp.html
+ERR: 1054:Unknown column 'isoffset' in 'field list'
+ [ SQL语句 ] : UPDATE `m_match` SET `isoffset`='0' WHERE ( `id` = 79123 )
+
+[ 2014-08-16T23:34:54+08:00 ] 127.0.0.1 /Home/MatAdmin/index.html
+ERR: 1146:Table 'match.peilv' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `m_match` INNER JOIN peilv ON match.id = peilv.id LEFT JOIN match_sp ON match_sp.sid = peilv.sid  ORDER BY peilv.ismatch desc,match.matchtime 
+ERR: 模板不存在:./Web/Home/View/Default/MatAdmin/index.html
+
+[ 2014-08-16T23:35:01+08:00 ] 127.0.0.1 /Home/Admin/index.html
+ERR: 无法加载控制器:Admin
+

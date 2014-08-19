@@ -24,7 +24,7 @@
 	<div class="header">
 		<blockquote>			
 			<h4>
-				<strong>抓取竞彩和外围数据，获取已匹配的场次信息</strong>&nbsp;&nbsp;&nbsp;&nbsp;	
+				<strong>抓取竞彩和欧赔数据，获取已匹配的场次信息</strong>&nbsp;&nbsp;&nbsp;&nbsp;	
 			</h4>
 			<p class="fontkt"><small>按返还率从高到低排序</small></p>
 		</blockquote>
@@ -40,28 +40,58 @@
 				<thead>
 					<tr class="danger">
 						<th>序号</th>
+						<th>场次</th>
 						<th>开赛时间</th>
 						<th>联赛</th>
 						<th>主队</th>
 						<th>客队</th>
-						<th>赔率</th>
-						<th>水位</th>
-						<th>返还率&nbsp;<span class="label label-default"><span class="glyphicon glyphicon-refresh"></span></span></th>
+						<th class="red">赔率</th>
+						<th class="red">水位</th>
+						<th class="red">返还率&nbsp;<span class="label label-default"><span class="glyphicon glyphicon-refresh"></span></span></th>
 					</tr>
 				</thead>
+				<colgroup>
+					<col width="6%">
+					<col width="8%">
+					<col width="14%">
+					<col width="10%">
+					<col width="14%">
+					<col width="14%">
+					<col width="10%">
+					<col width="12%">
+					<col width="12%">
+				</colgroup>
 				<tbody>
-					<?php if(isset($match) && is_array($match)){ foreach($match as $k=>$m){ ?>
-						<tr class="data" id="<?php echo $m['id']; ?>" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
-							<td><?php echo $k+1; ?></td>
-							<td><?php echo $m['matchtime']; ?></td>
-							<td><?php echo $m['league']; ?></td>
-							<td><?php echo $m['homename']; ?></td>
-							<td><?php echo $m['awayname']; ?></td>
-							<td><?php echo $m['win']; ?></td>
-							<td><?php echo $m['sp']; ?></td>
-							<td><?php echo $m['rnrate']; ?></td>
-						</tr>		
-					<?php } } ?>												
+					<?php if(isset($match) && is_array($match)){ foreach($match as $k=>$m){ if($m['b']&&$m['h']){ ?>
+							<tr class="data" id="<?php echo $m['id']; ?>" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
+								<td rowspan="2"><?php echo $k+1; ?></td>
+								<td rowspan="2"><?php echo $m['id']; ?></td>
+								<td rowspan="2"><?php echo $m['matchtime']; ?></td>
+								<td rowspan="2"><?php echo $m['simpleleague']; ?></td>
+								<td rowspan="2"><?php echo $m['homename']; ?></td>
+								<td rowspan="2"><?php echo $m['awayname']; ?></td>
+								<td><?php echo $m['w']; ?></td>
+								<td><?php echo $m['b'].'(bet365)'; ?></td>
+								<td><?php echo $m['bet_r']; ?></td>
+							</tr>
+							<tr>
+								<td><?php echo $m['w']; ?></td>
+								<td><?php echo $m['h'].'(皇冠)'; ?></td>
+								<td><?php echo $m['hg_r']; ?></td>
+							</tr>
+					<?php }else{ $sp = $sp_r = $nt = ''; if($m['b']){ $sp = $m['b']; $sp_r = $m['bet_r']; $nt = '(bet365)'; }elseif($m['h']){ $sp = $m['h']; $sp_r = $m['hg_r']; $nt = '(皇冠)'; } if($sp&&$sp_r&&$nt){ ?>		
+								<tr class="data" id="<?php echo $m['id']; ?>" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
+									<td><?php echo $k+1; ?></td>
+									<td><?php echo $m['id']; ?></td>
+									<td><?php echo $m['matchtime']; ?></td>
+									<td><?php echo $m['league']; ?></td>
+									<td><?php echo $m['homename']; ?></td>
+									<td><?php echo $m['awayname']; ?></td>
+									<td><?php echo $m['w']; ?></td>
+									<td><?php echo $sp.$nt; ?></td>
+									<td><?php echo $sp_r; ?></td>
+								</tr>							
+					<?php } } } } ?>												
 				</tbody>
 				</table>	
 			</div>

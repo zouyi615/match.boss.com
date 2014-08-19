@@ -22,7 +22,7 @@ return array(
     'DB_USER'    => 'root', // 用户名
     'DB_PWD'    => '123456', // 密码
     'DB_PORT'   => 3306, // 端口
-    'DB_PREFIX' => '', // 数据库表前缀 
+    'DB_PREFIX' => 'm_', // 数据库表前缀 
     //网站自定义公共类库
     'AUTOLOAD_NAMESPACE' => array(
     	'Libs'=> APP_PATH.'/Libs',

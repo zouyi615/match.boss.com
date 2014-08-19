@@ -80,17 +80,17 @@ $.dlg = {
 			}));
 };*/
 
-//后台设置匹配场次 /Home/MatAdmin/index.html
-$.namespace('matadmin.box');
-$.matadmin.box = {
+//后台设置匹配场次 /Home/Admin/index.html
+$.namespace('admin.box');
+$.admin.box = {
 	index:function(){
 		this.bindEvent();
-		this.autoUp();		
+		//this.autoUp();		
 	},
 	bindEvent:function(){
 		var _T = this, warning = $('#alert-warning').find('.content');		
 		//重新载入竞彩xml
-		$('#getallxml').click(function(){
+		$('#getxml').click(function(){
 			var url = $(this).attr('data-url');
 			if($.confirm("确定重新载入竞彩xml数据？该功能清空当前匹配的竞彩数据，请谨慎操作！")){
 				warning.html('<strong>提示！</strong>正在载入数据...');
@@ -104,24 +104,11 @@ $.matadmin.box = {
 					}
 				});
 			}
-		});
-		//更新外围数据sp1
-		$('#getallsp1').click(function(){
+		});		
+		//更新赔率
+		$('#getsp').click(function(){
 			var url = $(this).attr('data-url');
-			warning.html('<strong>提示！</strong>正在更新外围数据sp1...');
-			$.post(url,function(data, textStatus){
-				var res = $.parseJSON(data);
-				if(res.code < 0){
-					warning.html('<strong>警告！</strong>'+res.msg);
-				}else{
-					warning.html('&nbsp;');	
-				}
-			});
-		});
-		//更新匹配场次
-		$('#upallsp').click(function(){
-			var url = $(this).attr('data-url');
-			warning.html('<strong>提示！</strong>正在更新匹配场次...');
+			warning.html('<strong>提示！</strong>正在更新赔率...');
 			$.post(url,function(data, textStatus){				
 				if(textStatus == 'success'){
 					warning.html('&nbsp;');	
@@ -311,6 +298,21 @@ $.match.box = {
 			var scrollTop = $(window).scrollTop();
 			$.match.box.scrollTop(scrollTop);
 		});
+		//ajax刷新
+		$('#relup').click(function(){
+			var url = $(this).attr('data-url'), rnrate = $('#matching').attr('data-irate'), para;
+			para = {rnrate:rnrate};
+			$.post(url, para, function(data, textStatus){
+				var res = $.parseJSON(data);
+				console.log(data,res); return false;
+				if(res.code < 0){
+					warning.html('<strong>警告！</strong>'+res.msg);
+				}else{
+					warning.html('&nbsp;');	
+					$(T).attr('data-offset',offset).html(offstr);		
+				}
+			});
+		});
 		//显示详情
 		$('#matching').find('td.tobox').on('click',function(){
 			var s1, s2, s3, s4, vs, rate, prize, profit, in1, in2, rebate = _T.rebate, betmoney = _T.betmoney;
@@ -419,8 +421,7 @@ $.match.box = {
 			});
 		}
 		//JSON.stringify(_T.prolist)json转字符串写cookie
-		$.cookie('match.box.mlist', JSON.stringify(_T.mlist), $.C('expires'));
-		console.log(this.mlist);		
+		$.cookie('match.box.mlist', JSON.stringify(_T.mlist), $.C('expires'));		
 	},
 	//显示保存方案
 	showProList: function(){

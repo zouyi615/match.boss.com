@@ -1,6 +1,6 @@
 <?php
-class Jcpublic{
-	
+class Jcpublic{	
+	//获取竞彩xml
 	public function getMatchData($playtype='spf',$ggtype='2'){
 		header("content-type:text/html; charset=utf-8");
 		$ret = array('match'=>array(), 'league'=>array());
@@ -27,15 +27,10 @@ class Jcpublic{
 					$win = '';
 	            	$id = isset($da['id'])?strval($da['id']):'';
 	            	$isshow = isset($da['isshow'])?(string)$da['isshow']:'';
-	            	if($isshow || !$now){
+	            	if($isshow){
 				    	$count_active++;	
 				    	$rq = isset($da['rangqiu'])?strval($da['rangqiu']):0;
 						if(abs($rq) != 1) continue; //只获取让1球的比赛
-						if($rq == 1){
-							$win = isset($arrPl[$id]['lost'])?strval($arrPl[$id]['lost']):'';
-						}elseif($rq == -1){
-							$win = isset($arrPl[$id]['win'])?strval($arrPl[$id]['win']):'';
-						}
 				    	$matchnum = isset($da['matchnum'])?strval($da['matchnum']):'';
 						$league = isset($da['league'])?strval($da['league']):'';
 						$simpleleague = isset($da['simpleleague'])?strval($da['simpleleague']):'';
@@ -59,7 +54,6 @@ class Jcpublic{
 						$ret['match'][$i]['homesxname'] = $homesxname;
 						$ret['match'][$i]['awayname'] = $awayname;
 						$ret['match'][$i]['awaysxname'] = $awaysxname;
-						$ret['match'][$i]['win'] = $win;
 					    $ret['match'][$i]['processname'] = $processname;						
 					    $ret['match'][$i]['processdate'] = $processdate;
 						$ret['match'][$i]['matchdate'] = $matchdate;
@@ -68,7 +62,7 @@ class Jcpublic{
 						$ret['match'][$i]['matchnumdate'] = $matchnumdate;	
 						$ret['match'][$i]['title'] = $title;	
 						$ret['match'][$i]['date'] = $date;								
-					    if($now && strtotime($matchdate.$matchtime)<time()){ //已截止
+					    if(strtotime($matchdate.$matchtime) < strtotime("+20 minutes")){ //比赛前20分钟截止
 					        $ret['match'][$i]['end'] = 1;
 					    }else{
 					        $ret['match'][$i]['end'] = 0;
@@ -85,7 +79,6 @@ class Jcpublic{
 		ksort($ret['match']);
 		return $ret;
 	}
-
 	/**
 	 * 获取所有比赛最新赔率
 	 */
@@ -115,7 +108,26 @@ class Jcpublic{
 		}
 		return $peilvs;
 	}	
-	
+	/**
+	 * 获取欧赔赔率
+	 */
+	public function getOdds(){
+		$pl_odds = array();
+		$fn = 'http://trade.500.com/static/public/jczq/xml/odds/odds.xml';
+		$xml = @simplexml_load_string(@file_get_contents($fn));		
+		if($xml){
+			$match = $xml->matches;
+			if($match){
+				$odds = $match->xpath('//match');
+				foreach($odds as $d){
+					$id = intval($d['id']);
+					$pl_odds[$id]['bet365'] = $d->europe['bet365'];
+					$pl_odds[$id]['hg'] = $d->europe['hg'];					
+				}
+			}			
+		}
+		return $pl_odds;
+	}
 	//从n个字符串中取m个字符的所有组合
 	public function getCombine($arr,$m = 2){
 		$result = array();

@@ -28,10 +28,11 @@ body{position: relative;}
 /* 比赛列表样式 */
 .match-list{position:relative;}
 .match-list th,.match-list td{text-align:center;vertical-align:middle; *vertical-align:middle;}
-.match-list td.tobox{vertical-align:middle; color:red; cursor:pointer;}
-.match-list td.tobox a{color:red;}
+.match-list td.tobox{vertical-align:middle; cursor:pointer;}
+.match-list td.tobox a{text-decoration:underline; color:red;}
 .match-list .table > tbody > tr > td{vertical-align:middle; *vertical-align:middle;}
 .setbox{position:fixed;bottom: 0px;right:0px;}
+.match-list .relup{vertical-align:middle; cursor:pointer;}
 /* 比赛详细赛事 */
 .mod-inmoney{font-size:12px;position: relative;display: block !important;}
 .mod-inmoney a{color:blue; text-decoration:underline;}

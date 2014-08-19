@@ -170,68 +170,150 @@ class IndexController extends Controller {
 			)
 		)
 	);
+	public function test(){
+		$t1 = '2014-08-16 00:00:00';
+		$t2 = '2014-08-16 08:00:00';
+		var_dump(time(),strtotime("+30 minutes"),strtotime("+30 minutes")-time());
+	}
 	//首页加载匹配对阵
     public function index(){
         header("Content-type:text/html;charset=UTF-8");  	
 		$match = $this->queryMatch();
-		$match = $this->array2_sort($match,'rnrate',SORT_DESC,SORT_STRING); //二维数组排序
+		$match = $this->array2_sort($match,'rate',SORT_DESC,SORT_STRING); //二维数组排序
         $this->assign('match',$match);
         $this->display('index');
     }	
 	//查询数据库获取匹配match
 	public function queryMatch(){
 		header("Content-type:text/html;charset=UTF-8");   
-		$p = M('peilv');
+		$p = M('pl');
 		$match = array();
-		$rs = $p->field('peilv.id,peilv.win,peilv.sp,match.matchnum,match.league,match.homename,match.awayname,match.matchtime,match.rangqiu,match.isshow')->join('`match` ON peilv.id = match.id')->where('peilv.ismatch=1')->select();
+		$rs = $p->alias('p')->join('LEFT JOIN __MATCH__ m ON p.id = m.id')->where('p.ismatch=1 and m.end=0')->select();
 		if($rs){
 			foreach($rs as $key=>$val){
-				$k = $val['id'];
-				$match[$k] = $val;
-				$match[$k]['rnrate'] = sprintf("%.6f",1/(1/$val['win']+1/$val['sp']));
+				$w = '';
+				$bet_r = $hg_r = 0;
+				$id = $val['id'];
+				$rq = $val['rq'];
+				if($rq == "1"){
+					$w = isset($val['f'])?$val['f']:'';
+				}elseif($rq == "-1"){
+					$w = isset($val['s'])?$val['s']:'';
+				}
+				$b = $this->getMin($val['bet365']);  //bet365赔率最小值	
+				if($b){				
+					$bet_r = sprintf("%.6f",1/(1/$w+1/$b)); //计算bet365匹配回报率
+				}
+				$h = $this->getMin($val['hg']); //皇冠欧赔赔率最小值
+				if($h){				
+					$hg_r = sprintf("%.6f",1/(1/$w+1/$h)); //计算皇冠欧赔回报率
+				}				
+				$match[$id] = $val;
+				$match[$id]['w'] = $w; //竞彩受让方赔率
+				$match[$id]['b'] = $b; //bet365赔率最小值
+				$match[$id]['h'] = $h; //皇冠欧赔赔率最小值
+				$match[$id]['bet_r'] = $bet_r;
+				$match[$id]['hg_r'] = $hg_r;
+				$match[$id]['rate'] = sprintf("%.6f",($bet_r+$hg_r)/2);
 			}			
 		}
 		return $match;
 	}
-	//ajax加载匹配对阵
-	public function getAjaxMatch(){
-		$match = $this->queryMatch();
-		$match = $this->array2_sort($match,'rnrate',SORT_DESC,SORT_STRING); //二维数组排序
-		echo json_encode($match);
-	}
 	//计算匹配
-    public function matching(){
+    public function getMatch(){
 		header("Content-type:text/html;charset=UTF-8");
 		import('Libs.Trade.Jcpublic');
 		$jc = new \Jcpublic();
-		$irate = I('param.rnrate','2.00','htmlspecialchars'); //用户设置赔率
-		$betmoney = I('param.betmoney','10000','htmlspecialchars'); //用户下注金额
-		$rebate = I('param.rebate','5000','htmlspecialchars'); //用户返还金额
+		$irate = I('param.rnrate','','htmlspecialchars'); //用户设置赔率		
 		$match = $comMatchArr = array(); 
-		//$match = $this->match['match']['20140717']['data']; //test
-		$match = $this->queryMatch();
+		$match = $this->queryMatch(); 
 		$midArr = array();
 		foreach($match as $key=>$val){
 			$midArr[] = $val['id'];
 		}
-		$rscom = $jc->getCombine($midArr,2);
+		$rscom = $jc->getCombine($midArr,2);  
+		$i = 0;
 		foreach($rscom as $key=>$val){
 			$v = explode(',',$val);
 			$m1 = $v[0]; $m2 = $v[1];
-			$rnrate = strval(sprintf("%.6f",$match[$m1]['rnrate']+$match[$m2]['rnrate'])); //返还率			
-			if($rnrate < $irate) continue; //设置赔率值
-			
-			$comMatchArr[$key]['rnrate'] = $rnrate; //返还率
-			$comMatchArr[$key]['m1'] = $match[$m1];
-			$comMatchArr[$key]['m2'] = $match[$m2];			
-		}		
+			$timediff = abs(strtotime($match[$m2]['matchtime']) - strtotime($match[$m1]['matchtime'])); //两场比赛时间差
+			//两场比赛时间间隔<8小时
+			if($timediff > 8*60*60){
+				continue;
+			}
+			//bet365 / bet365
+			if($match[$m1]['bet_r']&&$match[$m2]['bet_r']){
+				$rnrate = strval(sprintf("%.6f",$match[$m1]['bet_r']+$match[$m2]['bet_r'])); //bet365返还率			
+				if($rnrate < $irate) continue; //计算返还率<设置赔率值
+				$comMatchArr[$i]['rnrate'] = $rnrate; //返还率
+				$comMatchArr[$i]['t1'] = 'bet365';
+				$comMatchArr[$i]['t2'] = 'bet365';
+				$comMatchArr[$i]['m1'] = $match[$m1];
+				$comMatchArr[$i]['m2'] = $match[$m2];
+				$i++;
+			}
+			//bet365 / hg
+			if($match[$m1]['bet_r']&&$match[$m2]['hg_r']){
+				$rnrate = strval(sprintf("%.6f",$match[$m1]['bet_r']+$match[$m2]['hg_r'])); //bet365返还率			
+				if($rnrate < $irate) continue; //计算返还率<设置赔率值
+				$comMatchArr[$i]['rnrate'] = $rnrate; //返还率
+				$comMatchArr[$i]['t1'] = 'bet365';
+				$comMatchArr[$i]['t2'] = 'hg';
+				$comMatchArr[$i]['m1'] = $match[$m1];
+				$comMatchArr[$i]['m2'] = $match[$m2];
+				$i++;
+			}
+			//hg / bet365
+			if($match[$m1]['bet_r']&&$match[$m2]['hg_r']){
+				$rnrate = strval(sprintf("%.6f",$match[$m1]['hg_r']+$match[$m2]['bet_r'])); //bet365返还率			
+				if($rnrate < $irate) continue; //计算返还率<设置赔率值
+				$comMatchArr[$i]['rnrate'] = $rnrate; //返还率
+				$comMatchArr[$i]['t1'] = 'hg';
+				$comMatchArr[$i]['t2'] = 'bet365';
+				$comMatchArr[$i]['m1'] = $match[$m1];
+				$comMatchArr[$i]['m2'] = $match[$m2];
+				$i++;
+			}
+			//hg / hg
+			if($match[$m1]['hg_r']&&$match[$m2]['hg_r']){
+				$rnrate = strval(sprintf("%.6f",$match[$m1]['hg_r']+$match[$m2]['hg_r'])); //bet365返还率			
+				if($rnrate < $irate) continue; //计算返还率<设置赔率值
+				$comMatchArr[$i]['rnrate'] = $rnrate; //返还率
+				$comMatchArr[$i]['t1'] = 'hg';
+				$comMatchArr[$i]['t2'] = 'hg';
+				$comMatchArr[$i]['m1'] = $match[$m1];
+				$comMatchArr[$i]['m2'] = $match[$m2];
+				$i++;
+			}	
+		}
 		$comMatchArr = $this->array2_sort($comMatchArr,'rnrate',SORT_DESC,SORT_STRING);
+		return $comMatchArr;
+    }
+	//加载匹配对阵
+	public function matching(){
+		header("Content-type:text/html;charset=UTF-8");
+		$irate = I('param.rnrate','','htmlspecialchars'); //用户设置赔率
+		$betmoney = I('param.betmoney','','htmlspecialchars'); //用户下注金额
+		$rebate = I('param.rebate','','htmlspecialchars'); //用户返还金额
+		$comMatchArr = $this->getMatch(); //获取对阵数据
 		$this->assign('comMatchArr',$comMatchArr);
+		$this->assign('irate',$irate);
 		$this->assign('betmoney',$betmoney);
 		$this->assign('rebate',$rebate);
 		$this->display('matching');
-    }
+	}
+	//ajax加载匹配对阵
+	public function getAjaxMatch(){
+		header("Content-type:text/html;charset=UTF-8");
+		$comMatchArr = $this->getMatch(); //获取对阵数据
+		echo json_encode($comMatchArr);
+	}	
 	
+	//获取最小值
+	public function getMin($str){		
+		$array = explode(',',$str);
+		return min($array);
+	}
 	//二维数组排序
 	function array2_sort($arr,$key,$order=SORT_ASC,$type=SORT_REGULAR){		
 		foreach ($arr as $kk => $vv){

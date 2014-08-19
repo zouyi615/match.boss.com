@@ -30,54 +30,60 @@
 		<div class="row main">
 			<!-- 显示比赛列表 -->
 			<div class="col-xs-8 match-list" id="matchList">			
-				<table class="table table-bordered table-hover table-condensed" id="matching" data-betmoney="<?php echo ($betmoney); ?>" data-rebate="<?php echo ($rebate); ?>">
+				<table class="table table-bordered table-hover table-condensed" id="matching" data-irate="<?php echo ($irate); ?>" data-betmoney="<?php echo ($betmoney); ?>" data-rebate="<?php echo ($rebate); ?>">
 				<thead>
 					<tr class="danger">
 						<th>序号</th>
+						<th>场次</th>
 						<th>开赛时间</th>
 						<th>联赛</th>
 						<th>主队</th>
 						<th>客队</th>
 						<th>赔率</th>
 						<th>水位</th>
-						<th colspan="2">返还率</th>
-						<th>操作</th>
+						<th colspan="2">
+							返还率&nbsp;&nbsp;
+							<span class="label label-success relup" id="relup" data-url="<?php echo U('Index/getAjaxMatch');?>">
+								<i class="glyphicon glyphicon-refresh"></i>
+							</span>
+						</th>
 					</tr>
 				</thead>
 				<colgroup>
-					<col width="5%" >
-					<col width="20%">
-					<col width="12%">
-					<col width="12%">
-					<col width="12%">
-					<col width="8%">                                
-					<col width="8%">
-					<col width="9%">
-					<col width="9%">
 					<col width="5%">
+					<col width="6%">
+					<col width="15%">
+					<col width="7%">
+					<col width="14%">
+					<col width="14%">
+					<col width="6%">
+					<col width="10%">
+					<col width="10%">
+					<col width="">
 				</colgroup>
-				<tbody>
-					<?php $k = 0; if(isset($comMatchArr) && is_array($comMatchArr)){ foreach($comMatchArr as $key=>$val){ ?>
-						<tr class="data" id="m<?php echo $key; ?>" mid="m<?php echo $key+1; ?>" data="<?php echo '{s1:'.$val['m1']['win'].',s2:'.$val['m2']['win'].',s3:'.$val['m1']['sp'].',s4:'.$val['m2']['sp'].'}'; ?>" vs="<?php echo '['.$val['m1']['homename'].'vs'.$val['m1']['awayname'].']/['.$val['m2']['homename'].'vs'.$val['m2']['awayname'].']'; ?>" rate="<?php echo $val['rnrate']; ?>">
-							<td rowspan="2" class="tobox"><?php echo $key+1; ?></td>
+				<tbody id="mlist_show">
+					<?php $k = 0; if(isset($comMatchArr) && is_array($comMatchArr)){ foreach($comMatchArr as $key=>$val){ $sp1 = $sp_r1 = $nt1 = $sp2 = $sp_r2 = $nt2 = ''; if($val['t1'] == 'bet365'){ $sp1 = $val['m1']['b']; $sp_r1 = $val['m1']['bet_r']; $nt1 = '(bet365)'; }elseif($val['t1'] == 'hg'){ $sp1 = $val['m1']['h']; $sp_r1 = $val['m1']['hg_r']; $nt1 = '(皇冠)'; } if($val['t2'] == 'bet365'){ $sp2 = $val['m2']['b']; $sp_r2 = $val['m2']['bet_r']; $nt2 = '(bet365)'; }elseif($val['t2'] == 'hg'){ $sp2 = $val['m2']['h']; $sp_r2 = $val['m2']['hg_r']; $nt2 = '(皇冠)'; } ?>
+						<tr class="data" id="m<?php echo $key; ?>" mid="m<?php echo $key+1; ?>" data="<?php echo '{s1:'.$val['m1']['w'].',s2:'.$val['m2']['w'].',s3:'.$sp1.',s4:'.$sp2.'}'; ?>" vs="<?php echo '['.$val['m1']['homename'].'vs'.$val['m1']['awayname'].']/['.$val['m2']['homename'].'vs'.$val['m2']['awayname'].']'; ?>" rate="<?php echo $val['rnrate']; ?>">
+							<td rowspan="2" class="tobox"><a href="javascript:;"><?php echo $key+1; ?></a></td>
+							<td><?php echo $val['m1']['id']; ?></td>
 							<td><?php echo $val['m1']['matchtime']; ?></td>
-							<td><?php echo $val['m1']['league']; ?></td>
+							<td><?php echo $val['m1']['simpleleague']; ?></td>
 							<td><?php echo $val['m1']['homename']; ?></td>
 							<td><?php echo $val['m1']['awayname']; ?></td>
-							<td><?php echo $val['m1']['win']; ?></td>
-							<td><?php echo $val['m1']['sp']; ?></td>
-							<td><?php echo $val['m1']['rnrate']; ?></td>
-							<td rowspan="2" class="tobox"><?php echo $val['rnrate']; ?></td>
-							<td rowspan="2" class="tobox"><a href="javascript:;">详情</a></td>							
+							<td><?php echo $val['m1']['w']; ?></td>
+							<td><?php echo $sp1.$nt1; ?></td>
+							<td><?php echo $sp_r1; ?></td>
+							<td rowspan="2" class="tobox"><?php echo $val['rnrate']; ?>&nbsp;<a href="javascript:;">详情</a></td>					
 						</tr>
 						<tr class="data" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
+							<td><?php echo $val['m2']['id']; ?></td>
 							<td><?php echo $val['m2']['matchtime']; ?></td>
-							<td><?php echo $val['m2']['league']; ?></td>
+							<td><?php echo $val['m2']['simpleleague']; ?></td>
 							<td><?php echo $val['m2']['homename']; ?></td>
 							<td><?php echo $val['m2']['awayname']; ?></td>
-							<td><?php echo $val['m2']['win']; ?></td>
-							<td><?php echo $val['m2']['sp']; ?></td>
-							<td><?php echo $val['m2']['rnrate']; ?></td>
+							<td><?php echo $val['m2']['w']; ?></td>
+							<td><?php echo $sp2.$nt2; ?></td>
+							<td><?php echo $sp_r2; ?></td>
 						</tr>
 					<?php } } ?>												
 				</tbody>

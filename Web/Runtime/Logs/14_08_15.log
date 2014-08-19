@@ -3098,3 +3098,117 @@ ERR: 1062:Duplicate entry '1819175' for key 'PRIMARY'
 ERR: 1062:Duplicate entry '1819208' for key 'PRIMARY'
  [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtimesp`,`sp`,`rangqiusp`) VALUES (1819208,'Club Friendly','俱乐部友谊赛','Reus Deportiu','里奥�\�','CE Sabadell FC','沙巴度尔',1408041000,'1.07',0)
 
+[ 2014-08-15T00:43:45+08:00 ] 127.0.0.1 /Home/Match/getSp1.html
+ERR: 1062:Duplicate entry '1817228' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtimesp`,`sp`,`rangqiusp`) VALUES (1817228,'Sweden Allsvenskan','瑞典超级联赛','Mjallby AIF','米亚尔比','IFK Norrkoping','IFK诺科�\�',1408035600,'1.17',0)
+ERR: 1062:Duplicate entry '1817231' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtimesp`,`sp`,`rangqiusp`) VALUES (1817231,'Sweden Allsvenskan','瑞典超级联赛','Halmstads BK','咸史泰斯','BK Hacken','哈肯',1408035600,'1.29',0)
+ERR: 1062:Duplicate entry '1817229' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtimesp`,`sp`,`rangqiusp`) VALUES (1817229,'Sweden Allsvenskan','瑞典超级联赛','Helsingborgs IF','希尔星堡','IF Elfsborg','艾夫斯堡',1408035900,'1.21',0)
+ERR: 1062:Duplicate entry '1819213' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtimesp`,`sp`,`rangqiusp`) VALUES (1819213,'Sweden Allsvenskan - Specials','瑞典超级联赛 - 特别投注','Mjallby AIF - No. of Corners','米亚尔比 - 角球总数','IFK Norrkoping - No. of Corners','IFK诺科�\� - 角球总数',1408035600,'0.82',0)
+ERR: 1062:Duplicate entry '1819214' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtimesp`,`sp`,`rangqiusp`) VALUES (1819214,'Sweden Allsvenskan - Specials','瑞典超级联赛 - 特别投注','Halmstads BK - No. of Corners','咸史泰斯 - 角球总数','BK Hacken - No. of Corners','哈肯 - 角球总数',1408035600,'0.87',0)
+ERR: 1062:Duplicate entry '1819216' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtimesp`,`sp`,`rangqiusp`) VALUES (1819216,'Sweden Allsvenskan - Specials','瑞典超级联赛 - 特别投注','Helsingborgs IF - No. of Corners','希尔星堡 - 角球总数','IF Elfsborg - No. of Corners','艾夫斯堡 - 角球总数',1408035900,'0.84',0)
+ERR: 1062:Duplicate entry '1817096' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtimesp`,`sp`,`rangqiusp`) VALUES (1817096,'Russia Premier League','俄罗斯超级联�\�','FC Krasnodar','克拉斯诺达尔','Spartak Moscow','莫斯科斯巴达',1408035600,'0.77',0)
+ERR: 1062:Duplicate entry '1819208' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `match_sp` (`sid`,`leagueEn`,`leagueCh`,`homenameEn`,`homenameCh`,`awaynameEn`,`awaynameCh`,`matchtimesp`,`sp`,`rangqiusp`) VALUES (1819208,'Club Friendly','俱乐部友谊赛','Reus Deportiu','里奥�\�','CE Sabadell FC','沙巴度尔',1408041000,'1.07',0)
+
+[ 2014-08-15T21:31:05+08:00 ] 127.0.0.1 /Home/MatAdmin/index.html
+ERR: 1146:Table 'match.peilv' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `match` INNER JOIN peilv ON match.id = peilv.id LEFT JOIN match_sp ON match_sp.sid = peilv.sid  ORDER BY peilv.ismatch desc,match.matchtime 
+
+[ 2014-08-15T22:28:43+08:00 ] 127.0.0.1 /Home/Match/getxml.html
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_pl` () VALUES ()
+
+[ 2014-08-15T22:49:32+08:00 ] 127.0.0.1 /Home/MatAdmin/index.html
+ERR: 1146:Table 'match.peilv' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `m_match` INNER JOIN peilv ON match.id = peilv.id LEFT JOIN match_sp ON match_sp.sid = peilv.sid  ORDER BY peilv.ismatch desc,match.matchtime 
+
+[ 2014-08-15T22:49:40+08:00 ] 127.0.0.1 /Home/Admin/index.html
+ERR: 无法加载控制器:Admin
+
+[ 2014-08-15T22:52:07+08:00 ] 127.0.0.1 /Home/Admin/index.html
+ERR: 无法加载控制器:Admin
+
+[ 2014-08-15T22:53:17+08:00 ] 127.0.0.1 /Home/Admin/index.html
+ERR: 无法加载控制器:Admin
+
+[ 2014-08-15T22:53:35+08:00 ] 127.0.0.1 /Home/Admin/index.html
+ERR: 无法加载控制器:Admin
+
+[ 2014-08-15T22:53:44+08:00 ] 127.0.0.1 /Home/Admin/Index.html
+ERR: 无法加载控制器:Admin
+
+[ 2014-08-15T22:53:59+08:00 ] 127.0.0.1 /Home/Admin/Index.html
+ERR: 无法加载控制器:Admin
+
+[ 2014-08-15T22:53:59+08:00 ] 127.0.0.1 /Home/Admin/Index.html
+ERR: 无法加载控制器:Admin
+
+[ 2014-08-15T22:54:17+08:00 ] 127.0.0.1 /Home/Match/Index.html
+ERR: 1146:Table 'match.peilv' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `m_match` INNER JOIN peilv ON match.id = pl.id  ORDER BY peilv.ismatch desc,match.matchtime 
+
+[ 2014-08-15T22:54:51+08:00 ] 127.0.0.1 /Home/Match/Index.html
+ERR: 1146:Table 'match.peilv' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `m_match` INNER JOIN peilv ON match.id = pl.id  ORDER BY peilv.ismatch desc,match.matchtime 
+
+[ 2014-08-15T22:55:09+08:00 ] 127.0.0.1 /Home/Match/Index.html
+ERR: 1146:Table 'match.pl' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `m_match` INNER JOIN pl ON match.id = pl.id  ORDER BY pl.ismatch desc,match.matchtime 
+
+[ 2014-08-15T22:55:17+08:00 ] 127.0.0.1 /Home/Match/Index.html
+ERR: 1146:Table 'match.pl' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `m_match` INNER JOIN pl ON match.id = pl.id  ORDER BY pl.ismatch desc,match.matchtime 
+
+[ 2014-08-15T22:56:29+08:00 ] 127.0.0.1 /Home/Match/Index.html
+ERR: 1146:Table 'match.__pl__' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `m_match` INNER JOIN __pl__ ON __match__.id = __pl__.id  ORDER BY __pl.ismatch desc,__match.matchtime 
+
+[ 2014-08-15T22:57:20+08:00 ] 127.0.0.1 /Home/Match/Index.html
+ERR: 1054:Unknown column '__PL__.ismatch' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `m_match` INNER JOIN m_pl ON m_match.id = m_pl.id  ORDER BY __PL__.ismatch desc,__MATCH__.matchtime 
+
+[ 2014-08-15T22:59:12+08:00 ] 127.0.0.1 /Home/MatAdmin/showSpLs.html
+ERR: 1146:Table 'match.m_match_sp' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `m_match_sp`
+ERR: 1146:Table 'match.m_match_sp' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `m_match_sp` ORDER BY matchtimesp 
+ERR: 模板不存在:./Web/Home/View/Default/MatAdmin/showspls.html
+
+[ 2014-08-15T23:24:25+08:00 ] 127.0.0.1 /
+ERR: 1146:Table 'match.m_peilv' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `m_peilv`
+ERR: 1146:Table 'match.m_peilv' doesn't exist
+ [ SQL语句 ] : SELECT peilv.id,peilv.win,peilv.sp,match.matchnum,match.league,match.homename,match.awayname,match.matchtime,match.rangqiu,match.isshow FROM `m_peilv` INNER JOIN `match` ON peilv.id = match.id  WHERE ( peilv.ismatch=1 ) 
+
+[ 2014-08-15T23:30:40+08:00 ] 127.0.0.1 /Home/Index/queryMatch.html
+ERR: 1146:Table 'match.m_peilv' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `m_peilv`
+ERR: 1146:Table 'match.m_peilv' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `m_peilv` LEFT JOIN m_match ON m_pl.id = m_match.id  WHERE ( __PL__.ismatch=1 ) 
+
+[ 2014-08-15T23:30:50+08:00 ] 127.0.0.1 /Home/Index/queryMatch.html
+ERR: 1146:Table 'match.m_peilv' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `m_peilv`
+ERR: 1146:Table 'match.m_peilv' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `m_peilv` LEFT JOIN m_match ON m_pl.id = m_match.id  WHERE ( __PL__.ismatch=1 ) 
+
+[ 2014-08-15T23:30:51+08:00 ] 127.0.0.1 /Home/Index/queryMatch.html
+ERR: 1146:Table 'match.m_peilv' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `m_peilv`
+ERR: 1146:Table 'match.m_peilv' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `m_peilv` LEFT JOIN m_match ON m_pl.id = m_match.id  WHERE ( __PL__.ismatch=1 ) 
+
+[ 2014-08-15T23:31:21+08:00 ] 127.0.0.1 /Home/Index/queryMatch.html
+ERR: 1054:Unknown column '__PL__.ismatch' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `m_pl` LEFT JOIN m_match ON m_pl.id = m_match.id  WHERE ( __PL__.ismatch=1 ) 
+
+[ 2014-08-15T23:31:49+08:00 ] 127.0.0.1 /Home/Index/queryMatch.html
+ERR: 1054:Unknown column '__PL__.ismatch' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `m_pl` LEFT JOIN m_match ON m_pl.id = m_match.id  WHERE ( `__PL__`.ismatch=1 ) 
+
