@@ -382,12 +382,12 @@ $.match.box = {
 			ml = $.pub.getObj(_T.prolist,'mid',mid);
 			_T.mlist = ml[mid];
 			_T.showDetail();
-		});
+		});	
 		//定时刷新 10s
-		clearInterval(_T.t_a);
-		_T.t_a = setInterval(function(){
+		clearTimeout(_T.t_a);
+		_T.t_a = setTimeout(function(){
 			_T.getAjaxList();
-		},10000);
+		},10000);	
 	},
 	//ajax获取list
 	getAjaxList: function(){
@@ -399,7 +399,12 @@ $.match.box = {
 				//刷新成功			
 				_T.list = list;
 				_T.createList();
-				$.bar.end();				
+				$.bar.end();
+				//定时刷新 10s
+				clearTimeout(_T.t_a);
+				_T.t_a = setTimeout(function(){
+					_T.getAjaxList();
+				},10000);				
 			}else{
 				$.bar.stop();
 			}
