@@ -60,7 +60,7 @@ class MatchController extends Controller {
 		//获取欧赔赔率
 		$oddsArr = $jc->getOdds();
 		//获取对阵信息
-		$mInfo = $m->getField('id,rangqiu,processname'); var_dump(strval($plArr['79121']['win']));
+		$mInfo = $m->getField('id,rangqiu,processname');
 		$i = 0;		
 		if($mInfo){
 			foreach($mInfo as $key=>$val){
