@@ -387,7 +387,7 @@ $.match.box = {
 		clearTimeout(_T.t_a);
 		_T.t_a = setTimeout(function(){
 			_T.getAjaxList();
-		},10000);	
+		},30000);	
 	},
 	//ajax获取list
 	getAjaxList: function(){
@@ -404,7 +404,7 @@ $.match.box = {
 				clearTimeout(_T.t_a);
 				_T.t_a = setTimeout(function(){
 					_T.getAjaxList();
-				},10000);				
+				},30000);				
 			}else{
 				$.bar.stop();
 			}

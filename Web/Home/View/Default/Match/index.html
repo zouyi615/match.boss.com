@@ -86,7 +86,7 @@
 								<php>echo '<span class="label label-default">'.$m['s'].'</span>&nbsp;<span class="label label-default">'.$m['p'].'</span>&nbsp;<span class="label label-default">'.$m['f'].'</span>';</php></td>
 							<td class="red"><php>echo $m['bet365'];</php></td>
 							<td class="red"><php>echo $m['hg'];</php></td>
-							<td class="offset" data-end="<php>echo $m['end'];</php>"><php>echo $m['end']==0?'<span class="label label-success">开售</span>':'<span class="label label-warning">已截止</span>';</php></td>
+							<td class="offset" data-end="<php>echo $m['end'];</php>"><php>echo $m['isend']==0?'<span class="label label-success">开售</span>':'<span class="label label-warning">已截止</span>';</php></td>
 						</tr>		
 					<php>						
 						}

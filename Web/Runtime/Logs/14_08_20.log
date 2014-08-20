@@ -1,3 +1,47 @@
 [ 2014-08-20T11:02:08+08:00 ] 192.168.50.4 /index.php/Home/Match/getSp.html
 ERR: 非法操作:getsp
 
+[ 2014-08-20T19:20:55+08:00 ] 192.168.50.4 /index.php/Home/Index/getAjaxMatch.html?rnrate=3.65
+ERR: 1054:Unknown column 'p.rangqiu' in 'field list'
+ [ SQL语句 ] : SELECT p.id,p.rangqiu,p.matchtime,p.simpleleague,p.homename,p.awayname,m.rq,m.s,m.p,m.f,m.bet365,m.hg,m.ismatch,m.uptime FROM m_pl p LEFT JOIN m_match m ON p.id = m.id  WHERE ( p.ismatch=1 and m.end=0 ) 
+
+[ 2014-08-20T19:21:01+08:00 ] 192.168.50.4 /index.php/Home/Index/getAjaxMatch.html?rnrate=2.9
+ERR: 1054:Unknown column 'p.rangqiu' in 'field list'
+ [ SQL语句 ] : SELECT p.id,p.rangqiu,p.matchtime,p.simpleleague,p.homename,p.awayname,m.rq,m.s,m.p,m.f,m.bet365,m.hg,m.ismatch,m.uptime FROM m_pl p LEFT JOIN m_match m ON p.id = m.id  WHERE ( p.ismatch=1 and m.end=0 ) 
+
+[ 2014-08-20T19:21:04+08:00 ] 192.168.50.4 /index.php/Home/Index/getAjaxMatch.html?rnrate=2.8
+ERR: 1054:Unknown column 'p.rangqiu' in 'field list'
+ [ SQL语句 ] : SELECT p.id,p.rangqiu,p.matchtime,p.simpleleague,p.homename,p.awayname,m.rq,m.s,m.p,m.f,m.bet365,m.hg,m.ismatch,m.uptime FROM m_pl p LEFT JOIN m_match m ON p.id = m.id  WHERE ( p.ismatch=1 and m.end=0 ) 
+
+[ 2014-08-20T19:21:07+08:00 ] 192.168.50.4 /index.php/Home/Index/getAjaxMatch.html?rnrate=2.9
+ERR: 1054:Unknown column 'p.rangqiu' in 'field list'
+ [ SQL语句 ] : SELECT p.id,p.rangqiu,p.matchtime,p.simpleleague,p.homename,p.awayname,m.rq,m.s,m.p,m.f,m.bet365,m.hg,m.ismatch,m.uptime FROM m_pl p LEFT JOIN m_match m ON p.id = m.id  WHERE ( p.ismatch=1 and m.end=0 ) 
+
+[ 2014-08-20T19:21:28+08:00 ] 192.168.50.4 /index.php/Home/Index/getAjaxMatch.html?rnrate=2.9
+ERR: 1054:Unknown column 'm.end' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM m_pl p WHERE ( p.ismatch=1 and m.end=0 ) 
+
+[ 2014-08-20T19:21:28+08:00 ] 192.168.50.4 /index.php/Home/Index/getAjaxMatch.html?rnrate=2.9
+ERR: 1054:Unknown column 'm.end' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM m_pl p WHERE ( p.ismatch=1 and m.end=0 ) 
+
+[ 2014-08-20T19:21:29+08:00 ] 192.168.50.4 /index.php/Home/Index/getAjaxMatch.html?rnrate=2.9
+ERR: 1054:Unknown column 'm.end' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM m_pl p WHERE ( p.ismatch=1 and m.end=0 ) 
+
+[ 2014-08-20T19:21:46+08:00 ] 192.168.50.4 /index.php/Home/Index/getAjaxMatch.html?rnrate=2.9
+ERR: 1054:Unknown column 'm.end' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM m_pl p WHERE ( p.ismatch=1 and m.end=0 ) 
+
+[ 2014-08-20T19:21:47+08:00 ] 192.168.50.4 /index.php/Home/Index/getAjaxMatch.html?rnrate=2.9
+ERR: 1054:Unknown column 'm.end' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM m_pl p WHERE ( p.ismatch=1 and m.end=0 ) 
+
+[ 2014-08-20T19:22:02+08:00 ] 192.168.50.4 /index.php/Home/Index/getAjaxMatch.html?rnrate=2.9
+ERR: 1054:Unknown column 'm.end' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM m_pl p WHERE ( p.ismatch=1 and m.end=0 ) 
+
+[ 2014-08-20T19:22:49+08:00 ] 192.168.50.4 /index.php/Home/Index/getAjaxMatch.html?rnrate=2.9
+ERR: 1054:Unknown column 'p.rangqiu' in 'field list'
+ [ SQL语句 ] : SELECT p.id,p.rangqiu FROM m_pl p LEFT JOIN m_match m ON p.id = m.id  WHERE ( p.ismatch=1 and m.end=0 ) 
+

@@ -174,7 +174,8 @@ class IndexController extends Controller {
 		// $t1 = '2014-08-16 00:00:00';
 		// $t2 = '2014-08-16 08:00:00';
 		// var_dump(time(),strtotime("+30 minutes"),strtotime("+30 minutes")-time());
-		$this->display();
+		var_dump(22);exit;
+		//$this->display();
 	}
 	//首页加载匹配对阵
     public function index(){
@@ -189,7 +190,7 @@ class IndexController extends Controller {
 		header("Content-type:text/html;charset=UTF-8");   
 		$p = M('pl');
 		$match = array();
-		$rs = $p->alias('p')->join('LEFT JOIN __MATCH__ m ON p.id = m.id')->where('p.ismatch=1 and m.end=0')->select();
+		$rs = $p->alias('p')->field('m.id,m.matchtime,m.simpleleague,m.homename,m.awayname,p.rq,p.s,p.f,p.bet365,p.hg,p.uptime')->join('LEFT JOIN __MATCH__ m ON p.id = m.id')->where('p.ismatch=1 and p.isend=0')->select();		
 		if($rs){
 			foreach($rs as $key=>$val){
 				$w = '';
@@ -218,8 +219,8 @@ class IndexController extends Controller {
 				$match[$id]['bet_r'] = $bet_r;
 				$match[$id]['hg_r'] = $hg_r;
 				$match[$id]['rate'] = sprintf("%.6f",($bet_r+$hg_r)/2);				
-			}			
-		}
+			}
+		}		
 		return $match;
 	}
 	//计算匹配

@@ -17,7 +17,7 @@ class MatchController extends Controller {
 	public function index(){
 		header("Content-type:text/html;charset=UTF-8"); 
 		$m = M('match');
-		$rsMat = $m->join('LEFT JOIN __PL__ ON __MATCH__.id = __PL__.id')->order('matchtime')->select();
+		$rsMat = $m->join('LEFT JOIN __PL__ ON __MATCH__.id = __PL__.id')->order('matchtime')->select();		
         $this->assign('rsMat',$rsMat); 
         $this->display();
 	}
@@ -60,10 +60,10 @@ class MatchController extends Controller {
 		//获取欧赔赔率
 		$oddsArr = $jc->getOdds();
 		//获取对阵信息
-		$mInfo = $m->getField('id,rangqiu,processname');
+		$mInfo = $m->getField('id,rangqiu,processname,matchtime');
 		$i = 0;		
 		if($mInfo){
-			foreach($mInfo as $key=>$val){
+			foreach($mInfo as $key=>$val){				
 				$id = $val['id'];
 				$newplArr[$i]['id'] = $id;
 				$newplArr[$i]['rq'] = $val['rangqiu'];
@@ -77,8 +77,13 @@ class MatchController extends Controller {
 				}else{
 					$newplArr[$i]['ismatch'] = 0;
 				}
+				if(strtotime($val['matchtime']) < strtotime("+20 minutes")){
+					$newplArr[$i]['isend'] = 1;
+				}else{
+					$newplArr[$i]['isend'] = 0;
+				}
 				$newplArr[$i]['uptime'] = date('Y-m-d H:i:s');
-				$rr = $p->field('id,rq,s,p,f,bet365,hg,ismatch,uptime')->save($newplArr[$i]);
+				$rr = $p->field('id,rq,s,p,f,bet365,hg,ismatch,isend,uptime')->save($newplArr[$i]);
 				$i++;
 			}
 		}else{
