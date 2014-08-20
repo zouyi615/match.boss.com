@@ -386,7 +386,7 @@ $.match.box = {
 		//定时刷新 10s
 		clearInterval(_T.t_a);
 		_T.t_a = setInterval(function(){
-			_T.getAjaxList();			
+			_T.getAjaxList();
 		},10000);
 	},
 	//ajax获取list

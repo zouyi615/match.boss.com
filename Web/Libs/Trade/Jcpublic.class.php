@@ -67,6 +67,7 @@ class Jcpublic{
 					    }else{
 					        $ret['match'][$i]['end'] = 0;
 					    }
+						$ret['match'][$i]['uptime'] = date('Y-m-d H:i:s');
 						$i++;
 				    }
 	            }

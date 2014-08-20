@@ -77,6 +77,7 @@ class MatchController extends Controller {
 				}else{
 					$newplArr[$i]['ismatch'] = 0;
 				}
+				$newplArr[$i]['uptime'] = date('Y-m-d H:i:s');
 				$rr = $p->field('id,rq,s,p,f,bet365,hg,ismatch')->save($newplArr[$i]);
 				$i++;
 			}
