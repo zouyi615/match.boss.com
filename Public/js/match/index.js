@@ -383,6 +383,11 @@ $.match.box = {
 			_T.mlist = ml[mid];
 			_T.showDetail();
 		});
+		//定时刷新 10s
+		clearInterval(_T.t_a);
+		_T.t_a = setInterval(function(){
+			_T.getAjaxList();			
+		},10000);
 	},
 	//ajax获取list
 	getAjaxList: function(){
@@ -527,16 +532,16 @@ $.match.box = {
 		var _T = this, ck = '', arr = ['match.box.mlist','match.box.prolist'];
 		$.each(arr,function(i,e){
 			ck = $.cookie(e);
-			if(ck && typeof(ck) != 'undefined'){				
+			if(ck && typeof(ck) != 'undefined'){
 				if(e == 'match.box.mlist'){
 					_T.mlist = JSON.parse(ck);
 					_T.showDetail(); //显示下注详情
 				}else if(e == 'match.box.prolist'){
 					_T.prolist = JSON.parse(ck);
-					_T.showProList(); //显示保存方案				
-				}				
-			}		
-		});		
+					_T.showProList(); //显示保存方案
+				}
+			}
+		});
 	},
 	scrollTop: function(top){
 		$('#tableDetail').animate({"top":top},0);	
