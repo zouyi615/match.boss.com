@@ -335,7 +335,7 @@ $.match.box = {
 			_T.getAjaxList();
 		});
 		//显示详情
-		$('#matching').find('td.tobox').on('click',function(){
+		$('#matching').find('td.tobox').live('click',function(){
 			var s1, s2, s3, s4, vs, rate, prize, profit, in1, in2, rebate = _T.rebate, betmoney = _T.betmoney;
 			_T.mlist = eval('('+$(this).parent().attr('data')+')');
 			_T.mlist['betmoney'] = betmoney; //下注金额
@@ -410,7 +410,7 @@ $.match.box = {
 		$.each(list,function(i,e){
 			html.push($.tpl(strhtml,{
 				key: i+1,
-				data: '{s1:'+e.m1.w+',s2:'+e.m2.w+',s3:'+e.op1+',s4:'+e.op1+'}',
+				data: '{s1:'+e.m1.w+',s2:'+e.m2.w+',s3:'+e.op1+',s4:'+e.op2+'}',
 				vs: '['+e.m1.homename+'vs'+e.m1.awayname+']/['+e.m2.homename+'vs'+e.m2.awayname+']',
 				rnrate: e.rnrate,
 				m1_id: e.m1.id,
