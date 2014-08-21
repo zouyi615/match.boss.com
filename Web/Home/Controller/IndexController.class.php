@@ -242,8 +242,8 @@ class IndexController extends Controller {
 			$v = explode(',',$val);
 			$m1 = $v[0]; $m2 = $v[1];
 			$timediff = abs(strtotime($match[$m2]['matchtime']) - strtotime($match[$m1]['matchtime'])); //两场比赛时间差
-			//两场比赛时间间隔<8小时
-			if($timediff > 8*60*60){
+			//两场比赛时间间隔>6小时
+			if($timediff < 6*60*60){
 				continue;
 			}
 			$arr = array('bet365','hg');
@@ -265,8 +265,21 @@ class IndexController extends Controller {
 						$comMatchArr[$i]['op2'] = $match[$m2][$op_arr[$v2]];
 						$comMatchArr[$i]['op_r1'] = $match[$m1][$op_r_arr[$v1]];
 						$comMatchArr[$i]['op_r2'] = $match[$m2][$op_r_arr[$v2]];
-						$comMatchArr[$i]['m1'] = $match[$m1];
-						$comMatchArr[$i]['m2'] = $match[$m2];
+						$comMatchArr[$i]['m1']['id'] = $match[$m1]['id'];
+						$comMatchArr[$i]['m1']['matchtime'] = $match[$m1]['matchtime'];
+						$comMatchArr[$i]['m1']['simpleleague'] = $match[$m1]['simpleleague'];
+						$comMatchArr[$i]['m1']['homename'] = $match[$m1]['homename'];
+						$comMatchArr[$i]['m1']['awayname'] = $match[$m1]['awayname'];
+						$comMatchArr[$i]['m1']['w'] = $match[$m1]['w'];
+						$comMatchArr[$i]['m2']['id'] = $match[$m2]['id'];
+						$comMatchArr[$i]['m2']['matchtime'] = $match[$m2]['matchtime'];
+						$comMatchArr[$i]['m2']['simpleleague'] = $match[$m2]['simpleleague'];
+						$comMatchArr[$i]['m2']['homename'] = $match[$m2]['homename'];
+						$comMatchArr[$i]['m2']['awayname'] = $match[$m2]['awayname'];
+						$comMatchArr[$i]['m2']['w'] = $match[$m2]['w'];
+											
+						//$comMatchArr[$i]['m1'] = $match[$m1];
+						//$comMatchArr[$i]['m2'] = $match[$m2];
 						$i++;						
 					}
 				}

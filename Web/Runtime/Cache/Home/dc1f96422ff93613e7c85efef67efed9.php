@@ -70,7 +70,7 @@
 					<col width="12%">
 				</colgroup>
 				<tbody id="mlist_show">					
-					<?php $k = 0; if(isset($comMatchArr) && is_array($comMatchArr)){ foreach($comMatchArr as $key=>$val){ $sp1 = $sp_r1 = $nt1 = $sp2 = $sp_r2 = $nt2 = ''; if($val['t1'] == 'bet365'){ $sp1 = $val['m1']['b']; $sp_r1 = $val['m1']['bet_r']; $nt1 = '(bet365)'; }elseif($val['t1'] == 'hg'){ $sp1 = $val['m1']['h']; $sp_r1 = $val['m1']['hg_r']; $nt1 = '(皇冠)'; } if($val['t2'] == 'bet365'){ $sp2 = $val['m2']['b']; $sp_r2 = $val['m2']['bet_r']; $nt2 = '(bet365)'; }elseif($val['t2'] == 'hg'){ $sp2 = $val['m2']['h']; $sp_r2 = $val['m2']['hg_r']; $nt2 = '(皇冠)'; } ?>
+					<?php $k = 0; if(isset($comMatchArr) && is_array($comMatchArr)){ foreach($comMatchArr as $key=>$val){ ?>
 						<tr class="data" id="m<?php echo $key+1; ?>" mid="m<?php echo $key+1; ?>" data="<?php echo '{s1:'.$val['m1']['w'].',s2:'.$val['m2']['w'].',s3:'.$val['op1'].',s4:'.$val['op2'].'}'; ?>" vs="<?php echo '['.$val['m1']['homename'].'vs'.$val['m1']['awayname'].']/['.$val['m2']['homename'].'vs'.$val['m2']['awayname'].']'; ?>" rate="<?php echo $val['rnrate']; ?>">
 							<td rowspan="2" class="tobox"><a href="javascript:;"><?php echo $key+1; ?></a></td>
 							<td><?php echo $val['m1']['id']; ?></td>
