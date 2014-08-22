@@ -82,8 +82,8 @@
 								<td rowspan="2"><php>echo $m['homename'];</php></td>
 								<td rowspan="2"><php>echo $m['awayname'];</php></td>
 								<td><php>echo $m['w'];</php></td>
-								<td><php>echo $m['b'].'(bet365)';</php></td>
-								<td><php>echo $m['bet_r'];</php></td>
+								<td><php>echo $m['b'].'(威廉)';</php></td>
+								<td><php>echo $m['wl_r'];</php></td>
 							</tr>
 							<tr>
 								<td><php>echo $m['w'];</php></td>
@@ -95,8 +95,8 @@
 								$sp = $sp_r = $nt = '';
 								if($m['b']){
 									$sp = $m['b'];
-									$sp_r = $m['bet_r'];
-									$nt = '(bet365)';
+									$sp_r = $m['wl_r'];
+									$nt = '(威廉)';
 								}elseif($m['h']){
 									$sp = $m['h'];
 									$sp_r = $m['hg_r'];

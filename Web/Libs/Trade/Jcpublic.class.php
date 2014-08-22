@@ -122,7 +122,7 @@ class Jcpublic{
 				$odds = $match->xpath('//match');
 				foreach($odds as $d){
 					$id = intval($d['id']);
-					$pl_odds[$id]['bet365'] = $d->europe['bet365'];
+					$pl_odds[$id]['wl'] = $d->europe['wl'];
 					$pl_odds[$id]['hg'] = $d->europe['hg'];					
 				}
 			}			

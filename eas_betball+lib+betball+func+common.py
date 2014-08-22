@@ -1,0 +1,410 @@
+#coding:gbk
+'''π´”√∑Ω∑® '''
+import betball.config.common as cf
+import logging
+import time,urllib,urllib2
+import XmlUtil
+import curl
+import datetime
+import pycurl
+import StringIO
+'''ªÒ»°ÀØ√ﬂ ±º‰'''
+def getThreadSleep(thread):
+    if cf.config['thread_sleep_time'].has_key(thread):
+        return cf.config['thread_sleep_time'][thread]
+    else:
+#        return 0
+        return ''
+    
+'''ªÒ»°≈‰÷√¬∑æ∂'''
+def getPath(key):
+    if cf.config['path'].has_key(key):
+        return cf.config['path'][key]
+    else:
+        return None
+    
+'''–¥»’÷æ≤Ÿ◊˜'''
+def write_log(msg):
+    logging.info(msg)
+    
+'''url∑√Œ “≥√Ê'''    
+def fopen(path,post={},type='',timeout=18):
+    content=''
+    try:
+#        if post:
+#            content=urllib2.urlopen(path,data=urllib.urlencode(post),timeout=10).read()
+#        else:
+#            content=urllib2.urlopen(path,timeout=10).read()
+#        request=curl.Curl()
+#        #…Ë÷√≥¨ ± ±º‰
+#        request.set_timeout(timeout)
+#        if not post:
+#            content=request.get(path)
+#        else:
+#            content=request.post(path,post)
+#        request.close()
+        host = path.split("/")[2]
+        if host.find("fenxi.310v.com")>=0:
+            heads = {'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Charset':'GB2312,utf-8;q=0.7,*;q=0.7',
+            'Accept-Language':'zh-cn,zh;q=0.5',
+            'Cache-Control':'max-age=0',
+            'Connection':'keep-alive',
+            'Host':host,
+            'Keep-Alive':'115',
+            'Referer':path,
+            'User-Agent':'Mozilla/5.0 (X11; U; Linux x86_64; zh-CN; rv:1.9.2.14) Gecko/20110221 Ubuntu/10.10 (maverick) Firefox/3.6.14'}
+            opener = urllib2.build_opener(urllib2.HTTPCookieProcessor())
+            urllib2.install_opener(opener)
+            data = urllib.urlencode(post)
+            req = urllib2.Request(path,data,headers=heads)
+            content = opener.open(req, timeout=30).read()
+        elif host.find("bet007.com")>=0:
+            c = pycurl.Curl() #¥¥Ω®“ª∏ˆÕ¨libcurl÷–µƒCURL¥¶¿Ì∆˜œ‡∂‘”¶µƒCurl∂‘œÛ
+            b = StringIO.StringIO()
+            c.setopt(pycurl.URL, path) #…Ë÷√“™∑√Œ µƒÕ¯÷∑
+            #–¥µƒªÿµ˜
+            c.setopt(pycurl.WRITEFUNCTION, b.write)
+            c.setopt(pycurl.FOLLOWLOCATION, 1) #≤Œ ˝”–1°¢2
+            c.setopt(pycurl.NOSIGNAL, 1)
+            #◊Ó¥Û÷ÿ∂®œÚ¥Œ ˝,ø…“‘‘§∑¿÷ÿ∂®œÚœ›⁄Â
+            c.setopt(pycurl.MAXREDIRS, 5)
+            #¡¨Ω”≥¨ ±…Ë÷√
+            c.setopt(pycurl.CONNECTTIMEOUT, 20) #¡¥Ω”≥¨ ±
+            c.setopt(pycurl.TIMEOUT, 60) #œ¬‘ÿ≥¨ ±
+            # c.setopt(pycurl.HEADER, True)
+            c.setopt(c.HTTPHEADER, ["Referer:http://www.bet007.com"])
+            #ƒ£ƒ‚‰Ø¿¿∆˜
+            c.setopt(pycurl.USERAGENT, "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)")
+            #∑√Œ ,◊Ë»˚µΩ∑√Œ Ω· ¯
+            c.perform() #÷¥––…œ ˆ∑√Œ Õ¯÷∑µƒ≤Ÿ◊˜
+            content = b.getvalue()
+            b.close()
+            c.close()
+        else:
+            request=curl.Curl()
+            #…Ë÷√≥¨ ± ±º‰
+            request.set_timeout(timeout)
+            if not post:
+                content=request.get(path)
+            else:
+                content=request.post(path,post)
+            request.close()
+    except Exception,e:
+        write_log('%s∑√Œ “≥√Ê%s≤Ÿ◊˜“Ï≥£:%s!'%(type,path,e))
+    return content
+
+'''Ω‚Œˆxmlƒ⁄»›'''
+def parseString(string):
+    if string and string.find('<?xml ')==0:
+        return XmlUtil.parseString(string)
+    else:
+        return None
+
+'''∑±ÃÂ◊™ªªºÚÃÂ'''
+def getSimplifiedChinese(string):
+    simple_string=u'ÕÚ”Î≥Û◊®“µ¥‘∂´Àø∂™¡Ω—œ…•∏ˆ„‹∑·¡ŸŒ™¿ˆæŸ√¥“ÂŒ⁄¿÷««œ∞œÁ È¬Ú¬“’˘”⁄ø˜‘∆ÿ®—«≤˙ƒ∂«◊ŸÙÅè“⁄Ωˆ¥”¬ÿ≤÷“«√«º€÷⁄”≈ªÔª·ÿÒ…°Œ∞¥´…Àÿˆ¬◊ÿ˜Œ±ÿ˘ÃÂ”‡”∂Ÿ›œ¿¬¬Ωƒ’Ï≤‡«»øÎŸ≠ŸØŸ∂Ÿ±Ÿ≤¡©Ÿ≥ºÛ’Æ«„ŸÃŸÕŸ«≥•ŸŒŸœ¥¢Ÿ–∂˘∂“Ÿµ≥¿ºπÿ–À◊»—¯ ﬁŸÊƒ⁄∏‘≤·–¥æ¸≈©⁄£∑Î≥Âæˆøˆ∂≥æª∆‡¡π¡Ëºı¥’¡›º∏∑ÔŸÏ∆æø≠ª˜€ ‘‰€ªªÆ¡ı‘Ú∏’¥¥…æ±ÑiÿŸπÙÿ€ÿ‹º¡π–Ω£∞˛æÁ»∞∞ÏŒÒ€Ω∂Ø¿¯æ¢¿Õ ∆—´€¬Ñ÷‘»ÿ–ÿ—«¯“Ωª™–≠µ•¬Ù¬¨¬±Œ‘Œ¿»¥⁄·≥ßÃ¸¿˙¿˜—π—·ÿ«≤ﬁœ·ÿ…œ√≥¯æ«ÿÀœÿ»˛≤ŒÖ•Ö¶À´∑¢±‰–µ˛“∂∫≈Ãæﬂ¥”ı∫Ûœ≈¬¿¬ﬂƒ∂÷Ã˝∆ÙŒ‚ﬂºﬂΩ≈ªﬂøﬂ¬‘±ﬂ√«∫Œÿ”Ωﬂ«¡¸ﬂÃﬂ–ﬂÂﬂ‘œÃﬂﬂœÏ—∆ﬂ’ﬂÿﬂŸﬂ‹ª©ﬂ‡ﬂ‚ﬂÊ”¥ﬂÈÜyﬂÎÜ|ﬂÔﬂªΩﬂ¸ﬂıÿƒﬂ˘ƒˆÜ™ÜÆ–•≈Á‡∂‡∑‡ø‡¿‡»–Í‡”÷ˆ‡‡‡Ëœ˘‡ÎÕ≈‘∞¥—Œß‡π˙Õº‘≤ •€€≥°€‡ªµøÈº·Ã≥€ﬁ∞”ŒÎ∑ÿ◊π¬¢€‚€‰¿›ø—€€—µÊ€Îàôàõ€Ó€Ò€ı€˜€ˆ€˛€˚«µ∂ÈâG‹´«Ω◊≥…˘ø«∫¯â◊¥¶±∏∏¥πªÕ∑ø‰º–∂·ﬁ∆€º∑‹Ω±∞¬◊±∏æ¬ËÂ¸Â˝Ê£Ê©Ω™¬¶Ê´Ê¨ΩøÊÆ”ÈÊ¥ÊµãO”§Êø…ÙÊ¡Ê»Ê…ÊÕÊ÷ÀÔ—ß¬œƒ˛±¶ µ≥Ë…Ûœ‹π¨øÌ±ˆ«ﬁ∂‘—∞µº ŸΩ´∂˚≥æ≥¢“¢ﬁœ ¨æ°≤„å¡ÃÎΩÏ Ù¬≈Â”ÏÀÍ∆Ò·´∏⁄·≠·Æ·∞µ∫¡Î‘¿·¥ø˘çN·ªœøçi·Ω·ø¬Õ·¿·¡çÅ’∏·…ç¬·Œ·–·’·€πÆ€œ±“Àß ¶‡¯’ ¡±÷ƒ¥¯÷°∞Ô‡¸‡˝‡˛√›·•∏…≤¢Á€π„◊Ø«Ï¬Æ‚–ø‚”¶√Ì≈”∑œéˆ‚ﬁø™“Ï∆˙’≈√÷ÂÚÕ‰µØ«øπÈµ±¬ºè¶—Â≥πæ∂·‚”˘“‰‚„”«‚Èª≥Ã¨ÀÀ‚‰‚Ê‚Í‚Î¡Ø◊‹Ì°‚¯¡µø“∂Ò‚˙‚˚‚˝‚¸ƒ’„¢‘√Ì®–¸„•√ıæ™æÂ≤“≥Õ±π„´≤—µ¨πﬂÌ™„≥∑ﬂ„¥‘∏…Âë\„¿ÌØ¿¡„¡Ì∞Íßœ∑Í®’ΩÍØªß‘˙∆À«§÷¥¿©ﬁ—…®—Ô»≈∏ß≈◊ﬁ“øŸ¬’«¿ª§±®µ£ƒ‚¬£º”µ¿π≈°≤¶‘Òπ“÷ø¬Œí•ŒŒÃ¢–Æƒ”µ≤ﬁÿ’ıº∑ª”í¶¿ÃÀºÒªªµ∑æ›ƒÌ¬∞ﬁ‚÷¿µß≤ÙﬁËﬁÍ¿øﬁÏ≤Û∏È¬ßΩ¡–Ø…„ﬁÛ∞⁄“°±˜ÃØﬁ¸≥≈ƒÏﬂ¢ﬂ£ﬂ•À”‘‹µ–¡≤ ˝’´Ïµ∂∑’∂∂œŒﬁæ… ±øıïDÍº÷Áïoœ‘Ω˙…πœ˛Í ‘ŒÍÕ‘›Í”‘˝ ı∆”ª˙…±‘”»®Ãı¿¥—ÓËøΩ‹º´ππË» ‡‘ÊË¿Ë≈Ë««π∑„Ë…πÒƒ˚ËﬂËŸ’§±Í’ªËŒË–∂∞Ë”Ë›¿∏ ˜∆‹—˘ËÔËË‚Ë„ËÂµµËÁ«≈ËÎËÌΩ∞◊Æ√ŒóÉóÖºÏË˘È§Ë¸Ë˝È°Õ÷¬•È≠È¥ÈµÈ∑òñº˜ÈƒÈ∆∫·È…”£ÈÕ≥˜È÷È⁄È‹È›ª∂Ï£≈∑ºﬂÈ‚È‰≤–ÈÊÈÁÈÈÈÎ≈πªŸÏ±±œ±–’±ÎßÎ™∆¯«‚Î≤Îµª„∫∫Œ€Ã¿–⁄Ì≥πµ√ª„„≈Ω¡§¬Ÿ≤◊õh„Ìª¶õm≈¢¿·Ì¥„Ò„Ú„¯–∫∆√‘Û„˛Ω‡»˜Õ›‰§«≥Ω¨ΩΩ‰•õ∏◊«≤‚‰´º√‰Øõ∫ªÎ‰∞≈®‰±õªÕø”øÃŒ¿‘‰µ¡∞‰∂Œ–õÈª¡µ”»ÛΩß’«…¨µÌ‘®‰À◊’‰¬Ω•‰≈”Ê‰……¯Œ¬”ŒÕÂ ™¿£Ω¶‰”úæ‰‰πˆ÷Õ‰Ÿ‰‹¬˙‰ﬁ¬À¿ƒ¬–±ıÃ≤ú˘‰Ì‰Î‰Ï‰ÚŒ´«±‰Û¿Ω‰˛±ÙÂ∞√µ∆¡È‘÷≤”Ïæ¬ØÏ¿ÏøÏ¡µ„¡∂≥„À∏¿√Ã˛÷Ú—Ã∑≥…’Ï«ª‚ÃÃΩ˝»»ª¿ÏÀÏ‚Ï—ÏŒÏ’Ï÷∞Æ“ØÎπÍÛ«£Œ˛∂øÍÒ·Î◊¥·Ó·Ô”Ã±∑·Û™Aƒ¸∂¿œ¡ ®·ˆ’¯”¸·¯·˝¡‘‚®‚§÷Ì√®‚¨œ◊Ã°Á·´_´`¬ÍÁ‚ª∑œ÷´oÁÙÁÎÁÂ∑©ÁÁ´öÁı¨QÁˆÀˆ«Ì—˛Ë®ËØË¨Ë∂ŒÕÍ±µÁª≠≥©Ó¥≥Î‹¡∆≈±›—Òﬂ¥Ø∑ËÂ‚”∏æ∑—˜ÈÏªæÔ≥’˜Ø}˘¸±ÒÃ±Ò´Ò®ÒÆ—¢Ò≤Ò≥∞®÷ÂÒ‰’µ—Œº‡∏«µ¡≈ÃÌÓÌˆ±Ä◊≈’ˆÌ˘Ì˙¬˜÷ıΩ√Ì∂∑ØøÛÌ∏¬Î◊©Ì∫—‚ÌøÌ¬Ì√¿˘¥°≥nπËÀ∂ÌÃÌÕ≥}≥~»∑ºÔ∞≠Ì”Ì◊ºÓÌ€Ìﬁ¿ÒµtÏÚÏıµªªˆŸ˜¬ªÏ¯¿ÎÕ∫∏—÷÷ª˝≥∆ª‡∂åÔ˘À∞ˆ’Œ»£«Ó«‘«œ“§¥‹Œ—ø˙ÒºÒ¿ ˙æ∫Û∆ÀÒ± Û»º„¡˝Û÷÷˛ÛŸ…∏πYÛ›≥Ô«©ºÚπÇÛÂÛÊÛÍ¬·ÛÏÛÔÛÒ¬®¿∫¿ÈÛ˝Ù•Ÿ·¿‡ÙÃÙ–Ùœ‘¡∑‡¡∏Ù÷Ù◊ΩÙÙÍÊ˘æ¿Ê˙∫ÏÊ˚œÀÊ¸‘ºº∂Ê˝Ê˛ºÕ»“Œ≥Á°¿Ä¥øÁ¢…¥∏Ÿƒ…¿Å◊›¬⁄∑◊÷ΩŒ∆∑ƒ¿Ç¿É≈¶Á£œﬂÁ§Á•Á¶¡∑◊È…œ∏÷Ø÷’Áß∞ÌÁ®Á©…‹“Ôæ≠Á™∞Û»ﬁΩ·Á´»∆¿ÑÁ¨ªÊ∏¯—§Á≠¬Áæ¯Ω Õ≥ÁÆÁØæÓ–Â¿ÖÀÁÃ–ºÃÁ∞º®–˜Á±¿Ü–¯Á≤Á≥¥¬Á¥Áµ…˛Œ¨√‡Á∑±¡≥Ò¿áÁ∏Áπ◊€’¿Á∫¬Ã◊∫ÁªÁºÁΩºÍ√Â¿¬ÁæÁøº©¿àÁ¿Á¡Á∂∂–Á¬¿âÁ√Áƒª∫µﬁ¬∆±‡Á≈‘µÁ∆∏øÁ»Á«∑Ï¿äÁ…≤¯Á ÁÀÁÃÁÕÁŒÁœÁ–”ßÀıÁ—Á“Á”Á‘……Á’Á÷Á◊ÁÿÁŸΩ…Á⁄ÛøÕ¯¬ﬁ∑£∞’ÓºÓøÙ«œ€«Ã¡ô¡öÒÏÒÔÀ ≥‹ƒÙ¡˚÷∞Ò˜¡™Ò˘¥œÀ‡≥¶∑ÙÎ……ˆ÷◊’Õ–≤µ® §Î ÎÀÎÕÎ÷Ω∫¬ˆÎ⁄‘‡∆Íƒ‘≈ßŸıΩ≈Õ—Î·¡≥¿∞ÎÁƒNÎÒƒÂÎÔÎÃ⁄Î˜≈H”ﬂÙØΩ¢≤’ÙµºË—ﬁ‹≥“’Ω⁄ÿ¬‹ºŒﬂ¬´‹ Œ≠‹¬‹»‹…≤‘‹—À’‹‹∆ªæ•‹◊‹‡‹„‹‰ºÎæ£ºˆ«Qº‘‹È‹Í‹Ò‹ˆ‹˘µ¥»ŸªÁ‹˛‹˝”´›°›£›•“Ò›§›¶›ß“©›∞›Ø¿≥¡´›™›´›≤ªÒ›µ”®›∫›ª»[¬‹”©”™›”œÙ»¯¥–›€›ﬁΩØ›‰¿∂ºª›Ò›˜›ˆ›Î«æ›¸›˛∞™ﬁ≠‘Ãﬁ¥ﬁªﬁ∫¬≤¬«–È≥ÊÚ∞Ú±À‰œ∫Ú≤ ¥“œ¬Ï≤œÚ∫Úππ∆Ú√Ú…¬˘’›ÚÃÚÕÚœÚ”Õ…Œœ¿Ø”¨ÚÂ≤ı–´Ú˜ÚÓŒÖÚ˝œ]–∆œŒ≤π≥ƒŸÚ∞¿Ù¡–ÑÕ‡œÆ—B◊∞Ò…—TÒÕÒœø„Ò–Ò⁄Ò‹Òﬂ“[º˚π€”_πÊ√Ÿ ”ÍË¿¿æıÍÈÍÍÍÎ”`ÍÏÍÌÍÓÍÔı¸¥•ˆ£‘Ä”˛Ã‹⁄•º∆∂©∏º»œº•⁄¶⁄ßÃ÷»√⁄®∆˝—µ“È—∂º«◊öΩ≤ª‰⁄©⁄™—»⁄´–Ì∂Ô¬€◊õÀœ∑Ì…Ë∑√æ˜÷§⁄¨⁄≠∆¿◊Á ∂◊ú’©Àﬂ’Ô⁄Æ÷ﬂ¥ ⁄∞⁄Ø◊ù“Î⁄±⁄≤⁄≥ ‘⁄¥ ´⁄µ⁄∂≥œ÷Ô⁄∑ª∞µÆ⁄∏⁄ππÓ—Ø“Ë⁄∫∏√œÍ≤Ô⁄ª⁄º◊ûΩÎŒ‹”Ô⁄ΩŒÛ⁄æ”’ªÂ⁄øÀµÀ–⁄¿«Î÷Ó⁄¡≈µ∂¡⁄¬∑ÃøŒ⁄√⁄ƒÀ≠⁄≈µ˜⁄∆¡¬◊ª⁄«Ã∏“Íƒ±⁄»µ˝ª—⁄…–≥⁄ ⁄ÀŒΩ⁄Ã⁄Õ⁄Œ≤˜⁄—⁄œ—Ë⁄–√’⁄“◊†⁄”⁄‘⁄’–ª“•∞˘⁄÷«´⁄◊Ω˜√°⁄ÿ⁄Ÿ√˝Ã∑⁄⁄⁄€¿æ∆◊⁄‹⁄›«¥⁄ﬁ⁄ﬂπ»ÿk±¥’Í∏∫⁄Oπ±≤∆‘œÕ∞‹’Àªı÷ ∑∑Ã∞∆∂±·π∫÷¸π·∑°º˙Í⁄Í€Ã˘πÛÍ‹¥˚√≥∑—∫ÿÍ›‘ÙÍﬁº÷ªﬂÍﬂ¡ﬁ¬∏‘ﬂ◊ Í‡Í·Í‰Í‚Í„…ﬁ∏≥∂ƒÍÂ Í…Õ¥Õ⁄P⁄Q‚Ÿ≈‚ÍÊ¿µ⁄R◊∏ÍÁ◊¨»¸ÿ”ÿÕ‘ﬁ⁄S‘˘…ƒ”Æ∏”⁄W’‘∏œ«˜Ùııª‘æıƒı≈ı»º˘€QıŒıœı—ı“”ª≥Ï◊ŸıŸı‹ıÊıÁıÈ¥⁄ıÔıÚ«˚≥µ‘˛πÏ–˘ﬁaÈÌ◊™ÈÓ¬÷»Ì∫‰ÈÔÈÈÒ÷·ÈÚÈÛÈıÈÙÈˆÈ˜«·È¯‘ÿÈ˘ΩŒﬁbÈ˙È˚ΩœÈ¸∏®¡æÈ˝±≤ª‘πıÈ˛ﬁcÍ°Í¢Í£∑¯º≠ﬁd ‰‡Œ‘ØœΩ’∑Í§’ﬁÍ•¥«±Á±Ë±ﬂ¡…¥Ô«®π˝¬ı‘Àªπ’‚Ω¯‘∂Œ•¡¨≥ŸÂ«Â…º£  —°—∑µ›ÂŒ¬ﬂ“≈“£µÀ⁄˜⁄˘” ◊ﬁ⁄˛¡⁄”Ù€ß€£€¶÷£€©€™‘«µ¶‘Õ·NΩ¥ı¶ıßƒ Õ¿Ô‚†º¯ˆ«ˆ…Ó≈Ó∆’Î∂§Ó»Ó«Ó…Ó «•ÓÀÓÃËï∑∞µˆÓÕÓœËñÓŒËó∏∆Ó–Ó—∂€≥Æ÷”ƒ∆±µ∏÷Ó”Ó‘‘ø«’æ˚ŒŸπ≥Ó÷Ó’ÓÿÓ◊≈•ÓŸÓ⁄«ÆÓ€«ØÓ‹≤ßÓ›ÓﬁÓﬂÓ‡Ó·◊ÍÓ‚Ó„ºÿÓ‰”ÀÃ˙≤¨¡ÂÓÂ«¶√≠ÓÊÓÁÓËÓÈÓÍÓÎÓÏËôÓÌÓÓÓÔËöËõÓÓÒÓÚÓÙÓÛËúÓıÕ≠¬¡ÓˆÓ˜Ó¯’°Ó˘œ≥Ó˙Ó˚ËùÓ¸Ó˝Ô°Ó˛Ô¢∏ı√˙Ô£Ô§Ω¬“ø≤˘Ô•Ô¶Ôß“¯Ô®÷˝Ô©∆ÃËûÔ™Ô´¡¥Ô¨œ˙À¯ÔÆÔ≠≥˙π¯ÔØÔ∞–‚Ô±Ô≤∑Ê–øÔ≥Ô¥Ôµ»ÒÃ‡Ô∂Ô∑Ô∏ÔπÔ∫’‡Ôª¥Ì√™ÔºËüÔΩÔæÔøË†Œ˝Ô¿¬‡¥∏◊∂ΩıÈ@œ«Ô√Ô¡Ô¬Ôƒ∂ßº¸æ‚√ÃÔ≈Ô∆ÈAÔ«ÔœÔ»Ô…Ô «¬ÔÒ∂ÕÔÀÈBÔÃÔÕ∂∆√æÔŒÈCÔ–Ô—Ô“’ÚÈDÔ”ƒ˜ÈEÔ‘ƒ¯Ô’Ô÷∏‰∞˜Ô◊ÔÿÔŸÈFÔ⁄Ô€Ô‹Ô›ÈGÔﬁæµÔ·ÔﬂÔ‡ÈHÔ‚Ô„¡ÕÔ‰ÔÂÔÊÔÁÔËÔÈÔÍÔÎÔÏ¿ÿÈIÔÌ¡≠ÔÓÔÔÔÈJÈKœ‚≥§√≈„≈…¡„∆Í\±’Œ ¥≥»Ú„«œ–„»º‰„…„ √∆’¢ƒ÷πÎŒ≈„À√ˆ„ÃÍ]∑ß∏Û∫“„Õ„Œ‘ƒ„œÍ^„–—À„—„“„”„‘—÷„’≤˚¿ª„÷Í_¿´„◊„ÿ„ŸÍ`„⁄„€Ía∂”—Ù“ı’ÛΩ◊º ¬Ω¬§≥¬⁄Í…¬⁄Ì‘…œ’ÀÊ“˛¡•ˆ¡ƒ—≥˚ˆ≈ˆ®ŒÌˆ´√πˆ∞ˆ¶æ≤ÿÃ˜≤˜≥˜µ˜πŒ§»ÕÌÇ∫´Ë∏ËπË∫‘œ“≥∂•«ÍÒ¸œÓÀ≥–ÎÁÔÕÁπÀ∂ŸÒ˝∞‰ÀÃÒ˛‘§¬≠¡Ï∆ƒæ±Ú°º’ÔFÚ¢Ú£ÔGÚ§“√∆µÔHÕ«Ú•ÔI”±ø≈Ã‚ÔJÚ¶Úß—’∂ÓÚ®Ú©µﬂÚ™Ú´ÔK≤¸Ú¨Ú≠»ß∑ÁÔrÔsÏ©Ï™Ï´ÔtÏ¨ÔuÔv∆ÆÏ≠ÏÆ∑…˜œ˜–óº¢ò‚º‚Ω‚æ‚ø‚¿‚¡∑π“˚Ω§ Œ±•À«ô‚¬∂¸»ƒ‚√öõΩ»ú±˝‚ƒù∂ˆ‚≈ƒŸûü‚∆œ⁄π›‚«¿°†‚»≤ˆÒ@‚…ÒA¡Û‚ ‚À¬¯‚Ã‚Õ‚Œ¬Ì‘¶Õ‘—±≥€«˝ÛR≤µ¬øÊ‡ ªÊ·Ê‚æ‘Ê„◊§Õ’ÊÂº›Ê‰ÊÊÊÁ¬ÓÛSΩæÊË¬Ê∫ßÊÈÛTÊÍ≥“—ÈÛUÛVø•ÊÎ∆ÔÊÏÊÌÛWÛXÊÓ∆≠ÊÔÛY…ßÊÊÒÊÚÂπÊÛÊÙ¬‚ÊıÊˆ÷ËÊ˜ÛZÊ¯˜√˜≈˜∆˜ﬁ˜ ˜À”„˜Å˜Çˆœ˜É¬≥ˆ–˜Öˆ—ˆ“ˆ”ˆ‘˜Ü˜áˆ÷˜à±´ˆ◊˜âˆÿˆŸˆ⁄˜äˆ€ˆ‹˜ã˜å˜ç˜éˆ›ˆﬁœ ˜èˆﬂˆ‡ˆ·ˆ‚ˆ„ˆ‰¿ˆÂˆÊˆÁˆËˆÈ˜êˆÍ˜ëˆÎˆÏ˜íˆÌˆÓˆÔˆˆÒˆÚˆÛˆÙæ®˜ìˆıˆˆˆ˜ˆ¯˜î˜ï˜ñ˜ó˜ò»˙ˆ˘ˆ˙ˆ˚ˆ¸˜ô˜öˆ˝ˆ˛˜°˜¢˜£˜§˜•˜õ˜ú˜¶˜ß˜®±Ó˜©˜™˜´˜û˜¨˜≠¡€˜Æ˜ü˜†˜Ø¯@ƒÒØº¶∞√˘˚\≈∏—ª˚]±≤≥¥µ—º˚^—Ï˚_∑∂‘ß˚`Õ“∏∫πªº˚a˚b∏ÎΩ∫Ë˚cæøæÈ¿∂Ï¡¬√ƒ»µ≈∆˚d«≈Ù˚e»˚f˚g˚h…˚i ˜Ω˚jÀÃÕ˚kŒ˚l˚m˚n˚oœ∫◊˚p–—“”‘’÷ÿ˚r”•◊˚sŸ˚tı∫¬ÛÙÔª∆Ÿ‰¸d˜Ú˜ıˆºˆΩ¸Öˆæÿª˜˙˜˛∆ÎÏ¥≥›ˆ≥˝Ü˝áˆ¥¡‰ˆµˆ∂ˆ∑ˆ∏ˆπˆ∫»£ˆª¡˙π®ÌËπÍ'
+    target_string=u'»f≈c·hå£òIÖ≤ñ|ΩzÅGÉ…á¿Ü ÇÄ„›ÿS≈RûÈ˚ê≈e¸N¡xûıò∑ÜÃ¡ï‡lï¯ŸIÅy†éÏ∂ÃùÎÖÅÉÅÜÆaÆÄ”H“CáæÉ|ÉHèƒÅˆÇ}ÉxÇÉÉr±äÉû‚∑ï˛Ç¯Ç„Ç•Ç˜Ç˚ÇtÇêÇ·ÇŒÅ–ÛwNÇÚÉLÇbÇHÉeÇ…Ç»ÉSÉ~ÉäÉzÇRÉâÉ∞ÇzÉ´ÉÄÇ˘ÉAÇÙÉEÉfÉîÉØÉÜÉ¶ÉÆÉ∫É∂Éº¸hÃmÍP≈d∆ùB´FáœÉ»å˘É‘åë‹äﬁrâVÒTõ_õQõrÉˆúQúDõˆúRúpúêÑCé◊¯P¯Dë{ÑPìÙöÎËè∆cÑùÑ¢ÑtÑÇÑìÑhÑeÑ}ÑqÑ£Ñ•ÑíÑ©ÑéÑ¶ÑÉÑ°ÑÒﬁkÑ’ÑÍÑ”ÑÓÑ≈Ñ⁄Ñ›ÑÏ√ÕÑ„ÑÚÖQÖTÖ^·t»AÖfÜŒŸu±R˚u≈P–lÖséÑèSèdï—Öñâ∫ÖíÖáé˙é˚ÖòèBèNé˝èPøh»˝Ö¢ÏaÏ^Îp∞l◊Éî¢ØB»~ÃñöUá\ªn··áòÖŒÜ·Üwáç¬†Ü¢Ö«á`á“áIá≥ÜhÜTÜJÜ‹ÜË‘ÅÜUáµáìázﬂ∏áj˚yﬂ…ÌëÜ°á}á^ÜÙáÇáWáàáùáÅÜ—áOÜﬂáZÜ§ÜÓÜrÜæ∫ÙáKÜ›á ˝má”ácá[áäáDáøáÀ∫«áÜáuá¬á⁄á£≈¸áÃ÷oàFà@áËá˙á˜á¯àDàA¬}âøàˆ⁄ÊâƒâKà‘âØâ»âŒâ]âûâãâ≈â≈â¿âæâ®àsà◊â|à∫â°â≥âNàﬂâPâ_àÂâ|àùâqâôâœ‘≠†ùâ—¬ïö§âÿâ⁄ÃéÇ‰—}âÚÓ^’FäAäZäYäJä^™ÑäWäyãDãåã≥ãûãÇäôÀKä‰ãIã∆ã…åDä ãzãπãΩãÎã»ãããã‹ãÂã‘ãﬂåOåWå\åéåöåçåôåèëóåmåíŸeåãå¶å§åßâ€å¢†ñâmáLàÚå¿å∆±Må”å⁄åœå√åŸå“å’éZöqÿMçÁçèçséSçπçuéXé[çñéhéGéFç{éAç˛çòénç˜çàéMç‰éVçÙç£ç‚ºπépÏñéÄé≈éõéüéÆé§∫üé√éßé¨éÕéŒéæéΩÉÁ“Lé÷ÅK√¥èV«fëcè]èTéÏë™èR˝ãèUèFè[È_ÆêóâèàèõèÜèùèóèäöwÆî‰õèßè©èÿèΩè∆∂Rëõë‘ënê˜ë—ëBëZëìëYêùêÌëzøÇëªë´ëŸë©ê∫ëQë√êê≈ê¿ê¡êÇê‚ë“ëaëëÛ@ë÷ëKëÕëvê‹ëMëÑëTú°ëCëçë|ÓäëÿëÄ‚ëøë–ë¨ëﬂë‚ëÚëÍëëÏëÙºôì‰íLàÃîUí–íﬂìPî_ì·íÅìªì∏í‡ìå◊oàÛì˙îMîní˛ìÌîrîQì‹ìÒíÏì¥îÅíÈìÎìÈí∂ìœìıì◊íÍîDì]ìÕì∆ìpìÏìQìvì˛ì”ìÔìùîSì€ìΩì•ì´îàìÂîvîRìßîáîyîzîdî[ìuîPîÇîtìŒîfîXî]îxî\îÄî≥îøîµ˝SîÃÙYîÿî‡üo≈fïrïÁï™ï“ïÉïÓÔ@ïxïÒï‘ïœïûïüï∫ï·Ñû–gò„ôCö¢Îsô‡ólÅÌóÓòqÇ‹òOòãò∫ò–óóô¿ógóñòåó˜ónôôôéôfódñ≈òÀó£ô±ô…óùôæôµô⁄ò‰ó´ò”ôËó®óøòÔòEônòÅòÚòÂôuò™ò∂âÙôÑóÆôzôÙò°ô≥ò†ôÂôEò«ôÏô¬ô∞ôŒôxôëôâôΩôMô{ô—ô¡ôªô©ô¥∫ôô_ögöeöWöûö{öëöàöåöööóöõö™öß›ûÆÖî¿ö÷ö–ö⁄ö‚ö‰öÂöËè°ùhõ@ú´õ∞ﬂeúœõ]ûñùaûrúSúÊútúøú˚ùùÙúIùÕû{ûoûTûaùäù…õ‹ùçû¢∏Dõ—ú\ù{ù≤úùú€ù·úyù“ù˙ûgùIúÜùGù‚ù°ù¯âTú•ù˝ù≥úZùiù¨úuú›úoúÏùôùæùqù≠ù’úYúOùnû^ùuù∆ùOûcùBúÿﬂ[û≥ùÒù¢ûRùsùUùßùLú˛ûπûóùMû]ûVûEû¥ûIû©ùÀûEûuûtûáûHùìûzûëû|ûlûÆúÁüÙÏ`ûƒ†Nü¨†tüıüòüÕ¸cüíüÎ†q†ÄüN†Tüüü©ü˝üÓ†Z†C†aü·ü®†F†cüè∫˝ÕÀ¡Ôê€†î†©†”†ø†ﬁ†Ÿèä»Æ†Ó´E™w™q™N˚É™û™ü™ö™M™{™ú™b™z™s™ù´C´J´MÿiÿàŒo´I´H≠^≠m¨Ñ¨î¨|≠h¨F¨ö≠t¨z´k¨m≠á≠c¨q≠\≠I¨ç≠Ç¨é≠a≠v≠ã≠ëÆYÆTÎäÆãï≥Ÿ‹Æ†∞XØüØë∞OØÉÛúØèØÇ∞íÂÌ∞bØd∞WØ{∞AØà∞B∞V∞DØîØéØõ∞T∞c∞a∞`∞]∞_∞dƒü∞}∞ô∞ó±K˚}±O…w±I±P≤g±{≤î÷¯±†≤A≤Ä≤m≤ö≥C¥âµ\µV¥X¥a¥u≥å≥é¥^µZµaµ[µA≥ÅŒ˘¥T≥à¥ì¥o¥ô¥_˚|µK¥É¥~âAÔ‡ùL∂Y∂B∂[µù∂\µú∑Aµì∂UÎx∂d∂í∑N∑e∑Q∑x∑v∑Ñ∂ê∑d∑Ä∑w∏F∏`∏[∏G∏Z∏C∏Q∏]∏MÿQ∏Ç∫VπSπPπaπ{ª\ªe∫B∫`∫Y∫öπ~ªI∫û∫ÜªU∫j∫DªXªj∫Ñ∫ç∫à∫tª@ªhªfª[ºeÓê∂iºgºcªõºSºZºRfæoø{ÙÈºmºuºtºq¿wºvºsºâºw¿kºoºxæïºãºáºÉºÑºÜæVº{ºåøvæ]ºäºàºyºèºüºÖº~ºÇæÄΩCΩXºõæöΩMºùºöøóΩKøUΩOΩEΩIΩB¿[ΩõΩHΩâΩqΩYΩf¿@ΩxΩW¿LΩoΩkΩ{ΩjΩ^ΩgΩyΩéΩãΩÅ¿CΩîΩóΩd¿^ΩêøÉæwæcæx¿mæ_æpæbæyæi¿KæSædæRøáæIæTæ^æJæCæ`æUæGæYælæ~æ|æ}æí¿|æüæòæÉøZ¿DæåæEæÑæúæÄæóøPæèæÜø|æéæáæâøNø`ødøbøpø\øc¿pørøOøV¿_ø~øzøw¿tøsøäøâ¿iøùøòøïÌ\¿`¿R¿Q¿U¿y¿õæW¡_¡P¡T¡`¡b¡u¡w¬N¬P¬E¬g¬e¬ñêu¬ô√@¬ö¬ú¬ì¬ò¬î√CƒcƒwƒdƒIƒ[√õ√{ƒëÑŸñVƒL≈F√Ñƒz√}ƒíÛvƒöƒXƒì≈Lƒ_√ìƒTƒò≈D·Zƒs˝|ƒÅÏtƒeÚvƒú≈N›õ≈ú≈û≈ì∆A∆DÿW∆HÀáπù¡dÀG èÃJ…ê»îÀû«{»O…n∆rÃKôîÃO«oÃd \âLü¶¿O«GÀ]ÀR«v Å…ú wÀCÀj éòs»ùúÓ†Œü… nÀ|…p a {»á»íÀé…W…â»R…è…P»nÀW´@ ~¨ì˙L…îÃEÃ}Œû†IøM íÀ_ [ r â Y VÀ{ÀEÃy öÊvÚáÀNÃ`ÃAÃ@ÃIÃNÀíÈ¬Ã\Ãîë]ÃìœxÕAœlÎmŒrœäŒgœÅŒõ–QœñÕò–Mœ†œ|–UœUÕêœuŒáœìÕëŒÅœûœâœXœsœêœNœîœQœ\–D·Ö„ï—a“r–ñ“\ãñ—ã“m“u“U—b“d—Ç—û“c—ù“M“@“høã“w“ä”^“ç“é“í“ï“ó”[”X”J“†”]”C”D”M”P”U”x”|”z◊Ñ◊u÷`”Ö”ã”Ü”á’J◊I”ì”è”ë◊å”ò”ô”ñ◊h”ç”õ”ï÷v÷M÷é‘n”†‘G‘S”û’ì‘K‘A÷S‘O‘L‘E◊C‘b‘X‘u‘{◊R‘w‘p‘V‘\‘g÷a‘~‘x‘t‘v◊g‘r’E’C‘á‘ü‘ä‘ë‘ú’\’D‘ñ‘í’Q‘ç‘è‘é‘É‘Ñ’ä‘ì‘î‘å’ü‘Ç◊p’]’_’Z’V’`’a’T’d’N’f’b’O’à÷T’å÷Z◊x’é’u’n’Ü’ò’l’î’{’~’è’Å’r’Ñ’x÷\÷R’ô÷e÷G÷C÷o÷]÷^÷@÷I÷X◊ã÷J÷O÷V÷B÷i’õ’ö÷É◊ï÷q÷x÷{÷r’û÷t÷k÷î÷ô÷Ü◊v÷á◊T◊P◊S◊é◊V◊H◊ó◊l◊d◊è∑YÿrÿêÿëÿìÿíÿïÿîÿüŸtî°Ÿ~ÿõŸ|ÿúÿùÿöŸHŸèŸAÿûŸEŸvŸSŸBŸNŸFŸLŸJŸQŸMŸRŸOŸ\ŸóŸZŸVŸDŸUŸT⁄EŸYŸW⁄BŸgŸcŸlŸdŸxŸÄ˝V⁄HŸpŸn⁄FŸkŸsŸrŸyŸáŸàŸòŸéŸçŸêŸë⁄IŸùŸöŸõŸ†⁄A⁄M⁄X⁄w⁄s⁄Ö⁄é‹O‹S€Ñ€ï‹V€`‹J‹E€ã‹]‹Q€x‹P€ô‹W‹U‹b€ò‹X‹f‹k‹g‹|‹á‹à‹â‹é‹ç‹êﬁD‹ó›Ü‹õﬁZ›M›Vﬁ_›S›T›W‹†›Fﬁ]›U›p›Y›d›eﬁI›c›b›`›^›m›o›v›Ç›Ö›x›Å›y›à›z›w›è›ó›ã›ú›îﬁ\ﬁ@›†›öﬁAﬁHﬁOﬁoﬁqﬁpﬂÖﬂ|ﬂ_ﬂwﬂ^ﬂ~ﬂ\ﬂÄﬂ@ﬂMﬂhﬂ`ﬂBﬂtﬂÉﬁü€Eﬂmﬂxﬂdﬂfﬂäﬂâﬂzﬂb‡á‡ó‡w‡]‡u‡í‡èÙd‡S‡P‡î‡ç‡i·B‡y‡ê·j·w·u·â·á·Ñ·å—YÓ“ËbËéÁY·è·ê·ò·î·ì·ï·ë‚Q‚T‚A·ü‚l‚C·ûÂ{‚SÂê‚O‚]‚}‚b‚Å‚g‚nÊR‚c‰^‰ì‚k‚jËÄöJ‚xÊu„^‚Ç‚[‚Ä‚^‚o‚Z‚ïÂX„`„Q‚í¿è‚é„O‚ò‚ì„XËç„f„g‚õ‚ö‚ôËF„K‚èËp„U„T‚ã„C„B„G‚â‚îËI„o‰D„ô„s‰ÄÂE‰B‰Ö‰e‰yÁt„áËK„~‰X‰H„üÊzÂé„è„ä‰b‰A„îÁf„åÊ|„x„ì„t„ëÂP‰C„q„ûÁP„|Á|‰@„y„úËTÁÑ‰Å‰oÂn‰àÊúÁH‰NÊi‰á‰{‰zÂÅ‰Ü‰~Án‰S‰s‰h‰\‰çÁòÁô‰J‰R‰Z‰u‰|ÂH‰ùÊNÂüÂeÂ^ÂQÂWÂu‰òÂKÂ_ÂaÂdËåÂNÂFÂ\ËeÂv‰üÂx‰ûÂUÂVÊI‰èÂiÂOÂõÂ}Â|ÁIÊJÂäÂöÊ@ÊRÂëÊ}ÂñÊDÊXÂÉÊVÁUÊtÁöÊ[ÊüÊÇÊnÊkËáËíÁùÊáÊìÊyÊÄÊ^ÊÑÊâË\ÊgÁSÁMÁNÊ†ÁaÁOÁRÁCÊóÊõÁBÁÜËëÁÇÁhËuÁÖË|ÁíËâÁjÁãËZËDËGËCÁ†ËOËdËsËnËÅËÇÈLÈTÈVÈWÈZÈ\È]ÜñÍJÈcÈùÈeÈbÈgÈhÈ`êûÈlÙ[È|¬ÑÍYÈ}ÈÇÍGÈyÈwÈuÈÄÙbÈÜÈÅÍAÈìÈéÈãÙ]ÈîÈíÈêÈëÍUÍ@ÈòÍTÈüÈ†ÍHÍDÍFÍIÍRÍXÍ†ÍñÍéÍáÎAÎHÍëÎ]ÍêÍÄÍÑÍüÎEÎUÎSÎ[Î`ÎhÎyÎr◊áÏZÏFÏV¸qÏ\ÏnÏoÏvÌ^ÌXÌdÌxÌfÌgÌhÌnÌtÌyÌwÌçÌìÌîÌïÌôÌóÌòÌöÌúÓBÓôÓDÌ†ÓCÌûÓ@ÓAÔBÓIÓHÓiÓRÓaÓcÓMù}ü‚ÓWÓUÓlÓ_ÓjÓhÓe∑fÓwÓ}ÓÑÓÄÓÖÓÅÓ~ÔDÓîÓçÓãÓó¿hÓùÓûÔAÔEÔLÔ^ÔQÔRÔSÔZÔ\Ô`Ô_ÔdÔhÔjÔjÔwãêÔ}áÔÄhÔÇqÔÉÔÑÔÜÔàÔãTÔóÔñÔïÔòÔçDàAÔùEÔúFÔûGLINHKRQW^lÅktívxos}~zÄÇñÒRÒSÒWÒZÒYÚåÒ_ÒgÛHÒzÒÇÒÜÒÄÒxÚ|ÒvÒÑÒwÒ{ÛAÒ~Úî¡RÒóÚúÚëÒòÒîÒâÛQÛPÚGÚûÚHÒüÚEÚUÚTÚSÚKÚRÚìÚâÚ_ÚsÚjÚ}Ú\ÚàÚtÚqÚ~ÚäÚÖÚãÚñÛEÛKÛLÛJÛtÛyÛxÙWÙ|ÙuÙ~ÙÄÙáÙúÙçÙîÙôÙüıEıGˆT˜|ıOıWıVıNıU˜cıQıTıqı^ıwınıbıjˆfı`˜d˜qıoırı~ıú˜\ıÜ˜~ˆñˆûıéˆàˆúıÖıèıåızˆaıóıõˆNıöˆOˆEˆHˆKˆAˆFˆTı†ˆLˆYˆXıô˜aˆlˆs˜lˆ[ˆìˆgˆw˜{ˆqˆvˆmˆe˜FˆcˆÖ¸ÅˆíˆçˆäˆéˆÑˆÅˆò˜B˜L˜Mˆ†ˆö˜I˜@˜Z˜X˜[˜V˜s˜h˜k˜g¯B¯FÎu¯S¯Q¯O˙t¯f˙I¯d¯c¯Å˘Ö˚R¯Ü¯{¯Ñ¯o¯|¯z¯x¯ä¯r˙É˙v¯ç¯é¯†¯í˘@¯ù˚[¯ô˘M˘P˚Z˘N˘]˘Z˘O˙ë˘Y˘^˘o˘ë˘g˙A˘l˘i˘k˘á˘à˘t˙â˘ñ˘ü˘ò˙X˘î˙\˙B˙F˙g˙_˙O˙V˙W˙^˙Y˙Q˙s˚W˙p˙w˙ç˙Ñ˙ê˙ñ˙ò˚D˙ó˚I˚L˚X˚U˚z˚ú˚ü¸S¸Z¸s¸t¸o¸w¸x¸{¸ÉÏä˝B˝O˝R˝W˝X˝Z˝[˝]˝e˝g˝_˝f˝b˝l˝r˝p˝x˝}˝à˝è˝ê˝î'
+    return_str=''
+    #Ω´gbk◊™ªªŒ™unicode¬Î, πµ√÷–°¢”¢Œƒ◊÷∑˚µƒ≥§∂»“ª÷¬
+    string=unicode(string,'gbk') 
+    for i in range(0,len(string)):
+        tmp_str=string[i:i+1]
+        index=target_string.find(tmp_str)
+        if index!=-1:
+            return_str+=simple_string[index:index+1]
+        else:
+            return_str+=tmp_str
+    return return_str.encode('gbk')#Ω´unicode¬Î◊™ªª≥…gbk
+
+def get_asian_pka(key):
+    if cf.config['asian']['pka'].has_key(key):
+        return cf.config['asian']['pka'][key]
+    else:
+        return None
+    
+def get_big_pka(key):
+    if cf.config['big']['pka'].has_key(key):
+        return cf.config['big']['pka'][key]
+    else:
+        return None
+    
+'''ªÒ»°ball365.xml ˝æ›'''
+def get_ball565xml_data(type):
+    content=fopen(getPath('ball365_xml'),type='[FUNC:get_ball565xml_data]')
+    return_arr=[]
+    if content:
+        content=content.decode('gb2312','ignore').encode('gbk').replace('<?xml version="1.0" encoding="gb2312"?>','<?xml version="1.0" encoding="gbk"?>')
+        dom=parseString(content)
+        if dom:
+            node_arr=dom.getElementsByTagName('m')
+        else:
+            node_arr=[]        
+        if type in ['today_asian','today_odds','today_dxodds']: #µ±ÃÏ≈∑≈‚°¢—«≈‚°¢¥Û–°œﬂ≥Ã
+            timestamp=time.time()
+            today=time.strftime('%Y%m%d%H%M',time.localtime(timestamp))
+            nextday=time.strftime('%Y%m%d%H%M',time.localtime(timestamp+86400))
+        elif type in ['future_odds','future_asian','future_dxodds']:
+            nextday=time.strftime('%Y%m%d%H%M',time.localtime(time.time()+86400))
+        
+        elif type=='lot_odds':
+            today=time.strftime('%Y%m%d%H%M',time.localtime())
+            
+            
+        for node in node_arr:
+            matchdate=node.getElementsByTagName('MatchDate')[0].firstChild.nodeValue
+            #µ±ÃÏ≈∑≈‚œﬂ≥Ã
+            if type=='today_odds' and (node.getAttribute('Limit1')!='0' or matchdate<=today or matchdate>nextday):
+                continue
+            #µ±ÃÏ—«≈‚œﬂ≥Ã
+            elif type=='today_asian' and (node.getAttribute('Limit2')!='0' or matchdate<=today or matchdate>nextday):
+                continue
+            #µ±ÃÏ¥Û–°œﬂ≥Ã
+            elif type=='today_dxodds' and (node.getAttribute('Limit3')!='0' or matchdate<=today or matchdate>nextday):
+                continue
+            #Œ¥¿¥≈∑≈‚œﬂ≥Ã
+            elif type=='future_odds' and (node.getAttribute('Limit1')!='0' or matchdate<=nextday):
+                continue
+            #Œ¥¿¥—«≈‚œﬂ≥Ã
+            elif type=='future_asian' and (node.getAttribute('Limit2')!='0' or matchdate<=nextday):
+                continue
+            elif type=='future_dxodds' and (node.getAttribute('Limit3')!='0' or matchdate<=nextday):
+                continue
+            #≤ ÷÷≈‚¬ œﬂ≥Ã
+            elif type=='lot_odds' and (node.getAttribute('IsLotType')!='1' or node.getAttribute('Limit1')!='0' or matchdate<=today):
+                continue
+            
+            fixtureid=int(node.getElementsByTagName('MatchID')[0].firstChild.nodeValue)
+            ball365_matchid=int(node.getElementsByTagName('Ball365_MatchID')[0].firstChild.nodeValue)
+            home_tmp=node.getElementsByTagName('HomeName')[0].firstChild.nodeValue.encode('gbk').split(',')
+            hometeam=home_tmp[0]
+            hometeam_ball365=home_tmp[1]
+            away_tmp=node.getElementsByTagName('AwayName')[0].firstChild.nodeValue.encode('gbk').split(',')
+            awayteam=away_tmp[0]
+            awayteam_ball365=away_tmp[1]                 
+            isreverse=int(node.getElementsByTagName('IsReverse')[0].firstChild.nodeValue)
+            islottype=int(node.getAttribute('IsLotType'))
+            isbeidan=int(node.getAttribute('IsBeiDan'))
+            row={'fixtureid':fixtureid,'ball365_matchid':ball365_matchid,'hometeam':hometeam,'awayteam':awayteam,'hometeam_ball365':hometeam_ball365,'awayteam_ball365':awayteam_ball365,'isreverse':isreverse,'islottype':islottype,'isbeidan':isbeidan,'matchdate':matchdate}
+            return_arr.append(row)
+    return return_arr
+    
+'''ªÒ»°betexplore xml–≈œ¢'''
+def get_betexplore_odds(type):
+    content=fopen(getPath('betexplore_xml'),type='[FUNC:get_betexplore_odds]')
+    return_arr=[]
+    if content:
+        content=content.replace('<?xml version="1.0" encoding="gb2312"?>','<?xml version="1.0" encoding="gbk"?>')
+        dom=parseString(content)
+        if dom:
+            node_arr=dom.getElementsByTagName('m')
+        else:
+            node_arr=[]
+        if type=='today_odds':
+            today=time.strftime('%Y%m%d%H%M',time.localtime())
+            nextday=time.strftime('%Y%m%d1200',time.localtime(time.time()+24*3600))
+        elif type=='lot_odds':
+            today=time.strftime('%Y%m%d%H%M',time.localtime())
+        elif type in ['main_odds','unmain_odds']:
+            nextday=time.strftime('%Y%m%d1200',time.localtime(time.time()+24*3600))
+            
+        for node in node_arr:
+            matchdate=node.getElementsByTagName('MatchDate')[0].firstChild.nodeValue
+            if type=='today_odds' and (node.getAttribute('ISLotType')!='0' or matchdate<=today or matchdate>nextday):
+                continue
+            elif type=='lot_odds' and (node.getAttribute('ISLotType')!='1' or matchdate<=today):
+                continue
+            elif type=='main_odds' and (node.getAttribute('ISLotType')!='0' or node.getAttribute('IsMain')!='1' or matchdate<=nextday):
+                continue
+            elif type=='unmain_odds' and (node.getAttribute('ISLotType')!='0' or node.getAttribute('IsMain')!='0' or matchdate<=nextday):
+                continue
+            fixtureid=int(node.getElementsByTagName('MatchID')[0].firstChild.nodeValue)
+            isbeidan=int(node.getAttribute('IsBeiDan'))
+            isreverse=int(node.getElementsByTagName('IsReverse')[0].firstChild.nodeValue)
+            url=node.getElementsByTagName('MatchUrl')[0].firstChild.nodeValue.encode('gbk')
+#            team_str=node.getElementsByTagName('MatchTeam')[0].firstChild.nodeValue.encode('gbk')
+#            team_arr=team_str.split('VS')
+#            if isreverse==0:
+#                hometeam=team_arr[0].strip()
+#                awayteam=team_arr[1].strip()
+#            else:
+#                hometeam=team_arr[1].strip()
+#                awayteam=team_arr[0].strip()
+            row={'fixtureid':fixtureid,'isreverse':isreverse,'url':url,'isbeidan':isbeidan}
+            return_arr.append(row)
+    return return_arr
+'''º∆À„¡Ω∏ˆ ±º‰œ‡≤ÓµƒÃÏ ˝'''
+def day_diff(datetime1,datetime2):
+#    time_tmp=datetime1.split(' ')
+#    time1_tmp=time_tmp[0].split('-')
+#    time2_tmp=time_tmp[1].split(':')
+#    time1=datetime.datetime(int(time1_tmp[0]),int(time1_tmp[1]),int(time1_tmp[2]),int(time2_tmp[0]),int(time2_tmp[1]),int(time2_tmp[2]))
+#    
+#    time_tmp=datetime2.split(' ')
+#    time1_tmp=time_tmp[0].split('-')
+#    time2_tmp=time_tmp[1].split(':')
+#    time2=datetime.datetime(int(time1_tmp[0]),int(time1_tmp[1]),int(time1_tmp[2]),int(time2_tmp[0]),int(time2_tmp[1]),int(time2_tmp[2]))
+#    return (time2-time1).days
+    timestamp_1=time.mktime(time.strptime(str(datetime1),'%Y-%m-%d %H:%M:%S'))
+    timestamp_2=time.mktime(time.strptime(str(datetime2),'%Y-%m-%d %H:%M:%S'))
+    return abs(timestamp_1-timestamp_2)/86400
+
+def check_day_diff(time1,time2):
+    if not time1 or not time2 or day_diff(time1,time2)>=1:
+        return False
+    else:
+        return True
+
+def addColor(str):
+    return str.replace('W','<font color="#FF0000">W</font>').replace('D','<font color="#006600">D</font>').replace('L','<font color="#0000FF">L</font>')
+
+def genRecommend(recommend,recommend_text,home,away):
+    if recommend=="1":
+        return home
+    elif recommend=="2":
+        return away
+    elif recommend=="4":
+        return recommend_text
+    else:
+        return '∫Õæ÷'
+def genConfidence(n):
+    string=''
+    for i in range(1,n+1):
+        string+='°Ô'
+    return string
+
+def getHandicapName(handicap,homeismain):
+    string=''
+    if cf.config['aomen']['handicapname'].has_key(handicap):
+        string=cf.config['aomen']['handicapname'][handicap]
+    else:
+        string=''
+    if handicap!=1 and homeismain==0:
+        string=' ‹'+string
+    return string
+def getHandicap(handicapname):
+    key_tmp=cf.config['aomen']['handicap'].keys()
+    val_tmp=cf.config['aomen']['handicap'].values()
+    if handicapname in val_tmp:
+        id=val_tmp.index(handicapname)
+        return key_tmp[id]
+    else:
+        return 0
+    
+def getCompany(type):
+    if cf.config['cid'].has_key(type):
+        return cf.config['cid'][type]
+    else:
+        return []
+
+def getDxhandicap(handicap):
+    return cf.config['aomen']['dx_handicap'][handicap]
+
+def checkData(string):
+    return float(string)-1
+
+def getMacauZqXml(type):
+    url=getPath('create_interface_url')+getPath('create_zq_xml')
+    content=fopen(url)
+    xml=parseString(content)
+    if xml:
+        m_node_arr=xml.getElementsByTagName('Table')
+    else:
+        m_node_arr=[]
+    mid_arr={}
+    for node in m_node_arr:
+        if type in ['match_halfeuro','match_euro','match_dx','match_bd','match_bqc','match_ds','match_jqs','match_teamjqs']:
+            fixtureid=int(node.getElementsByTagName('FixtureID')[0].firstChild.nodeValue)
+            mid=int(node.getElementsByTagName('MacauID')[0].firstChild.nodeValue)
+            isresver=int(node.getElementsByTagName('IsResver')[0].firstChild.nodeValue)
+            matchdate=node.getElementsByTagName('MatchDate')[0].firstChild.nodeValue.encode('gbk')
+            mid_arr[mid]={'fixtureid':fixtureid,'isresver':isresver,'matchdate':matchdate}
+            
+        elif type=='match_asian':
+            fixtureid=int(node.getElementsByTagName('FixtureID')[0].firstChild.nodeValue)
+            mid=int(node.getElementsByTagName('MacauID')[0].firstChild.nodeValue)
+            isresver=int(node.getElementsByTagName('IsResver')[0].firstChild.nodeValue)
+            islottyle=int(node.getElementsByTagName('IsLotTyle')[0].firstChild.nodeValue)
+            isbeidan=int(node.getElementsByTagName('IsBeiDan')[0].firstChild.nodeValue)
+            matchdate=node.getElementsByTagName('MatchDate')[0].firstChild.nodeValue.encode('gbk')
+            vsteam=node.getElementsByTagName('VSTeam')[0].firstChild.nodeValue.encode('gbk','ignore')
+            mid_arr[mid]={'fixtureid':fixtureid,'matchdate':matchdate,'isresver':isresver,'islottyle':islottyle,'isbeidan':isbeidan,'vsteam':vsteam}
+            
+    m_node_arr=None
+    return mid_arr
+
+'''¥”xmlªÒ»°¿∫«Ú∆•≈‰–≈œ¢'''
+def getMacauLqXml(type):
+    url=getPath('create_interface_url')+getPath('create_nba_xml')
+    content=fopen(url)
+    xml=parseString(content)
+    if xml:
+        m_node_arr=xml.getElementsByTagName('Table')
+    else:
+        m_node_arr=[]
+    mid_arr={}
+    
+    for node in m_node_arr:
+        if type=='match_lq_pen':
+            fixtureid=int(node.getElementsByTagName('FixtureID')[0].firstChild.nodeValue)
+            mid=int(node.getElementsByTagName('MacauID')[0].firstChild.nodeValue)
+            vsteam=node.getElementsByTagName('VSTeam')[0].firstChild.nodeValue.encode('gbk','ignore')
+            mid_arr[mid]={'fixtureid':fixtureid,'vsteam':vsteam}
+    m_node_arr=None
+    return mid_arr
+
+def get_gooooal_handi(handi,isreverse):
+    if isreverse==1:
+        handi=-1*handi
+    if cf.config['gooooal']['handi'].has_key(abs(handi)):
+        if handi<=0:
+            str=cf.config['gooooal']['handi'][abs(handi)]
+        else:
+            str=' ‹'+cf.config['gooooal']['handi'][handi]
+    else:
+        str=''
+    return str
+
+def get_gooooal_pka(handi):
+    if cf.config['gooooal']['pk'].has_key(handi):
+        str=cf.config['gooooal']['pk'][handi]
+    else:
+        str=''
+    return str      
+
+def sendMsgInterface(phone,content):
+    import EasClient
+    import JsonUtil
+    import XmlConfig
+    import os
+    XmlConfig.loadFile(os.environ['_BASIC_PATH_'] + '/etc/service.xml')
+    eas_instance = EasClient.EasClient().getInstance('others')
+    if type(content)==unicode:
+        content = content.encode("gbk")
+    result = []
+    for p in phone.split("|"):
+        params={
+            'tag':'www.server.notice',
+            'mobile':p,
+            'args':JsonUtil.write({'content':content}),
+        }
+        res = eas_instance.invoke('sendSMS',params)
+        result.append("%s:%s" % (p, res[0]))
+    return str(result)
+
+
+def Sc_Interface(type,fixtureid):
+    import EasClient
+    import XmlConfig
+    import os
+    #…œ¥´Ω”ø⁄
+    XmlConfig.loadFile(os.environ['_BASIC_PATH_'] + '/etc/service.xml')
+    eas_instance = EasClient.EasClient().getInstance('odds_interface')
+    if type=='euro':
+        type_param='euro'
+    elif type=='asian':
+        type_param='asian'
+    else:
+        type_param='dxq'
+    params={'type':type_param,'fid':str(fixtureid)}
+    eas_instance.invoke('api/make',params)

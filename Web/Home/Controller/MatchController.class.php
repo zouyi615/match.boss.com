@@ -70,9 +70,9 @@ class MatchController extends Controller {
 				$newplArr[$i]['s'] = strval($plArr[$id]['win']);
 				$newplArr[$i]['p'] = strval($plArr[$id]['draw']);
 				$newplArr[$i]['f'] = strval($plArr[$id]['lost']);
-				$newplArr[$i]['bet365'] = strval($oddsArr[$id]['bet365']);
+				$newplArr[$i]['wl'] = strval($oddsArr[$id]['wl']);
 				$newplArr[$i]['hg'] = strval($oddsArr[$id]['hg']);
-				if($newplArr[$i]['bet365'] || $newplArr[$i]['hg']){
+				if($newplArr[$i]['wl'] || $newplArr[$i]['hg']){
 					$newplArr[$i]['ismatch'] = 1;
 				}else{
 					$newplArr[$i]['ismatch'] = 0;
@@ -83,7 +83,7 @@ class MatchController extends Controller {
 					$newplArr[$i]['isend'] = 0;
 				}
 				$newplArr[$i]['uptime'] = date('Y-m-d H:i:s');
-				$rr = $p->field('id,rq,s,p,f,bet365,hg,ismatch,isend,uptime')->save($newplArr[$i]);
+				$rr = $p->field('id,rq,s,p,f,wl,hg,ismatch,isend,uptime')->save($newplArr[$i]);
 				$i++;
 			}
 		}else{

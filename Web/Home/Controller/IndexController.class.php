@@ -190,11 +190,11 @@ class IndexController extends Controller {
 		header("Content-type:text/html;charset=UTF-8");   
 		$p = M('pl');
 		$match = array();
-		$rs = $p->alias('p')->field('m.id,m.matchtime,m.simpleleague,m.homename,m.awayname,p.rq,p.s,p.f,p.bet365,p.hg,p.uptime')->join('LEFT JOIN __MATCH__ m ON p.id = m.id')->where('p.ismatch=1 and p.isend=0')->select();		
+		$rs = $p->alias('p')->field('m.id,m.matchtime,m.simpleleague,m.homename,m.awayname,p.rq,p.s,p.f,p.wl,p.hg,p.uptime')->join('LEFT JOIN __MATCH__ m ON p.id = m.id')->where('p.ismatch=1 and p.isend=0')->select();		
 		if($rs){
 			foreach($rs as $key=>$val){
 				$w = '';
-				$bet_r = $hg_r = 0;
+				$wl_r = $hg_r = 0;
 				$id = $val['id'];
 				$rq = $val['rq'];
 				if($rq == "-1"){
@@ -203,9 +203,9 @@ class IndexController extends Controller {
 					$w = isset($val['s'])?$val['s']:'';
 				}
 				if(!$w) continue;
-				$b = $this->getMin($val['bet365']);  //bet365赔率最小值	
+				$b = $this->getMin($val['wl']);  //bet365赔率最小值	
 				if($b){				
-					$bet_r = sprintf("%.6f",1/(1/$w+1/$b)); //计算bet365匹配回报率
+					$wl_r = sprintf("%.6f",1/(1/$w+1/$b)); //计算bet365匹配回报率
 				}
 				$h = $this->getMin($val['hg']); //皇冠欧赔赔率最小值
 				if($h){				
@@ -216,9 +216,9 @@ class IndexController extends Controller {
 				$match[$id]['w'] = $w; //竞彩受让方赔率
 				$match[$id]['b'] = $b; //bet365赔率最小值
 				$match[$id]['h'] = $h; //皇冠欧赔赔率最小值
-				$match[$id]['bet_r'] = $bet_r;
+				$match[$id]['wl_r'] = $wl_r;
 				$match[$id]['hg_r'] = $hg_r;
-				$match[$id]['rate'] = sprintf("%.6f",($bet_r+$hg_r)/2);				
+				$match[$id]['rate'] = sprintf("%.6f",($wl_r+$hg_r)/2);				
 			}
 		}		
 		return $match;
@@ -246,10 +246,10 @@ class IndexController extends Controller {
 			if($timediff < 6*60*60){
 				continue;
 			}
-			$arr = array('bet365','hg');
-			$name_arr = array('bet365'=>'bet365','hg'=>'皇冠');
-			$op_arr = array('bet365'=>'b','hg'=>'h'); //赔率字段
-			$op_r_arr = array('bet365'=>'bet_r','hg'=>'hg_r'); //返还率字段
+			$arr = array('wl','hg');
+			$name_arr = array('wl'=>'威廉','hg'=>'皇冠');
+			$op_arr = array('wl'=>'b','hg'=>'h'); //赔率字段
+			$op_r_arr = array('wl'=>'wl_r','hg'=>'hg_r'); //返还率字段
 			foreach($arr as $v1){
 				foreach($arr as $v2){
 					if($match[$m1][$op_r_arr[$v1]]&&$match[$m2][$op_r_arr[$v2]]){

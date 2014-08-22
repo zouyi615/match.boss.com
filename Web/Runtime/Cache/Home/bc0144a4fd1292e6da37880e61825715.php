@@ -78,15 +78,15 @@
 								<td rowspan="2"><?php echo $m['homename']; ?></td>
 								<td rowspan="2"><?php echo $m['awayname']; ?></td>
 								<td><?php echo $m['w']; ?></td>
-								<td><?php echo $m['b'].'(bet365)'; ?></td>
-								<td><?php echo $m['bet_r']; ?></td>
+								<td><?php echo $m['b'].'(威廉)'; ?></td>
+								<td><?php echo $m['wl_r']; ?></td>
 							</tr>
 							<tr>
 								<td><?php echo $m['w']; ?></td>
 								<td><?php echo $m['h'].'(皇冠)'; ?></td>
 								<td><?php echo $m['hg_r']; ?></td>
 							</tr>
-					<?php }else{ $sp = $sp_r = $nt = ''; if($m['b']){ $sp = $m['b']; $sp_r = $m['bet_r']; $nt = '(bet365)'; }elseif($m['h']){ $sp = $m['h']; $sp_r = $m['hg_r']; $nt = '(皇冠)'; } if($sp&&$sp_r&&$nt){ ?>		
+					<?php }else{ $sp = $sp_r = $nt = ''; if($m['b']){ $sp = $m['b']; $sp_r = $m['wl_r']; $nt = '(威廉)'; }elseif($m['h']){ $sp = $m['h']; $sp_r = $m['hg_r']; $nt = '(皇冠)'; } if($sp&&$sp_r&&$nt){ ?>		
 								<tr class="data" id="<?php echo $m['id']; ?>" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
 									<td><?php echo $k+1; ?></td>
 									<td><?php echo $m['id']; ?></td>

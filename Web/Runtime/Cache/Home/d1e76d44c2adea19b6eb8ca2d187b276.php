@@ -53,7 +53,7 @@
 						<th>主队</th>
 						<th>客队</th>
 						<th>赔率</th>
-						<th class="red">欧赔（bet365）</th>
+						<th class="red">欧赔（威廉）</th>
 						<th class="red">欧赔（皇冠）</th>
 						<th>开售状态</th>
 					</tr>
@@ -81,7 +81,7 @@
 							<td><?php echo $m['awayname']; ?></td>
 							<td>
 								<?php echo '<span class="label label-default">'.$m['s'].'</span>&nbsp;<span class="label label-default">'.$m['p'].'</span>&nbsp;<span class="label label-default">'.$m['f'].'</span>'; ?></td>
-							<td class="red"><?php echo $m['bet365']; ?></td>
+							<td class="red"><?php echo $m['wl']; ?></td>
 							<td class="red"><?php echo $m['hg']; ?></td>
 							<td class="offset" data-end="<?php echo $m['end']; ?>"><?php echo $m['isend']==0?'<span class="label label-success">开售</span>':'<span class="label label-warning">已截止</span>'; ?></td>
 						</tr>		

@@ -1,0 +1,4 @@
+[ 2014-08-22T22:02:40+08:00 ] 127.0.0.1 /
+ERR: 1054:Unknown column 'p.bet365' in 'field list'
+ [ SQL语句 ] : SELECT m.id,m.matchtime,m.simpleleague,m.homename,m.awayname,p.rq,p.s,p.f,p.bet365,p.hg,p.uptime FROM m_pl p LEFT JOIN m_match m ON p.id = m.id  WHERE ( p.ismatch=1 and p.isend=0 ) 
+

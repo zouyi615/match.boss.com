@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="gbk"?>
+<xml>
+	<weChat email="siweidashu@gmail.com" password="1q2w3e4r" />
+	<config 
+		distUrl="http://dist.500wan.com/dist/distribute.php"
+		daili="http://get.data%s.com/getcontent.php?chk=7a0ce6b8c2e7a0a877e654f4ce06defe&amp;url=%s"
+		ip=""
+	/>
+	<match 
+		expectUrl="http://www.500wan.com/static/public/%s/xml/expect/list/expect.xml" 
+		configUrl="http://resources.500wan.com/static/info/info_server/eas_checkdata/mconfig.json"
+		tradeUrl="http://www.500wan.com/static/info/%s/daigou/xml/%s.xml" 
+		txtUrl="http://www.500wan.com/static/public/%s/txt/ticket/%s.txt" 
+		noticeUrl="http://resources.500wan.com/static/info/info_server/eas_checkdata/match.json" 
+		noticePath="/static/info/info_server/eas_checkdata/match.json" 
+		apiurl="http://tk.boss.com/pages/auto/expectman/autoShenheZcProcess.php?%s"
+		key="exman_autoshenhe_process$!#$*%^**"
+		lot="sfc|jq4|zc6" 
+		loop="120" 
+	/>
+	<name loop="300" matchxml="http://www.500.com/static/public/%s/xml/match/match.xml" config="http://dist.boss.com/static/info/info_server/eas_checkdata/name_config.json" name="http://dist.boss.com/static/info/info_server/eas_checkdata/name.json" namePath="/static/info/info_server/eas_checkdata/name.json" />
+	<delay loop="300" lot="jczq|bjdc" config="http://dist.boss.com/static/info/info_server/eas_checkdata/dconfig.json" delay="http://dist.boss.com/static/info/info_server/eas_checkdata/delay.json" delayPath="/static/info/info_server/eas_checkdata/delay.json" >
+		<jczq matchurl="http://www.okooo.com/jingcai/" matchxml="http://www.500.com/static/public/jczq/xml/endtime/match.xml" />
+		<bjdc matchurl="http://www.okooo.com/danchang/" matchxml="http://www.500.com/static/public/bjdc/xml/process/%s.xml" />
+	</delay>
+	<notice 
+		num="3" 
+		configUrl="http://resources.500wan.com/static/info/info_server/eas_checkdata/nconfig.json"
+		zgjc="http://www.sporttery.com/list/ann/list.html" 
+		zgtc="http://www.lottery.gov.cn/news/List.aspx?p=1&amp;t=1" 
+		bjtc="http://www.bjlot.com/List/List_100_1.shtml" 
+		noticeUrl="http://resources.500wan.com/static/info/info_server/eas_checkdata/notice.json" 
+		noticePath="/static/info/info_server/eas_checkdata/notice.json" 
+		insertUrl="http://infoadmin.500wan.com/interface/article/article_api.php"
+		loop="30" 
+	/>
+	<news> 
+		<upnews url="http://infoadmin.boss.com/~futx/500boss/infoadmin/html/interface/article/article_amfh.php" />
+		<!--<amcp newslist="http://www.macauslot.com/soccer/html/homepage/news_title_1.xml" news="http://web.macauslot.com/soccer/html/news/main/news_%s.html?nocache=%s" />-->
+		<amcp newslist="http://www.macauslot.com/soccer/html/homepage/news_update_1.xml"/>
+		<lqjb newslist="http://www.macauslot.com/nba/html/homepage/news_update_1.xml"/>
+		<lqhx newslist="http://www.macauslot.com/nba/html/homepage/news_update_2.xml"/>
+		<xgsm newslist="http://football.hkjc.com/football/preview/chinese/preview-list.aspx" news="http://football.hkjc.com%s" />
+	</news>
+	<email
+		host="113.98.237.180" 
+		user="zixun@mail.500wan.com.cn" 
+	/>
+	<numlot phone1="18682029615" phone2="18682029615" admin="18682029615" url="http://www.lottery.gov.cn/lottery/draws/Global.aspx" host="http://www.lottery.gov.cn" zxurl="http://infoadmin.boss.com/interface/server/expect.php" tkurl="http://www.500boss.com/static/public/%s/txt/kaijiang/%s.txt">
+		<ssq url="http://www.zhcw.com/ssq/kjgg/zuixinkaijiang/" />
+		<sd url="http://www.zhcw.com/3d/kjgg/zxkj/" sjhurl="http://kj.zhcw.com/kjData/2012/zhcw_3d_index_last30.js?%d" />
+		<qlc url="http://www.zhcw.com/kaijiang/zhcw_qlc_index.html" />
+	</numlot>
+</xml>

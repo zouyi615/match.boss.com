@@ -130,7 +130,7 @@ $.admin.box = {
 				warning.html('<strong>提示！</strong>正在载入数据...');
 				$.post(url,function(data, textStatus){
 					var res = $.parseJSON(data);
-					if(res){
+					if(res < 0){
 						warning.html('<strong>警告！</strong>'+res.msg);
 					}else{
 						warning.html('&nbsp;');	
