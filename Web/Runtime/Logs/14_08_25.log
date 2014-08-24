@@ -1,0 +1,636 @@
+[ 2014-08-25T00:39:24+08:00 ] 127.0.0.1 /Home/Match/teamUpAll.html
+ERR: 1062:Duplicate entry '1179' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1179,'热那�\�','热那�\�')
+ERR: 1062:Duplicate entry '562' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (562,'埃瓦�\�','埃瓦�\�')
+ERR: 1062:Duplicate entry '885' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (885,'皇家社会','皇家社会')
+ERR: 1062:Duplicate entry '1109' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1109,'莫尔�\�','莫尔�\�')
+ERR: 1062:Duplicate entry '546' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (546,'奥勒�\�','奥勒�\�')
+ERR: 1062:Duplicate entry '467' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (467,'圣洛伦索','圣洛伦索')
+ERR: 1062:Duplicate entry '639' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (639,'班菲尔德','班菲尔德')
+ERR: 1062:Duplicate entry '963' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (963,'拉努�\�','拉努�\�')
+ERR: 1062:Duplicate entry '569' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (569,'拉普拉塔大学�\�','拉普拉塔大学�\�')
+ERR: 1062:Duplicate entry '709' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (709,'博阿维斯�\�','博阿维斯�\�')
+ERR: 1062:Duplicate entry '678' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (678,'本菲�\�','本菲�\�')
+ERR: 1062:Duplicate entry '1276' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1276,'乌迪内斯','乌迪内斯')
+ERR: 1062:Duplicate entry '1276' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1276,'乌迪内斯','乌迪内斯')
+ERR: 1062:Duplicate entry '1129' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1129,'南特','南特')
+ERR: 1062:Duplicate entry '1105' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1105,'摩纳�\�','摩纳�\�')
+ERR: 1062:Duplicate entry '1580' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1580,'格雷米奥','格雷米奥')
+ERR: 1062:Duplicate entry '1572' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1572,'科林蒂安','科林蒂安')
+ERR: 1062:Duplicate entry '1577' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1577,'弗拉门戈','弗拉门戈')
+ERR: 1062:Duplicate entry '1578' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1578,'弗鲁米嫩�\�','弗鲁米嫩�\�')
+ERR: 1062:Duplicate entry '3988' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3988,'累西腓体�\�','累西腓体�\�')
+ERR: 1062:Duplicate entry '1385' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1385,'圣保�\�','圣保�\�')
+ERR: 1062:Duplicate entry '472' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (472,'桑托�\�','桑托�\�')
+ERR: 1062:Duplicate entry '1589' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1589,'维多利亚','维多利亚')
+ERR: 1062:Duplicate entry '1576' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1576,'费古埃伦�\�','费古埃伦�\�')
+ERR: 1062:Duplicate entry '953' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (953,'基尔梅斯','基尔梅斯')
+ERR: 1062:Duplicate entry '985' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (985,'莱万�\�','莱万�\�')
+ERR: 1062:Duplicate entry '683' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (683,'比利亚雷亚尔','比利亚雷亚尔')
+ERR: 1062:Duplicate entry '4286' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (4286,'西雅图海湾人','西雅图海湾人')
+ERR: 1062:Duplicate entry '705' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (705,'博卡青年','博卡青年')
+ERR: 1062:Duplicate entry '1183' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1183,'拉斐拉竞技','拉斐拉竞技')
+ERR: 1062:Duplicate entry '1571' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1571,'巴拉纳竞技','巴拉纳竞技')
+ERR: 1062:Duplicate entry '2277' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (2277,'巴伊�\�','巴伊�\�')
+ERR: 1062:Duplicate entry '1575' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1575,'克鲁塞罗','克鲁塞罗')
+ERR: 1062:Duplicate entry '3638' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3638,'德国女足U20','德国女足U20')
+ERR: 1062:Duplicate entry '6186' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (6186,'费城联合','费城联合')
+ERR: 1062:Duplicate entry '499' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (499,'圣何塞地�\�','圣何塞地�\�')
+ERR: 1062:Duplicate entry '3608' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3608,'戈多伊克鲁斯','戈多伊克鲁斯')
+ERR: 1062:Duplicate entry '864' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (864,'河床','河床')
+ERR: 1062:Duplicate entry '4126' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (4126,'札幌冈萨�\�','札幌冈萨�\�')
+ERR: 1062:Duplicate entry '3834' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3834,'枥木SC','枥木SC')
+ERR: 1062:Duplicate entry '913' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (913,'卡尔�\�','卡尔�\�')
+ERR: 1062:Duplicate entry '2640' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (2640,'耶夫�\�','耶夫�\�')
+ERR: 1062:Duplicate entry '1355' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1355,'佐加顿斯','佐加顿斯')
+ERR: 1062:Duplicate entry '695' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (695,'波鸿','波鸿')
+ERR: 1062:Duplicate entry '660' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (660,'柏林联合','柏林联合')
+ERR: 1062:Duplicate entry '1072' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1072,'曼彻斯特�\�','曼彻斯特�\�')
+ERR: 1062:Duplicate entry '1011' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1011,'利物�\�','利物�\�')
+ERR: 1062:Duplicate entry '1072' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1072,'曼彻斯特�\�','曼彻斯特�\�')
+ERR: 1062:Duplicate entry '1011' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1011,'利物�\�','利物�\�')
+ERR: 1062:Duplicate entry '719' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (719,'布拉�\�','布拉�\�')
+ERR: 1062:Duplicate entry '650' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (650,'巴列卡诺','巴列卡诺')
+ERR: 1062:Duplicate entry '1046' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1046,'马德里竞技','马德里竞技')
+
+[ 2014-08-25T00:39:26+08:00 ] 127.0.0.1 /Home/Match/teamUpAll.html
+ERR: 1062:Duplicate entry '1179' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1179,'热那�\�','热那�\�')
+ERR: 1062:Duplicate entry '562' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (562,'埃瓦�\�','埃瓦�\�')
+ERR: 1062:Duplicate entry '885' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (885,'皇家社会','皇家社会')
+ERR: 1062:Duplicate entry '1109' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1109,'莫尔�\�','莫尔�\�')
+ERR: 1062:Duplicate entry '546' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (546,'奥勒�\�','奥勒�\�')
+ERR: 1062:Duplicate entry '467' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (467,'圣洛伦索','圣洛伦索')
+ERR: 1062:Duplicate entry '639' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (639,'班菲尔德','班菲尔德')
+ERR: 1062:Duplicate entry '963' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (963,'拉努�\�','拉努�\�')
+ERR: 1062:Duplicate entry '569' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (569,'拉普拉塔大学�\�','拉普拉塔大学�\�')
+ERR: 1062:Duplicate entry '709' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (709,'博阿维斯�\�','博阿维斯�\�')
+ERR: 1062:Duplicate entry '678' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (678,'本菲�\�','本菲�\�')
+ERR: 1062:Duplicate entry '1276' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1276,'乌迪内斯','乌迪内斯')
+ERR: 1062:Duplicate entry '1276' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1276,'乌迪内斯','乌迪内斯')
+ERR: 1062:Duplicate entry '1129' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1129,'南特','南特')
+ERR: 1062:Duplicate entry '1105' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1105,'摩纳�\�','摩纳�\�')
+ERR: 1062:Duplicate entry '1580' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1580,'格雷米奥','格雷米奥')
+ERR: 1062:Duplicate entry '1572' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1572,'科林蒂安','科林蒂安')
+ERR: 1062:Duplicate entry '1577' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1577,'弗拉门戈','弗拉门戈')
+ERR: 1062:Duplicate entry '1578' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1578,'弗鲁米嫩�\�','弗鲁米嫩�\�')
+ERR: 1062:Duplicate entry '3988' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3988,'累西腓体�\�','累西腓体�\�')
+ERR: 1062:Duplicate entry '1385' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1385,'圣保�\�','圣保�\�')
+ERR: 1062:Duplicate entry '472' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (472,'桑托�\�','桑托�\�')
+ERR: 1062:Duplicate entry '1589' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1589,'维多利亚','维多利亚')
+ERR: 1062:Duplicate entry '1576' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1576,'费古埃伦�\�','费古埃伦�\�')
+ERR: 1062:Duplicate entry '953' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (953,'基尔梅斯','基尔梅斯')
+ERR: 1062:Duplicate entry '985' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (985,'莱万�\�','莱万�\�')
+ERR: 1062:Duplicate entry '683' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (683,'比利亚雷亚尔','比利亚雷亚尔')
+ERR: 1062:Duplicate entry '4286' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (4286,'西雅图海湾人','西雅图海湾人')
+ERR: 1062:Duplicate entry '705' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (705,'博卡青年','博卡青年')
+ERR: 1062:Duplicate entry '1183' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1183,'拉斐拉竞技','拉斐拉竞技')
+ERR: 1062:Duplicate entry '1571' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1571,'巴拉纳竞技','巴拉纳竞技')
+ERR: 1062:Duplicate entry '2277' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (2277,'巴伊�\�','巴伊�\�')
+ERR: 1062:Duplicate entry '1575' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1575,'克鲁塞罗','克鲁塞罗')
+ERR: 1062:Duplicate entry '3638' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3638,'德国女足U20','德国女足U20')
+ERR: 1062:Duplicate entry '6186' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (6186,'费城联合','费城联合')
+ERR: 1062:Duplicate entry '499' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (499,'圣何塞地�\�','圣何塞地�\�')
+ERR: 1062:Duplicate entry '3608' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3608,'戈多伊克鲁斯','戈多伊克鲁斯')
+ERR: 1062:Duplicate entry '864' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (864,'河床','河床')
+ERR: 1062:Duplicate entry '4126' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (4126,'札幌冈萨�\�','札幌冈萨�\�')
+ERR: 1062:Duplicate entry '3834' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3834,'枥木SC','枥木SC')
+ERR: 1062:Duplicate entry '913' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (913,'卡尔�\�','卡尔�\�')
+ERR: 1062:Duplicate entry '2640' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (2640,'耶夫�\�','耶夫�\�')
+ERR: 1062:Duplicate entry '1355' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1355,'佐加顿斯','佐加顿斯')
+ERR: 1062:Duplicate entry '695' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (695,'波鸿','波鸿')
+ERR: 1062:Duplicate entry '660' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (660,'柏林联合','柏林联合')
+ERR: 1062:Duplicate entry '1072' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1072,'曼彻斯特�\�','曼彻斯特�\�')
+ERR: 1062:Duplicate entry '1011' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1011,'利物�\�','利物�\�')
+ERR: 1062:Duplicate entry '1072' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1072,'曼彻斯特�\�','曼彻斯特�\�')
+ERR: 1062:Duplicate entry '1011' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1011,'利物�\�','利物�\�')
+ERR: 1062:Duplicate entry '719' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (719,'布拉�\�','布拉�\�')
+ERR: 1062:Duplicate entry '650' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (650,'巴列卡诺','巴列卡诺')
+ERR: 1062:Duplicate entry '1046' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1046,'马德里竞技','马德里竞技')
+
+[ 2014-08-25T00:39:26+08:00 ] 127.0.0.1 /Home/Match/teamUpAll.html
+ERR: 1062:Duplicate entry '1179' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1179,'热那�\�','热那�\�')
+ERR: 1062:Duplicate entry '562' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (562,'埃瓦�\�','埃瓦�\�')
+ERR: 1062:Duplicate entry '885' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (885,'皇家社会','皇家社会')
+ERR: 1062:Duplicate entry '1109' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1109,'莫尔�\�','莫尔�\�')
+ERR: 1062:Duplicate entry '546' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (546,'奥勒�\�','奥勒�\�')
+ERR: 1062:Duplicate entry '467' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (467,'圣洛伦索','圣洛伦索')
+ERR: 1062:Duplicate entry '639' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (639,'班菲尔德','班菲尔德')
+ERR: 1062:Duplicate entry '963' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (963,'拉努�\�','拉努�\�')
+ERR: 1062:Duplicate entry '569' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (569,'拉普拉塔大学�\�','拉普拉塔大学�\�')
+ERR: 1062:Duplicate entry '709' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (709,'博阿维斯�\�','博阿维斯�\�')
+ERR: 1062:Duplicate entry '678' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (678,'本菲�\�','本菲�\�')
+ERR: 1062:Duplicate entry '1276' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1276,'乌迪内斯','乌迪内斯')
+ERR: 1062:Duplicate entry '1276' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1276,'乌迪内斯','乌迪内斯')
+ERR: 1062:Duplicate entry '1129' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1129,'南特','南特')
+ERR: 1062:Duplicate entry '1105' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1105,'摩纳�\�','摩纳�\�')
+ERR: 1062:Duplicate entry '1580' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1580,'格雷米奥','格雷米奥')
+ERR: 1062:Duplicate entry '1572' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1572,'科林蒂安','科林蒂安')
+ERR: 1062:Duplicate entry '1577' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1577,'弗拉门戈','弗拉门戈')
+ERR: 1062:Duplicate entry '1578' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1578,'弗鲁米嫩�\�','弗鲁米嫩�\�')
+ERR: 1062:Duplicate entry '3988' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3988,'累西腓体�\�','累西腓体�\�')
+ERR: 1062:Duplicate entry '1385' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1385,'圣保�\�','圣保�\�')
+ERR: 1062:Duplicate entry '472' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (472,'桑托�\�','桑托�\�')
+ERR: 1062:Duplicate entry '1589' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1589,'维多利亚','维多利亚')
+ERR: 1062:Duplicate entry '1576' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1576,'费古埃伦�\�','费古埃伦�\�')
+ERR: 1062:Duplicate entry '953' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (953,'基尔梅斯','基尔梅斯')
+ERR: 1062:Duplicate entry '985' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (985,'莱万�\�','莱万�\�')
+ERR: 1062:Duplicate entry '683' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (683,'比利亚雷亚尔','比利亚雷亚尔')
+ERR: 1062:Duplicate entry '4286' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (4286,'西雅图海湾人','西雅图海湾人')
+ERR: 1062:Duplicate entry '705' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (705,'博卡青年','博卡青年')
+ERR: 1062:Duplicate entry '1183' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1183,'拉斐拉竞技','拉斐拉竞技')
+ERR: 1062:Duplicate entry '1571' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1571,'巴拉纳竞技','巴拉纳竞技')
+ERR: 1062:Duplicate entry '2277' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (2277,'巴伊�\�','巴伊�\�')
+ERR: 1062:Duplicate entry '1575' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1575,'克鲁塞罗','克鲁塞罗')
+ERR: 1062:Duplicate entry '3638' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3638,'德国女足U20','德国女足U20')
+ERR: 1062:Duplicate entry '6186' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (6186,'费城联合','费城联合')
+ERR: 1062:Duplicate entry '499' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (499,'圣何塞地�\�','圣何塞地�\�')
+ERR: 1062:Duplicate entry '3608' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3608,'戈多伊克鲁斯','戈多伊克鲁斯')
+ERR: 1062:Duplicate entry '864' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (864,'河床','河床')
+ERR: 1062:Duplicate entry '4126' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (4126,'札幌冈萨�\�','札幌冈萨�\�')
+ERR: 1062:Duplicate entry '3834' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3834,'枥木SC','枥木SC')
+ERR: 1062:Duplicate entry '913' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (913,'卡尔�\�','卡尔�\�')
+ERR: 1062:Duplicate entry '2640' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (2640,'耶夫�\�','耶夫�\�')
+ERR: 1062:Duplicate entry '1355' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1355,'佐加顿斯','佐加顿斯')
+ERR: 1062:Duplicate entry '695' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (695,'波鸿','波鸿')
+ERR: 1062:Duplicate entry '660' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (660,'柏林联合','柏林联合')
+ERR: 1062:Duplicate entry '1072' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1072,'曼彻斯特�\�','曼彻斯特�\�')
+ERR: 1062:Duplicate entry '1011' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1011,'利物�\�','利物�\�')
+ERR: 1062:Duplicate entry '1072' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1072,'曼彻斯特�\�','曼彻斯特�\�')
+ERR: 1062:Duplicate entry '1011' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1011,'利物�\�','利物�\�')
+ERR: 1062:Duplicate entry '719' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (719,'布拉�\�','布拉�\�')
+ERR: 1062:Duplicate entry '650' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (650,'巴列卡诺','巴列卡诺')
+ERR: 1062:Duplicate entry '1046' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1046,'马德里竞技','马德里竞技')
+
+[ 2014-08-25T00:39:27+08:00 ] 127.0.0.1 /Home/Match/teamUpAll.html
+ERR: 1062:Duplicate entry '1179' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1179,'热那�\�','热那�\�')
+ERR: 1062:Duplicate entry '562' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (562,'埃瓦�\�','埃瓦�\�')
+ERR: 1062:Duplicate entry '885' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (885,'皇家社会','皇家社会')
+ERR: 1062:Duplicate entry '1109' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1109,'莫尔�\�','莫尔�\�')
+ERR: 1062:Duplicate entry '546' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (546,'奥勒�\�','奥勒�\�')
+ERR: 1062:Duplicate entry '467' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (467,'圣洛伦索','圣洛伦索')
+ERR: 1062:Duplicate entry '639' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (639,'班菲尔德','班菲尔德')
+ERR: 1062:Duplicate entry '963' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (963,'拉努�\�','拉努�\�')
+ERR: 1062:Duplicate entry '569' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (569,'拉普拉塔大学�\�','拉普拉塔大学�\�')
+ERR: 1062:Duplicate entry '709' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (709,'博阿维斯�\�','博阿维斯�\�')
+ERR: 1062:Duplicate entry '678' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (678,'本菲�\�','本菲�\�')
+ERR: 1062:Duplicate entry '1276' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1276,'乌迪内斯','乌迪内斯')
+ERR: 1062:Duplicate entry '1276' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1276,'乌迪内斯','乌迪内斯')
+ERR: 1062:Duplicate entry '1129' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1129,'南特','南特')
+ERR: 1062:Duplicate entry '1105' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1105,'摩纳�\�','摩纳�\�')
+ERR: 1062:Duplicate entry '1580' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1580,'格雷米奥','格雷米奥')
+ERR: 1062:Duplicate entry '1572' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1572,'科林蒂安','科林蒂安')
+ERR: 1062:Duplicate entry '1577' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1577,'弗拉门戈','弗拉门戈')
+ERR: 1062:Duplicate entry '1578' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1578,'弗鲁米嫩�\�','弗鲁米嫩�\�')
+ERR: 1062:Duplicate entry '3988' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3988,'累西腓体�\�','累西腓体�\�')
+ERR: 1062:Duplicate entry '1385' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1385,'圣保�\�','圣保�\�')
+ERR: 1062:Duplicate entry '472' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (472,'桑托�\�','桑托�\�')
+ERR: 1062:Duplicate entry '1589' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1589,'维多利亚','维多利亚')
+ERR: 1062:Duplicate entry '1576' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1576,'费古埃伦�\�','费古埃伦�\�')
+ERR: 1062:Duplicate entry '953' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (953,'基尔梅斯','基尔梅斯')
+ERR: 1062:Duplicate entry '985' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (985,'莱万�\�','莱万�\�')
+ERR: 1062:Duplicate entry '683' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (683,'比利亚雷亚尔','比利亚雷亚尔')
+ERR: 1062:Duplicate entry '4286' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (4286,'西雅图海湾人','西雅图海湾人')
+ERR: 1062:Duplicate entry '705' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (705,'博卡青年','博卡青年')
+ERR: 1062:Duplicate entry '1183' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1183,'拉斐拉竞技','拉斐拉竞技')
+ERR: 1062:Duplicate entry '1571' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1571,'巴拉纳竞技','巴拉纳竞技')
+ERR: 1062:Duplicate entry '2277' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (2277,'巴伊�\�','巴伊�\�')
+ERR: 1062:Duplicate entry '1575' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1575,'克鲁塞罗','克鲁塞罗')
+ERR: 1062:Duplicate entry '3638' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3638,'德国女足U20','德国女足U20')
+ERR: 1062:Duplicate entry '6186' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (6186,'费城联合','费城联合')
+ERR: 1062:Duplicate entry '499' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (499,'圣何塞地�\�','圣何塞地�\�')
+ERR: 1062:Duplicate entry '3608' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3608,'戈多伊克鲁斯','戈多伊克鲁斯')
+ERR: 1062:Duplicate entry '864' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (864,'河床','河床')
+ERR: 1062:Duplicate entry '4126' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (4126,'札幌冈萨�\�','札幌冈萨�\�')
+ERR: 1062:Duplicate entry '3834' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3834,'枥木SC','枥木SC')
+ERR: 1062:Duplicate entry '913' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (913,'卡尔�\�','卡尔�\�')
+ERR: 1062:Duplicate entry '2640' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (2640,'耶夫�\�','耶夫�\�')
+ERR: 1062:Duplicate entry '1355' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1355,'佐加顿斯','佐加顿斯')
+ERR: 1062:Duplicate entry '695' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (695,'波鸿','波鸿')
+ERR: 1062:Duplicate entry '660' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (660,'柏林联合','柏林联合')
+ERR: 1062:Duplicate entry '1072' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1072,'曼彻斯特�\�','曼彻斯特�\�')
+ERR: 1062:Duplicate entry '1011' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1011,'利物�\�','利物�\�')
+ERR: 1062:Duplicate entry '1072' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1072,'曼彻斯特�\�','曼彻斯特�\�')
+ERR: 1062:Duplicate entry '1011' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1011,'利物�\�','利物�\�')
+ERR: 1062:Duplicate entry '719' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (719,'布拉�\�','布拉�\�')
+ERR: 1062:Duplicate entry '650' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (650,'巴列卡诺','巴列卡诺')
+ERR: 1062:Duplicate entry '1046' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1046,'马德里竞技','马德里竞技')
+
+[ 2014-08-25T00:44:26+08:00 ] 127.0.0.1 /Home/Match/teamUpAll.html
+ERR: 1062:Duplicate entry '1179' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1179,'热那�\�','热那�\�')
+ERR: 1062:Duplicate entry '562' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (562,'埃瓦�\�','埃瓦�\�')
+ERR: 1062:Duplicate entry '885' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (885,'皇家社会','皇家社会')
+ERR: 1062:Duplicate entry '1109' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1109,'莫尔�\�','莫尔�\�')
+ERR: 1062:Duplicate entry '546' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (546,'奥勒�\�','奥勒�\�')
+ERR: 1062:Duplicate entry '467' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (467,'圣洛伦索','圣洛伦索')
+ERR: 1062:Duplicate entry '639' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (639,'班菲尔德','班菲尔德')
+ERR: 1062:Duplicate entry '963' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (963,'拉努�\�','拉努�\�')
+ERR: 1062:Duplicate entry '569' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (569,'拉普拉塔大学�\�','拉普拉塔大学�\�')
+ERR: 1062:Duplicate entry '709' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (709,'博阿维斯�\�','博阿维斯�\�')
+ERR: 1062:Duplicate entry '678' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (678,'本菲�\�','本菲�\�')
+ERR: 1062:Duplicate entry '1276' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1276,'乌迪内斯','乌迪内斯')
+ERR: 1062:Duplicate entry '1276' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1276,'乌迪内斯','乌迪内斯')
+ERR: 1062:Duplicate entry '1129' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1129,'南特','南特')
+ERR: 1062:Duplicate entry '1105' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1105,'摩纳�\�','摩纳�\�')
+ERR: 1062:Duplicate entry '1580' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1580,'格雷米奥','格雷米奥')
+ERR: 1062:Duplicate entry '1572' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1572,'科林蒂安','科林蒂安')
+ERR: 1062:Duplicate entry '1577' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1577,'弗拉门戈','弗拉门戈')
+ERR: 1062:Duplicate entry '1578' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1578,'弗鲁米嫩�\�','弗鲁米嫩�\�')
+ERR: 1062:Duplicate entry '3988' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3988,'累西腓体�\�','累西腓体�\�')
+ERR: 1062:Duplicate entry '1385' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1385,'圣保�\�','圣保�\�')
+ERR: 1062:Duplicate entry '472' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (472,'桑托�\�','桑托�\�')
+ERR: 1062:Duplicate entry '1589' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1589,'维多利亚','维多利亚')
+ERR: 1062:Duplicate entry '1576' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1576,'费古埃伦�\�','费古埃伦�\�')
+ERR: 1062:Duplicate entry '953' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (953,'基尔梅斯','基尔梅斯')
+ERR: 1062:Duplicate entry '985' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (985,'莱万�\�','莱万�\�')
+ERR: 1062:Duplicate entry '683' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (683,'比利亚雷亚尔','比利亚雷亚尔')
+ERR: 1062:Duplicate entry '4286' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (4286,'西雅图海湾人','西雅图海湾人')
+ERR: 1062:Duplicate entry '705' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (705,'博卡青年','博卡青年')
+ERR: 1062:Duplicate entry '1183' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1183,'拉斐拉竞技','拉斐拉竞技')
+ERR: 1062:Duplicate entry '1571' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1571,'巴拉纳竞技','巴拉纳竞技')
+ERR: 1062:Duplicate entry '2277' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (2277,'巴伊�\�','巴伊�\�')
+ERR: 1062:Duplicate entry '1575' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1575,'克鲁塞罗','克鲁塞罗')
+ERR: 1062:Duplicate entry '3638' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3638,'德国女足U20','德国女足U20')
+ERR: 1062:Duplicate entry '6186' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (6186,'费城联合','费城联合')
+ERR: 1062:Duplicate entry '499' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (499,'圣何塞地�\�','圣何塞地�\�')
+ERR: 1062:Duplicate entry '3608' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3608,'戈多伊克鲁斯','戈多伊克鲁斯')
+ERR: 1062:Duplicate entry '864' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (864,'河床','河床')
+ERR: 1062:Duplicate entry '4126' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (4126,'札幌冈萨�\�','札幌冈萨�\�')
+ERR: 1062:Duplicate entry '3834' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3834,'枥木SC','枥木SC')
+ERR: 1062:Duplicate entry '913' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (913,'卡尔�\�','卡尔�\�')
+ERR: 1062:Duplicate entry '2640' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (2640,'耶夫�\�','耶夫�\�')
+ERR: 1062:Duplicate entry '1355' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1355,'佐加顿斯','佐加顿斯')
+ERR: 1062:Duplicate entry '695' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (695,'波鸿','波鸿')
+ERR: 1062:Duplicate entry '660' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (660,'柏林联合','柏林联合')
+ERR: 1062:Duplicate entry '1072' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1072,'曼彻斯特�\�','曼彻斯特�\�')
+ERR: 1062:Duplicate entry '1011' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1011,'利物�\�','利物�\�')
+ERR: 1062:Duplicate entry '1072' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1072,'曼彻斯特�\�','曼彻斯特�\�')
+ERR: 1062:Duplicate entry '1011' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1011,'利物�\�','利物�\�')
+ERR: 1062:Duplicate entry '719' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (719,'布拉�\�','布拉�\�')
+ERR: 1062:Duplicate entry '650' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (650,'巴列卡诺','巴列卡诺')
+ERR: 1062:Duplicate entry '1046' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1046,'马德里竞技','马德里竞技')
+
+[ 2014-08-25T00:56:03+08:00 ] 127.0.0.1 /Home/Match/teamUpAll.html
+ERR: 1062:Duplicate entry '1179' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1179,'热那�\�','热那�\�')
+ERR: 1062:Duplicate entry '562' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (562,'埃瓦�\�','埃瓦�\�')
+ERR: 1062:Duplicate entry '885' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (885,'皇家社会','皇家社会')
+ERR: 1062:Duplicate entry '1109' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1109,'莫尔�\�','莫尔�\�')
+ERR: 1062:Duplicate entry '546' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (546,'奥勒�\�','奥勒�\�')
+ERR: 1062:Duplicate entry '467' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (467,'圣洛伦索','圣洛伦索')
+ERR: 1062:Duplicate entry '639' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (639,'班菲尔德','班菲尔德')
+ERR: 1062:Duplicate entry '963' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (963,'拉努�\�','拉努�\�')
+ERR: 1062:Duplicate entry '569' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (569,'拉普拉塔大学�\�','拉普拉塔大学�\�')
+ERR: 1062:Duplicate entry '709' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (709,'博阿维斯�\�','博阿维斯�\�')
+ERR: 1062:Duplicate entry '678' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (678,'本菲�\�','本菲�\�')
+ERR: 1062:Duplicate entry '1276' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1276,'乌迪内斯','乌迪内斯')
+ERR: 1062:Duplicate entry '1276' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1276,'乌迪内斯','乌迪内斯')
+ERR: 1062:Duplicate entry '1129' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1129,'南特','南特')
+ERR: 1062:Duplicate entry '1105' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1105,'摩纳�\�','摩纳�\�')
+ERR: 1062:Duplicate entry '1580' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1580,'格雷米奥','格雷米奥')
+ERR: 1062:Duplicate entry '1572' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1572,'科林蒂安','科林蒂安')
+ERR: 1062:Duplicate entry '1577' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1577,'弗拉门戈','弗拉门戈')
+ERR: 1062:Duplicate entry '1578' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1578,'弗鲁米嫩�\�','弗鲁米嫩�\�')
+ERR: 1062:Duplicate entry '3988' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3988,'累西腓体�\�','累西腓体�\�')
+ERR: 1062:Duplicate entry '1385' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1385,'圣保�\�','圣保�\�')
+ERR: 1062:Duplicate entry '472' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (472,'桑托�\�','桑托�\�')
+ERR: 1062:Duplicate entry '1589' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1589,'维多利亚','维多利亚')
+ERR: 1062:Duplicate entry '1576' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1576,'费古埃伦�\�','费古埃伦�\�')
+ERR: 1062:Duplicate entry '953' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (953,'基尔梅斯','基尔梅斯')
+ERR: 1062:Duplicate entry '985' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (985,'莱万�\�','莱万�\�')
+ERR: 1062:Duplicate entry '683' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (683,'比利亚雷亚尔','比利亚雷亚尔')
+ERR: 1062:Duplicate entry '4286' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (4286,'西雅图海湾人','西雅图海湾人')
+ERR: 1062:Duplicate entry '705' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (705,'博卡青年','博卡青年')
+ERR: 1062:Duplicate entry '1183' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1183,'拉斐拉竞技','拉斐拉竞技')
+ERR: 1062:Duplicate entry '1571' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1571,'巴拉纳竞技','巴拉纳竞技')
+ERR: 1062:Duplicate entry '2277' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (2277,'巴伊�\�','巴伊�\�')
+ERR: 1062:Duplicate entry '1575' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1575,'克鲁塞罗','克鲁塞罗')
+ERR: 1062:Duplicate entry '3638' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3638,'德国女足U20','德国女足U20')
+ERR: 1062:Duplicate entry '6186' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (6186,'费城联合','费城联合')
+ERR: 1062:Duplicate entry '499' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (499,'圣何塞地�\�','圣何塞地�\�')
+ERR: 1062:Duplicate entry '3608' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3608,'戈多伊克鲁斯','戈多伊克鲁斯')
+ERR: 1062:Duplicate entry '864' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (864,'河床','河床')
+ERR: 1062:Duplicate entry '4126' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (4126,'札幌冈萨�\�','札幌冈萨�\�')
+ERR: 1062:Duplicate entry '3834' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (3834,'枥木SC','枥木SC')
+ERR: 1062:Duplicate entry '913' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (913,'卡尔�\�','卡尔�\�')
+ERR: 1062:Duplicate entry '2640' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (2640,'耶夫�\�','耶夫�\�')
+ERR: 1062:Duplicate entry '1355' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1355,'佐加顿斯','佐加顿斯')
+ERR: 1062:Duplicate entry '695' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (695,'波鸿','波鸿')
+ERR: 1062:Duplicate entry '660' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (660,'柏林联合','柏林联合')
+ERR: 1062:Duplicate entry '1072' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1072,'曼彻斯特�\�','曼彻斯特�\�')
+ERR: 1062:Duplicate entry '1011' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1011,'利物�\�','利物�\�')
+ERR: 1062:Duplicate entry '1072' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1072,'曼彻斯特�\�','曼彻斯特�\�')
+ERR: 1062:Duplicate entry '1011' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1011,'利物�\�','利物�\�')
+ERR: 1062:Duplicate entry '719' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (719,'布拉�\�','布拉�\�')
+ERR: 1062:Duplicate entry '650' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (650,'巴列卡诺','巴列卡诺')
+ERR: 1062:Duplicate entry '1046' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`qtname`) VALUES (1046,'马德里竞技','马德里竞技')
+

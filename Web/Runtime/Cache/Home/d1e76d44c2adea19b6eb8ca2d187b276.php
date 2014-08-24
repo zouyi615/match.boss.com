@@ -13,6 +13,7 @@
 		<script type="text/javascript" src="/Public/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="/Public/js/jquery.cookie.js"></script>		
 		<script type="text/javascript" src="/Public/js/match/index.js"></script>
+		<script type="text/javascript" src="/Public/js/match/common.js"></script>
 		<script type="text/javascript">
 		$(document).ready(function(){
 			$.admin.box.index();
@@ -73,6 +74,7 @@
 				<tbody>
 					<?php if($rsMat && is_array($rsMat)){ foreach($rsMat as $k=>$m){ ?>
 						<tr class="data" id="<?php echo $m['id']; ?>" ismod="0">
+							<td><?php echo $k+1; ?></td>
 							<td><?php echo $m['id']; ?></td>
 							<td><?php echo $m['matchnum'].'<br>'.$m['matchtime']; ?></td>
 							<td><?php echo $m['league']; ?></td>
@@ -81,8 +83,7 @@
 							<td><?php echo $m['awayname']; ?></td>
 							<td>
 								<?php echo '<span class="label label-default">'.$m['s'].'</span>&nbsp;<span class="label label-default">'.$m['p'].'</span>&nbsp;<span class="label label-default">'.$m['f'].'</span>'; ?></td>
-							<td class="red"><?php echo $m['wl']; ?></td>
-							<td class="red"><?php echo $m['hg']; ?></td>
+							<td class="red"><?php echo $m['sp']; ?></td>
 							<td class="offset" data-end="<?php echo $m['end']; ?>"><?php echo $m['isend']==0?'<span class="label label-success">开售</span>':'<span class="label label-warning">已截止</span>'; ?></td>
 						</tr>		
 					<?php } } ?>												

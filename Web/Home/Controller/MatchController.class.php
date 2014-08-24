@@ -20,7 +20,7 @@ class MatchController extends Controller {
 		$rsMat = $m->join('LEFT JOIN __PL__ ON __MATCH__.id = __PL__.id')->order('matchtime')->select();		
         $this->assign('rsMat',$rsMat); 
         $this->display();
-	}
+	}	
 	//获取初始xml数据
 	public function getXml(){
 		header("Content-type:text/html;charset=UTF-8");
@@ -37,7 +37,7 @@ class MatchController extends Controller {
 				$p->field('id,rq')->addAll($match['match']);
 				$this->out['code'] = 100;
 				$this->out['msg'] = 'suc';
-				$this->out['info'] = $match['match'];
+				$this->out['info'] = array('uptime'=>date('Y-m-d H:i:s'),'num'=>count($match['match']));
 			}else{
 				$this->out['msg'] = '保存对阵xml失败！';
 			}
@@ -46,45 +46,114 @@ class MatchController extends Controller {
 		}
 		echo json_encode($this->out); exit;
 	}
+	//更新欧赔
+	public function getOdds(){
+		header("Content-type:text/html;charset=UTF-8");
+		import('Libs.Trade.Jcpublic');
+        $jc = new \Jcpublic();
+       //获取球探网欧赔赔率(利记)
+		$oddsArr = $jc->getOddsQt();
+		$o = M('odds');
+		$t = M('team');
+		$o->where('1')->delete();
+		$rs = $o->addAll($oddsArr);
+		if($rs){			
+			$this->out['code'] = 100;
+			$this->out['msg'] = 'suc';
+			$this->out['info'] = array('uptime'=>date('Y-m-d H:i:s'),'num'=>$rs);
+		}else{
+			$this->out['msg'] = '保存对阵xml失败！';		
+		}
+		echo json_encode($this->out); exit;		
+	}
+	//更新球队名匹配
+	public function teamUpAll(){
+		header("Content-type:text/html;charset=UTF-8");
+		//获取数据库信息
+		$m = M('match');
+		$o = M('odds');
+		$t = M('team');
+		//获取竞彩对阵信息
+		$mInfo = $m->getField('id,homeid,homename,awayid,awayname');
+		//获取外围场次信息
+		$map['urlty&oddty'] =array('qiutan','liji','_multi'=>true);
+		$oddInfo = $o->field('hname,aname')->where($map)->select();
+		$team = array();
+		$i = 0;
+		foreach($mInfo as $val){
+			foreach($oddInfo as $v){
+				if($val['homename'] == $v['hname']){
+					$team[$i]['tid'] = $val['homeid'];
+					$team[$i]['tname'] = $val['homename'];
+					$team[$i]['qtname'] = $v['hname'];					
+					$r = $t->data($team[$i])->add();
+					if($r){
+						$i++;
+					}					
+				}
+				if($val['awayname'] == $v['aname']){
+					$team[$i]['tid'] = $val['awayid'];
+					$team[$i]['tname'] = $val['awayname'];
+					$team[$i]['qtname'] = $v['aname'];
+					$r = $t->data($team[$i])->add();
+					if($r){
+						$i++;
+					}	
+				}
+			}
+		}
+		$this->out['code'] = 100;
+		$this->out['msg'] = 'suc';
+		$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>$i);
+		echo json_encode($this->out); exit;
+	}
 	//更新赔率
 	public function getPl(){
 		header("Content-type:text/html;charset=UTF-8");
 		$newplArr = array();
 		//获取数据库信息
 		$m = M('match');
+		$o = M('odds');
+		$t = M('team');
 		$p = M('pl');
 		import('Libs.Trade.Jcpublic');
         $jc = new \Jcpublic();
 		//获取竞彩赔率
-		$plArr = $jc->getPL(); 
-		//获取欧赔赔率
-		$oddsArr = $jc->getOdds();
+		$plArr = $jc->getSp(); 
+		//获取球探网欧赔赔率(利记)
+		$map['urlty&oddty'] =array('qiutan','liji','_multi'=>true);
+		$oInfo = $o->field('oid,hname,aname,hw,st,aw')->where($map)->select();
 		//获取对阵信息
-		$mInfo = $m->getField('id,rangqiu,processname,matchtime');
-		$i = 0;		
-		if($mInfo){
-			foreach($mInfo as $key=>$val){				
-				$id = $val['id'];
-				$newplArr[$i]['id'] = $id;
-				$newplArr[$i]['rq'] = $val['rangqiu'];
-				$newplArr[$i]['s'] = strval($plArr[$id]['win']);
-				$newplArr[$i]['p'] = strval($plArr[$id]['draw']);
-				$newplArr[$i]['f'] = strval($plArr[$id]['lost']);
-				$newplArr[$i]['wl'] = strval($oddsArr[$id]['wl']);
-				$newplArr[$i]['hg'] = strval($oddsArr[$id]['hg']);
-				if($newplArr[$i]['wl'] || $newplArr[$i]['hg']){
-					$newplArr[$i]['ismatch'] = 1;
-				}else{
-					$newplArr[$i]['ismatch'] = 0;
+		$mInfo = $m->getField('id,rq,homeid,homename,awayid,awayname,matchtime');
+		$i = 0;
+		if($mInfo && $oInfo){
+			foreach($mInfo as $key=>$val){
+				//球探网对应队名
+				$qt_hname = $t->getFieldByTid($val['homeid'],'qtname'); //主队
+				$qt_aname = $t->getFieldByTid($val['awayid'],'qtname'); //客队
+				foreach($oInfo as $k=>$v){
+					if($qt_hname == $v['hname'] && $qt_aname == $v['aname']){
+						$newplArr[$i]['id'] = $val['id'];
+						$newplArr[$i]['rq'] = $val['rq'];
+						if($val['rq'] == "-1"){
+							$sp = isset($plArr[$key]['lost'])?strval($plArr[$key]['lost']):'';
+						}elseif($val['rq'] == "1"){
+							$sp = isset($plArr[$key]['win'])?strval($plArr[$key]['win']):'';
+						}
+						if(empty($sp)) continue;						
+						$newplArr[$i]['sp'] = $sp;
+						$newplArr[$i]['liji'] = min(array($v['hw'],$v['st'],$v['aw']));					
+						if(strtotime($val['matchtime']) < strtotime("+20 minutes")){
+							$newplArr[$i]['isend'] = 1;
+						}else{
+							$newplArr[$i]['isend'] = 0;
+						}
+						$newplArr[$i]['ismat'] = 1; //是否匹配
+						$newplArr[$i]['uptime'] = date('Y-m-d H:i:s');
+						$rr = $p->field('id,rq,sp,liji,isend,ismat,uptime')->save($newplArr[$i]);
+						$i++;
+					}				
 				}
-				if(strtotime($val['matchtime']) < strtotime("+20 minutes")){
-					$newplArr[$i]['isend'] = 1;
-				}else{
-					$newplArr[$i]['isend'] = 0;
-				}
-				$newplArr[$i]['uptime'] = date('Y-m-d H:i:s');
-				$rr = $p->field('id,rq,s,p,f,wl,hg,ismatch,isend,uptime')->save($newplArr[$i]);
-				$i++;
 			}
 		}else{
 			$this->out['msg'] = '本地xml数据为空，请先载入xml数据！';
@@ -92,7 +161,7 @@ class MatchController extends Controller {
 		if($newplArr && !$this->out['msg']){
 			$this->out['code'] = 100;
 			$this->out['msg'] = 'suc';
-			$this->out['info'] = $newplArr;
+			$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>count($newplArr));
 		}
 		echo json_encode($this->out); exit;
 	}

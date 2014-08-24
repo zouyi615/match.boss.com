@@ -13,6 +13,7 @@
 		<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="__PUBLIC__/js/jquery.cookie.js"></script>		
 		<script type="text/javascript" src="__PUBLIC__/js/match/index.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/match/common.js"></script>
 		<script type="text/javascript">
 		$(document).ready(function(){
 			$.admin.box.index();
@@ -76,6 +77,7 @@
 						foreach($rsMat as $k=>$m){
 					</php>
 						<tr class="data" id="<php>echo $m['id'];</php>" ismod="0">
+							<td><php>echo $k+1;</php></td>
 							<td><php>echo $m['id'];</php></td>
 							<td><php>echo $m['matchnum'].'<br>'.$m['matchtime'];</php></td>
 							<td><php>echo $m['league'];</php></td>
@@ -84,8 +86,7 @@
 							<td><php>echo $m['awayname'];</php></td>
 							<td>
 								<php>echo '<span class="label label-default">'.$m['s'].'</span>&nbsp;<span class="label label-default">'.$m['p'].'</span>&nbsp;<span class="label label-default">'.$m['f'].'</span>';</php></td>
-							<td class="red"><php>echo $m['wl'];</php></td>
-							<td class="red"><php>echo $m['hg'];</php></td>
+							<td class="red"><php>echo $m['sp'];</php></td>
 							<td class="offset" data-end="<php>echo $m['end'];</php>"><php>echo $m['isend']==0?'<span class="label label-success">开售</span>':'<span class="label label-warning">已截止</span>';</php></td>
 						</tr>		
 					<php>						

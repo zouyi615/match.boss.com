@@ -174,8 +174,16 @@ class IndexController extends Controller {
 		// $t1 = '2014-08-16 00:00:00';
 		// $t2 = '2014-08-16 08:00:00';
 		// var_dump(time(),strtotime("+30 minutes"),strtotime("+30 minutes")-time());
-		var_dump(22);exit;
-		//$this->display();
+		
+		
+		header("Content-type:text/html;charset=UTF-8");
+		import('Libs.Trade.Jcpublic');
+		$jc = new \Jcpublic();
+
+		$url = "http://61.143.225.74:88/xml/Odds2.aspx?companyid=31&".time();
+		$host = "61.143.225.74:88";
+		$str = $jc->curl($url,$host);
+		var_dump(1408809540000,substr('1408809540000',0,10),date('Y-m-d H:i:s','1408809540'),explode('$',$str));
 	}
 	//首页加载匹配对阵
     public function index(){
