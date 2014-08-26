@@ -71,53 +71,20 @@
 				<tbody>
 					<php>
 					if(isset($match) && is_array($match)){						
-						foreach($match as $k=>$m){
-							if($m['b']&&$m['h']){
+						foreach($match as $k=>$m){							
 					</php>
-							<tr class="data" id="<php>echo $m['id'];</php>" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
-								<td rowspan="2"><php>echo $k+1;</php></td>
-								<td rowspan="2"><php>echo $m['id'];</php></td>
-								<td rowspan="2"><php>echo $m['matchtime'];</php></td>
-								<td rowspan="2"><php>echo $m['simpleleague'];</php></td>
-								<td rowspan="2"><php>echo $m['homename'];</php></td>
-								<td rowspan="2"><php>echo $m['awayname'];</php></td>
-								<td><php>echo $m['w'];</php></td>
-								<td><php>echo $m['b'].'(威廉)';</php></td>
-								<td><php>echo $m['wl_r'];</php></td>
-							</tr>
-							<tr>
-								<td><php>echo $m['w'];</php></td>
-								<td><php>echo $m['h'].'(皇冠)';</php></td>
-								<td><php>echo $m['hg_r'];</php></td>
-							</tr>
+						<tr class="data" id="<php>echo $m['id'];</php>" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
+							<td><php>echo $k+1;</php></td>
+							<td><php>echo $m['id'];</php></td>
+							<td><php>echo $m['matchtime'];</php></td>
+							<td><php>echo $m['simpleleague'];</php></td>
+							<td><php>echo $m['homename'];</php></td>
+							<td><php>echo $m['awayname'];</php></td>
+							<td><php>echo $m['w'];</php></td>
+							<td><php>echo $m['lj'].'(利记)';</php></td>
+							<td><php>echo $m['rate'];</php></td>
+						</tr>						
 					<php>
-							}else{
-								$sp = $sp_r = $nt = '';
-								if($m['b']){
-									$sp = $m['b'];
-									$sp_r = $m['wl_r'];
-									$nt = '(威廉)';
-								}elseif($m['h']){
-									$sp = $m['h'];
-									$sp_r = $m['hg_r'];
-									$nt = '(皇冠)';
-								}
-								if($sp&&$sp_r&&$nt){
-					</php>		
-								<tr class="data" id="<php>echo $m['id'];</php>" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
-									<td><php>echo $k+1;</php></td>
-									<td><php>echo $m['id'];</php></td>
-									<td><php>echo $m['matchtime'];</php></td>
-									<td><php>echo $m['league'];</php></td>
-									<td><php>echo $m['homename'];</php></td>
-									<td><php>echo $m['awayname'];</php></td>
-									<td><php>echo $m['w'];</php></td>
-									<td><php>echo $sp.$nt;</php></td>
-									<td><php>echo $sp_r;</php></td>
-								</tr>							
-					<php>		
-								}
-							}
 						}
 					}					
 					</php>												

@@ -48,28 +48,30 @@
 				<thead>
 					<tr class="danger">
 						<th>编号</th>
-						<th>比赛时间</th>						
+						<th>场次ID</th>
+						<th>比赛时间</th>
 						<th>联赛</th>
 						<th>让球</th>
-						<th>主队</th>
-						<th>客队</th>
+						<th>主队/客队</th>
 						<th>赔率</th>
-						<th class="red">欧赔（威廉）</th>
-						<th class="red">欧赔（皇冠）</th>
+						<th class="red">欧赔（利记）</th>
+						<th>球探网主客队</th>
 						<th>开售状态</th>
+						<th>赔率更新时间</th>
 					</tr>
 				</thead>
 				<colgroup>
-					<col width="6%">
-					<col width="12%">
-					<col width="12%">
-					<col width="6%">
-					<col width="12%">
-					<col width="12%">
-					<col width="12%">
+					<col width="4%">
+					<col width="5%">
 					<col width="10%">
 					<col width="10%">
-					<col width="8%">
+					<col width="4%">
+					<col width="16%">
+					<col width="9%">
+					<col width="9%">
+					<col width="16%">
+					<col width="6%">
+					<col width="11%">
 				</colgroup>
 				<tbody>
 					<?php if($rsMat && is_array($rsMat)){ foreach($rsMat as $k=>$m){ ?>
@@ -77,19 +79,19 @@
 							<td><?php echo $k+1; ?></td>
 							<td><?php echo $m['id']; ?></td>
 							<td><?php echo $m['matchnum'].'<br>'.$m['matchtime']; ?></td>
-							<td><?php echo $m['league']; ?></td>
-							<td><?php echo $m['rangqiu']; ?></td>
-							<td><?php echo $m['homename']; ?></td>
-							<td><?php echo $m['awayname']; ?></td>
-							<td>
-								<?php echo '<span class="label label-default">'.$m['s'].'</span>&nbsp;<span class="label label-default">'.$m['p'].'</span>&nbsp;<span class="label label-default">'.$m['f'].'</span>'; ?></td>
-							<td class="red"><?php echo $m['sp']; ?></td>
+							<td><?php echo $m['simpleleague']; ?></td>
+							<td><?php echo $m['rq']; ?></td>
+							<td data-hid="<?php echo $m['homeid']; ?>" data-homename="<?php echo $m['homename']; ?>" data-aid="<?php echo $m['awayid']; ?>" data-awayname="<?php echo $m['awayname']; ?>" class="team"><?php echo $m['homename'].'&nbsp;VS&nbsp;'.$m['awayname']; ?></td>							
+							<td><?php echo $m['sp']; ?></td>
+							<td class="red"><?php echo $m['liji']; ?></td>
+							<td class="team_op row"><?php echo $rsTeam[$m['homeid']].'VS'.$rsTeam[$m['awayid']]; ?></td>
 							<td class="offset" data-end="<?php echo $m['end']; ?>"><?php echo $m['isend']==0?'<span class="label label-success">开售</span>':'<span class="label label-warning">已截止</span>'; ?></td>
+							<td><?php echo $m['uptime']; ?></td>
 						</tr>		
 					<?php } } ?>												
 				</tbody>
 				</table>
-				<input type="hidden" id="modupurl" value="<?php echo U('MatAdmin/modUp');?>">
+				<input type="hidden" id="modupurl" value="<?php echo U('Match/teamUp');?>">
 			</div>		
 		</div>
 	</div>

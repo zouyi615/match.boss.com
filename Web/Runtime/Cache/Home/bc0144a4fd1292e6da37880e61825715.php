@@ -69,36 +69,19 @@
 					<col width="12%">
 				</colgroup>
 				<tbody>
-					<?php if(isset($match) && is_array($match)){ foreach($match as $k=>$m){ if($m['b']&&$m['h']){ ?>
-							<tr class="data" id="<?php echo $m['id']; ?>" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
-								<td rowspan="2"><?php echo $k+1; ?></td>
-								<td rowspan="2"><?php echo $m['id']; ?></td>
-								<td rowspan="2"><?php echo $m['matchtime']; ?></td>
-								<td rowspan="2"><?php echo $m['simpleleague']; ?></td>
-								<td rowspan="2"><?php echo $m['homename']; ?></td>
-								<td rowspan="2"><?php echo $m['awayname']; ?></td>
-								<td><?php echo $m['w']; ?></td>
-								<td><?php echo $m['b'].'(威廉)'; ?></td>
-								<td><?php echo $m['wl_r']; ?></td>
-							</tr>
-							<tr>
-								<td><?php echo $m['w']; ?></td>
-								<td><?php echo $m['h'].'(皇冠)'; ?></td>
-								<td><?php echo $m['hg_r']; ?></td>
-							</tr>
-					<?php }else{ $sp = $sp_r = $nt = ''; if($m['b']){ $sp = $m['b']; $sp_r = $m['wl_r']; $nt = '(威廉)'; }elseif($m['h']){ $sp = $m['h']; $sp_r = $m['hg_r']; $nt = '(皇冠)'; } if($sp&&$sp_r&&$nt){ ?>		
-								<tr class="data" id="<?php echo $m['id']; ?>" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
-									<td><?php echo $k+1; ?></td>
-									<td><?php echo $m['id']; ?></td>
-									<td><?php echo $m['matchtime']; ?></td>
-									<td><?php echo $m['league']; ?></td>
-									<td><?php echo $m['homename']; ?></td>
-									<td><?php echo $m['awayname']; ?></td>
-									<td><?php echo $m['w']; ?></td>
-									<td><?php echo $sp.$nt; ?></td>
-									<td><?php echo $sp_r; ?></td>
-								</tr>							
-					<?php } } } } ?>												
+					<?php if(isset($match) && is_array($match)){ foreach($match as $k=>$m){ ?>
+						<tr class="data" id="<?php echo $m['id']; ?>" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
+							<td><?php echo $k+1; ?></td>
+							<td><?php echo $m['id']; ?></td>
+							<td><?php echo $m['matchtime']; ?></td>
+							<td><?php echo $m['simpleleague']; ?></td>
+							<td><?php echo $m['homename']; ?></td>
+							<td><?php echo $m['awayname']; ?></td>
+							<td><?php echo $m['w']; ?></td>
+							<td><?php echo $m['lj'].'(利记)'; ?></td>
+							<td><?php echo $m['rate']; ?></td>
+						</tr>						
+					<?php } } ?>												
 				</tbody>
 				</table>	
 			</div>

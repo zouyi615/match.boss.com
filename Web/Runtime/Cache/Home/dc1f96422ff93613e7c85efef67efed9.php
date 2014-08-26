@@ -60,8 +60,8 @@
 				<colgroup>
 					<col width="5%">
 					<col width="6%">
-					<col width="15%">
-					<col width="7%">
+					<col width="14%">
+					<col width="8%">
 					<col width="14%">
 					<col width="14%">
 					<col width="6%">
@@ -71,7 +71,7 @@
 				</colgroup>
 				<tbody id="mlist_show">					
 					<?php $k = 0; if(isset($comMatchArr) && is_array($comMatchArr)){ foreach($comMatchArr as $key=>$val){ ?>
-						<tr class="data" id="m<?php echo $key+1; ?>" mid="m<?php echo $key+1; ?>" data="<?php echo '{s1:'.$val['m1']['w'].',s2:'.$val['m2']['w'].',s3:'.$val['op1'].',s4:'.$val['op2'].'}'; ?>" vs="<?php echo '['.$val['m1']['homename'].'vs'.$val['m1']['awayname'].']/['.$val['m2']['homename'].'vs'.$val['m2']['awayname'].']'; ?>" rate="<?php echo $val['rnrate']; ?>">
+						<tr class="data <?php echo ($key+1)%2==0?'success':''; ?>" id="m<?php echo $key+1; ?>" mid="m<?php echo $key+1; ?>" data="<?php echo '{s1:'.$val['m1']['w'].',s2:'.$val['m2']['w'].',s3:'.$val['m1']['lj'].',s4:'.$val['m2']['lj'].'}'; ?>" vs="<?php echo '['.$val['m1']['homename'].'vs'.$val['m1']['awayname'].']/['.$val['m2']['homename'].'vs'.$val['m2']['awayname'].']'; ?>" rate="<?php echo $val['rnrate']; ?>">
 							<td rowspan="2" class="tobox"><a href="javascript:;"><?php echo $key+1; ?></a></td>
 							<td><?php echo $val['m1']['id']; ?></td>
 							<td><?php echo $val['m1']['matchtime']; ?></td>
@@ -79,19 +79,19 @@
 							<td><?php echo $val['m1']['homename']; ?></td>
 							<td><?php echo $val['m1']['awayname']; ?></td>
 							<td><?php echo $val['m1']['w']; ?></td>
-							<td><?php echo $val['op1'].'('.$val['t1'].')'; ?></td>
-							<td><?php echo $val['op_r1']; ?></td>
+							<td><?php echo $val['m1']['lj'].'(利记)'; ?></td>
+							<td><?php echo $val['m1']['rate']; ?></td>
 							<td rowspan="2" class="tobox"><?php echo $val['rnrate']; ?>&nbsp;<a href="javascript:;">详情</a></td>					
 						</tr>
-						<tr class="data" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
+						<tr class="data <?php echo ($key+1)%2==0?'success':''; ?>" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
 							<td><?php echo $val['m2']['id']; ?></td>
 							<td><?php echo $val['m2']['matchtime']; ?></td>
 							<td><?php echo $val['m2']['simpleleague']; ?></td>
 							<td><?php echo $val['m2']['homename']; ?></td>
 							<td><?php echo $val['m2']['awayname']; ?></td>
 							<td><?php echo $val['m2']['w']; ?></td>
-							<td><?php echo $val['op2'].'('.$val['t2'].')'; ?></td>
-							<td><?php echo $val['op_r2']; ?></td>
+							<td><?php echo $val['m2']['lj'].'(利记)'; ?></td>
+							<td><?php echo $val['m2']['rate']; ?></td>
 						</tr>
 					<?php } } ?>												
 				</tbody>

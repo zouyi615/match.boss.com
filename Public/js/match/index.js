@@ -89,7 +89,7 @@ $.bar = {
 	process: function(t){
 		var _T = this;
 		t = t === undefined ? 1000 : t;
-		this.val += 10; console.log(this.val);
+		this.val += 10;
 		if(this.val >= 99){
 			this.val = 99;
 			clearTimeout(this.ct);
@@ -189,25 +189,37 @@ $.admin.box = {
 	},
 	//修改主客队
 	modUi:function(T){
-		var homesp = $(T).find('td.homesp'), awaysp = $(T).find('td.awaysp'), offset = $(T).find('td.offset');
+		var team_op = $(T).find('td.team_op'), t_h, t_o, h;
+		team = team_op.html().split('VS');
+		t_h = team[0];
+		t_o = team[1];
+		h = '<input type="text" class="form-control input-sm" name="t_h" value="'+t_h+'">VS<input type="text" class="form-control input-sm" name="t_o" value="'+t_o+'">'
 		$(T).attr('ismod','1'); //修改标记值
-		homesp.html('<input type="text" class="form-control input-sm" name="homesp" value="'+homesp.attr('data-homesp')+'">');
-		awaysp.html('<input type="text" class="form-control input-sm" name="awaysp" value="'+awaysp.attr('data-awaysp')+'">');
+		team_op.html(h);
 	},
 	//保存主客队修改
 	modUp:function(T){
-		var mid = $(T).attr('id'), homesp = $(T).find('td.homesp input').val(), awaysp = $(T).find('td.awaysp input').val(), offset = $(T).find('td.offset').attr('data-offset'), url = $('#modupurl').val(), warning = $('#alert-warning').find('.content'), para;
+		var team_op = $(T).find('td.team_op'),
+			hid = $(T).find('td.team').attr('data-hid'),
+			aid = $(T).find('td.team').attr('data-aid'),
+			homename = $(T).find('td.team').attr('data-homename'),
+			awayname = $(T).find('td.team').attr('data-awayname'),
+			t_h = $(T).find('td.team_op').find('input[name="t_h"]').val(),
+			t_o = $(T).find('td.team_op').find('input[name="t_o"]').val(),
+			url = $('#modupurl').val(), 
+			warning = $('#alert-warning').find('.content'), 
+			para, h;			
 		$(T).attr('ismod','0'); //修改标记值
-		$(T).find('td.homesp').attr('data-homesp',homesp).html(homesp);
-		$(T).find('td.awaysp').attr('data-awaysp',awaysp).html(awaysp);
-		para = { mid: mid, homesp: homesp, awaysp: awaysp, offset: offset };
+		h = t_h+'VS'+t_o;
+		team_op.html(h);
+		para = { mod:hid+':'+encodeURI(homename)+':'+encodeURI(t_h)+';'+aid+':'+encodeURI(awayname)+':'+encodeURI(t_o) };
 		warning.html('<strong>提示！</strong>正在保存修改，请稍后...');
 		$.post(url, para, function(data, textStatus){
 			var res = $.parseJSON(data);
 			if(res.code < 0){
 				warning.html('<strong>警告！</strong>'+res.msg);
 			}else{
-				warning.html('&nsbp;'+res.msg);		
+				warning.html(' ');		
 			}
 		});
 	},
@@ -387,7 +399,7 @@ $.match.box = {
 		clearTimeout(_T.t_a);
 		_T.t_a = setTimeout(function(){
 			_T.getAjaxList();
-		},30000);	
+		},20000);	
 	},
 	//ajax获取list
 	getAjaxList: function(){
@@ -404,7 +416,7 @@ $.match.box = {
 				clearTimeout(_T.t_a);
 				_T.t_a = setTimeout(function(){
 					_T.getAjaxList();
-				},30000);				
+				},20000);				
 			}else{
 				$.bar.stop();
 			}
@@ -413,14 +425,14 @@ $.match.box = {
 	//ajax刷新比赛列表
 	createList: function(){
 		var list = this.list, html = [], listTable = $('#mlist_show'), 
-			strhtml = '<tr class="data" id="m{$key}" mid="m{$key}" data="{$data}" vs="{$vs}" rate="{$rnrate}">'+
-						'<td rowspan="2" class="tobox"><a href="javascript:;">{$key}</a></td><td>{$m1_id}</td><td>{$m1_matchtime}</td><td>{$m1_simpleleague}</td><td>{$m1_homename}</td><td>{$m1_awayname}</td><td>{$m1_w}</td><td>{$m1_op}</td><td>{$m1_op_r}</td><td rowspan="2" class="tobox">{$rnrate}&nbsp;<a href="javascript:;">详情</a></td></tr>'+
-					  '<tr class="data">'+
-						'<td>{$m2_id}</td><td>{$m2_matchtime}</td><td>{$m2_simpleleague}</td><td>{$m2_homename}</td><td>{$m2_awayname}</td><td>{$m2_w}</td><td>{$m2_op}</td><td>{$m2_op_r}</td></tr>';
+			strhtml = '<tr class="data {$cl}" id="m{$key}" mid="m{$key}" data="{$data}" vs="{$vs}" rate="{$rnrate}">'+
+						'<td rowspan="2" class="tobox"><a href="javascript:;">{$key}</a></td><td>{$m1_id}</td><td>{$m1_matchtime}</td><td>{$m1_simpleleague}</td><td>{$m1_homename}</td><td>{$m1_awayname}</td><td>{$m1_w}</td><td>{$m1_op}</td><td>{$m1_rate}</td><td rowspan="2" class="tobox">{$rnrate}&nbsp;<a href="javascript:;">详情</a></td></tr>'+
+					  '<tr class="data {$cl}">'+		'<td>{$m2_id}</td><td>{$m2_matchtime}</td><td>{$m2_simpleleague}</td><td>{$m2_homename}</td><td>{$m2_awayname}</td><td>{$m2_w}</td><td>{$m2_op}</td><td>{$m2_rate}</td></tr>';
 		$.each(list,function(i,e){
 			html.push($.tpl(strhtml,{
 				key: i+1,
-				data: '{s1:'+e.m1.w+',s2:'+e.m2.w+',s3:'+e.op1+',s4:'+e.op2+'}',
+				cl: (i+1)%2 == 0 ? 'success' : '',
+				data: '{s1:'+e.m1.w+',s2:'+e.m2.w+',s3:'+e.m1.lj+',s4:'+e.m2.lj+'}',
 				vs: '['+e.m1.homename+'vs'+e.m1.awayname+']/['+e.m2.homename+'vs'+e.m2.awayname+']',
 				rnrate: e.rnrate,
 				m1_id: e.m1.id,
@@ -429,16 +441,16 @@ $.match.box = {
 				m1_homename: e.m1.homename,
 				m1_awayname: e.m1.awayname,
 				m1_w: e.m1.w,
-				m1_op: e.op1+'('+e.t1+')',
-				m1_op_r: e.op_r1,
+				m1_op: e.m1.lj+'(利记)',
+				m1_rate: e.m1.rate,
 				m2_id: e.m2.id,
 				m2_matchtime: e.m2.matchtime,
 				m2_simpleleague: e.m2.simpleleague,
 				m2_homename: e.m2.homename,
 				m2_awayname: e.m2.awayname,
 				m2_w: e.m2.w,
-				m2_op: e.op2+'('+e.t2+')',
-				m2_op_r: e.op_r2				
+				m2_op: e.m2.lj+'(利记)',
+				m2_rate: e.m2.rate
 			}));			
 		});
 		listTable.html(html.join(''));

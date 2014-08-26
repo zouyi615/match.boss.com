@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Bootstrap, from LayoutIt!</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link href="__PUBLIC__/css/bootstrap.css" rel="stylesheet">
+		<link href="__PUBLIC__/css/public.css" rel="stylesheet">
+		<link href="__PUBLIC__/css/adipoli.css" rel="stylesheet">
+		<link rel="shortcut icon" href="__PUBLIC__/img/favicon.png">
+		<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/jquery.cookie.js"></script>		
+		<script type="text/javascript" src="__PUBLIC__/js/match/index.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/match/common.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+
+		});
+		</script>
+	</head>
+	<body>	
+	<!-- 头部 -->
+	<div class="header">
+		<blockquote>			
+			<h4>
+				<strong>外围赔率数据对阵表</strong>&nbsp;&nbsp;&nbsp;&nbsp;								
+			</h4>
+		</blockquote>		
+	</div>
+	<!--  内容  -->
+	<div class="container-fluid">
+		<!-- 主体内容 -->
+		<div class="row main">
+			<!-- 显示比赛列表 -->
+			<div class="col-xs-12 match-list">			
+				<table class="table table-bordered table-hover table-condensed" id="allsptab">
+				<thead>
+					<tr class="danger">
+						<th>编号</th>
+						<th>场次ID</th>
+						<th>比赛时间</th>
+						<th>主队</th>
+						<th>客队</th>
+						<th>胜</th>
+						<th>平</th>
+						<th>负</th>
+						<th>来源</th>
+						<th>欧赔</th>
+						<th>赔率更新时间</th>
+					</tr>
+				</thead>
+				<colgroup>
+					<col width="4%">
+					<col width="5%">
+					<col width="12%">
+					<col width="10%">
+					<col width="10%">
+					<col width="6%">
+					<col width="6%">
+					<col width="6%">
+					<col width="6%">
+					<col width="6%">
+					<col width="12%">
+				</colgroup>
+				<tbody>
+					<php>
+					if($odds && is_array($odds)){
+						foreach($odds as $k=>$m){						
+					</php>
+						<tr class="data" id="<php>echo $m['id'];</php>" ismod="0">
+							<td><php>echo $k+1;</php></td>
+							<td><php>echo $m['oid'];</php></td>
+							<td><php>echo $m['matchtime'];</php></td>
+							<td><php>echo $m['hname'];</php></td>
+							<td><php>echo $m['aname'];</php></td>
+							<td class="<php>echo $m['hw'] == min($m['hw'],$m['st'],$m['aw'])?'red':''</php>"><php>echo $m['hw'];</php></td>
+							<td class="<php>echo $m['st'] == min($m['hw'],$m['st'],$m['aw'])?'red':''</php>"><php>echo $m['st'];</php></td>
+							<td class="<php>echo $m['aw'] == min($m['hw'],$m['st'],$m['aw'])?'red':''</php>"><php>echo $m['aw'];</php></td>
+							<td><php>echo $m['urlty'];</php></td>
+							<td><php>echo $m['oddty'];</php></td>
+							<td><php>echo $m['uptime'];</php></td>
+						</tr>		
+					<php>						
+						}
+					}
+					</php>												
+				</tbody>
+				</table>
+				<input type="hidden" id="modupurl" value="{:U('MatAdmin/modUp')}">
+			</div>		
+		</div>
+	</div>
+	<!-- 底部 -->
+</body>
+</html>

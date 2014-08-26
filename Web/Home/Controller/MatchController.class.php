@@ -13,14 +13,35 @@ class MatchController extends Controller {
 	//外围网站赔率
 	//public $spUrl = 'http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2';
 	//public $spHost = 'sports1.im.fun88.com'; //抓取赔率域名
-	//处理函数
+	//对阵管理页面
 	public function index(){
 		header("Content-type:text/html;charset=UTF-8"); 
 		$m = M('match');
-		$rsMat = $m->join('LEFT JOIN __PL__ ON __MATCH__.id = __PL__.id')->order('matchtime')->select();		
+		$t = M('team');
+		$h = $m->getField('homeid',true);
+		$a = $m->getField('awayid',true);
+		$rsMat = $m->alias('m')->field('m.id,m.matchnum,m.homeid,m.homename,m.awayid,m.awayname,m.matchtime,m.simpleleague,m.homename,m.awayname,p.sp,p.liji,p.rq,p.isend,p.uptime')->join('LEFT JOIN __PL__ p ON m.id = p.id')->order('m.matchtime')->select();	
+		$rsTeam = $this->getTeamById(array_merge($h,$a));
+		$this->assign('rsTeam',$rsTeam); 
         $this->assign('rsMat',$rsMat); 
         $this->display();
-	}	
+	}
+	//外围赔率显示页面
+	public function odds(){
+		header("Content-type:text/html;charset=UTF-8"); 
+		$o = M('odds');		
+		$odds = $o->order('matchtime')->select();
+		$this->assign('odds',$odds); 
+        $this->display();
+	}
+	//主客队匹配显示页面
+	public function team(){
+		header("Content-type:text/html;charset=UTF-8"); 
+		$t = M('team');
+		$team = $t->select();
+		$this->assign('team',$team); 
+        $this->display();
+	}
 	//获取初始xml数据
 	public function getXml(){
 		header("Content-type:text/html;charset=UTF-8");
@@ -64,7 +85,8 @@ class MatchController extends Controller {
 		}else{
 			$this->out['msg'] = '保存对阵xml失败！';		
 		}
-		echo json_encode($this->out); exit;		
+		echo json_encode($this->out); 
+		exit;		
 	}
 	//更新球队名匹配
 	public function teamUpAll(){
@@ -119,53 +141,111 @@ class MatchController extends Controller {
 		import('Libs.Trade.Jcpublic');
         $jc = new \Jcpublic();
 		//获取竞彩赔率
+		$time1 = microtime(true);
 		$plArr = $jc->getSp(); 
 		//获取球探网欧赔赔率(利记)
+		$time1_o = microtime(true);
 		$map['urlty&oddty'] =array('qiutan','liji','_multi'=>true);
-		$oInfo = $o->field('oid,hname,aname,hw,st,aw')->where($map)->select();
+		$oInfo = $o->field('oid,hname,aname,hw,st,aw,matchtime')->where($map)->select();
+		$time2_o = microtime(true);
 		//获取对阵信息
 		$mInfo = $m->getField('id,rq,homeid,homename,awayid,awayname,matchtime');
+		//获取主客队匹配信息
+		$time3_o = microtime(true);
+		$h = $m->getField('homeid',true);
+		$a = $m->getField('awayid',true);	
+		$mTeam = $this->getTeamById(array_merge($h,$a));
+		$time4_o = microtime(true);
+		
+		// echo '<br>取竞彩赔率时间：'.($time1_o-$time1);
+		// echo '<br>取欧赔时间：'.($time2_o-$time1_o);
+		// echo '<br>取对阵时间：'.($time3_o-$time2_o);
+		// echo '<br>取主客队匹配信息时间：'.($time4_o-$time3_o);
+		
 		$i = 0;
 		if($mInfo && $oInfo){
-			foreach($mInfo as $key=>$val){
-				//球探网对应队名
-				$qt_hname = $t->getFieldByTid($val['homeid'],'qtname'); //主队
-				$qt_aname = $t->getFieldByTid($val['awayid'],'qtname'); //客队
-				foreach($oInfo as $k=>$v){
-					if($qt_hname == $v['hname'] && $qt_aname == $v['aname']){
-						$newplArr[$i]['id'] = $val['id'];
-						$newplArr[$i]['rq'] = $val['rq'];
-						if($val['rq'] == "-1"){
-							$sp = isset($plArr[$key]['lost'])?strval($plArr[$key]['lost']):'';
-						}elseif($val['rq'] == "1"){
-							$sp = isset($plArr[$key]['win'])?strval($plArr[$key]['win']):'';
-						}
-						if(empty($sp)) continue;						
-						$newplArr[$i]['sp'] = $sp;
-						$newplArr[$i]['liji'] = min(array($v['hw'],$v['st'],$v['aw']));					
-						if(strtotime($val['matchtime']) < strtotime("+20 minutes")){
-							$newplArr[$i]['isend'] = 1;
-						}else{
-							$newplArr[$i]['isend'] = 0;
-						}
-						$newplArr[$i]['ismat'] = 1; //是否匹配
-						$newplArr[$i]['uptime'] = date('Y-m-d H:i:s');
-						$rr = $p->field('id,rq,sp,liji,isend,ismat,uptime')->save($newplArr[$i]);
-						$i++;
-					}				
+			foreach($mInfo as $key=>$val){				
+				$newplArr[$i]['id'] = $val['id'];
+				$newplArr[$i]['rq'] = $val['rq'];										
+				$newplArr[$i]['sp'] = $plArr[$key]['win'].','.$plArr[$key]['draw'].','.$plArr[$key]['lost'];
+				if(strtotime($val['matchtime']) < strtotime("+20 minutes")){
+					$newplArr[$i]['isend'] = 1;
+				}else{
+					$newplArr[$i]['isend'] = 0;
 				}
+				$newplArr[$i]['liji'] = '';						
+				$newplArr[$i]['ismat'] = 0; //是否匹配
+				//球探网对应队名
+				$qt_hname = $mTeam[$val['homeid']]; //主队
+				$qt_aname = $mTeam[$val['awayid']]; //客队
+				foreach($oInfo as $k=>$v){
+					//匹配对应场次，首先根据日期匹配，其次根据主客队名匹配
+					if(substr($val['matchtime'],0,10) != substr($v['matchtime'],0,10)) continue;
+					if($qt_hname == $v['hname'] && $qt_aname == $v['aname']){						
+						$newplArr[$i]['liji'] = $v['hw'].','.$v['st'].','.$v['aw'];						
+						$newplArr[$i]['ismat'] = 1; //是否匹配
+						break;
+					}					
+				}
+				$newplArr[$i]['uptime'] = date('Y-m-d H:i:s');
+				$rr = $p->field('id,rq,sp,liji,isend,ismat,uptime')->save($newplArr[$i]);
+				$i++;
 			}
 		}else{
 			$this->out['msg'] = '本地xml数据为空，请先载入xml数据！';
 		}
+		$time5_o = microtime(true);
 		if($newplArr && !$this->out['msg']){
 			$this->out['code'] = 100;
 			$this->out['msg'] = 'suc';
-			$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>count($newplArr));
+			$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>count($newplArr),'cost'=>($time5_o-$time1));
 		}
 		echo json_encode($this->out); exit;
 	}
-	
+	//更新竞彩、外围主客队匹配数据
+	public function teamUp(){
+		header("Content-type:text/html;charset=UTF-8"); 
+		$t = M('team');
+		$arr = array();
+		$mod = I('param.mod','','htmlspecialchars'); //场次ID
+		$i = $n = 0;
+		if($mod){
+			$arr_t = explode(';',$mod);
+			if($arr_t && is_array($arr_t)){
+				foreach($arr_t as $k => $v){
+					$arr_v = explode(':',$v);
+					if(trim($arr_v[1]) != '' && trim($arr_v[2]) != ''){
+						$arr[$i]['tid'] = $arr_v[0];
+						$arr[$i]['tname'] = urldecode($arr_v[1]);
+						$arr[$i]['qtname'] = urldecode($arr_v[2]);
+						if(!$t->save($arr[$i])){
+							$r = $t->data($arr[$i])->add();
+							if($r) $n++;
+						}else{
+							$n++;
+						}						
+						$i++;
+					}
+				}
+			}		
+		}
+		$this->out['code'] = 100;
+		$this->out['msg'] = 'suc';
+		$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>$n);
+		
+		echo json_encode($this->out); exit;
+	}
+	//根据队名ID获取队名信息$hid主队ID,$aid客队ID
+	public function getTeamById($arr){
+		$teamArr = array();
+		$t = M('team');
+		$map['tid']  = array('in',$arr);
+		$team = $t->field('tid,qtname')->where($map)->select();
+		foreach($team as $val){
+			$teamArr[$val['tid']] = $val['qtname'];
+		}
+		return $teamArr;
+	}
 	//获取外围赔率1
 	public function getSp1(){
 		header("Content-type:text/html;charset=UTF-8");

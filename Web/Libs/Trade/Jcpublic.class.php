@@ -154,11 +154,12 @@ class Jcpublic{
 					$pl_odds[$k]['hw'] = $infoArr[5];
 					$pl_odds[$k]['st'] = $infoArr[6];
 					$pl_odds[$k]['aw'] = $infoArr[7];
-					$pl_odds[$k]['time'] = $match[$id]['time'];
+					$pl_odds[$k]['matchtime'] = $match[$id]['time'];
 					$pl_odds[$k]['hname'] = $match[$id]['hname'];
 					$pl_odds[$k]['aname'] = $match[$id]['aname'];
 					$pl_odds[$k]['urlty'] = 'qiutan';
 					$pl_odds[$k]['oddty'] = 'liji';
+					$pl_odds[$k]['uptime'] = date('Y-m-d H:i:s');
 					$k++;
 				}
 			}

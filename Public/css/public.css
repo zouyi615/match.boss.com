@@ -34,6 +34,8 @@ body{position: relative;}
 .setbox{position:fixed;bottom: 0px;right:0px;}
 .match-list .relup{vertical-align:middle; cursor:pointer;}
 .match-list .progress{margin: 0px; height:6px;}
+.match-list .tr>td{border-top:1px solid red;}
+.match-list .team,.match-list .team_op{font-family:Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","楷体","楷体_GB2312",serif;}
 /* 比赛详细赛事 */
 .mod-inmoney{font-size:12px;position: relative;display: block !important;}
 .mod-inmoney a{color:blue; text-decoration:underline;}
@@ -44,6 +46,7 @@ body{position: relative;}
 .mod-inmoney .tableProList .left{text-align: left;}
 /* 主客队匹配管理 */
 td.homesp,td.awaysp,td.offset{-moz-user-select: none;-webkit-user-select: none;-webkit-user-select: none; cursor:pointer;}
+
 
 
 
