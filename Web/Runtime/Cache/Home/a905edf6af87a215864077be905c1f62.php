@@ -16,17 +16,25 @@
 		<script type="text/javascript" src="/Public/js/match/common.js"></script>
 		<script type="text/javascript">
 		$(document).ready(function(){
-
+			$.admin.box.index();
 		});
 		</script>
 	</head>
 	<body>	
 	<!-- 头部 -->
 	<div class="header">
+		<div class="alert alert-warning alert-dismissible fade in" role="alert" id="alert-warning">
+			<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+			<div class="content">&nbsp;</div>
+		</div>
 		<blockquote>			
 			<h4>
 				<strong>外围赔率数据对阵表</strong>&nbsp;&nbsp;&nbsp;&nbsp;								
 			</h4>
+			<p id="getdata">
+				<a href="javascript:;" id="getOdds" class="updataC" data-url="<?php echo U('Match/getOdds');?>"><span class="label label-danger"><font>重新载入欧赔odds</font>&nbsp;<span class="glyphicon glyphicon-download"></span></span></a>
+				<a href="javascript:;" id="getsp" class="updataD" data-url="<?php echo U('Match/getPl');?>"><span class="label label-success"><font>更新赔率</font>&nbsp;<span class="glyphicon glyphicon-refresh"></span></span></a>				
+			</p>
 		</blockquote>		
 	</div>
 	<!--  内容  -->
@@ -82,7 +90,7 @@
 					<?php } } ?>												
 				</tbody>
 				</table>
-				<input type="hidden" id="modupurl" value="<?php echo U('MatAdmin/modUp');?>">
+				<input type="hidden" id="modupurl" value="<?php echo U('Match/modUp');?>">
 			</div>		
 		</div>
 	</div>

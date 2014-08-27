@@ -32,6 +32,7 @@ body{position: relative;}
 .match-list td.tobox a{text-decoration:underline; color:red;}
 .match-list .table > tbody > tr > td{vertical-align:middle; *vertical-align:middle;}
 .setbox{position:fixed;bottom: 0px;right:0px;}
+.addteambox{position:fixed;top: 171px;right:0px;}
 .match-list .relup{vertical-align:middle; cursor:pointer;}
 .match-list .progress{margin: 0px; height:6px;}
 .match-list .tr>td{border-top:1px solid red;}

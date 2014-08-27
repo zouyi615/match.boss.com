@@ -180,12 +180,13 @@ class MatchController extends Controller {
 				$qt_aname = $mTeam[$val['awayid']]; //客队
 				foreach($oInfo as $k=>$v){
 					//匹配对应场次，首先根据日期匹配，其次根据主客队名匹配
-					if(substr($val['matchtime'],0,10) != substr($v['matchtime'],0,10)) continue;
+					//两场比赛时间差允许超过一小时
+					if(abs(strtotime($val['matchtime']) - strtotime($v['matchtime'])) > 1*60*60) continue;
 					if($qt_hname == $v['hname'] && $qt_aname == $v['aname']){						
 						$newplArr[$i]['liji'] = $v['hw'].','.$v['st'].','.$v['aw'];						
 						$newplArr[$i]['ismat'] = 1; //是否匹配
 						break;
-					}					
+					}
 				}
 				$newplArr[$i]['uptime'] = date('Y-m-d H:i:s');
 				$rr = $p->field('id,rq,sp,liji,isend,ismat,uptime')->save($newplArr[$i]);
@@ -231,9 +232,68 @@ class MatchController extends Controller {
 		}
 		$this->out['code'] = 100;
 		$this->out['msg'] = 'suc';
-		$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>$n);
-		
+		$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>$n);		
 		echo json_encode($this->out); exit;
+	}
+	//更新匹配队名
+	public function modteamUp(){
+		header("Content-type:text/html;charset=UTF-8"); 
+		$t = M('team');
+		$arr = array();
+		$tid = I('param.tid','','htmlspecialchars'); //队名ID
+		$team = I('param.team','','htmlspecialchars'); //队名
+		$arr['tid'] = $tid;
+		$arr['qtname'] = $team;
+		$r = $t->save($arr);
+		if($r === false){
+			$this->out['msg'] = '修改队名失败！';
+		}else{
+			$this->out['code'] = 100;
+			$this->out['msg'] = 'suc';
+			$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>$r);
+		}
+		echo json_encode($this->out); exit;
+	}
+	//添加匹配队名
+	public function addteamUp(){
+		header("Content-type:text/html;charset=UTF-8"); 
+		$t = M('team');
+		$arr = array();
+		$team = $_POST;
+		if($team){
+			foreach($team as $key => $val){
+				$j = 0;
+				foreach($val as $k => $v){
+					$arr[$j][$key] = $v;
+					$j++;
+				}
+			}
+		}
+		$r = $t->addAll($arr);
+		if($r === false){
+			$this->out['msg'] = '添加出错！';
+		}else{
+			$this->out['code'] = 100;
+			$this->out['msg'] = 'suc';
+			$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>$r);
+		}
+		echo json_encode($this->out); exit;	
+	}
+	//添加匹配队名
+	public function delteamUp(){
+		header("Content-type:text/html;charset=UTF-8"); 
+		$t = M('team');
+		$arr = array();
+		$tid = I('param.tid','','htmlspecialchars'); //队名ID		
+		$r = $t->where(array('tid'=>$tid))->delete();
+		if($r === false){
+			$this->out['msg'] = '添加出错！';
+		}else{
+			$this->out['code'] = 100;
+			$this->out['msg'] = 'suc';
+			$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>$r);
+		}
+		echo json_encode($this->out); exit;	
 	}
 	//根据队名ID获取队名信息$hid主队ID,$aid客队ID
 	public function getTeamById($arr){

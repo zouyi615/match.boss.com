@@ -31,9 +31,14 @@
 			<h4>
 				<strong>外围场次主客队匹配管理</strong>&nbsp;&nbsp;&nbsp;&nbsp;								
 			</h4>
+			<p id="getdata">
+				<a href="javascript:;" id="getxml" class="updataC" data-url="<?php echo U('Match/getXml');?>"><span class="label label-danger"><font>重新载入竞彩xml</font>&nbsp;<span class="glyphicon glyphicon-download"></span></span></a>
+				<a href="javascript:;" id="getOdds" class="updataC" data-url="<?php echo U('Match/getOdds');?>"><span class="label label-danger"><font>重新载入欧赔odds</font>&nbsp;<span class="glyphicon glyphicon-download"></span></span></a>
+				<a href="javascript:;" id="getsp" class="updataD" data-url="<?php echo U('Match/getPl');?>"><span class="label label-success"><font>更新赔率</font>&nbsp;<span class="glyphicon glyphicon-refresh"></span></span></a>				
+			</p>
 			<p>
-				<a href="javascript:;" id="getxml" data-url="<?php echo U('Match/getXml');?>"><span class="label label-danger">重新载入竞彩xml&nbsp;<span class="glyphicon glyphicon-download"></span></span></a>
-				<a href="javascript:;" id="getsp" data-url="<?php echo U('Match/getPl');?>"><span class="label label-success">更新赔率&nbsp;<span class="glyphicon glyphicon-refresh"></span></span></a>				
+				<a href="<?php echo U('Match/odds');?>" target="_blank"><span class="label label-info"><font>查看欧赔数据</font>&nbsp;<span class="glyphicon glyphicon-list"></span></span></a>
+				<a href="<?php echo U('Match/team');?>" target="_blank"><span class="label label-info"><font>查看主客队匹配数据</font>&nbsp;<span class="glyphicon glyphicon-list"></span></span></a>
 			</p>
 		</blockquote>		
 	</div>

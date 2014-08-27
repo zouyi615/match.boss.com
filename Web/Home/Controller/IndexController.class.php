@@ -5,9 +5,12 @@ use Think\Controller;
 class IndexController extends Controller {
 	public function test(){
 		header("Content-type:text/html;charset=UTF-8");
-		$match = A('Match');
-		$rs = $match->getTeamById('211','350');
-		var_dump($rs);
+		//$match = A('Match');
+		//$rs = $match->getTeamById('211','350');
+		$t1 = strtotime('2014-08-29 00:00');
+		$t2 = strtotime('2014-08-28 23:59:00');
+		$t3 = strtotime('2014-08-29 00:00:00');
+		var_dump($t1,$t2,$t3);
 	}
 	//首页加载匹配对阵
     public function index(){

@@ -124,9 +124,9 @@ $.admin.box = {
 	bindEvent:function(){
 		var _T = this, warning = $('#alert-warning').find('.content');		
 		//重新载入竞彩xml
-		$('#getxml').click(function(){
-			var url = $(this).attr('data-url');
-			if($.confirm("确定重新载入竞彩xml数据？该功能清空当前匹配的竞彩数据，请谨慎操作！")){
+		$('#getdata .updataC').click(function(){
+			var url = $(this).attr('data-url'), c = $(this).find('font').html();
+			if($.confirm("确定"+c+"？该功能清空当前匹配的竞彩数据，请谨慎操作！")){
 				warning.html('<strong>提示！</strong>正在载入数据...');
 				$.post(url,function(data, textStatus){
 					var res = $.parseJSON(data);
@@ -140,16 +140,17 @@ $.admin.box = {
 			}
 		});		
 		//更新赔率
-		$('#getsp').click(function(){
+		$('#getdata .updataD').click(function(){
 			var url = $(this).attr('data-url');
 			warning.html('<strong>提示！</strong>正在更新赔率...');
-			$.post(url,function(data, textStatus){				
-				if(textStatus == 'success'){
+			$.post(url,function(data, textStatus){
+				var res = $.parseJSON(data);
+				if(res < 0){
+					warning.html('<strong>警告！</strong>'+res.msg);
+				}else{
 					warning.html('&nbsp;');	
 					location.reload();
-				}else{					
-					warning.html('<strong>警告！</strong>更新匹配场次失败，请重新更新！');
-				}
+				}				
 			});
 		});
 		//修改主、客队匹配
@@ -178,14 +179,72 @@ $.admin.box = {
 				}
 			});
 		});
+		//修改主客队匹配/Home/Match/team.html
+		$('#oddsteam tr.data').dblclick(function(){
+			var ismod = $(this).attr('ismod'), tid = $(this).attr('data-id'), oddname = $(this).find('td.oddsname'), url = $('#modteamurl').val(), o_n;
+			if(ismod == '0'){
+				o_n = $.trim(oddname.html());
+				oddname.html('<input type="text" class="form-control input-sm" name="o_n" value="'+o_n+'">');
+				$(this).attr('ismod','1'); //修改标记值
+			}else{
+				o_n = $.trim(oddname.find('input[name="o_n"]').val());
+				para = { tid:tid, team:o_n };
+				warning.html('<strong>提示！</strong>正在保存修改，请稍后...');
+				$.post(url, para, function(data, textStatus){
+					var res = $.parseJSON(data);
+					if(res.code < 0){
+						warning.html('<strong>警告！</strong>'+res.msg);
+					}else{
+						warning.html('&nbsp;');
+						oddname.html(o_n);						
+						$(this).attr('ismod','0'); //修改标记值
+					}
+				});	
+			}		
+		});
+		//新增主客队匹配
+		$('#addteamform #addOneTd').click(function(){
+			var tr = '<tr><td><input type="text" class="form-control input-sm" name="tid[]" value=""></td><td><input type="text" class="form-control input-sm" name="tname[]" value=""></td><td><input type="text" class="form-control input-sm" name="qtname[]" value=""></td></tr>';
+			$('#addteamform').find('tbody.tbody').append(tr);		
+		});
+		//新增主客队匹配
+		$('#addteamform #addteamup').click(function(){
+			var url = $('#addteamform').attr('action'), para = $('#addteamform').serialize();
+			warning.html('<strong>提示！</strong>正在保存修改，请稍后...');
+			$.post(url, para, function(data, textStatus){
+				var res = $.parseJSON(data);
+				if(res.code < 0){
+					warning.html('<strong>警告！</strong>'+res.msg);
+				}else{
+					warning.html('&nbsp;');
+					location.reload();
+				}
+			});	
+		});
+		//删除主客队匹配
+		$('#oddsteam .delteam').click(function(){
+			var url = $('#delteamurl').val(), tid = $(this).parents('tr.data').attr('data-id');
+			if($.confirm("是否删除该匹配：队名ID（"+tid+"）")){
+				warning.html('<strong>提示！</strong>正在保存修改，请稍后...');
+				$.post(url, {tid:tid}, function(data, textStatus){
+					var res = $.parseJSON(data);
+					if(res.code < 0){
+						warning.html('<strong>警告！</strong>'+res.msg);
+					}else{
+						warning.html('&nbsp;');
+						location.reload();
+					}
+				});	
+			}
+		});
 		//开始更新数据
-		$('#autoup').click(function(){
+		/*$('#autoup').click(function(){
 			_T.autoUp();
-		});
+		});*/
 		//停止更新数据
-		$('#stopup').click(function(){
+		/*$('#stopup').click(function(){
 			_T.stopUp();
-		});
+		});*/
 	},
 	//修改主客队
 	modUi:function(T){
@@ -204,8 +263,8 @@ $.admin.box = {
 			aid = $(T).find('td.team').attr('data-aid'),
 			homename = $(T).find('td.team').attr('data-homename'),
 			awayname = $(T).find('td.team').attr('data-awayname'),
-			t_h = $(T).find('td.team_op').find('input[name="t_h"]').val(),
-			t_o = $(T).find('td.team_op').find('input[name="t_o"]').val(),
+			t_h = $.trim($(T).find('td.team_op').find('input[name="t_h"]').val()),
+			t_o = $.trim($(T).find('td.team_op').find('input[name="t_o"]').val()),
 			url = $('#modupurl').val(), 
 			warning = $('#alert-warning').find('.content'), 
 			para, h;			
