@@ -120,51 +120,93 @@ class Jcpublic{
 		return $pl_odds;
 	}
 	/**
-	 * 获取球探网欧赔赔率(利记)
+	 * 获取球探网欧赔赔率(利记31,明陞17,金宝博23)
 	 */
 	public function getOddsQt(){
 		//公共变量
 		$splitDomain = "$";
 		$splitRecord = ";";
 		$splitColumn = ",";
-		$pl_odds = $match = $Odds1x2 = array(); 
-		//抓取利记(31)
-		$ty = 31;
-		$url = "http://61.143.225.74:88/xml/Odds2.aspx?companyid=31&".time(); 
+		$pl_odds = $match = $msheng_odds = array(); 
+		//抓取利记(31),明陞(17)
+		$ty = array('jinbb'=>23,'msheng'=>17);
+		$url_jinbb = "http://61.143.225.74:88/xml/Odds2.aspx?companyid=23&".time();
+		$url_msheng = "http://61.143.225.74:88/xml/Odds2.aspx?companyid=17&".time();
 		$host = "61.143.225.74:88";
-		$str = $this->curl($url,$host);
-		if($str){
-			$domains = explode($splitDomain,$str); 
+		$time1 = microtime(true);
+		$str_jinbb = $this->curl($url_jinbb,$host); 
+		$str_msheng = $this->curl($url_msheng,$host);
+		$time2 = microtime(true);
+		//明陞
+		if($str_jinbb){
+			$domains = explode($splitDomain,$str_jinbb); 
+			//赔率，数据重组
+			$oddsDomain = explode($splitRecord,$domains[3]);
+			for($i = 0; $i < count($oddsDomain); $i++){
+				$infoArr = explode($splitColumn,$oddsDomain[$i]);
+				$id	= $infoArr[0];
+				$cId = $infoArr[1];
+				if($cId == $ty['jinbb']){
+					$jinbb_odds[$id]['jinbb'] = $infoArr[5].','.$infoArr[6].','.$infoArr[7];
+				}
+			}
+		}
+		$time3 = microtime(true);
+		//利记
+		if($str_msheng){
+			$domains = explode($splitDomain,$str_msheng); 
+			//联赛
+			$leagueDomain = explode($splitRecord,$domains[0]);
+			for($i = 0; $i < count($leagueDomain); $i++){
+				$infoArr = explode($splitColumn,$leagueDomain[$i]);
+				$id = $infoArr[0];
+				$league[$id] = $infoArr[3];
+			}
+			$time4 = microtime(true);
+			//队名
 			$matchDomain = explode($splitRecord,$domains[1]);
 			for($i = 0; $i < count($matchDomain); $i++){
 				$infoArr = explode($splitColumn,$matchDomain[$i]);
 				$id = $infoArr[0];
 				$match[$id]['time'] = date('Y-m-d H:i:s',substr($infoArr[2],0,10));
+				$match[$id]['league'] = $league[$infoArr[1]];
 				$match[$id]['hname'] = $infoArr[5];
 				$match[$id]['aname'] = $infoArr[10];	
 			}
-			$oddsDomain = explode($splitRecord,$domains[3]);
-			$k = 0;
+			$time5 = microtime(true);
+			//赔率，数据重组
+			$oddsDomain = explode($splitRecord,$domains[3]); 
 			for($i = 0; $i < count($oddsDomain); $i++){
 				$infoArr = explode($splitColumn,$oddsDomain[$i]);
 				$id	= $infoArr[0];
 				$cId = $infoArr[1];
-				if($cId == $ty){ //利记(31)
-					$pl_odds[$k]['oid'] = $infoArr[0];
-					$pl_odds[$k]['hw'] = $infoArr[5];
-					$pl_odds[$k]['st'] = $infoArr[6];
-					$pl_odds[$k]['aw'] = $infoArr[7];
-					$pl_odds[$k]['matchtime'] = $match[$id]['time'];
-					$pl_odds[$k]['hname'] = $match[$id]['hname'];
-					$pl_odds[$k]['aname'] = $match[$id]['aname'];
-					$pl_odds[$k]['urlty'] = 'qiutan';
-					$pl_odds[$k]['oddty'] = 'liji';
-					$pl_odds[$k]['uptime'] = date('Y-m-d H:i:s');
-					$k++;
+				if($cId == $ty['msheng']){
+					$pl_odds[$id]['oid'] = $infoArr[0];
+					$pl_odds[$id]['matchtime'] = $match[$id]['time'];					
+					$pl_odds[$id]['league'] = $match[$id]['league'];
+					$pl_odds[$id]['hname'] = $match[$id]['hname'];
+					$pl_odds[$id]['aname'] = $match[$id]['aname'];
+					$pl_odds[$id]['msheng'] = $infoArr[5].','.$infoArr[6].','.$infoArr[7];
+					$pl_odds[$id]['jinbb'] = isset($jinbb_odds[$id]['jinbb'])?$jinbb_odds[$id]['jinbb']:'';					
+					$pl_odds[$id]['urlty'] = 'qiutan';
+					$pl_odds[$id]['uptime'] = date('Y-m-d H:i:s');					
+				}elseif(isset($jinbb_odds[$id]['jinbb'])){
+					if(isset($pl_odds[$id]['oid'])) continue;
+					$pl_odds[$id]['oid'] = $infoArr[0];
+					$pl_odds[$id]['matchtime'] = $match[$id]['time'];					
+					$pl_odds[$id]['league'] = $match[$id]['league'];
+					$pl_odds[$id]['hname'] = $match[$id]['hname'];
+					$pl_odds[$id]['aname'] = $match[$id]['aname'];
+					$pl_odds[$id]['msheng'] = '';
+					$pl_odds[$id]['jinbb'] = $jinbb_odds[$id]['jinbb'];					
+					$pl_odds[$id]['urlty'] = 'qiutan';
+					$pl_odds[$id]['uptime'] = date('Y-m-d H:i:s');
 				}
 			}
+			$time6 = microtime(true);
 		}
-		return $pl_odds; 
+		//echo json_encode(array('geturl'=>($time2-$time1),'getmsheng'=>($time3-$time2),'league'=>($time4-$time3),'match'=>($time5-$time4),'odds'=>($time6-$time5)));
+		return $pl_odds;
 	}
 	//从n个字符串中取m个字符的所有组合
 	public function getCombine($arr,$m = 2){

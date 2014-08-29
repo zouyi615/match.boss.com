@@ -15,7 +15,7 @@ class IndexController extends Controller {
 	//首页加载匹配对阵
     public function index(){
         header("Content-type:text/html;charset=UTF-8");  	
-		$match = $this->queryMatch();
+		$match = $this->queryMatch(); 
 		$match = $this->array2_sort($match,'rate',SORT_DESC,SORT_STRING); //二维数组排序
         $this->assign('match',$match);
         $this->display('index');
@@ -25,7 +25,7 @@ class IndexController extends Controller {
 		header("Content-type:text/html;charset=UTF-8");   
 		$p = M('pl');
 		$match = array();
-		$rs = $p->alias('p')->field('m.id,m.matchtime,m.simpleleague,m.homename,m.awayname,p.rq,p.sp,p.liji,p.uptime')->join('LEFT JOIN __MATCH__ m ON p.id = m.id')->where('p.ismat=1 and p.isend=0')->select();	
+		$rs = $p->alias('p')->field('m.id,m.matchtime,m.simpleleague,m.homename,m.awayname,p.rq,p.sp,p.msheng,p.jinbb,p.uptime')->join('LEFT JOIN __MATCH__ m ON p.id = m.id')->where('p.ismat=1 and p.isend=0')->select();	
 		if($rs){
 			foreach($rs as $key=>$val){
 				$sp = '';
@@ -39,13 +39,19 @@ class IndexController extends Controller {
 					$sp = isset($spA[0])?$spA[0]:'';
 				}
 				if(!$sp) continue;
-				$liji = $this->getMin($val['liji']);  //利记赔率最小值
-				if(!$liji) continue;
-				$rate = sprintf("%.6f",1/(1/$liji+1/$sp)); //计算匹配回报率
+				$msheng = $this->getMin($val['msheng']);  //利记赔率最小值
+				if(!$msheng) continue;
+				$jinbb = $this->getMin($val['jinbb']);  //利记赔率最小值
+				if(!$jinbb) continue;
+				$ms_rate = sprintf("%.6f",1/(1/$msheng+1/$sp)); //计算匹配回报率(明陞)
+				$jbb_rate = sprintf("%.6f",1/(1/$jinbb+1/$sp)); //计算匹配回报率(金宝博)
 				$match[$id] = $val;
 				$match[$id]['w'] = $sp; //竞彩受让方赔率
-				$match[$id]['lj'] = $liji; //利记赔率最小值
-				$match[$id]['rate'] = $rate;				
+				$match[$id]['ms'] = $msheng;
+				$match[$id]['jbb'] = $jinbb;
+				$match[$id]['ms_rate'] = $ms_rate;
+				$match[$id]['jbb_rate'] = $jbb_rate; 
+				$match[$id]['rate'] = sprintf("%.6f",($ms_rate+$jbb_rate)/2); //平均赔率 用于排序	
 			}
 		}		
 		return $match;
@@ -58,7 +64,7 @@ class IndexController extends Controller {
 		$irate = I('param.rnrate','','htmlspecialchars'); //用户设置赔率
 		$topnum = I('param.topnum','0','htmlspecialchars'); //获取最大显示数目		
 		$match = $comMatchArr = array(); 
-		$match = $this->queryMatch(); 
+		$match = $this->queryMatch();  
 		$midArr = array();
 		foreach($match as $key=>$val){
 			$midArr[] = $val['id'];

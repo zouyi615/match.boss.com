@@ -20,7 +20,7 @@ class MatchController extends Controller {
 		$t = M('team');
 		$h = $m->getField('homeid',true);
 		$a = $m->getField('awayid',true);
-		$rsMat = $m->alias('m')->field('m.id,m.matchnum,m.homeid,m.homename,m.awayid,m.awayname,m.matchtime,m.simpleleague,m.homename,m.awayname,p.sp,p.liji,p.rq,p.isend,p.uptime')->join('LEFT JOIN __PL__ p ON m.id = p.id')->order('m.matchtime')->select();	
+		$rsMat = $m->alias('m')->field('m.id,m.matchnum,m.homeid,m.homename,m.awayid,m.awayname,m.matchtime,m.simpleleague,m.homename,m.awayname,p.sp,p.jinbb,p.msheng,p.rq,p.isend,p.uptime')->join('LEFT JOIN __PL__ p ON m.id = p.id')->order('m.matchtime')->select();	
 		$rsTeam = $this->getTeamById(array_merge($h,$a));
 		$this->assign('rsTeam',$rsTeam); 
         $this->assign('rsMat',$rsMat); 
@@ -72,16 +72,19 @@ class MatchController extends Controller {
 		header("Content-type:text/html;charset=UTF-8");
 		import('Libs.Trade.Jcpublic');
         $jc = new \Jcpublic();
-       //获取球探网欧赔赔率(利记)
+		//获取球探网欧赔赔率(利记)
+		$time1 = microtime(true);
 		$oddsArr = $jc->getOddsQt();
+		$time2 = microtime(true);
 		$o = M('odds');
 		$t = M('team');
 		$o->where('1')->delete();
-		$rs = $o->addAll($oddsArr);
+		$rs = $o->addAll(array_values($oddsArr));
+		$time3 = microtime(true);
 		if($rs){			
 			$this->out['code'] = 100;
 			$this->out['msg'] = 'suc';
-			$this->out['info'] = array('uptime'=>date('Y-m-d H:i:s'),'num'=>$rs);
+			$this->out['info'] = array('uptime'=>date('Y-m-d H:i:s'),'num'=>$rs,'oddscost'=>($time2-$time1),'addcost'=>($time3-$time2));
 		}else{
 			$this->out['msg'] = '保存对阵xml失败！';		
 		}
@@ -96,9 +99,10 @@ class MatchController extends Controller {
 		$o = M('odds');
 		$t = M('team');
 		//获取竞彩对阵信息
-		$mInfo = $m->getField('id,homeid,homename,awayid,awayname');
+		$mInfo = $m->getField('id,homeid,homename,awayid,awayname');		
 		//获取外围场次信息
-		$map['urlty&oddty'] =array('qiutan','liji','_multi'=>true);
+		//$map['urlty&oddty'] =array('qiutan','liji','_multi'=>true);
+		$map['urlty'] = 'qiutan';
 		$oddInfo = $o->field('hname,aname')->where($map)->select();
 		$team = array();
 		$i = 0;
@@ -145,8 +149,8 @@ class MatchController extends Controller {
 		$plArr = $jc->getSp(); 
 		//获取球探网欧赔赔率(利记)
 		$time1_o = microtime(true);
-		$map['urlty&oddty'] =array('qiutan','liji','_multi'=>true);
-		$oInfo = $o->field('oid,hname,aname,hw,st,aw,matchtime')->where($map)->select();
+		$map['urlty'] = 'qiutan';
+		$oInfo = $o->field('oid,hname,aname,jinbb,msheng,matchtime')->where($map)->select();
 		$time2_o = microtime(true);
 		//获取对阵信息
 		$mInfo = $m->getField('id,rq,homeid,homename,awayid,awayname,matchtime');
@@ -164,32 +168,36 @@ class MatchController extends Controller {
 		
 		$i = 0;
 		if($mInfo && $oInfo){
-			foreach($mInfo as $key=>$val){				
+			foreach($mInfo as $key=>$val){
+				$newplArr[$i]['jinbb'] = '';
+				$newplArr[$i]['msheng'] = '';
+				$newplArr[$i]['isend'] = 0;
+				$newplArr[$i]['ismat'] = 0; //是否匹配
 				$newplArr[$i]['id'] = $val['id'];
 				$newplArr[$i]['rq'] = $val['rq'];										
 				$newplArr[$i]['sp'] = $plArr[$key]['win'].','.$plArr[$key]['draw'].','.$plArr[$key]['lost'];
+				//比赛已经截止 不抓赔率
 				if(strtotime($val['matchtime']) < strtotime("+20 minutes")){
-					$newplArr[$i]['isend'] = 1;
-				}else{
-					$newplArr[$i]['isend'] = 0;
+					continue;
 				}
-				$newplArr[$i]['liji'] = '';						
-				$newplArr[$i]['ismat'] = 0; //是否匹配
 				//球探网对应队名
-				$qt_hname = $mTeam[$val['homeid']]; //主队
-				$qt_aname = $mTeam[$val['awayid']]; //客队
+				$qt_hname = isset($mTeam[$val['homeid']])?$mTeam[$val['homeid']]:''; //主队
+				$qt_aname = isset($mTeam[$val['awayid']])?$mTeam[$val['awayid']]:''; //客队
+				//if(!$qt_hname || !$qt_aname) continue;
+				//if(!$qt_hname )
 				foreach($oInfo as $k=>$v){
 					//匹配对应场次，首先根据日期匹配，其次根据主客队名匹配
 					//两场比赛时间差允许超过一小时
 					if(abs(strtotime($val['matchtime']) - strtotime($v['matchtime'])) > 1*60*60) continue;
 					if($qt_hname == $v['hname'] && $qt_aname == $v['aname']){						
-						$newplArr[$i]['liji'] = $v['hw'].','.$v['st'].','.$v['aw'];						
+						$newplArr[$i]['jinbb'] = $v['jinbb'];
+						$newplArr[$i]['msheng'] = $v['msheng'];
 						$newplArr[$i]['ismat'] = 1; //是否匹配
 						break;
 					}
 				}
 				$newplArr[$i]['uptime'] = date('Y-m-d H:i:s');
-				$rr = $p->field('id,rq,sp,liji,isend,ismat,uptime')->save($newplArr[$i]);
+				$rr = $p->field('id,rq,sp,jinbb,msheng,isend,ismat,uptime')->save($newplArr[$i]);
 				$i++;
 			}
 		}else{
@@ -199,7 +207,7 @@ class MatchController extends Controller {
 		if($newplArr && !$this->out['msg']){
 			$this->out['code'] = 100;
 			$this->out['msg'] = 'suc';
-			$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>count($newplArr),'cost'=>($time5_o-$time1));
+			$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>count($newplArr),'plArr'=>($time1_o-$time1),'oInfo'=>($time2_o-$time1_o),'mInfo'=>($time3_o-$time2_o),'mTeam'=>($time4_o-$time3_o),'match'=>($time5_o-$time4_o),'cost'=>($time5_o-$time1));
 		}
 		echo json_encode($this->out); exit;
 	}

@@ -34,7 +34,7 @@
 			<p id="getdata">
 				<a href="javascript:;" id="getxml" class="updataC" data-url="<?php echo U('Match/getXml');?>"><span class="label label-danger"><font>重新载入竞彩xml</font>&nbsp;<span class="glyphicon glyphicon-download"></span></span></a>
 				<a href="javascript:;" id="getOdds" class="updataC" data-url="<?php echo U('Match/getOdds');?>"><span class="label label-danger"><font>重新载入欧赔odds</font>&nbsp;<span class="glyphicon glyphicon-download"></span></span></a>
-				<a href="javascript:;" id="getsp" class="updataD" data-url="<?php echo U('Match/getPl');?>"><span class="label label-success"><font>更新赔率</font>&nbsp;<span class="glyphicon glyphicon-refresh"></span></span></a>				
+				<a href="javascript:;" id="getsp" class="updataD" data-url="<?php echo U('Match/getPl');?>"><span class="label label-success"><font>更新赔率</font>&nbsp;<span class="glyphicon glyphicon-refresh"></span></span></a>
 			</p>
 			<p>
 				<a href="<?php echo U('Match/odds');?>" target="_blank"><span class="label label-info"><font>查看欧赔数据</font>&nbsp;<span class="glyphicon glyphicon-list"></span></span></a>
@@ -58,24 +58,26 @@
 						<th>联赛</th>
 						<th>让球</th>
 						<th>主队/客队</th>
-						<th>赔率</th>
-						<th class="red">欧赔（利记）</th>
 						<th>球探网主客队</th>
+						<th>赔率</th>
+						<th class="red">欧赔（明陞）</th>
+						<th class="red">欧赔（金宝博）</th>						
 						<th>开售状态</th>
 						<th>赔率更新时间</th>
 					</tr>
 				</thead>
 				<colgroup>
-					<col width="4%">
+					<col width="3%">
 					<col width="5%">
 					<col width="10%">
-					<col width="10%">
+					<col width="6%">
 					<col width="4%">
 					<col width="16%">
-					<col width="9%">
-					<col width="9%">
 					<col width="16%">
-					<col width="6%">
+					<col width="8%">
+					<col width="8%">
+					<col width="8%">					
+					<col width="5%">
 					<col width="11%">
 				</colgroup>
 				<tbody>
@@ -87,9 +89,10 @@
 							<td><?php echo $m['simpleleague']; ?></td>
 							<td><?php echo $m['rq']; ?></td>
 							<td data-hid="<?php echo $m['homeid']; ?>" data-homename="<?php echo $m['homename']; ?>" data-aid="<?php echo $m['awayid']; ?>" data-awayname="<?php echo $m['awayname']; ?>" class="team"><?php echo $m['homename'].'&nbsp;VS&nbsp;'.$m['awayname']; ?></td>							
-							<td><?php echo $m['sp']; ?></td>
-							<td class="red"><?php echo $m['liji']; ?></td>
 							<td class="team_op row"><?php echo $rsTeam[$m['homeid']].'VS'.$rsTeam[$m['awayid']]; ?></td>
+							<td><?php echo $m['sp']; ?></td>
+							<td class="red"><?php echo $m['msheng']; ?></td>
+							<td class="red"><?php echo $m['jinbb']; ?></td>							
 							<td class="offset" data-end="<?php echo $m['end']; ?>"><?php echo $m['isend']==0?'<span class="label label-success">开售</span>':'<span class="label label-warning">已截止</span>'; ?></td>
 							<td><?php echo $m['uptime']; ?></td>
 						</tr>		
