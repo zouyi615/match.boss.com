@@ -500,7 +500,7 @@ $.match.box = {
 				m1_homename: e.m1.homename,
 				m1_awayname: e.m1.awayname,
 				m1_w: e.m1.w,
-				m1_op: e.m1.fun+'(利记)',
+				m1_op: e.m1.fun+'(乐天堂)',
 				m1_rate: e.m1.rate,
 				m2_id: e.m2.id,
 				m2_matchtime: e.m2.matchtime,
@@ -508,7 +508,7 @@ $.match.box = {
 				m2_homename: e.m2.homename,
 				m2_awayname: e.m2.awayname,
 				m2_w: e.m2.w,
-				m2_op: e.m2.fun+'(利记)',
+				m2_op: e.m2.fun+'(乐天堂)',
 				m2_rate: e.m2.rate
 			}));			
 		});
