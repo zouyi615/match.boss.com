@@ -49,7 +49,7 @@
 						<th>编号</th>
 						<th>队名ID</th>
 						<th>500队名</th>
-						<th>球探网队名</th>	
+						<th>外围队名</th>	
 						<th>操作</th>
 						<th></th>
 					</tr>
@@ -71,7 +71,7 @@
 							<td><php>echo $k+1;</php></td>
 							<td><php>echo $m['tid'];</php></td>
 							<td><php>echo $m['tname'];</php></td>
-							<td class="oddsname <php>echo $m['tname'] != $m['qtname']?'red':''</php>"><php>echo $m['qtname'];</php></td>
+							<td class="oddsname <php>echo $m['tname'] != $m['oname']?'red':''</php>"><php>echo $m['oname'];</php></td>
 							<td class=""><button type="button" class="btn btn-danger btn-xs delteam">删除<i class="glyphicon glyphicon-remove"></i></button></td>
 							<td></td>
 						</tr>		
@@ -90,14 +90,14 @@
 							<th colspan="2">添加球队匹配名称</th>
 							<td align="right"><a href="javascript:;" id="addOneTd"><span class="label label-default">添加一行&nbsp;<span class="glyphicon glyphicon-plus"></span></span></a></td>
 						</tr>
-						<tr><th>队名ID</th><th>500队名</th><th>球探网队名</th></tr>
+						<tr><th>队名ID</th><th>500队名</th><th>外围队名</th></tr>
 					</thead>
 					<colgroup><col width="20%"><col width="40%"><col width="40%"></colgroup>
 					<tbody class="tbody">
 						<tr>
 							<td><input type="text" class="form-control input-sm" name="tid[]" value=""></td>
 							<td><input type="text" class="form-control input-sm" name="tname[]" value=""></td>
-							<td><input type="text" class="form-control input-sm" name="qtname[]" value=""></td>
+							<td><input type="text" class="form-control input-sm" name="oname[]" value=""></td>
 						</tr>
 					</tbody>
 					<tr>

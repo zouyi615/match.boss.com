@@ -60,8 +60,7 @@
 						<th>主队/客队</th>
 						<th>球探网主客队</th>
 						<th>赔率</th>
-						<th class="red">欧赔（明陞）</th>
-						<th class="red">欧赔（金宝博）</th>						
+						<th class="red">欧赔（乐天堂）</th>					
 						<th>开售状态</th>
 						<th>赔率更新时间</th>
 					</tr>
@@ -70,14 +69,13 @@
 					<col width="3%">
 					<col width="5%">
 					<col width="10%">
-					<col width="6%">
+					<col width="8%">
 					<col width="4%">
-					<col width="16%">
-					<col width="16%">
+					<col width="18%">
+					<col width="18%">
 					<col width="8%">
-					<col width="8%">
-					<col width="8%">					
-					<col width="5%">
+					<col width="9%">				
+					<col width="6%">
 					<col width="11%">
 				</colgroup>
 				<tbody>
@@ -91,8 +89,7 @@
 							<td data-hid="<?php echo $m['homeid']; ?>" data-homename="<?php echo $m['homename']; ?>" data-aid="<?php echo $m['awayid']; ?>" data-awayname="<?php echo $m['awayname']; ?>" class="team"><?php echo $m['homename'].'&nbsp;VS&nbsp;'.$m['awayname']; ?></td>							
 							<td class="team_op row"><?php echo $rsTeam[$m['homeid']].'VS'.$rsTeam[$m['awayid']]; ?></td>
 							<td><?php echo $m['sp']; ?></td>
-							<td class="red"><?php echo $m['msheng']; ?></td>
-							<td class="red"><?php echo $m['jinbb']; ?></td>							
+							<td class="red"><?php echo $m['fun88']; ?></td>						
 							<td class="offset" data-end="<?php echo $m['end']; ?>"><?php echo $m['isend']==0?'<span class="label label-success">开售</span>':'<span class="label label-warning">已截止</span>'; ?></td>
 							<td><?php echo $m['uptime']; ?></td>
 						</tr>		

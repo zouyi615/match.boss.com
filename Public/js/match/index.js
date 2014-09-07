@@ -204,7 +204,7 @@ $.admin.box = {
 		});
 		//新增主客队匹配
 		$('#addteamform #addOneTd').click(function(){
-			var tr = '<tr><td><input type="text" class="form-control input-sm" name="tid[]" value=""></td><td><input type="text" class="form-control input-sm" name="tname[]" value=""></td><td><input type="text" class="form-control input-sm" name="qtname[]" value=""></td></tr>';
+			var tr = '<tr><td><input type="text" class="form-control input-sm" name="tid[]" value=""></td><td><input type="text" class="form-control input-sm" name="tname[]" value=""></td><td><input type="text" class="form-control input-sm" name="oname[]" value=""></td></tr>';
 			$('#addteamform').find('tbody.tbody').append(tr);		
 		});
 		//新增主客队匹配
@@ -458,15 +458,15 @@ $.match.box = {
 		clearTimeout(_T.t_a);
 		_T.t_a = setTimeout(function(){
 			_T.getAjaxList();
-		},20000);	
+		},5000);	
 	},
 	//ajax获取list
 	getAjaxList: function(){
 		var _T = this, url = $('#relup').attr('data-url'), rnrate = $('#matching').attr('data-irate'), para;
 		$.bar.process();
 		$.post(url, {rnrate:rnrate}, function(data, textStatus){
-			var list = $.parseJSON(data);
-			if(textStatus == "success"){
+			var list = $.parseJSON(data);			
+			if(textStatus == "success" && list.length > 0){
 				//刷新成功			
 				_T.list = list;
 				_T.createList();
@@ -475,9 +475,9 @@ $.match.box = {
 				clearTimeout(_T.t_a);
 				_T.t_a = setTimeout(function(){
 					_T.getAjaxList();
-				},20000);				
+				},5000);				
 			}else{
-				$.bar.stop();
+				$.bar.end();
 			}
 		});
 	},
@@ -491,7 +491,7 @@ $.match.box = {
 			html.push($.tpl(strhtml,{
 				key: i+1,
 				cl: (i+1)%2 == 0 ? 'success' : '',
-				data: '{s1:'+e.m1.w+',s2:'+e.m2.w+',s3:'+e.m1.lj+',s4:'+e.m2.lj+'}',
+				data: '{s1:'+e.m1.w+',s2:'+e.m2.w+',s3:'+e.m1.fun+',s4:'+e.m2.fun+'}',
 				vs: '['+e.m1.homename+'vs'+e.m1.awayname+']/['+e.m2.homename+'vs'+e.m2.awayname+']',
 				rnrate: e.rnrate,
 				m1_id: e.m1.id,
@@ -500,7 +500,7 @@ $.match.box = {
 				m1_homename: e.m1.homename,
 				m1_awayname: e.m1.awayname,
 				m1_w: e.m1.w,
-				m1_op: e.m1.lj+'(利记)',
+				m1_op: e.m1.fun+'(利记)',
 				m1_rate: e.m1.rate,
 				m2_id: e.m2.id,
 				m2_matchtime: e.m2.matchtime,
@@ -508,7 +508,7 @@ $.match.box = {
 				m2_homename: e.m2.homename,
 				m2_awayname: e.m2.awayname,
 				m2_w: e.m2.w,
-				m2_op: e.m2.lj+'(利记)',
+				m2_op: e.m2.fun+'(利记)',
 				m2_rate: e.m2.rate
 			}));			
 		});
@@ -535,13 +535,14 @@ $.match.box = {
 		s2 = _T.mlist.s2;
 		betmoney = _T.mlist.betmoney;
 		rebate = _T.mlist.rebate;
-		prize = (s1*s2*betmoney).toFixed(2); 
+		prize = parseFloat((s1*s2*betmoney).toFixed(2)); 
 		_T.mlist['prize'] = prize; //预计奖金
 		s3 = _T.mlist.s3;
 		s4 = _T.mlist.s4; 
-		in1 = ((betmoney - rebate)/(s3-1)).toFixed(2);			
+		in1 = parseFloat(((betmoney - rebate)/(s3-1)).toFixed(2));			
 		_T.mlist['in1'] = in1; //首场下注金额
-		in2 = (prize+rebate-betmoney-in1).toFixed(2);
+		in2 = parseFloat((prize+rebate-betmoney-in1).toFixed(2));
+		//console.log(prize,rebate,betmoney,in1,in2);
 		_T.mlist['in2'] = in2; //末场下注金额
 		profit = (in2*s4+rebate-betmoney-in1-in2).toFixed(2); 
 		_T.mlist['profit'] = profit; //盈利	

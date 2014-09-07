@@ -47,10 +47,10 @@
 						<th>客队</th>
 						<th class="red">赔率</th>
 						<th class="red">水位</th>
-						<th class="red" colspan="2">返还率&nbsp;<span class="label label-default"><span class="glyphicon glyphicon-refresh"></span></span></th>
+						<th class="red">返还率&nbsp;<span class="label label-default"><span class="glyphicon glyphicon-refresh"></span></span></th>
 					</tr>
 					<tr>
-						<td colspan="10">
+						<td colspan="9">
 						<div class="progress">
 							<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
 						</div>
@@ -59,35 +59,28 @@
 				</thead>
 				<colgroup>
 					<col width="4%">
-					<col width="6%">
-					<col width="14%">
-					<col width="10%">
-					<col width="14%">
-					<col width="14%">
 					<col width="8%">
+					<col width="14%">
+					<col width="14%">
+					<col width="14%">
+					<col width="14%">
 					<col width="10%">
 					<col width="10%">
-					<col width="10%">
+					<col width="12%">
 				</colgroup>
 				<tbody>
 					<?php if(isset($match) && is_array($match)){ foreach($match as $k=>$m){ ?>
 						<tr class="data <?php echo ($k+1)%2==0?'success':''; ?>" id="<?php echo $m['id']; ?>" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
-							<td rowspan="2"><?php echo $k+1; ?></td>
-							<td rowspan="2"><?php echo $m['id']; ?></td>
-							<td rowspan="2"><?php echo $m['matchtime']; ?></td>
-							<td rowspan="2"><?php echo $m['simpleleague']; ?></td>
-							<td rowspan="2"><?php echo $m['homename']; ?></td>
-							<td rowspan="2"><?php echo $m['awayname']; ?></td>
+							<td><?php echo $k+1; ?></td>
+							<td><?php echo $m['id']; ?></td>
+							<td><?php echo $m['matchtime']; ?></td>
+							<td><?php echo $m['simpleleague']; ?></td>
+							<td><?php echo $m['homename']; ?></td>
+							<td><?php echo $m['awayname']; ?></td>
 							<td><?php echo $m['w']; ?></td>
-							<td><?php echo $m['ms'].'(明陞)'; ?></td>
-							<td><?php echo $m['ms_rate']; ?></td>
-							<td rowspan="2"><?php echo $m['rate']; ?></td>
-						</tr>
-						<tr class="data <?php echo ($k+1)%2==0?'success':''; ?>">
-							<td><?php echo $m['w']; ?></td>
-							<td><?php echo $m['jbb'].'(金宝博)'; ?></td>
-							<td><?php echo $m['ms_rate']; ?></td>
-						</tr>
+							<td><?php echo $m['fun'].'(乐天堂)'; ?></td>
+							<td><?php echo $m['rate']; ?></td>
+						</tr>						
 					<?php } } ?>												
 				</tbody>
 				</table>	

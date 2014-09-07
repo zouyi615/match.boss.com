@@ -25,7 +25,7 @@ class IndexController extends Controller {
 		header("Content-type:text/html;charset=UTF-8");   
 		$p = M('pl');
 		$match = array();
-		$rs = $p->alias('p')->field('m.id,m.matchtime,m.simpleleague,m.homename,m.awayname,p.rq,p.sp,p.msheng,p.jinbb,p.uptime')->join('LEFT JOIN __MATCH__ m ON p.id = m.id')->where('p.ismat=1 and p.isend=0')->select();	
+		$rs = $p->alias('p')->field('m.id,m.matchtime,m.simpleleague,m.homename,m.awayname,p.rq,p.sp,p.fun88,p.uptime')->join('LEFT JOIN __MATCH__ m ON p.id = m.id')->where('p.ismat=1 and p.isend=0')->select();	
 		if($rs){
 			foreach($rs as $key=>$val){
 				$sp = '';
@@ -39,19 +39,13 @@ class IndexController extends Controller {
 					$sp = isset($spA[0])?$spA[0]:'';
 				}
 				if(!$sp) continue;
-				$msheng = $this->getMin($val['msheng']);  //利记赔率最小值
-				if(!$msheng) continue;
-				$jinbb = $this->getMin($val['jinbb']);  //利记赔率最小值
-				if(!$jinbb) continue;
-				$ms_rate = sprintf("%.6f",1/(1/$msheng+1/$sp)); //计算匹配回报率(明陞)
-				$jbb_rate = sprintf("%.6f",1/(1/$jinbb+1/$sp)); //计算匹配回报率(金宝博)
+				$fun88 = $this->getMin($val['fun88']);  //利记赔率最小值
+				if(!$fun88) continue;				
+				$rate = sprintf("%.6f",1/(1/$fun88+1/$sp)); //计算匹配回报率(乐天堂)				
 				$match[$id] = $val;
 				$match[$id]['w'] = $sp; //竞彩受让方赔率
-				$match[$id]['ms'] = $msheng;
-				$match[$id]['jbb'] = $jinbb;
-				$match[$id]['ms_rate'] = $ms_rate;
-				$match[$id]['jbb_rate'] = $jbb_rate; 
-				$match[$id]['rate'] = sprintf("%.6f",($ms_rate+$jbb_rate)/2); //平均赔率 用于排序	
+				$match[$id]['fun'] = $fun88;
+				$match[$id]['rate'] = $rate; //匹配回报率
 			}
 		}		
 		return $match;
@@ -88,7 +82,7 @@ class IndexController extends Controller {
 			$comMatchArr[$i]['m1']['homename'] = $match[$m1]['homename'];
 			$comMatchArr[$i]['m1']['awayname'] = $match[$m1]['awayname'];
 			$comMatchArr[$i]['m1']['w'] = $match[$m1]['w'];
-			$comMatchArr[$i]['m1']['lj'] = $match[$m1]['lj'];
+			$comMatchArr[$i]['m1']['fun'] = $match[$m1]['fun'];
 			$comMatchArr[$i]['m1']['rate'] = $match[$m1]['rate'];
 			$comMatchArr[$i]['m2']['id'] = $match[$m2]['id'];
 			$comMatchArr[$i]['m2']['matchtime'] = $match[$m2]['matchtime'];
@@ -96,7 +90,7 @@ class IndexController extends Controller {
 			$comMatchArr[$i]['m2']['homename'] = $match[$m2]['homename'];
 			$comMatchArr[$i]['m2']['awayname'] = $match[$m2]['awayname'];
 			$comMatchArr[$i]['m2']['w'] = $match[$m2]['w'];
-			$comMatchArr[$i]['m2']['lj'] = $match[$m2]['lj'];
+			$comMatchArr[$i]['m2']['fun'] = $match[$m2]['fun'];
 			$comMatchArr[$i]['m2']['rate'] = $match[$m2]['rate'];
 			$i++;			
 		}

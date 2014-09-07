@@ -75,7 +75,7 @@
 					if(isset($comMatchArr) && is_array($comMatchArr)){						
 						foreach($comMatchArr as $key=>$val){							
 					</php>
-						<tr class="data <php>echo ($key+1)%2==0?'success':'';</php>" id="m<php>echo $key+1;</php>" mid="m<php>echo $key+1;</php>" data="<php>echo '{s1:'.$val['m1']['w'].',s2:'.$val['m2']['w'].',s3:'.$val['m1']['lj'].',s4:'.$val['m2']['lj'].'}';</php>" vs="<php>echo '['.$val['m1']['homename'].'vs'.$val['m1']['awayname'].']/['.$val['m2']['homename'].'vs'.$val['m2']['awayname'].']';</php>" rate="<php>echo $val['rnrate'];</php>">
+						<tr class="data <php>echo ($key+1)%2==0?'success':'';</php>" id="m<php>echo $key+1;</php>" mid="m<php>echo $key+1;</php>" data="<php>echo '{s1:'.$val['m1']['w'].',s2:'.$val['m2']['w'].',s3:'.$val['m1']['fun'].',s4:'.$val['m2']['fun'].'}';</php>" vs="<php>echo '['.$val['m1']['homename'].'vs'.$val['m1']['awayname'].']/['.$val['m2']['homename'].'vs'.$val['m2']['awayname'].']';</php>" rate="<php>echo $val['rnrate'];</php>">
 							<td rowspan="2" class="tobox"><a href="javascript:;"><php>echo $key+1;</php></a></td>
 							<td><php>echo $val['m1']['id'];</php></td>
 							<td><php>echo $val['m1']['matchtime'];</php></td>
@@ -83,7 +83,7 @@
 							<td><php>echo $val['m1']['homename'];</php></td>
 							<td><php>echo $val['m1']['awayname'];</php></td>
 							<td><php>echo $val['m1']['w'];</php></td>
-							<td><php>echo $val['m1']['lj'].'(利记)';</php></td>
+							<td><php>echo $val['m1']['fun'].'(利记)';</php></td>
 							<td><php>echo $val['m1']['rate'];</php></td>
 							<td rowspan="2" class="tobox"><php>echo $val['rnrate'];</php>&nbsp;<a href="javascript:;">详情</a></td>					
 						</tr>
@@ -94,7 +94,7 @@
 							<td><php>echo $val['m2']['homename'];</php></td>
 							<td><php>echo $val['m2']['awayname'];</php></td>
 							<td><php>echo $val['m2']['w'];</php></td>
-							<td><php>echo $val['m2']['lj'].'(利记)';</php></td>
+							<td><php>echo $val['m2']['fun'].'(利记)';</php></td>
 							<td><php>echo $val['m2']['rate'];</php></td>
 						</tr>
 					<php>						

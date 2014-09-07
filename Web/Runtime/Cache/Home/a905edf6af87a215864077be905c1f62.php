@@ -52,26 +52,24 @@
 						<th>联赛</th>
 						<th>主队</th>
 						<th>客队</th>
-						<th>明陞</th>
-						<th>金宝博</th>						
+						<th>fun88</th>				
 						<th>来源</th>
 						<th>赔率更新时间</th>
 					</tr>
 				</thead>
 				<colgroup>
 					<col width="4%">
-					<col width="5%">
+					<col width="8%">
 					<col width="12%">
-					<col width="6%">
-					<col width="10%">
-					<col width="10%">
+					<col width="14%">
+					<col width="16%">
+					<col width="16%">
 					<col width="9%">
 					<col width="9%">
-					<col width="6%">
 					<col width="12%">
 				</colgroup>
 				<tbody>
-					<?php if($odds && is_array($odds)){ foreach($odds as $k=>$m){ $min_ms = strval(min(explode(',',$m['msheng']))); $m['msheng'] = str_replace($min_ms,'<font class="red">'.$min_ms.'</font>',$m['msheng']); $min_jbb = strval(min(explode(',',$m['jinbb']))); $m['jinbb'] = str_replace($min_jbb,'<font class="red">'.$min_jbb.'</font>',$m['jinbb']); ?>
+					<?php if($odds && is_array($odds)){ foreach($odds as $k=>$m){ $min_ms = strval(min(explode(',',$m['fun88']))); $m['fun88'] = str_replace($min_ms,'<font class="red">'.$min_ms.'</font>',$m['fun88']); ?>
 						<tr class="data" id="<?php echo $m['id']; ?>" ismod="0">
 							<td><?php echo $k+1; ?></td>
 							<td><?php echo $m['oid']; ?></td>
@@ -79,8 +77,7 @@
 							<td><?php echo $m['league']; ?></td>
 							<td><?php echo $m['hname']; ?></td>
 							<td><?php echo $m['aname']; ?></td>
-							<td><?php echo $m['msheng']; ?></td>
-							<td><?php echo $m['jinbb']; ?></td>
+							<td><?php echo $m['fun88']; ?></td>
 							<td><?php echo $m['urlty']; ?></td>
 							<td><?php echo $m['uptime']; ?></td>
 						</tr>		

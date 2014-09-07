@@ -1,0 +1,4 @@
+[ 2014-09-04T22:19:33+08:00 ] 127.0.0.1 /Home/Match/getOddsFun.html
+ERR: 1146:Table 'match.m_match_sp' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `m_match_sp`
+

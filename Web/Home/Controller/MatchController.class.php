@@ -20,7 +20,7 @@ class MatchController extends Controller {
 		$t = M('team');
 		$h = $m->getField('homeid',true);
 		$a = $m->getField('awayid',true);
-		$rsMat = $m->alias('m')->field('m.id,m.matchnum,m.homeid,m.homename,m.awayid,m.awayname,m.matchtime,m.simpleleague,m.homename,m.awayname,p.sp,p.jinbb,p.msheng,p.rq,p.isend,p.uptime')->join('LEFT JOIN __PL__ p ON m.id = p.id')->order('m.matchtime')->select();	
+		$rsMat = $m->alias('m')->field('m.id,m.matchnum,m.homeid,m.homename,m.awayid,m.awayname,m.matchtime,m.simpleleague,m.homename,m.awayname,p.sp,p.fun88,p.rq,p.isend,p.uptime')->join('LEFT JOIN __PL__ p ON m.id = p.id')->order('m.matchtime')->select();	
 		$rsTeam = $this->getTeamById(array_merge($h,$a));
 		$this->assign('rsTeam',$rsTeam); 
         $this->assign('rsMat',$rsMat); 
@@ -68,7 +68,7 @@ class MatchController extends Controller {
 		echo json_encode($this->out); exit;
 	}
 	//更新欧赔
-	public function getOdds(){
+	public function getOddsQt(){
 		header("Content-type:text/html;charset=UTF-8");
 		import('Libs.Trade.Jcpublic');
         $jc = new \Jcpublic();
@@ -91,6 +91,43 @@ class MatchController extends Controller {
 		echo json_encode($this->out); 
 		exit;		
 	}
+	//获取外围赔率 乐天堂
+	public function getOdds(){
+		header("Content-type:text/html;charset=UTF-8");
+		import('Libs.Trade.Jcpublic');
+		$jc = new \Jcpublic();
+		$spUrl_1 = 'http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=1&UserTimeZone=-480&Language=1&FilterDay=-1&OpenParlay=1&Theme=Fun88&ShowStatistics=0&IsUserLogin=false&ExtraFilter=&SportId=0&Market=0&OddsPageCode=1&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0';	 //今日
+		$spUrl_2 = 'http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=1&UserTimeZone=-480&Language=1&FilterDay=-1&OpenParlay=1&Theme=Fun88&ShowStatistics=0&IsUserLogin=false&ExtraFilter=&SportId=0&Market=2&OddsPageCode=1&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0'; //早盘
+		$spHost = 'sports1.im.fun88.com'; //抓取赔率域名
+		$pl_odds = $pl_odds_1 = $pl_odds_2 = array();
+		$time1 = microtime(true);
+		$spJson_1 = $jc->curl($spUrl_1,$spHost);
+		if($spJson_1){
+			$spArr_1 = (array)json_decode($spJson_1);
+			$pl_odds_1 = $this->getOddsArr($spArr_1['d']);
+		}		
+		$time2 = microtime(true);
+		$spJson_2 = $jc->curl($spUrl_2,$spHost);
+		if($spJson_2){
+			$spArr_2 = (array)json_decode($spJson_2);
+			$pl_odds_2 = $this->getOddsArr($spArr_2['d']);
+		}
+		$time3 = microtime(true);
+		$pl_odds = array_merge($pl_odds_1,$pl_odds_2);
+		$o = M('odds');
+		$o->where('1')->delete();
+		$rs = $o->addAll(array_values($pl_odds));
+		$time4 = microtime(true);
+		if($rs){			
+			$this->out['code'] = 100;
+			$this->out['msg'] = 'suc';
+			$this->out['info'] = array('uptime'=>date('Y-m-d H:i:s'),'num'=>$rs,'oddscost1'=>($time2-$time1),'oddscost2'=>($time3-$time2),'addcost'=>($time4-$time3));
+		}else{
+			$this->out['msg'] = '获取odds赔率失败！';		
+		}
+		echo json_encode($this->out); 
+		exit;
+	}
 	//更新球队名匹配
 	public function teamUpAll(){
 		header("Content-type:text/html;charset=UTF-8");
@@ -99,10 +136,10 @@ class MatchController extends Controller {
 		$o = M('odds');
 		$t = M('team');
 		//获取竞彩对阵信息
-		$mInfo = $m->getField('id,homeid,homename,awayid,awayname');		
+		$mInfo = $m->getField('id,homeid,homename,awayid,awayname');
 		//获取外围场次信息
 		//$map['urlty&oddty'] =array('qiutan','liji','_multi'=>true);
-		$map['urlty'] = 'qiutan';
+		$map['urlty'] = 'fun88';
 		$oddInfo = $o->field('hname,aname')->where($map)->select();
 		$team = array();
 		$i = 0;
@@ -111,7 +148,7 @@ class MatchController extends Controller {
 				if($val['homename'] == $v['hname']){
 					$team[$i]['tid'] = $val['homeid'];
 					$team[$i]['tname'] = $val['homename'];
-					$team[$i]['qtname'] = $v['hname'];					
+					$team[$i]['oname'] = $v['hname'];					
 					$r = $t->data($team[$i])->add();
 					if($r){
 						$i++;
@@ -120,7 +157,7 @@ class MatchController extends Controller {
 				if($val['awayname'] == $v['aname']){
 					$team[$i]['tid'] = $val['awayid'];
 					$team[$i]['tname'] = $val['awayname'];
-					$team[$i]['qtname'] = $v['aname'];
+					$team[$i]['oname'] = $v['aname'];
 					$r = $t->data($team[$i])->add();
 					if($r){
 						$i++;
@@ -149,8 +186,8 @@ class MatchController extends Controller {
 		$plArr = $jc->getSp(); 
 		//获取球探网欧赔赔率(利记)
 		$time1_o = microtime(true);
-		$map['urlty'] = 'qiutan';
-		$oInfo = $o->field('oid,hname,aname,jinbb,msheng,matchtime')->where($map)->select();
+		$map['urlty'] = 'fun88';
+		$oInfo = $o->field('oid,hname,aname,fun88,matchtime')->where($map)->select(); 
 		$time2_o = microtime(true);
 		//获取对阵信息
 		$mInfo = $m->getField('id,rq,homeid,homename,awayid,awayname,matchtime');
@@ -169,15 +206,14 @@ class MatchController extends Controller {
 		$i = 0;
 		if($mInfo && $oInfo){
 			foreach($mInfo as $key=>$val){
-				$newplArr[$i]['jinbb'] = '';
-				$newplArr[$i]['msheng'] = '';
+				$newplArr[$i]['fun88'] = '';				
 				$newplArr[$i]['isend'] = 0;
 				$newplArr[$i]['ismat'] = 0; //是否匹配
 				$newplArr[$i]['id'] = $val['id'];
 				$newplArr[$i]['rq'] = $val['rq'];										
 				$newplArr[$i]['sp'] = $plArr[$key]['win'].','.$plArr[$key]['draw'].','.$plArr[$key]['lost'];
-				//比赛已经截止 不抓赔率
-				if(strtotime($val['matchtime']) < strtotime("+20 minutes")){
+				//比赛已经截止 不抓赔率 (竞彩官网提前10分钟截止)
+				if(strtotime($val['matchtime']) < strtotime("+10 minutes")){
 					continue;
 				}
 				//球探网对应队名
@@ -190,14 +226,13 @@ class MatchController extends Controller {
 					//两场比赛时间差允许超过一小时
 					if(abs(strtotime($val['matchtime']) - strtotime($v['matchtime'])) > 1*60*60) continue;
 					if($qt_hname == $v['hname'] && $qt_aname == $v['aname']){						
-						$newplArr[$i]['jinbb'] = $v['jinbb'];
-						$newplArr[$i]['msheng'] = $v['msheng'];
+						$newplArr[$i]['fun88'] = $v['fun88'];
 						$newplArr[$i]['ismat'] = 1; //是否匹配
 						break;
 					}
 				}
 				$newplArr[$i]['uptime'] = date('Y-m-d H:i:s');
-				$rr = $p->field('id,rq,sp,jinbb,msheng,isend,ismat,uptime')->save($newplArr[$i]);
+				$rr = $p->field('id,rq,sp,fun88,isend,ismat,uptime')->save($newplArr[$i]);
 				$i++;
 			}
 		}else{
@@ -226,7 +261,7 @@ class MatchController extends Controller {
 					if(trim($arr_v[1]) != '' && trim($arr_v[2]) != ''){
 						$arr[$i]['tid'] = $arr_v[0];
 						$arr[$i]['tname'] = urldecode($arr_v[1]);
-						$arr[$i]['qtname'] = urldecode($arr_v[2]);
+						$arr[$i]['oname'] = urldecode($arr_v[2]);
 						if(!$t->save($arr[$i])){
 							$r = $t->data($arr[$i])->add();
 							if($r) $n++;
@@ -251,7 +286,7 @@ class MatchController extends Controller {
 		$tid = I('param.tid','','htmlspecialchars'); //队名ID
 		$team = I('param.team','','htmlspecialchars'); //队名
 		$arr['tid'] = $tid;
-		$arr['qtname'] = $team;
+		$arr['oname'] = $team;
 		$r = $t->save($arr);
 		if($r === false){
 			$this->out['msg'] = '修改队名失败！';
@@ -308,9 +343,9 @@ class MatchController extends Controller {
 		$teamArr = array();
 		$t = M('team');
 		$map['tid']  = array('in',$arr);
-		$team = $t->field('tid,qtname')->where($map)->select();
+		$team = $t->field('tid,oname')->where($map)->select();
 		foreach($team as $val){
-			$teamArr[$val['tid']] = $val['qtname'];
+			$teamArr[$val['tid']] = $val['oname'];
 		}
 		return $teamArr;
 	}
@@ -379,5 +414,32 @@ class MatchController extends Controller {
 			$this->out['info'] = $rs;
 		}		
 		echo json_encode($this->out);exit;
+	}
+	//乐天堂 赔率组合函数
+	public function getOddsArr($odd){
+		$odds = array();
+		$ptr = '/Date\((.*)\)/';
+		if($odd){
+			foreach($odd as $key=>$val){
+				$match = $val[4];
+				if($match){
+					foreach($match as $k=>$v){
+						foreach($v[10] as $m){
+							$id = $v[0];
+							$odds[$id]['oid'] = $v[0];
+							$odds[$id]['league'] = $val[1][1];
+							$odds[$id]['hname'] = $v[5][1];
+							$odds[$id]['aname'] = $v[6][1];
+							preg_match($ptr,$v[7],$matchtime);
+							$odds[$id]['matchtime'] = date('Y-m-d H:i:s',substr($matchtime[1],0,10));
+							$odds[$id]['fun88'] = $m[6][2].','.$m[6][4].','.$m[6][3];
+							$odds[$id]['urlty'] = 'fun88';
+							$odds[$id]['uptime'] = date('Y-m-d H:i:s');
+						}
+					}
+				}
+			}
+		}
+		return $odds;
 	}
 }
