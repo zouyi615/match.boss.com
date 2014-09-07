@@ -491,7 +491,6 @@ $.match.box = {
 			complete:function(XMLHttpRequest,status){ //请求完成后最终执行参数
 				console.log(XMLHttpRequest,status);
 		　　　　if(status=='timeout'){//超时,status还有success,error等值的情况
-		 　　　　　 ajaxTimeoutTest.abort();
 		　　　　　  location.reload();
 		　　　　}
 		　　}
