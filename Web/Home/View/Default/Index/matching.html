@@ -60,14 +60,14 @@
 				<colgroup>
 					<col width="5%">
 					<col width="6%">
-					<col width="14%">
+					<col width="15%">
 					<col width="8%">
 					<col width="14%">
 					<col width="14%">
 					<col width="6%">
-					<col width="11%">
 					<col width="10%">
-					<col width="12%">
+					<col width="10%">
+					<col width="">
 				</colgroup>
 				<tbody id="mlist_show">					
 					<php>
@@ -75,7 +75,7 @@
 					if(isset($comMatchArr) && is_array($comMatchArr)){						
 						foreach($comMatchArr as $key=>$val){							
 					</php>
-						<tr class="data <php>echo ($key+1)%2==0?'success':'';</php>" id="m<php>echo $key+1;</php>" mid="m<php>echo $key+1;</php>" data="<php>echo '{s1:'.$val['m1']['w'].',s2:'.$val['m2']['w'].',s3:'.$val['m1']['fun'].',s4:'.$val['m2']['fun'].'}';</php>" vs="<php>echo '['.$val['m1']['homename'].'vs'.$val['m1']['awayname'].']/['.$val['m2']['homename'].'vs'.$val['m2']['awayname'].']';</php>" rate="<php>echo $val['rnrate'];</php>">
+						<tr class="data <php>echo ($key+1)%2==0?'success':'';</php>" id="m<php>echo $key+1;</php>" mid="m<php>echo $key+1;</php>" data="<php>echo '{s1:'.$val['m1']['w'].',s2:'.$val['m2']['w'].',s3:'.$val['m1']['fun'].',s4:'.$val['m2']['fun'].'}';</php>" vs="<php>echo '['.$val['m1']['homename'].'vs'.$val['m1']['awayname'].']/['.$val['m2']['homename'].'vs'.$val['m2']['awayname'].']';</php>" rate="<php>echo $val['rnrate'];</php>"> 
 							<td rowspan="2" class="tobox"><a href="javascript:;"><php>echo $key+1;</php></a></td>
 							<td><php>echo $val['m1']['id'];</php></td>
 							<td><php>echo $val['m1']['matchtime'];</php></td>
