@@ -12,7 +12,7 @@ http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&P
 http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=1&UserTimeZone=-480&Language=1&FilterDay=-1&OpenParlay=1&Theme=Fun88&ShowStatistics=0&IsUserLogin=false&ExtraFilter=&SportId=0&Market=2&OddsPageCode=1&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0 //‘Á≈Ã
 
 
-http://sports1.im.fun88.com/OddsDisplay/Sportsbook/DisplayOddsPage?sportIds=0&oddsPageCode=0&viewTypes=2&sortTypes=0&market=2&language=1&oddsTypes=1&openParlay=1&filterDay=2&theme=Fun88&timeZones=-480&showStatistics=0
+http://sports1.im.fun88.com/OddsDisplay/Sportsbook/DisplayOddsPage?sportIds=0&oddsPageCode=0&viewTypes=2&sortTypes=0&market=2&language=1&oddsTypes=0&openParlay=1&filterDay=2&theme=Fun88&timeZones=-480&showStatistics=0
 
 
 

@@ -463,7 +463,7 @@ $.match.box = {
 	//ajax获取list
 	getAjaxList: function(){
 		var _T = this, url = $('#relup').attr('data-url'), rnrate = $('#matching').attr('data-irate'), para;
-		$.bar.process();
+		$.bar.process();		
 		//ajax ,设置请求超时时间
 		$.ajax({
 			url:url,
@@ -471,13 +471,15 @@ $.match.box = {
 			type:'post',
 			data:{rnrate:rnrate},
 			dataType:'json',//返回的数据格式
+			
 			success:function(list){ //请求成功的回调函数
+				console.log(list);
 				if(list.length > 0){
 			　　　　//刷新成功			
 					_T.list = list;
 					_T.createList();
 					$.bar.end();
-					//定时刷新 10s
+					//定时刷新 5s
 					clearTimeout(_T.t_a);
 					_T.t_a = setTimeout(function(){
 						_T.getAjaxList();
@@ -485,6 +487,13 @@ $.match.box = {
 				}else{
 					$.bar.end();
 				}
+		　　},
+			complete:function(XMLHttpRequest,status){ //请求完成后最终执行参数
+				console.log(XMLHttpRequest,status);
+		　　　　if(status=='timeout'){//超时,status还有success,error等值的情况
+		 　　　　　 ajaxTimeoutTest.abort();
+		　　　　　  location.reload();
+		　　　　}
 		　　}
 		});
 		// post提交请求
