@@ -473,7 +473,7 @@ $.match.box = {
 			dataType:'json',//返回的数据格式
 			
 			success:function(list){ //请求成功的回调函数
-				console.log(list);
+				//console.log(list);
 				if(list.length > 0){
 			　　　　//刷新成功			
 					_T.list = list;
