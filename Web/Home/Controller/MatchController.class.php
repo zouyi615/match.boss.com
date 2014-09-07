@@ -113,9 +113,9 @@ class MatchController extends Controller {
 			$pl_odds_2 = $this->getOddsArr($spArr_2['d']);
 		}
 		$time3 = microtime(true);
-		$pl_odds = array_merge($pl_odds_1,$pl_odds_2);
+		$pl_odds = $pl_odds_1 + $pl_odds_2;
 		$o = M('odds');
-		$o->where('1')->delete();
+		$o->where('1')->delete(); 
 		$rs = $o->addAll(array_values($pl_odds));
 		$time4 = microtime(true);
 		if($rs){			
@@ -124,7 +124,7 @@ class MatchController extends Controller {
 			$this->out['info'] = array('uptime'=>date('Y-m-d H:i:s'),'num'=>$rs,'oddscost1'=>($time2-$time1),'oddscost2'=>($time3-$time2),'addcost'=>($time4-$time3));
 		}else{
 			$this->out['msg'] = '获取odds赔率失败！';		
-		}
+		}		
 		echo json_encode($this->out); 
 		exit;
 	}
@@ -417,6 +417,7 @@ class MatchController extends Controller {
 	}
 	//乐天堂 赔率组合函数
 	public function getOddsArr($odd){
+		header("Content-type:text/html;charset=UTF-8");
 		$odds = array();
 		$ptr = '/Date\((.*)\)/';
 		if($odd){
@@ -427,7 +428,7 @@ class MatchController extends Controller {
 						foreach($v[10] as $m){
 							$id = $v[0];
 							$odds[$id]['oid'] = $v[0];
-							$odds[$id]['league'] = $val[1][1];
+							$odds[$id]['league'] = trim($val[1][1]);
 							$odds[$id]['hname'] = $v[5][1];
 							$odds[$id]['aname'] = $v[6][1];
 							preg_match($ptr,$v[7],$matchtime);
