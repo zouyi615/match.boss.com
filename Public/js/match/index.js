@@ -464,22 +464,46 @@ $.match.box = {
 	getAjaxList: function(){
 		var _T = this, url = $('#relup').attr('data-url'), rnrate = $('#matching').attr('data-irate'), para;
 		$.bar.process();
-		$.post(url, {rnrate:rnrate}, function(data, textStatus){
-			var list = $.parseJSON(data);			
-			if(textStatus == "success" && list.length > 0){
-				//刷新成功			
-				_T.list = list;
-				_T.createList();
-				$.bar.end();
-				//定时刷新 10s
-				clearTimeout(_T.t_a);
-				_T.t_a = setTimeout(function(){
-					_T.getAjaxList();
-				},5000);				
-			}else{
-				$.bar.end();
-			}
+		//ajax ,设置请求超时时间
+		$.ajax({
+			url:url,
+			timeout: 5000, //超时时间设置，单位毫秒
+			type:'post',
+			data:{rnrate:rnrate},
+			dataType:'json',//返回的数据格式
+			success:function(list){ //请求成功的回调函数
+				if(list.length > 0){
+			　　　　//刷新成功			
+					_T.list = list;
+					_T.createList();
+					$.bar.end();
+					//定时刷新 10s
+					clearTimeout(_T.t_a);
+					_T.t_a = setTimeout(function(){
+						_T.getAjaxList();
+					},5000);
+				}else{
+					$.bar.end();
+				}
+		　　}
 		});
+		// post提交请求
+		// $.post(url, {rnrate:rnrate}, function(data, textStatus){
+			// var list = $.parseJSON(data);			
+			// if(textStatus == "success" && list.length > 0){
+				// //刷新成功			
+				// _T.list = list;
+				// _T.createList();
+				// $.bar.end();
+				// //定时刷新 10s
+				// clearTimeout(_T.t_a);
+				// _T.t_a = setTimeout(function(){
+					// _T.getAjaxList();
+				// },5000);				
+			// }else{
+				// $.bar.end();
+			// }
+		// });
 	},
 	//ajax刷新比赛列表
 	createList: function(){
