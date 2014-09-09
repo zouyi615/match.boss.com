@@ -413,7 +413,7 @@ $.match.box = {
 			_T.mlist['rebate'] = rebate; //返利
 			_T.mlist['mid'] = $(this).parent().attr('mid'); //mid方案标示
 			_T.mlist['vs'] = $(this).parent().attr('vs'); //对阵信息
-			_T.mlist['rate'] = $(this).parent().attr('rate'); //赔率
+			_T.mlist['rate'] = parseFloat($(this).parent().attr('rate')); //赔率			
 			_T.countDetail(); //计算下注金额
 			_T.showDetail(); //显示下注详情			
 		});
@@ -557,7 +557,7 @@ $.match.box = {
 		this.mlist['rebate'] = parseFloat(tableDetail.find('input[name="rebate"]').val());
 		this.mlist['mid'] = tableDetail.find('input[name="mid"]').val();
 		this.mlist['vs'] = tableDetail.find('input[name="vs"]').val();
-		this.mlist['rate'] = tableDetail.find('input[name="rnrate"]').val();		
+		this.mlist['rate'] = parseFloat(tableDetail.find('input[name="rnrate"]').val());		
 		this.countDetail();
 	},
 	//计算下注金额
@@ -566,7 +566,7 @@ $.match.box = {
 		s1 = _T.mlist.s1;
 		s2 = _T.mlist.s2;
 		betmoney = _T.mlist.betmoney;
-		rebate = _T.mlist.rebate;
+		rebate = _T.mlist.rebate;		
 		prize = parseFloat((s1*s2*betmoney).toFixed(2)); 
 		_T.mlist['prize'] = prize; //预计奖金
 		s3 = _T.mlist.s3;
@@ -574,9 +574,8 @@ $.match.box = {
 		in1 = parseFloat(((betmoney - rebate)/(s3-1)).toFixed(2));			
 		_T.mlist['in1'] = in1; //首场下注金额
 		in2 = parseFloat((prize+rebate-betmoney-in1).toFixed(2));
-		//console.log(prize,rebate,betmoney,in1,in2);
 		_T.mlist['in2'] = in2; //末场下注金额
-		profit = (in2*s4+rebate-betmoney-in1-in2).toFixed(2); 
+		profit = parseFloat((in2*s4+rebate-betmoney-in1-in2).toFixed(2)); 
 		_T.mlist['profit'] = profit; //盈利	
 	},
 	//显示下注详情

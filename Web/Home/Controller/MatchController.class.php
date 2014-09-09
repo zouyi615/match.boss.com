@@ -213,22 +213,21 @@ class MatchController extends Controller {
 				$newplArr[$i]['rq'] = $val['rq'];										
 				$newplArr[$i]['sp'] = $plArr[$key]['win'].','.$plArr[$key]['draw'].','.$plArr[$key]['lost'];
 				//比赛已经截止 不抓赔率 (竞彩官网提前10分钟截止)
-				if(strtotime($val['matchtime']) < strtotime("+10 minutes")){
-					continue;
-				}
-				//球探网对应队名
-				$qt_hname = isset($mTeam[$val['homeid']])?$mTeam[$val['homeid']]:''; //主队
-				$qt_aname = isset($mTeam[$val['awayid']])?$mTeam[$val['awayid']]:''; //客队
-				//if(!$qt_hname || !$qt_aname) continue;
-				//if(!$qt_hname )
-				foreach($oInfo as $k=>$v){
-					//匹配对应场次，首先根据日期匹配，其次根据主客队名匹配
-					//两场比赛时间差允许超过一小时
-					if(abs(strtotime($val['matchtime']) - strtotime($v['matchtime'])) > 1*60*60) continue;
-					if($qt_hname == $v['hname'] && $qt_aname == $v['aname']){						
-						$newplArr[$i]['fun88'] = $v['fun88'];
-						$newplArr[$i]['ismat'] = 1; //是否匹配
-						break;
+				if(strtotime($val['matchtime']) < strtotime("+10 minutes")){				
+					$newplArr[$i]['isend'] = 1;
+				}else{
+					//球探网对应队名
+					$qt_hname = isset($mTeam[$val['homeid']])?$mTeam[$val['homeid']]:''; //主队
+					$qt_aname = isset($mTeam[$val['awayid']])?$mTeam[$val['awayid']]:''; //客队
+					foreach($oInfo as $k=>$v){
+						//匹配对应场次，首先根据日期匹配，其次根据主客队名匹配
+						//两场比赛时间差允许超过一小时
+						if(abs(strtotime($val['matchtime']) - strtotime($v['matchtime'])) > 1*60*60) continue;
+						if($qt_hname == $v['hname'] && $qt_aname == $v['aname']){						
+							$newplArr[$i]['fun88'] = $v['fun88'];
+							$newplArr[$i]['ismat'] = 1; //是否匹配
+							break;
+						}
 					}
 				}
 				$newplArr[$i]['uptime'] = date('Y-m-d H:i:s');
