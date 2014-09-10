@@ -413,7 +413,8 @@ $.match.box = {
 			_T.mlist['rebate'] = rebate; //返利
 			_T.mlist['mid'] = $(this).parent().attr('mid'); //mid方案标示
 			_T.mlist['vs'] = $(this).parent().attr('vs'); //对阵信息
-			_T.mlist['rate'] = parseFloat($(this).parent().attr('rate')); //赔率			
+			_T.mlist['rate'] = parseFloat($(this).parent().attr('rate')); //赔率	
+			console.log(_T.mlist);
 			_T.countDetail(); //计算下注金额
 			_T.showDetail(); //显示下注详情			
 		});
@@ -455,23 +456,22 @@ $.match.box = {
 			_T.showDetail();
 		});	
 		//定时刷新 10s
-		clearTimeout(_T.t_a);
-		_T.t_a = setTimeout(function(){
-			_T.getAjaxList();
-		},5000);	
+		// clearTimeout(_T.t_a);
+		// _T.t_a = setTimeout(function(){
+			// _T.getAjaxList();
+		// },5000);	
 	},
 	//ajax获取list
 	getAjaxList: function(){
 		var _T = this, url = $('#relup').attr('data-url'), rnrate = $('#matching').attr('data-irate'), para;
-		$.bar.process();		
+		$.bar.process();
 		//ajax ,设置请求超时时间
 		$.ajax({
 			url:url,
 			timeout: 5000, //超时时间设置，单位毫秒
 			type:'post',
 			data:{rnrate:rnrate},
-			dataType:'json',//返回的数据格式
-			
+			dataType:'json',//返回的数据格式			
 			success:function(list){ //请求成功的回调函数
 				//console.log(list);
 				if(list.length > 0){
@@ -491,7 +491,11 @@ $.match.box = {
 			complete:function(XMLHttpRequest,status){ //请求完成后最终执行参数
 				//console.log(XMLHttpRequest,status);
 		　　　　if(status == 'timeout'){//超时,status还有success,error等值的情况
-		　　　　　  location.reload();
+					// var irate = parseFloat($('#matching').attr('data-irate')),
+						// betmoney = parseFloat($('#matching').attr('data-betmoney')),
+						// rebate = parseFloat($('#matching').attr('data-rebate'));
+					// location = location.href+'?irate='+irate+'&betmoney='+betmoney+'&rebate='+rebate;
+					$.bar.end();
 		　　　　}
 		　　}
 		});
