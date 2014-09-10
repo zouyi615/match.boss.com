@@ -96,8 +96,8 @@ class MatchController extends Controller {
 		header("Content-type:text/html;charset=UTF-8");
 		import('Libs.Trade.Jcpublic');
 		$jc = new \Jcpublic();
-		$spUrl_1 = 'http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=1&UserTimeZone=-480&Language=1&FilterDay=-1&OpenParlay=1&Theme=Fun88&ShowStatistics=0&IsUserLogin=false&ExtraFilter=&SportId=0&Market=0&OddsPageCode=1&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0';	 //今日
-		$spUrl_2 = 'http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=1&UserTimeZone=-480&Language=1&FilterDay=-1&OpenParlay=1&Theme=Fun88&ShowStatistics=0&IsUserLogin=false&ExtraFilter=&SportId=0&Market=2&OddsPageCode=1&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0'; //早盘
+		$spUrl_1 = 'http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=1&UserTimeZone=-480&Language=1&FilterDay=1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=0&OddsPageCode=1&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0';	 //今日		
+		$spUrl_2 = 'http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=2&LeagueIdList=-1&SortingType=0&OddsType=0&UserTimeZone=-480&Language=1&FilterDay=-1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=2&OddsPageCode=1&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0'; //早盘
 		$spHost = 'sports1.im.fun88.com'; //抓取赔率域名
 		$pl_odds = $pl_odds_1 = $pl_odds_2 = array();
 		$time1 = microtime(true);
@@ -427,9 +427,9 @@ class MatchController extends Controller {
 						foreach($v[10] as $m){
 							$id = $v[0];
 							$odds[$id]['oid'] = $v[0];
-							$odds[$id]['league'] = trim($val[1][1]);
-							$odds[$id]['hname'] = $v[5][1];
-							$odds[$id]['aname'] = $v[6][1];
+							$odds[$id]['league'] = trim($val[1][1]);							
+							$odds[$id]['hname'] = $this->getTeam($v[5][1]);
+							$odds[$id]['aname'] = $this->getTeam($v[6][1]);
 							preg_match($ptr,$v[7],$matchtime);
 							$odds[$id]['matchtime'] = date('Y-m-d H:i:s',substr($matchtime[1],0,10));
 							$odds[$id]['fun88'] = $m[6][2].','.$m[6][4].','.$m[6][3];
@@ -441,5 +441,19 @@ class MatchController extends Controller {
 			}
 		}
 		return $odds;
+	}
+	//抓取主客队名称过滤
+	public function getTeam($name){
+		//普马斯吉内拉雷拿 (中)
+		preg_match('/(.*)\((.*)\)/',$name,$team1); 
+		if(isset($team1[1])&&$team1[1]){
+			$name = trim($team1[1]);
+		}
+		//普马斯吉内拉雷拿 -(中)
+		preg_match('/(.*)\-(.*)/',$name,$team2); 
+		if(isset($team2[1])&&$team2[1]){
+			$name = trim($team2[1]);
+		}
+		return $name;
 	}
 }
