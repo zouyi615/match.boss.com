@@ -413,8 +413,7 @@ $.match.box = {
 			_T.mlist['rebate'] = rebate; //返利
 			_T.mlist['mid'] = $(this).parent().attr('mid'); //mid方案标示
 			_T.mlist['vs'] = $(this).parent().attr('vs'); //对阵信息
-			_T.mlist['rate'] = parseFloat($(this).parent().attr('rate')); //赔率	
-			console.log(_T.mlist);
+			_T.mlist['rate'] = parseFloat($(this).parent().attr('rate')); //赔率			
 			_T.countDetail(); //计算下注金额
 			_T.showDetail(); //显示下注详情			
 		});
