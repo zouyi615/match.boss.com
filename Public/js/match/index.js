@@ -490,11 +490,11 @@ $.match.box = {
 			complete:function(XMLHttpRequest,status){ //请求完成后最终执行参数
 				//console.log(XMLHttpRequest,status);
 		　　　　if(status == 'timeout'){//超时,status还有success,error等值的情况
-					// var irate = parseFloat($('#matching').attr('data-irate')),
-						// betmoney = parseFloat($('#matching').attr('data-betmoney')),
-						// rebate = parseFloat($('#matching').attr('data-rebate'));
-					// location = location.href+'?irate='+irate+'&betmoney='+betmoney+'&rebate='+rebate;
-					$.bar.end();
+					var irate = parseFloat($('#matching').attr('data-irate')),
+						betmoney = parseFloat($('#matching').attr('data-betmoney')),
+						rebate = parseFloat($('#matching').attr('data-rebate'));
+					location = location.href+'?rnrate='+irate+'&betmoney='+betmoney+'&rebate='+rebate;
+					//$.bar.end();
 		　　　　}
 		　　}
 		});
