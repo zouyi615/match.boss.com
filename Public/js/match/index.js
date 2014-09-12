@@ -488,10 +488,10 @@ $.match.box = {
 			});
 		});
 		//定时刷新 10s
-		//clearTimeout(_T.t_a);
-		// _T.t_a = setTimeout(function(){
-			// _T.getAjaxList();
-		// },5000);	
+		clearTimeout(_T.t_a);
+		_T.t_a = setTimeout(function(){
+			_T.getAjaxList();
+		},5000);	
 	},
 	//ajax获取list
 	getAjaxList: function(){
