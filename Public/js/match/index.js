@@ -179,6 +179,30 @@ $.admin.box = {
 				}
 			});
 		});
+		//切换匹配状态
+		$('#allsptab tr.data>td.isban').click(function(){
+			var T = this, url = $('#modbanurl').val(), mid = $(this).parent().attr('id'), isban = $(this).attr('data-isban'), matchtime = $(this).parent().attr('matchtime'), league = $.trim($(this).parent().find('td.league').html()), hname = $.trim($(this).parent().find('td.team').attr('data-homename')), oname = $.trim($(this).parent().find('td.team').attr('data-awayname')), oteam = $.trim($(this).parent().find('td.team_op').html()), team, htmstr;
+			team = hname +'VS'+ oname;
+			if(isban == 1){
+				isban = 0;
+				htmstr = '<span class="label label-success">允许匹配</span>';
+			}else{
+				isban = 1;
+				htmstr = '<span class="label label-warning">禁止匹配</span>';
+			}
+			//console.log(url,mid,isban,matchtime,league,team,oteam);
+			para = { mid:mid, isban:isban, matchtime:matchtime, league:league, team:team, oteam:oteam };
+			warning.html('<strong>提示！</strong>正在切换匹配，请稍后...');
+			$.post(url, para, function(data, textStatus){
+				var res = $.parseJSON(data);
+				if(res.code < 0){
+					warning.html('<strong>警告！</strong>'+res.msg);
+				}else{
+					warning.html('&nbsp;');	
+					$(T).attr('data-isban',isban).html(htmstr);		
+				}
+			});
+		});
 		//修改主客队匹配/Home/Match/team.html
 		$('#oddsteam tr.data').dblclick(function(){
 			var ismod = $(this).attr('ismod'), tid = $(this).attr('data-id'), oddname = $(this).find('td.oddsname'), url = $('#modteamurl').val(), o_n;
@@ -472,7 +496,6 @@ $.match.box = {
 			data:{rnrate:rnrate},
 			dataType:'json',//返回的数据格式			
 			success:function(list){ //请求成功的回调函数
-				//console.log(list);
 				if(list.length > 0){
 			　　　　//刷新成功			
 					_T.list = list;
@@ -488,7 +511,6 @@ $.match.box = {
 				}
 		　　},
 			complete:function(XMLHttpRequest,status){ //请求完成后最终执行参数
-				//console.log(XMLHttpRequest,status);
 		　　　　if(status == 'timeout'){//超时,status还有success,error等值的情况
 					var irate = parseFloat($('#matching').attr('data-irate')),
 						betmoney = parseFloat($('#matching').attr('data-betmoney')),
@@ -497,24 +519,7 @@ $.match.box = {
 					//$.bar.end();
 		　　　　}
 		　　}
-		});
-		// post提交请求
-		// $.post(url, {rnrate:rnrate}, function(data, textStatus){
-			// var list = $.parseJSON(data);			
-			// if(textStatus == "success" && list.length > 0){
-				// //刷新成功			
-				// _T.list = list;
-				// _T.createList();
-				// $.bar.end();
-				// //定时刷新 10s
-				// clearTimeout(_T.t_a);
-				// _T.t_a = setTimeout(function(){
-					// _T.getAjaxList();
-				// },5000);				
-			// }else{
-				// $.bar.end();
-			// }
-		// });
+		});		
 	},
 	//ajax刷新比赛列表
 	createList: function(){

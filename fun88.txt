@@ -19,6 +19,8 @@ http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&P
 ‘Á≈Ã
 http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=2&LeagueIdList=-1&SortingType=0&OddsType=0&UserTimeZone=-480&Language=1&FilterDay=-1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=2&OddsPageCode=1&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0
 
+http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=2&LeagueIdList=-1&SortingType=0&OddsType=0&UserTimeZone=-480&Language=1&FilterDay=0&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=2&OddsPageCode=1&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0
+
 
 
 

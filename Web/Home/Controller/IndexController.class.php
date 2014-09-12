@@ -8,7 +8,8 @@ class IndexController extends Controller {
 		$str = '普马斯吉内拉雷拿 (中)';
 		$pt = '/(.*)\-\((.*)\)/';
 		preg_match($pt,$str,$team);
-		var_dump($team,trim($team[1]));
+		//var_dump($team,trim($team[1]));
+		$this->display();
 	}
 	//首页加载匹配对阵
     public function index(){

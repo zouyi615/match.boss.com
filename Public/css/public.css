@@ -47,6 +47,8 @@ body{position: relative;}
 .mod-inmoney .tableProList .left{text-align: left;}
 /* 主客队匹配管理 */
 td.homesp,td.awaysp,td.offset{-moz-user-select: none;-webkit-user-select: none;-webkit-user-select: none; cursor:pointer;}
+.allsptab .matchtime .label{padding:0 4px;}
+.allsptab .isban a:hover{text-decoration:none;}
 
 
 

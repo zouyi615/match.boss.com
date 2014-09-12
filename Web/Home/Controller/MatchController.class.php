@@ -8,11 +8,6 @@ class MatchController extends Controller {
 	public $xmlUrl = 'http://trade.500.com/static/public/jczq/xml/match/match.xml'; //对阵xml
 	public $xmlspfpl = 'http://trade.500.com/static/public/jczq/xml/pl/pl_spf_2.xml'; //让球胜平负赔率
 	public $xmlodds = 'http://trade.500.com/static/public/jczq/xml/odds/odds.xml'; //欧赔
-	//public $spUrl = 'http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=1&UserTimeZone=-480&Language=1&FilterDay=1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=1&OddsPageCode=0&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0';	
-	//public $spHost = 'sports1.im.fun88.com'; //抓取赔率域名
-	//外围网站赔率
-	//public $spUrl = 'http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2';
-	//public $spHost = 'sports1.im.fun88.com'; //抓取赔率域名
 	//对阵管理页面
 	public function index(){
 		header("Content-type:text/html;charset=UTF-8"); 
@@ -20,10 +15,10 @@ class MatchController extends Controller {
 		$t = M('team');
 		$h = $m->getField('homeid',true);
 		$a = $m->getField('awayid',true);
-		$rsMat = $m->alias('m')->field('m.id,m.matchnum,m.homeid,m.homename,m.awayid,m.awayname,m.matchtime,m.simpleleague,m.homename,m.awayname,p.sp,p.fun88,p.rq,p.isend,p.uptime')->join('LEFT JOIN __PL__ p ON m.id = p.id')->order('m.matchtime')->select();	
+		$rsMat = $m->alias('m')->field('m.id,m.matchnum,m.homeid,m.homename,m.awayid,m.awayname,m.matchtime,m.simpleleague,m.homename,m.awayname,p.sp,p.fun88,p.rq,p.isend,p.uptime,bm.isban')->join('LEFT JOIN __PL__ p ON m.id = p.id LEFT JOIN __BANMATCH__ bm ON m.id = bm.mid')->order('m.matchtime')->select();
 		$rsTeam = $this->getTeamById(array_merge($h,$a));
 		$this->assign('rsTeam',$rsTeam); 
-        $this->assign('rsMat',$rsMat); 
+        $this->assign('rsMat',$rsMat);
         $this->display();
 	}
 	//外围赔率显示页面
@@ -127,49 +122,7 @@ class MatchController extends Controller {
 		}		
 		echo json_encode($this->out); 
 		exit;
-	}
-	//更新球队名匹配
-	public function teamUpAll(){
-		header("Content-type:text/html;charset=UTF-8");
-		//获取数据库信息
-		$m = M('match');
-		$o = M('odds');
-		$t = M('team');
-		//获取竞彩对阵信息
-		$mInfo = $m->getField('id,homeid,homename,awayid,awayname');
-		//获取外围场次信息
-		//$map['urlty&oddty'] =array('qiutan','liji','_multi'=>true);
-		$map['urlty'] = 'fun88';
-		$oddInfo = $o->field('hname,aname')->where($map)->select();
-		$team = array();
-		$i = 0;
-		foreach($mInfo as $val){
-			foreach($oddInfo as $v){
-				if($val['homename'] == $v['hname']){
-					$team[$i]['tid'] = $val['homeid'];
-					$team[$i]['tname'] = $val['homename'];
-					$team[$i]['oname'] = $v['hname'];					
-					$r = $t->data($team[$i])->add();
-					if($r){
-						$i++;
-					}					
-				}
-				if($val['awayname'] == $v['aname']){
-					$team[$i]['tid'] = $val['awayid'];
-					$team[$i]['tname'] = $val['awayname'];
-					$team[$i]['oname'] = $v['aname'];
-					$r = $t->data($team[$i])->add();
-					if($r){
-						$i++;
-					}	
-				}
-			}
-		}
-		$this->out['code'] = 100;
-		$this->out['msg'] = 'suc';
-		$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>$i);
-		echo json_encode($this->out); exit;
-	}
+	}	
 	//更新赔率
 	public function getPl(){
 		header("Content-type:text/html;charset=UTF-8");
@@ -245,6 +198,87 @@ class MatchController extends Controller {
 		}
 		echo json_encode($this->out); exit;
 	}
+	//切换匹配状态
+	public function teamBan(){
+		header("Content-type:text/html;charset=UTF-8"); 
+		$bm = M('banmatch');
+		$arr = array();
+		$mid = I('param.mid','','htmlspecialchars'); //场次ID
+		$isban = I('param.isban','','htmlspecialchars'); //是否允许匹配
+		$matchtime = I('param.matchtime','','htmlspecialchars'); //比赛时间
+		$league = I('param.league','','htmlspecialchars'); //联赛
+		$team = I('param.team','','htmlspecialchars'); //竞彩对阵
+		$oteam = I('param.oteam','','htmlspecialchars'); //外围对阵
+		$uptime = date('Y-m-d H:i:s');
+		$arr = array(
+			'mid' => $mid,
+			'isban' => $isban,
+			'matchtime' => $matchtime,
+			'simpleleague' => $league,
+			'team' => $team,
+			'oteam' => $oteam,
+			'uptime' => $uptime,
+		);
+		if(!$bm->save($arr)){
+			$r = $bm->data($arr)->add();
+			if($r) {
+				$this->out['code'] = 100;
+				$this->out['msg'] = '添加成功';
+			}else{
+				$this->out['code'] = -100;
+				$this->out['msg'] = '添加失败';	
+			}
+		}else{
+			$this->out['code'] = 100;
+			$this->out['msg'] = '保存成功';
+		}				
+		$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>$n);		
+		echo json_encode($this->out); exit;
+	}
+	//批量更新球队名匹配
+	public function teamUpAll(){
+		header("Content-type:text/html;charset=UTF-8");
+		//获取数据库信息
+		$m = M('match');
+		$o = M('odds');
+		$t = M('team');
+		//获取竞彩对阵信息
+		$mInfo = $m->getField('id,homeid,homename,awayid,awayname');
+		//获取外围场次信息
+		//$map['urlty&oddty'] =array('qiutan','liji','_multi'=>true);
+		$map['urlty'] = 'fun88';
+		$oddInfo = $o->field('hname,aname')->where($map)->select();
+		$team = array();
+		$i = 0;
+		foreach($mInfo as $val){
+			foreach($oddInfo as $v){
+				if($val['homename'] == $v['hname']){
+					$team[$i]['tid'] = $val['homeid'];
+					$team[$i]['tname'] = $val['homename'];
+					$team[$i]['oname'] = $v['hname'];
+					$team[$i]['uptime'] = date('Y-m-d H:i:s');
+					$r = $t->data($team[$i])->add();
+					if($r){
+						$i++;
+					}					
+				}
+				if($val['awayname'] == $v['aname']){
+					$team[$i]['tid'] = $val['awayid'];
+					$team[$i]['tname'] = $val['awayname'];
+					$team[$i]['oname'] = $v['aname'];
+					$team[$i]['uptime'] = date('Y-m-d H:i:s');
+					$r = $t->data($team[$i])->add();
+					if($r){
+						$i++;
+					}	
+				}
+			}
+		}
+		$this->out['code'] = 100;
+		$this->out['msg'] = 'suc';
+		$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>$i);
+		echo json_encode($this->out); exit;
+	}
 	//更新竞彩、外围主客队匹配数据
 	public function teamUp(){
 		header("Content-type:text/html;charset=UTF-8"); 
@@ -261,6 +295,7 @@ class MatchController extends Controller {
 						$arr[$i]['tid'] = $arr_v[0];
 						$arr[$i]['tname'] = urldecode($arr_v[1]);
 						$arr[$i]['oname'] = urldecode($arr_v[2]);
+						$arr[$i]['uptime'] = date('Y-m-d H:i:s');
 						if(!$t->save($arr[$i])){
 							$r = $t->data($arr[$i])->add();
 							if($r) $n++;
@@ -286,6 +321,7 @@ class MatchController extends Controller {
 		$team = I('param.team','','htmlspecialchars'); //队名
 		$arr['tid'] = $tid;
 		$arr['oname'] = $team;
+		$arr['uptime'] = date('Y-m-d H:i:s');
 		$r = $t->save($arr);
 		if($r === false){
 			$this->out['msg'] = '修改队名失败！';
@@ -307,6 +343,7 @@ class MatchController extends Controller {
 				$j = 0;
 				foreach($val as $k => $v){
 					$arr[$j][$key] = $v;
+					$arr[$j]['uptime'] = date('Y-m-d H:i:s');
 					$j++;
 				}
 			}
