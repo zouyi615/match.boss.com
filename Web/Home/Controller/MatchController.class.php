@@ -198,6 +198,26 @@ class MatchController extends Controller {
 		}
 		echo json_encode($this->out); exit;
 	}
+	
+	//添加禁止匹配对阵列表
+	public function listBan(){
+		header("Content-type:text/html;charset=UTF-8"); 
+		$lb = M('listban');
+		$arr = array();
+		$m1id = I('param.m1id','','htmlspecialchars'); //场次ID
+		$m2id = I('param.m2id','','htmlspecialchars'); //场次ID
+		$uptime = date('Y-m-d H:i:s');
+		$arr = array(
+			'm1id' => $m1id,
+			'm2id' => $m2id,
+			'uptime' => $uptime,
+		);
+		$r = $lb->data($arr)->add();
+		$this->out['code'] = 100;
+		$this->out['msg'] = $r;			
+		$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>$r);		
+		echo json_encode($this->out); exit;
+	}
 	//切换匹配状态
 	public function teamBan(){
 		header("Content-type:text/html;charset=UTF-8"); 
@@ -234,6 +254,7 @@ class MatchController extends Controller {
 		}				
 		$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>$n);		
 		echo json_encode($this->out); exit;
+	
 	}
 	//批量更新球队名匹配
 	public function teamUpAll(){

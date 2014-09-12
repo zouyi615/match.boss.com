@@ -24,7 +24,7 @@ class IndexController extends Controller {
 		header("Content-type:text/html;charset=UTF-8");   
 		$p = M('pl');
 		$match = array();
-		$rs = $p->alias('p')->field('m.id,m.matchtime,m.simpleleague,m.homename,m.awayname,p.rq,p.sp,p.fun88,p.uptime')->join('LEFT JOIN __MATCH__ m ON p.id = m.id')->where('p.ismat=1 and p.isend=0')->select();	
+		$rs = $p->alias('p')->field('m.id,m.matchtime,m.simpleleague,m.homename,m.awayname,p.rq,p.sp,p.fun88,p.uptime,bm.mid')->join('LEFT JOIN __MATCH__ m ON p.id = m.id LEFT JOIN __BANMATCH__ bm ON p.id = bm.mid')->where('p.ismat=1 and p.isend=0 and (bm.isban = 0 or bm.isban is null)')->select();	
 		if($rs){
 			foreach($rs as $key=>$val){
 				$sp = '';
@@ -62,18 +62,32 @@ class IndexController extends Controller {
 		foreach($match as $key=>$val){
 			$midArr[] = $val['id'];
 		}
+		//禁止匹配列表
+		$lb = M('listban');
+		$listbanArr = $lb->select();
+		$listban = array();
+		if($listbanArr && is_array($listbanArr)){
+			foreach($listbanArr as $vls){
+				$listban[] = $vls['m1id'].','.$vls['m2id'];
+			}
+		}		
 		$rscom = $jc->getCombine($midArr,2);
 		$i = 0;
 		foreach($rscom as $key=>$val){
-			$v = explode(',',$val);
-			$m1 = $v[0]; $m2 = $v[1];
-			$timediff = abs(strtotime($match[$m2]['matchtime']) - strtotime($match[$m1]['matchtime'])); //两场比赛时间差
-			//两场比赛时间间隔>6小时
-			if($timediff < 6*60*60){
+			//禁止匹配列表过滤
+			if(in_array($val,$listban)){
 				continue;
 			}
-			$rnrate = strval(sprintf("%.6f",$match[$m1]['rate']+$match[$m2]['rate'])); //bet365返还率
+			$v = explode(',',$val);
+			$m1 = $v[0]; $m2 = $v[1];
+			//返还率过滤
+			$rnrate = strval(sprintf("%.6f",$match[$m1]['rate']+$match[$m2]['rate'])); //返还率
 			if($rnrate < $irate) continue; //计算返还率<设置赔率值
+			//两场比赛时间间隔>6小时
+			$timediff = abs(strtotime($match[$m2]['matchtime']) - strtotime($match[$m1]['matchtime'])); //两场比赛时间差			
+			if($timediff < 6*60*60){
+				continue;
+			}			
 			$comMatchArr[$i]['rnrate'] = $rnrate; //返还率
 			$comMatchArr[$i]['m1']['id'] = $match[$m1]['id'];
 			$comMatchArr[$i]['m1']['matchtime'] = $match[$m1]['matchtime'];

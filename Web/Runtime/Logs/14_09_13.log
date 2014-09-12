@@ -1,0 +1,61 @@
+[ 2014-09-13T00:41:39+08:00 ] 127.0.0.1 /Home/Match/listBan.html
+ERR: 非法操作:listban
+
+[ 2014-09-13T00:41:44+08:00 ] 127.0.0.1 /Home/Match/listBan.html
+ERR: 非法操作:listban
+
+[ 2014-09-13T00:42:02+08:00 ] 127.0.0.1 /Home/Match/listBan.html?m1id=80044&m2id=80086
+ERR: 非法操作:listban
+
+[ 2014-09-13T00:56:02+08:00 ] 127.0.0.1 /Home/Match/listBan.html?m1id=80044&m2id=80086
+ERR: 1146:Table 'match.m_banlist' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `m_banlist`
+ERR: 1146:Table 'match.m_banlist' doesn't exist
+ [ SQL语句 ] : INSERT INTO `m_banlist` (`m1id`,`m2id`,`uptime`) VALUES ('80044','80086','2014-09-13 00:56:02')
+
+[ 2014-09-13T00:56:03+08:00 ] 127.0.0.1 /Home/Match/listBan.html?m1id=80044&m2id=80086
+ERR: 1146:Table 'match.m_banlist' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `m_banlist`
+ERR: 1146:Table 'match.m_banlist' doesn't exist
+ [ SQL语句 ] : INSERT INTO `m_banlist` (`m1id`,`m2id`,`uptime`) VALUES ('80044','80086','2014-09-13 00:56:03')
+
+[ 2014-09-13T00:56:05+08:00 ] 127.0.0.1 /Home/Match/listBan.html?m1id=80044&m2id=80086
+ERR: 1146:Table 'match.m_banlist' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `m_banlist`
+ERR: 1146:Table 'match.m_banlist' doesn't exist
+ [ SQL语句 ] : INSERT INTO `m_banlist` (`m1id`,`m2id`,`uptime`) VALUES ('80044','80086','2014-09-13 00:56:05')
+
+[ 2014-09-13T00:56:06+08:00 ] 127.0.0.1 /Home/Match/listBan.html?m1id=80044&m2id=80086
+ERR: 1146:Table 'match.m_banlist' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `m_banlist`
+ERR: 1146:Table 'match.m_banlist' doesn't exist
+ [ SQL语句 ] : INSERT INTO `m_banlist` (`m1id`,`m2id`,`uptime`) VALUES ('80044','80086','2014-09-13 00:56:06')
+
+[ 2014-09-13T00:56:46+08:00 ] 127.0.0.1 /Home/Match/listBan.html?m1id=80044&m2id=80086
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_listban` (`m1id`,`m2id`,`uptime`) VALUES (80044,80086,'2014-09-13 00:56:46')
+
+[ 2014-09-13T00:56:47+08:00 ] 127.0.0.1 /Home/Match/listBan.html?m1id=80044&m2id=80086
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_listban` (`m1id`,`m2id`,`uptime`) VALUES (80044,80086,'2014-09-13 00:56:47')
+
+[ 2014-09-13T00:57:43+08:00 ] 127.0.0.1 /Home/Match/listBan.html?m1id=80044&m2id=80084
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_listban` (`m1id`,`m2id`,`uptime`) VALUES (80044,80084,'2014-09-13 00:57:43')
+
+[ 2014-09-13T00:57:47+08:00 ] 127.0.0.1 /Home/Match/listBan.html?m1id=80044&m2id=8005
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_listban` (`m1id`,`m2id`,`uptime`) VALUES (80044,8005,'2014-09-13 00:57:47')
+
+[ 2014-09-13T00:57:51+08:00 ] 127.0.0.1 /Home/Match/listBan.html?m1id=80774&m2id=8005
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_listban` (`m1id`,`m2id`,`uptime`) VALUES (80774,8005,'2014-09-13 00:57:51')
+
+[ 2014-09-13T01:02:29+08:00 ] 127.0.0.1 /Home/Match/listBan.html?m1id=80774&m2id=8005
+ERR: 1062:Duplicate entry '80774-8005' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_listban` (`m1id`,`m2id`,`uptime`) VALUES (80774,8005,'2014-09-13 01:02:29')
+
+[ 2014-09-13T01:02:30+08:00 ] 127.0.0.1 /Home/Match/listBan.html?m1id=80774&m2id=8005
+ERR: 1062:Duplicate entry '80774-8005' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_listban` (`m1id`,`m2id`,`uptime`) VALUES (80774,8005,'2014-09-13 01:02:30')
+

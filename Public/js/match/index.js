@@ -199,7 +199,7 @@ $.admin.box = {
 					warning.html('<strong>警告！</strong>'+res.msg);
 				}else{
 					warning.html('&nbsp;');	
-					$(T).attr('data-isban',isban).html(htmstr);		
+					$(T).attr('data-isban',isban).find('a').html(htmstr);		
 				}
 			});
 		});
@@ -478,11 +478,20 @@ $.match.box = {
 			_T.mlist = ml[mid];
 			_T.showDetail();
 		});	
+		//删除场次匹配
+		$('#matching td.banlist>a').live('click',function(){
+			var _T = this, url = $('#listban').val(), m1id = $.trim($(this).parents('tr.data').find('td.mid').html()), m2id = $.trim($(this).parents('tr.data').next().find('td.mid').html());
+			para = { m1id:m1id, m2id:m2id };
+			$.post(url, para, function(data, textStatus){
+				var res = $.parseJSON(data);
+				console.log(res);
+			});
+		});
 		//定时刷新 10s
-		clearTimeout(_T.t_a);
-		_T.t_a = setTimeout(function(){
-			_T.getAjaxList();
-		},5000);	
+		//clearTimeout(_T.t_a);
+		// _T.t_a = setTimeout(function(){
+			// _T.getAjaxList();
+		// },5000);	
 	},
 	//ajax获取list
 	getAjaxList: function(){
@@ -525,8 +534,27 @@ $.match.box = {
 	createList: function(){
 		var list = this.list, html = [], listTable = $('#mlist_show'), 
 			strhtml = '<tr class="data {$cl}" id="m{$key}" mid="m{$key}" data="{$data}" vs="{$vs}" rate="{$rnrate}">'+
-						'<td rowspan="2" class="tobox"><a href="javascript:;">{$key}</a></td><td>{$m1_id}</td><td>{$m1_matchtime}</td><td>{$m1_simpleleague}</td><td>{$m1_homename}</td><td>{$m1_awayname}</td><td>{$m1_w}</td><td>{$m1_op}</td><td>{$m1_rate}</td><td rowspan="2" class="tobox">{$rnrate}&nbsp;<a href="javascript:;">详情</a></td></tr>'+
-					  '<tr class="data {$cl}">'+		'<td>{$m2_id}</td><td>{$m2_matchtime}</td><td>{$m2_simpleleague}</td><td>{$m2_homename}</td><td>{$m2_awayname}</td><td>{$m2_w}</td><td>{$m2_op}</td><td>{$m2_rate}</td></tr>';
+						'<td rowspan="2" class="banlist">{$key}<br><a href="javascript:;"><span class="glyphicon glyphicon-remove red"></span></a></td>'+
+						'<td class="mid">{$m1_id}</td>'+
+						'<td>{$m1_matchtime}</td>'+
+						'<td>{$m1_simpleleague}</td>'+
+						'<td>{$m1_homename}</td>'+
+						'<td>{$m1_awayname}</td>'+
+						'<td>{$m1_w}</td>'+
+						'<td>{$m1_op}</td>'+
+						'<td>{$m1_rate}</td>'+
+						'<td rowspan="2" class="tobox">{$rnrate}&nbsp;<a href="javascript:;">详情</a></td>'+
+					  '</tr>'+
+					  '<tr class="data {$cl}">'+		
+					    '<td class="mid">{$m2_id}</td>'+
+						'<td>{$m2_matchtime}</td>'+
+						'<td>{$m2_simpleleague}</td>'+
+						'<td>{$m2_homename}</td>'+
+						'<td>{$m2_awayname}</td>'+
+						'<td>{$m2_w}</td>'+
+						'<td>{$m2_op}</td>'+
+						'<td>{$m2_rate}</td>'+
+					  '</tr>';
 		$.each(list,function(i,e){
 			html.push($.tpl(strhtml,{
 				key: i+1,

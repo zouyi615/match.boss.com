@@ -76,8 +76,8 @@
 						foreach($comMatchArr as $key=>$val){							
 					</php>
 						<tr class="data <php>echo ($key+1)%2==0?'success':'';</php>" id="m<php>echo $key+1;</php>" mid="m<php>echo $key+1;</php>" data="<php>echo '{s1:'.$val['m1']['w'].',s2:'.$val['m2']['w'].',s3:'.$val['m1']['fun'].',s4:'.$val['m2']['fun'].'}';</php>" vs="<php>echo '['.$val['m1']['homename'].'vs'.$val['m1']['awayname'].']/['.$val['m2']['homename'].'vs'.$val['m2']['awayname'].']';</php>" rate="<php>echo $val['rnrate'];</php>"> 
-							<td rowspan="2" class="tobox"><a href="javascript:;"><php>echo $key+1;</php></a></td>
-							<td><php>echo $val['m1']['id'];</php></td>
+							<td rowspan="2" class="banlist"><php>echo $key+1;</php><br><a href="javascript:;"><span class="glyphicon glyphicon-remove red"></span></a></td>
+							<td class="mid"><php>echo $val['m1']['id'];</php></td>
 							<td><php>echo $val['m1']['matchtime'];</php></td>
 							<td><php>echo $val['m1']['simpleleague'];</php></td>
 							<td><php>echo $val['m1']['homename'];</php></td>
@@ -85,10 +85,10 @@
 							<td><php>echo $val['m1']['w'];</php></td>
 							<td><php>echo $val['m1']['fun'].'(乐天堂)';</php></td>
 							<td><php>echo $val['m1']['rate'];</php></td>
-							<td rowspan="2" class="tobox"><php>echo $val['rnrate'];</php>&nbsp;<a href="javascript:;">详情</a></td>					
+							<td rowspan="2" class="tobox"><php>echo $val['rnrate'];</php>&nbsp;<a href="javascript:;">详情</a></td>
 						</tr>
 						<tr class="data <php>echo ($key+1)%2==0?'success':'';</php>" mid="" pname="" pdate="" lg="" rq="" pendtime="" win="" draw="" lost="" gdate="">
-							<td><php>echo $val['m2']['id'];</php></td>
+							<td class="mid"><php>echo $val['m2']['id'];</php></td>
 							<td><php>echo $val['m2']['matchtime'];</php></td>
 							<td><php>echo $val['m2']['simpleleague'];</php></td>
 							<td><php>echo $val['m2']['homename'];</php></td>
@@ -156,6 +156,8 @@
 				<table class="table table-bordered table-hover table-condensed tableProList" id="tableProList">
 				<!-- 保存方案列表 -->
 				</table>
+				<!-- 隐藏域URL -->
+				<input type="hidden" id="listban" value="{:U('Match/listBan')}">
 			</div>			
 		</div>
 	</div>
