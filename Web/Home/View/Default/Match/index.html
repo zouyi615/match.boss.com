@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>Bootstrap, from LayoutIt!</title>
+		<title>外围场次主客队匹配管理</title>
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<link href="__PUBLIC__/css/bootstrap.css" rel="stylesheet">
@@ -38,6 +38,7 @@
 			<p>
 				<a href="{:U('Match/odds')}" target="_blank"><span class="label label-info"><font>查看欧赔数据</font>&nbsp;<span class="glyphicon glyphicon-list"></span></span></a>
 				<a href="{:U('Match/team')}" target="_blank"><span class="label label-info"><font>查看主客队匹配数据</font>&nbsp;<span class="glyphicon glyphicon-list"></span></span></a>
+				<a href="{:U('Match/showblist')}" target="_blank"><span class="label label-info"><font>查看禁止匹配列表</font>&nbsp;<span class="glyphicon glyphicon-list"></span></span></a>
 			</p>
 		</blockquote>		
 	</div>
@@ -85,7 +86,7 @@
 						<tr class="data" id="<php>echo $m['id'];</php>" matchtime="<php>echo $m['matchtime'];</php>" ismod="0">
 							<td><php>echo $k+1;</php></td>
 							<td><php>echo $m['id'];</php></td>
-							<td class="matchtime"><php>echo $m['matchnum'];echo $m['isend']==0?'<span class="label label-success">开售</span>':'<span class="label label-warning">已截止</span>';echo '<br>'.$m['matchtime'];</php></td>
+							<td class="matchtime"><php>echo $m['matchnum'];echo $m['isend']==0?'<span class="label label-success">开售</span>':'<span class="label label-warning">已截止</span>';echo '<br><a href="javascript:;" title="截止时间'.$m['endtime'].'">'.$m['matchtime'].'</a>';</php></td>
 							<td class="league"><php>echo $m['simpleleague'];</php></td>
 							<td class="rq"><php>echo $m['rq'];</php></td>
 							<td data-hid="<php>echo $m['homeid'];</php>" data-homename="<php>echo $m['homename'];</php>" data-aid="<php>echo $m['awayid'];</php>" data-awayname="<php>echo $m['awayname'];</php>" class="team"><php>echo $m['homename'].'&nbsp;VS&nbsp;'.$m['awayname'];</php></td>							

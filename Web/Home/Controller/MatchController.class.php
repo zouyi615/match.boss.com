@@ -15,7 +15,7 @@ class MatchController extends Controller {
 		$t = M('team');
 		$h = $m->getField('homeid',true);
 		$a = $m->getField('awayid',true);
-		$rsMat = $m->alias('m')->field('m.id,m.matchnum,m.homeid,m.homename,m.awayid,m.awayname,m.matchtime,m.simpleleague,m.homename,m.awayname,p.sp,p.fun88,p.rq,p.isend,p.uptime,bm.isban')->join('LEFT JOIN __PL__ p ON m.id = p.id LEFT JOIN __BANMATCH__ bm ON m.id = bm.mid')->order('m.matchtime')->select();
+		$rsMat = $m->alias('m')->field('m.id,m.matchnum,m.homeid,m.homename,m.awayid,m.awayname,m.matchtime,m.endtime,m.simpleleague,m.homename,m.awayname,p.sp,p.fun88,p.rq,p.isend,p.uptime,bm.isban')->join('LEFT JOIN __PL__ p ON m.id = p.id LEFT JOIN __BANMATCH__ bm ON m.id = bm.mid')->order('m.matchtime')->select();
 		$rsTeam = $this->getTeamById(array_merge($h,$a));
 		$this->assign('rsTeam',$rsTeam); 
         $this->assign('rsMat',$rsMat);
@@ -35,6 +35,38 @@ class MatchController extends Controller {
 		$t = M('team');
 		$team = $t->select();
 		$this->assign('team',$team); 
+        $this->display();
+	}
+	//查看禁止匹配列表
+	public function showblist(){
+		header("Content-type:text/html;charset=UTF-8");
+		//禁止匹配场次（该场所有匹配禁止）
+		$bm = M('banmatch');
+		$banmatch = $bm->alias('bm')->field('bm.mid,bm.matchtime,bm.simpleleague,bm.team,bm.oteam,bm.isban,bm.uptime,p.sp,p.fun88')->join('LEFT JOIN __PL__ p ON bm.mid = p.id')->order('bm.mid')->select();
+		$this->assign('banmatch',$banmatch); 
+		//禁止匹配，配对场次（该匹配场次禁止）
+		$lb = M('listban');
+		$m = M('match');
+		$p = M('pl');
+		$lbarr = $lb->select();
+		$listban = $midArr = array();
+		if($lbarr){
+			foreach($lbarr as $val){
+				$midArr[] = $val['m1id'];
+				$midArr[] = $val['m2id'];
+			}
+		}
+		$map['id']  = array('in',$midArr);
+		$match = $m->where($map)->getField('id,homename,awayname,matchtime,simpleleague');
+		$pl = $p->where($map)->getField('id,sp,fun88');
+		if($lbarr){
+			foreach($lbarr as $key=>$val){
+				$listban[$key]['m1'] = $match[$val['m1id']] + $pl[$val['m1id']];
+				$listban[$key]['m2'] = $match[$val['m2id']] + $pl[$val['m2id']];		
+			}
+		}
+		$this->assign('listban',$listban);
+		//var_dump($listban);
         $this->display();
 	}
 	//获取初始xml数据
@@ -143,7 +175,7 @@ class MatchController extends Controller {
 		$oInfo = $o->field('oid,hname,aname,fun88,matchtime')->where($map)->select(); 
 		$time2_o = microtime(true);
 		//获取对阵信息
-		$mInfo = $m->getField('id,rq,homeid,homename,awayid,awayname,matchtime');
+		$mInfo = $m->getField('id,rq,homeid,homename,awayid,awayname,matchtime,endtime');
 		//获取主客队匹配信息
 		$time3_o = microtime(true);
 		$h = $m->getField('homeid',true);
@@ -166,7 +198,7 @@ class MatchController extends Controller {
 				$newplArr[$i]['rq'] = $val['rq'];										
 				$newplArr[$i]['sp'] = $plArr[$key]['win'].','.$plArr[$key]['draw'].','.$plArr[$key]['lost'];
 				//比赛已经截止 不抓赔率 (竞彩官网提前10分钟截止)
-				if(strtotime($val['matchtime']) < strtotime("+10 minutes")){				
+				if(strtotime($val['endtime']) < strtotime("+10 minutes")){				
 					$newplArr[$i]['isend'] = 1;
 				}else{
 					//球探网对应队名
@@ -253,8 +285,43 @@ class MatchController extends Controller {
 			$this->out['msg'] = '保存成功';
 		}				
 		$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>$n);		
-		echo json_encode($this->out); exit;
-	
+		echo json_encode($this->out); exit;	
+	}
+	//删除 禁止匹配场次（该场所有匹配禁止）
+	public function delBanmatch(){
+		header("Content-type:text/html;charset=UTF-8"); 
+		$bm = M('banmatch');
+		$mid = I('param.id','','htmlspecialchars'); //场次ID
+		$map['mid']  = $mid;
+		$rs = $bm->where($map)->delete(); 
+		if($rs >= 0){
+			$this->out['code'] = 100;
+			$this->out['msg'] = '删除成功';
+		}else{
+			$this->out['code'] = -100;
+			$this->out['msg'] = '删除失败，请稍后再试';	
+		}
+		$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>$rs);		
+		echo json_encode($this->out); exit;	
+	}
+	//删除禁止匹配，配对场次（该匹配场次禁止）	
+	public function delListban(){
+		header("Content-type:text/html;charset=UTF-8"); 
+		$lb = M('listban');
+		$m1id = I('param.m1id','','htmlspecialchars'); //场次ID
+		$m2id = I('param.m2id','','htmlspecialchars'); //场次ID
+		$map['m1id']  = $m1id;
+		$map['m2id']  = $m2id;
+		$rs = $lb->where($map)->delete(); 
+		if($rs >= 0){
+			$this->out['code'] = 100;
+			$this->out['msg'] = '删除成功';
+		}else{
+			$this->out['code'] = -100;
+			$this->out['msg'] = '删除失败，请稍后再试';	
+		}
+		$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>$rs);		
+		echo json_encode($this->out); exit;	
 	}
 	//批量更新球队名匹配
 	public function teamUpAll(){

@@ -52,7 +52,7 @@ class Jcpublic{
 						$ret['match'][$i]['matchdate'] = $matchdate;
 						$ret['match'][$i]['matchtime'] = $matchdate.' '.$matchtime;
 						$ret['match'][$i]['endtime'] = $endtime;
-					    if(strtotime($ret['match'][$i]['matchtime']) < strtotime("+10 minutes")){ //比赛前10分钟截止
+					    if(strtotime($ret['match'][$i]['endtime']) < strtotime("+10 minutes")){ //比赛前10分钟截止
 					        $ret['match'][$i]['isend'] = 1;
 					    }else{
 					        $ret['match'][$i]['isend'] = 0;

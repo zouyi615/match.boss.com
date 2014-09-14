@@ -203,6 +203,36 @@ $.admin.box = {
 				}
 			});
 		});
+		//删除 禁止匹配场次（该场所有匹配禁止）
+		$('.match-list tr.banmatch>td.del').live('click',function(){
+			var url = $('#delbanmatch').val(), id = $(this).parent().attr('data-id');
+			para = { id:id };
+			warning.html('<strong>提示！</strong>正在删除禁止场次，请稍后...');
+			$.post(url, para, function(data, textStatus){
+				var res = $.parseJSON(data);
+				if(res.code < 0){
+					warning.html('<strong>警告！</strong>'+res.msg);
+				}else{
+					warning.html('&nbsp;');	
+					location.reload();	
+				}
+			});
+		});			
+		//删除禁止匹配，配对场次（该匹配场次禁止）
+		$('.match-list tr.listban>td.del').live('click',function(){
+			var url = $('#dellistban').val(), m1id = $(this).parent().attr('data-m1id'), m2id = $(this).parent().attr('data-m2id');
+			para = { m1id:m1id, m2id:m2id };
+			warning.html('<strong>提示！</strong>正在删除禁止匹配场次，请稍后...');
+			$.post(url, para, function(data, textStatus){
+				var res = $.parseJSON(data);
+				if(res.code < 0){
+					warning.html('<strong>警告！</strong>'+res.msg);
+				}else{
+					warning.html('&nbsp;');	
+					location.reload();	
+				}
+			});
+		});			
 		//修改主客队匹配/Home/Match/team.html
 		$('#oddsteam tr.data').dblclick(function(){
 			var ismod = $(this).attr('ismod'), tid = $(this).attr('data-id'), oddname = $(this).find('td.oddsname'), url = $('#modteamurl').val(), o_n;
@@ -260,7 +290,7 @@ $.admin.box = {
 					}
 				});	
 			}
-		});
+		});		
 		//开始更新数据
 		/*$('#autoup').click(function(){
 			_T.autoUp();
@@ -478,12 +508,13 @@ $.match.box = {
 			_T.mlist = ml[mid];
 			_T.showDetail();
 		});	
-		//删除场次匹配
+		//禁止场次匹配
 		$('#matching td.banlist>a').live('click',function(){
-			var _T = this, url = $('#listban').val(), m1id = $.trim($(this).parents('tr.data').find('td.mid').html()), m2id = $.trim($(this).parents('tr.data').next().find('td.mid').html());
+			var url = $('#listban').val(), m1id = $.trim($(this).parents('tr.data').find('td.mid').html()), m2id = $.trim($(this).parents('tr.data').next().find('td.mid').html());
 			para = { m1id:m1id, m2id:m2id };
 			$.post(url, para, function(data, textStatus){
 				var res = $.parseJSON(data);
+				//_T.reloadMatch();
 				console.log(res);
 			});
 		});
@@ -521,11 +552,12 @@ $.match.box = {
 		　　},
 			complete:function(XMLHttpRequest,status){ //请求完成后最终执行参数
 		　　　　if(status == 'timeout'){//超时,status还有success,error等值的情况
-					var irate = parseFloat($('#matching').attr('data-irate')),
-						betmoney = parseFloat($('#matching').attr('data-betmoney')),
-						rebate = parseFloat($('#matching').attr('data-rebate'));
-					location = location.href+'?rnrate='+irate+'&betmoney='+betmoney+'&rebate='+rebate;
+					//var irate = parseFloat($('#matching').attr('data-irate')),
+						//betmoney = parseFloat($('#matching').attr('data-betmoney')),
+						//rebate = parseFloat($('#matching').attr('data-rebate'));
+					//location = location.href+'?rnrate='+irate+'&betmoney='+betmoney+'&rebate='+rebate;
 					//$.bar.end();
+					_T.reloadMatch();
 		　　　　}
 		　　}
 		});		
@@ -689,6 +721,13 @@ $.match.box = {
 	},
 	scrollTop: function(top){
 		$('#tableDetail').animate({"top":top},0);	
+	},
+	//刷新匹配页面
+	reloadMatch: function(){
+		var irate = parseFloat($('#matching').attr('data-irate')),
+			betmoney = parseFloat($('#matching').attr('data-betmoney')),
+			rebate = parseFloat($('#matching').attr('data-rebate'));
+		location = window.location.protocol+'//'+window.location.host+window.location.pathname+'?rnrate='+irate+'&betmoney='+betmoney+'&rebate='+rebate;
 	}
 };
 //公用函数
