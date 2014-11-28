@@ -1,0 +1,15 @@
+[ 2014-11-11T22:54:31+08:00 ] 127.0.0.1 /Home/Match/commjs/cookie.js
+ERR: 非法操作:commjs
+
+[ 2014-11-11T22:54:31+08:00 ] 127.0.0.1 /Home/Match/commJS/streaming.js?v=201409180650
+ERR: 非法操作:commjs
+
+[ 2014-11-11T22:54:31+08:00 ] 127.0.0.1 /Home/Match/commjs/ieupdate.js
+ERR: 非法操作:commjs
+
+[ 2014-11-11T22:54:32+08:00 ] 127.0.0.1 /Home/Match/commjs/jquery.min.js
+ERR: 非法操作:commjs
+
+[ 2014-11-11T23:33:13+08:00 ] 127.0.0.1 /Home/Match/getOddsSp.html
+ERR: 非法操作:getoddssp
+

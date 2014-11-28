@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>Bootstrap, from LayoutIt!</title>
+		<title>外围网站主客队名匹配</title>
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<link href="/Public/css/bootstrap.css" rel="stylesheet">
@@ -49,7 +49,8 @@
 						<th>编号</th>
 						<th>队名ID</th>
 						<th>500队名</th>
-						<th>外围队名</th>	
+						<th>外围队名</th>
+						<th>更新时间</th>						
 						<th>操作</th>
 						<th></th>
 					</tr>
@@ -59,6 +60,7 @@
 					<col width="10%">
 					<col width="16%">
 					<col width="16%">
+					<col width="15%">
 					<col width="8%">
 					<col width="">
 				</colgroup>
@@ -69,6 +71,7 @@
 							<td><?php echo $m['tid']; ?></td>
 							<td><?php echo $m['tname']; ?></td>
 							<td class="oddsname <?php echo $m['tname'] != $m['oname']?'red':'' ?>"><?php echo $m['oname']; ?></td>
+							<td><?php echo date('Y-m-d H:i',strtotime($m['uptime'])); ?></td>
 							<td class=""><button type="button" class="btn btn-danger btn-xs delteam">删除<i class="glyphicon glyphicon-remove"></i></button></td>
 							<td></td>
 						</tr>		

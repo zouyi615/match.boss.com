@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>Bootstrap, from LayoutIt!</title>
+		<title>外围赔率数据对阵表</title>
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<link href="/Public/css/bootstrap.css" rel="stylesheet">

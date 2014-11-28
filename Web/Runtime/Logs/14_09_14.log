@@ -1,0 +1,43 @@
+[ 2014-09-14T13:33:39+08:00 ] 127.0.0.1 /Home/Match/showblist.html
+ERR: 模板不存在:./Web/Home/View/Default/Match/showblist.html
+
+[ 2014-09-14T13:34:13+08:00 ] 127.0.0.1 /Home/Match/showblist.html
+ERR: 模板不存在:./Web/Home/View/Default/Match/showblist.html
+
+[ 2014-09-14T14:39:08+08:00 ] 127.0.0.1 /Home/Match/showblist.html
+ERR: 1146:Table 'match.__listban__' doesn't exist
+ [ SQL语句 ] : select * from __LISTBAN__
+ERR: 模板不存在:./Web/Home/View/Default/Match/showblist.html
+
+[ 2014-09-14T14:41:12+08:00 ] 127.0.0.1 /Home/Match/showblist.html
+ERR: 1146:Table 'match.__listban__' doesn't exist
+ [ SQL语句 ] : select * from __LISTBAN__
+
+[ 2014-09-14T14:41:25+08:00 ] 127.0.0.1 /Home/Match/showblist.html
+ERR: 1146:Table 'match.__listban__' doesn't exist
+ [ SQL语句 ] : select * from __LISTBAN__
+
+[ 2014-09-14T15:18:58+08:00 ] 127.0.0.1 /Home/Match/showblist.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'on (select lb.m1id,lb.m2id,m.id,m.homename,m.awayname,m.matchtime,m.simpleleague' at line 1
+ [ SQL语句 ] : select * from m_listban t1 left join on (select lb.m1id,lb.m2id,m.id,m.homename,m.awayname,m.matchtime,m.simpleleague,p.sp,p.fun88 from m_listban lb left join m_match m on lb.m1id = m.id or lb.m2id = m.id left join m_pl p on m.id = p.id) t2 on t1.m1id = t2.m1id and t1.m2id = t2.m2id 
+
+[ 2014-09-14T15:19:09+08:00 ] 127.0.0.1 /Home/Match/showblist.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'on (select lb.m1id,lb.m2id,m.id,m.homename,m.awayname,m.matchtime,m.simpleleague' at line 1
+ [ SQL语句 ] : select * from m_listban t1 left join on (select lb.m1id,lb.m2id,m.id,m.homename,m.awayname,m.matchtime,m.simpleleague,p.sp,p.fun88 from m_listban lb left join m_match m on lb.m1id = m.id or lb.m2id = m.id left join m_pl p on m.id = p.id) t2 on t1.m1id = t2.m1id and t1.m2id = t2.m2id 
+
+[ 2014-09-14T15:29:13+08:00 ] 127.0.0.1 /Home/Match/showblist.html
+ERR: 1054:Unknown column 'tid' in 'where clause'
+ [ SQL语句 ] : SELECT m.id,m.homename,m.awayname,m.matchtime,m.simpleleague,p.sp,p.fun88 FROM m_match m LEFT JOIN m_pl p on p.id = m.id  WHERE ( `tid` IN ('80042','80086','80043','80086') ) 
+
+[ 2014-09-14T15:29:28+08:00 ] 127.0.0.1 /Home/Match/showblist.html
+ERR: 1054:Unknown column 'tid' in 'where clause'
+ [ SQL语句 ] : SELECT m.id,m.homename,m.awayname,m.matchtime,m.simpleleague,p.sp,p.fun88 FROM m_match m LEFT JOIN m_pl p on p.id = m.id  WHERE ( `tid` IN ('80042','80086','80043','80086') ) 
+
+[ 2014-09-14T15:30:18+08:00 ] 127.0.0.1 /Home/Match/showblist.html
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT m.id,m.homename,m.awayname,m.matchtime,m.simpleleague,p.sp,p.fun88 FROM m_match m LEFT JOIN m_pl p on p.id = m.id  WHERE ( `id` IN ('80042','80086','80043','80086') ) 
+
+[ 2014-09-14T15:31:58+08:00 ] 127.0.0.1 /Home/Match/showblist.html
+ERR: 1054:Unknown column 'p.sp' in 'field list'
+ [ SQL语句 ] : SELECT m.id,m.homename,m.awayname,m.matchtime,m.simpleleague,p.sp,p.fun88 FROM m_match m 
+

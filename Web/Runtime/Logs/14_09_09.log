@@ -1,0 +1,32 @@
+[ 2014-09-09T21:17:55+08:00 ] 127.0.0.1 /Home/Match/teamUpAll.html
+ERR: 1062:Duplicate entry '753' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`oname`) VALUES (753,'大阪樱花','大阪樱花')
+ERR: 1062:Duplicate entry '753' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`oname`) VALUES (753,'大阪樱花','大阪樱花')
+ERR: 1062:Duplicate entry '845' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`oname`) VALUES (845,'广岛三箭','广岛三箭')
+ERR: 1062:Duplicate entry '845' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`oname`) VALUES (845,'广岛三箭','广岛三箭')
+ERR: 1062:Duplicate entry '1576' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`oname`) VALUES (1576,'费古埃伦�\�','费古埃伦�\�')
+ERR: 1062:Duplicate entry '1571' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`oname`) VALUES (1571,'巴拉纳竞技','巴拉纳竞技')
+ERR: 1062:Duplicate entry '1567' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`oname`) VALUES (1567,'帕尔梅拉�\�','帕尔梅拉�\�')
+ERR: 1062:Duplicate entry '4293' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`oname`) VALUES (4293,'蒙特利尔冲击','蒙特利尔冲击')
+ERR: 1062:Duplicate entry '1139' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`oname`) VALUES (1139,'纽约红牛','纽约红牛')
+ERR: 1062:Duplicate entry '881' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`oname`) VALUES (881,'华盛顿联','华盛顿联')
+ERR: 1062:Duplicate entry '1589' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`oname`) VALUES (1589,'维多利亚','维多利亚')
+ERR: 1062:Duplicate entry '1385' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`oname`) VALUES (1385,'圣保�\�','圣保�\�')
+ERR: 1062:Duplicate entry '4285' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`oname`) VALUES (4285,'温哥华白�\�','温哥华白�\�')
+ERR: 1062:Duplicate entry '1572' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`oname`) VALUES (1572,'科林蒂安','科林蒂安')
+ERR: 1062:Duplicate entry '1570' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `m_team` (`tid`,`tname`,`oname`) VALUES (1570,'米内罗竞技','米内罗竞技')
+

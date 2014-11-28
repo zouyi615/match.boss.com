@@ -2,15 +2,20 @@
 //对阵处理类文件
 namespace Home\Controller;
 use Think\Controller;
+
+header("Content-type:text/html;charset=UTF-8");
+import('Libs.Public.Function');//公用函数
+
 class MatchController extends Controller {
 	public $out = array("code"=>-100,"msg"=>"");
 	//参数
 	public $xmlUrl = 'http://trade.500.com/static/public/jczq/xml/match/match.xml'; //对阵xml
 	public $xmlspfpl = 'http://trade.500.com/static/public/jczq/xml/pl/pl_spf_2.xml'; //让球胜平负赔率
 	public $xmlodds = 'http://trade.500.com/static/public/jczq/xml/odds/odds.xml'; //欧赔
+	/*{{{显示页面*/
 	//对阵管理页面
 	public function index(){
-		header("Content-type:text/html;charset=UTF-8"); 
+		checklogin();//检测登录 
 		$m = M('match');
 		$t = M('team');
 		$h = $m->getField('homeid',true);
@@ -23,7 +28,6 @@ class MatchController extends Controller {
 	}
 	//外围赔率显示页面
 	public function odds(){
-		header("Content-type:text/html;charset=UTF-8"); 
 		$o = M('odds');		
 		$odds = $o->order('matchtime')->select();
 		$this->assign('odds',$odds); 
@@ -31,7 +35,6 @@ class MatchController extends Controller {
 	}
 	//主客队匹配显示页面
 	public function team(){
-		header("Content-type:text/html;charset=UTF-8"); 
 		$t = M('team');
 		$team = $t->select();
 		$this->assign('team',$team); 
@@ -39,7 +42,6 @@ class MatchController extends Controller {
 	}
 	//查看禁止匹配列表
 	public function showblist(){
-		header("Content-type:text/html;charset=UTF-8");
 		//禁止匹配场次（该场所有匹配禁止）
 		$bm = M('banmatch');
 		$banmatch = $bm->alias('bm')->field('bm.mid,bm.matchtime,bm.simpleleague,bm.team,bm.oteam,bm.isban,bm.uptime,p.sp,p.fun88')->join('LEFT JOIN __PL__ p ON bm.mid = p.id')->order('bm.mid')->select();
@@ -69,6 +71,8 @@ class MatchController extends Controller {
 		//var_dump($listban);
         $this->display();
 	}
+	/*}}}*/
+	/*{{{获取赔率*/
 	//获取初始xml数据
 	public function getXml(){
 		header("Content-type:text/html;charset=UTF-8");
@@ -94,54 +98,54 @@ class MatchController extends Controller {
 		}
 		echo json_encode($this->out); exit;
 	}
-	//更新欧赔
-	public function getOddsQt(){
-		header("Content-type:text/html;charset=UTF-8");
-		import('Libs.Trade.Jcpublic');
-        $jc = new \Jcpublic();
-		//获取球探网欧赔赔率(利记)
-		$time1 = microtime(true);
-		$oddsArr = $jc->getOddsQt();
-		$time2 = microtime(true);
-		$o = M('odds');
-		$t = M('team');
-		$o->where('1')->delete();
-		$rs = $o->addAll(array_values($oddsArr));
-		$time3 = microtime(true);
-		if($rs){			
-			$this->out['code'] = 100;
-			$this->out['msg'] = 'suc';
-			$this->out['info'] = array('uptime'=>date('Y-m-d H:i:s'),'num'=>$rs,'oddscost'=>($time2-$time1),'addcost'=>($time3-$time2));
-		}else{
-			$this->out['msg'] = '保存对阵xml失败！';		
-		}
-		echo json_encode($this->out); 
-		exit;		
-	}
-	//获取外围赔率 乐天堂
-	public function getOdds(){
-		header("Content-type:text/html;charset=UTF-8");
+	//获取外围赔率 乐天堂 体育
+	public function getOdds(){	
 		import('Libs.Trade.Jcpublic');
 		$jc = new \Jcpublic();
-		$spUrl_1 = 'http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=1&UserTimeZone=-480&Language=1&FilterDay=1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=0&OddsPageCode=1&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0';	 //今日		
-		$spUrl_2 = 'http://sports1.im.fun88.com/OddsDisplay/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=2&LeagueIdList=-1&SortingType=0&OddsType=0&UserTimeZone=-480&Language=1&FilterDay=-1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=2&OddsPageCode=1&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0'; //早盘
-		$spHost = 'sports1.im.fun88.com'; //抓取赔率域名
+		/*{{{设置cookie*/
+		$url = 'http://sports.fun166.com/vender.aspx?lang=cs&act=sportsbook&menutype=0&market=T';
+		$jc->setCookie($url);
+		/*}}}*/
+		/*{{{获取返回*/
+		$urls = array();
+		//乐天堂体育
+		$fun_sp_url_1 = 'http://sports.fun166.com/1X2_data.aspx?Sport=1&Market=t&RT=W&CT=&Game=0&OrderBy=0';//今日		
+		$fun_sp_url_2 = 'http://sports.fun166.com/1X2_data.aspx?Sport=1&Market=e&RT=W&CT=&Game=0&OrderBy=0';//早盘
+		$urls = array($fun_sp_url_1,$fun_sp_url_2);
+		$content = $jc->curlMulti($urls);
+		var_dump($content);
+		/*}}}*/
+		
+	}
+	//获取外围赔率 乐天堂 IM体育
+	public function getOddsIM(){
+		import('Libs.Trade.Jcpublic');
+		$jc = new \Jcpublic();
+		//乐天堂IM体育
+		$fun_im_url_1 = 'http://sports1.im.fun166.com/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=1&UserTimeZone=-480&Language=1&FilterDay=1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=0&OddsPageCode=1&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0';//今日
+		$fun_im_url_2 = 'http://sports1.im.fun166.com/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=2&LeagueIdList=-1&SortingType=0&OddsType=0&UserTimeZone=-480&Language=1&FilterDay=-1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=2&OddsPageCode=1&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0';//早盘
+		$urls = array($fun_im_url_1,$fun_im_url_2);
+		//获取返回
+		$content_IM = $jc->curlMultiIM($urls); 
+		$spJson_1 = $content_IM[0];
+		$spJson_2 = $content_IM[1];			
+		//获取数据库结果
 		$pl_odds = $pl_odds_1 = $pl_odds_2 = array();
 		$time1 = microtime(true);
-		$spJson_1 = $jc->curl($spUrl_1,$spHost);
+		//今日
 		if($spJson_1){
 			$spArr_1 = (array)json_decode($spJson_1);
-			$pl_odds_1 = $this->getOddsArr($spArr_1['d']);
+			$pl_odds_1 = $this->getOddsIMArr($spArr_1['d']);
 		}		
 		$time2 = microtime(true);
-		$spJson_2 = $jc->curl($spUrl_2,$spHost);
+		//早盘
 		if($spJson_2){
 			$spArr_2 = (array)json_decode($spJson_2);
-			$pl_odds_2 = $this->getOddsArr($spArr_2['d']);
+			$pl_odds_2 = $this->getOddsIMArr($spArr_2['d']);
 		}
 		$time3 = microtime(true);
 		$pl_odds = $pl_odds_1 + $pl_odds_2;
-		$o = M('odds');
+		$o = M('odds_im');
 		$o->where('1')->delete(); 
 		$rs = $o->addAll(array_values($pl_odds));
 		$time4 = microtime(true);
@@ -154,10 +158,34 @@ class MatchController extends Controller {
 		}		
 		echo json_encode($this->out); 
 		exit;
+	}
+	//获取乐天堂体育投注数据
+	public function curlOdds(){
+		import('Libs.Trade.Jcpublic');
+		$jc = new \Jcpublic();
+		/*{{{设置cookie*/
+		$url = 'http://sports.fun166.com/vender.aspx?lang=cs&act=sportsbook&menutype=0&market=T';
+		$jc->setCookie($url);
+		/*}}}*/
+		/*{{{获取返回*/
+		$urls = array();
+		//乐天堂体育
+		$fun_sp_url_1 = 'http://sports.fun166.com/1X2_data.aspx?Sport=1&Market=t&RT=W&CT=&Game=0&OrderBy=0';//今日		
+		$fun_sp_url_2 = 'http://sports.fun166.com/1X2_data.aspx?Sport=1&Market=e&RT=W&CT=&Game=0&OrderBy=0';//早盘
+		$urls = array($fun_sp_url_1,$fun_sp_url_2);
+		//$content = $jc->curlMulti($urls);
+		//乐天堂IM体育
+		$fun_im_url_1 = 'http://sports1.im.fun166.com/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=0&LeagueIdList=-1&SortingType=0&OddsType=1&UserTimeZone=-480&Language=1&FilterDay=1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=0&OddsPageCode=1&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0';//今日
+		$fun_im_url_2 = 'http://sports1.im.fun166.com/Sportsbook/GetOddsData2?PageSportIds=0&PageMarket=2&LeagueIdList=-1&SortingType=0&OddsType=0&UserTimeZone=-480&Language=1&FilterDay=-1&OpenParlay=0&Theme=Fun88&ShowStatistics=1&IsUserLogin=false&ExtraFilter=&SportId=0&Market=2&OddsPageCode=1&ViewType=0&MatchIdList=-1&ActiveMatchFilter=false&Token=&SMVUpcomingLimit=0';//早盘
+		$urls = array($fun_im_url_1,$fun_im_url_2);
+		$content_IM = $jc->curlMultiIM($urls);		
+		/*}}}*/		
+		
+		
+		
 	}	
 	//更新赔率
 	public function getPl(){
-		header("Content-type:text/html;charset=UTF-8");
 		$newplArr = array();
 		//获取数据库信息
 		$m = M('match');
@@ -168,7 +196,7 @@ class MatchController extends Controller {
         $jc = new \Jcpublic();
 		//获取竞彩赔率
 		$time1 = microtime(true);
-		$plArr = $jc->getSp(); 
+		$plArr = $jc->getSp();		
 		//获取球探网欧赔赔率(利记)
 		$time1_o = microtime(true);
 		$map['urlty'] = 'fun88';
@@ -229,8 +257,32 @@ class MatchController extends Controller {
 			$this->out['info'] = array('time'=>date('Y-m-d H:i:s'),'num'=>count($newplArr),'plArr'=>($time1_o-$time1),'oInfo'=>($time2_o-$time1_o),'mInfo'=>($time3_o-$time2_o),'mTeam'=>($time4_o-$time3_o),'match'=>($time5_o-$time4_o),'cost'=>($time5_o-$time1));
 		}
 		echo json_encode($this->out); exit;
+	}	
+	//更新欧赔
+	public function getOddsQt(){
+		import('Libs.Trade.Jcpublic');
+        $jc = new \Jcpublic();
+		//获取球探网欧赔赔率(利记)
+		$time1 = microtime(true);
+		$oddsArr = $jc->getOddsQt();
+		$time2 = microtime(true);
+		$o = M('odds');
+		$t = M('team');
+		$o->where('1')->delete();
+		$rs = $o->addAll(array_values($oddsArr));
+		$time3 = microtime(true);
+		if($rs){			
+			$this->out['code'] = 100;
+			$this->out['msg'] = 'suc';
+			$this->out['info'] = array('uptime'=>date('Y-m-d H:i:s'),'num'=>$rs,'oddscost'=>($time2-$time1),'addcost'=>($time3-$time2));
+		}else{
+			$this->out['msg'] = '保存对阵xml失败！';		
+		}
+		echo json_encode($this->out); 
+		exit;		
 	}
-	
+	/*}}}*/
+	/*{{{操作*/
 	//添加禁止匹配对阵列表
 	public function listBan(){
 		header("Content-type:text/html;charset=UTF-8"); 
@@ -473,6 +525,8 @@ class MatchController extends Controller {
 		}
 		return $teamArr;
 	}
+	/*}}}*/
+	/*{{{赔率测试*/
 	//获取外围赔率1
 	public function getSp1(){
 		header("Content-type:text/html;charset=UTF-8");
@@ -539,8 +593,10 @@ class MatchController extends Controller {
 		}		
 		echo json_encode($this->out);exit;
 	}
+	/*}}}*/
+	/*{{{公用函数*/
 	//乐天堂 赔率组合函数
-	public function getOddsArr($odd){
+	public function getOddsIMArr($odd){
 		header("Content-type:text/html;charset=UTF-8");
 		$odds = array();
 		$ptr = '/Date\((.*)\)/';
@@ -581,4 +637,5 @@ class MatchController extends Controller {
 		}
 		return $name;
 	}
+	/*}}}*/
 }

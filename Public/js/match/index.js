@@ -130,6 +130,7 @@ $.admin.box = {
 				warning.html('<strong>提示！</strong>正在载入数据...');
 				$.post(url,function(data, textStatus){
 					var res = $.parseJSON(data);
+					console.log(res);
 					if(res < 0){
 						warning.html('<strong>警告！</strong>'+res.msg);
 					}else{
@@ -217,7 +218,21 @@ $.admin.box = {
 					location.reload();	
 				}
 			});
-		});			
+		});	
+		$('.match-list tr.banmatch>td.del').live('click',function(){
+			var url = $('#delbanmatch').val(), id = $(this).parent().attr('data-id');
+			para = { id:id };
+			warning.html('<strong>提示！</strong>正在删除禁止场次，请稍后...');
+			$.post(url, para, function(data, textStatus){
+				var res = $.parseJSON(data);
+				if(res.code < 0){
+					warning.html('<strong>警告！</strong>'+res.msg);
+				}else{
+					warning.html('&nbsp;');	
+					location.reload();	
+				}
+			});
+		});	
 		//删除禁止匹配，配对场次（该匹配场次禁止）
 		$('.match-list tr.listban>td.del').live('click',function(){
 			var url = $('#dellistban').val(), m1id = $(this).parent().attr('data-m1id'), m2id = $(this).parent().attr('data-m2id');

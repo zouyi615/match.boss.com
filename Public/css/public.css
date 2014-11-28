@@ -49,6 +49,7 @@ body{position: relative;}
 td.homesp,td.awaysp,td.offset{-moz-user-select: none;-webkit-user-select: none;-webkit-user-select: none; cursor:pointer;}
 .allsptab .matchtime .label{padding:0 4px;}
 .allsptab .isban a:hover{text-decoration:none;}
+.match-list .dellist,.match-list .delbtn{ cursor:pointer;}
 
 
 

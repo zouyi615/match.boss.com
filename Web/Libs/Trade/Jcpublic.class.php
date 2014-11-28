@@ -317,8 +317,10 @@ class Jcpublic{
 		$array = explode(',',$str);
 		return min($array);
 	}
+	
+	
 	//curl请求
-	public function curl($url,$host = ""){
+	public function curl($url){
         set_time_limit(0);         
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL,$url); // 要访问的地址
@@ -331,13 +333,14 @@ class Jcpublic{
         curl_setopt($ch,CURLOPT_HTTPHEADER,array(
             "User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; TheWorld)",
             "Accept-Language: en",
-            "Host:".$host
+            "Host: sports1.im.fun166.com"
         ));
-        curl_setopt($ch, CURLOPT_REFERER, "http://".$host);
+        curl_setopt($ch, CURLOPT_REFERER, "http://sports1.im.fun166.com");
         $content = curl_exec($ch);
         curl_close($ch);
+		var_dump($content);
         return $content;
-    }
+    }		
 	
 	//curl请求
 	public function curlget($url,$host = ""){
@@ -374,5 +377,144 @@ class Jcpublic{
         curl_close($ch);
         return $content;
     }
+	
+	//乐天堂体育设置cookie
+	public function setCookie($url){		
+		$cookie_file = dirname(dirname(dirname(dirname(__FILE__))))."/match.cookie";
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, $url); //提交到指定网页 
+		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1); // 使用自动跳转
+		curl_setopt($ch, CURLOPT_AUTOREFERER, 1); // 自动设置Referer
+		curl_setopt($ch, CURLOPT_HEADER, 1); //header头部信息
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); //要求结果为字符串且输出到屏幕上
+		curl_setopt($ch, CURLOPT_NOBODY, 1);  //是否输出中不包含body部分
+		curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie_file);
+		curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36");   // 模拟用户使用的浏览器
+		curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+			"Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+			"Accept-Language:zh-CN,zh;q=0.8,en;q=0.6",
+			"Connection:keep-alive",
+			"Cookie:SkinType=False; MuSou=20110303; MiniKey=max; DispVer=3; OddsType_SPONUUS01001=4; LangKey=cs",
+			"Host:sports.fun166.com",
+			"User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36",
+		));
+		$content = curl_exec($ch);
+		curl_close($ch);
+	}
+	
+	//乐天堂体育赛事 curl批量查询
+	public function curlMulti($urls){
+		$cookie_file = dirname(dirname(dirname(dirname(__FILE__))))."/match.cookie"; 
+		//加载一个多进程CURL实例
+		ini_set('max_execution_time', '100');
+		$mh = curl_multi_init();
+		$output = array();
+		$handles = array();
+		//开始时间
+		if($urls && is_array($urls)){
+			foreach($urls as $key => $url){				
+				$ip = '60.166.'.rand(0,16).'.'.rand(0,158);				
+				// 创建一个单线程CURL实例
+				$ch = curl_init();
+				// 设置CURL相关参数
+				curl_setopt($ch, CURLOPT_URL, $url); // 要访问的地址
+				curl_setopt($ch, CURLOPT_HTTPHEADER, array('X-FORWARDED-FOR:'.$ip, 'CLIENT-IP:'.$ip));
+				//curl_setopt($ch, CURLOPT_TIMEOUT, 200000); 
+				curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);  // 对认证证书来源的检查
+				curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false); // 从证书中检查SSL加密算法是否存在
+				curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); // 获取的信息以文件流的形式返回                    
+				curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);// 使用自动跳转    
+				curl_setopt($ch, CURLOPT_HEADER, 0);  // 显示返回的Header区域内容  
+				curl_setopt($ch, CURLOPT_FRESH_CONNECT, 0);   
+				curl_setopt($ch, CURLOPT_USERAGENT,"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)");   // 模拟用户使用的浏览器				
+				curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+					"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+					"User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; TheWorld)",
+					"Accept-Language: en",
+					"Host: sports.fun166.com"
+				));
+				curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie_file);
+				curl_setopt($ch, CURLOPT_REFERER, "http://sports.fun166.com");
+				// 将该进程加载到实例中
+				curl_multi_add_handle($mh,$ch);
+				// 加入循环数组中
+				$handles[] = $ch;
+			}
+			// 执行CURL多线程实例
+			$running=null;
+			do {
+				curl_multi_exec($mh,$running);
+				// 间隔0.25S
+				usleep (20);
+			} while ($running > 0);			
+			// 获取采集内容
+			for($i=0;$i<count($handles);$i++){				
+				if(curl_multi_getcontent($handles[$i])){
+					$result = curl_multi_getcontent($handles[$i]);
+				} else {
+					$result = 0;
+				}
+				$output[] = $result;
+				curl_multi_remove_handle($mh,$handles[$i]);
+			}
+		}
+		//关闭实例
+		curl_multi_close($mh);
+		return $output;
+	}	
+	
+	//乐天堂IM体育赛事 curl批量查询
+	public function curlMultiIM($urls){
+		//加载一个多进程CURL实例
+		ini_set('max_execution_time', '100');
+		$mh = curl_multi_init();
+		$output = array();
+		$handles = array();
+		//开始时间
+		if($urls && is_array($urls)){
+			foreach($urls as $key => $url){
+				// 创建一个单线程CURL实例
+				set_time_limit(0);         
+				$ch = curl_init();
+				curl_setopt($ch, CURLOPT_URL,$url); // 要访问的地址
+				curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);  // 对认证证书来源的检查
+				curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false); // 从证书中检查SSL加密算法是否存在
+				curl_setopt($ch, CURLOPT_RETURNTRANSFER,1); // 获取的信息以文件流的形式返回                    
+				curl_setopt($ch, CURLOPT_FOLLOWLOCATION,1);// 使用自动跳转    
+				curl_setopt($ch, CURLOPT_HEADER, 0);  // 显示返回的Header区域内容    
+				curl_setopt($ch, CURLOPT_USERAGENT,"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)");   // 模拟用户使用的浏览器	
+				curl_setopt($ch,CURLOPT_HTTPHEADER,array(
+					"User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; TheWorld)",
+					"Accept-Language: en",
+					"Host: sports1.im.fun166.com"
+				));
+				curl_setopt($ch, CURLOPT_REFERER, "http://sports1.im.fun166.com");
+				// 将该进程加载到实例中
+				curl_multi_add_handle($mh,$ch);
+				// 加入循环数组中
+				$handles[] = $ch;
+			}
+			// 执行CURL多线程实例
+			$running=null;
+			do {
+				curl_multi_exec($mh,$running);
+				// 间隔0.25S
+				usleep (20);
+			} while ($running > 0);			
+			// 获取采集内容
+			for($i=0;$i<count($handles);$i++){				
+				if(curl_multi_getcontent($handles[$i])){
+					$result = curl_multi_getcontent($handles[$i]);
+				} else {
+					$result = 0;
+				}
+				$output[] = $result;
+				curl_multi_remove_handle($mh,$handles[$i]);
+			}
+		}
+		//关闭实例
+		curl_multi_close($mh);
+		return $output;
+	}
 }
 ?>

@@ -1,0 +1,6 @@
+[ 2014-09-10T21:56:26+08:00 ] 127.0.0.1 /Home/Index/getTeam.html
+ERR: 非法操作:getteam
+
+[ 2014-09-10T21:59:46+08:00 ] 127.0.0.1 /Home/Match/getTeam.html
+ERR: 参数错误或者未定义:name
+

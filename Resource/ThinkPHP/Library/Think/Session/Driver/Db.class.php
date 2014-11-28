@@ -36,11 +36,11 @@ class Db {
        $this->lifeTime = C('SESSION_EXPIRE')?C('SESSION_EXPIRE'):ini_get('session.gc_maxlifetime');
        $this->sessionTable  =   C('SESSION_TABLE')?C('SESSION_TABLE'):C("DB_PREFIX")."session";
        //分布式数据库
-       $host = explode(',',C('DB_HOST'));
-       $port = explode(',',C('DB_PORT'));
-       $name = explode(',',C('DB_NAME'));
-       $user = explode(',',C('DB_USER'));
-       $pwd  = explode(',',C('DB_PWD'));
+       $host = explode(',',C('SESSION_HOST'));
+       $port = explode(',',C('SESSION_PORT'));
+       $name = explode(',',C('SESSION_NAME'));
+       $user = explode(',',C('SESSION_USER'));
+       $pwd  = explode(',',C('SESSION_PWD'));
        if(1 == C('DB_DEPLOY_TYPE')){
            //读写分离
            if(C('DB_RW_SEPARATE')){

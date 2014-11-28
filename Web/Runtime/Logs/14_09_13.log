@@ -59,3 +59,11 @@ ERR: 1062:Duplicate entry '80774-8005' for key 'PRIMARY'
 ERR: 1062:Duplicate entry '80774-8005' for key 'PRIMARY'
  [ SQL语句 ] : INSERT INTO `m_listban` (`m1id`,`m2id`,`uptime`) VALUES (80774,8005,'2014-09-13 01:02:30')
 
+[ 2014-09-13T01:39:55+08:00 ] 127.0.0.1 /Home/Match/showblist.html
+ERR: 1054:Unknown column 'p.sp' in 'field list'
+ [ SQL语句 ] : SELECT m.id,m.matchnum,m.homeid,m.homename,m.awayid,m.awayname,m.matchtime,m.simpleleague,m.homename,m.awayname,p.sp,p.fun88,p.rq,p.isend,p.uptime,bm.isban FROM m_listban lb LEFT JOIN m_match m ON m.id = lb.m1id or m.id = lb.m2id  ORDER BY m.matchtime 
+
+[ 2014-09-13T01:39:56+08:00 ] 127.0.0.1 /Home/Match/showblist.html
+ERR: 1054:Unknown column 'p.sp' in 'field list'
+ [ SQL语句 ] : SELECT m.id,m.matchnum,m.homeid,m.homename,m.awayid,m.awayname,m.matchtime,m.simpleleague,m.homename,m.awayname,p.sp,p.fun88,p.rq,p.isend,p.uptime,bm.isban FROM m_listban lb LEFT JOIN m_match m ON m.id = lb.m1id or m.id = lb.m2id  ORDER BY m.matchtime 
+

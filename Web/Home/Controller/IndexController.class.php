@@ -2,6 +2,10 @@
 // 本类由系统自动生成，仅供测试用途
 namespace Home\Controller;
 use Think\Controller;
+
+header("Content-type:text/html;charset=UTF-8");
+import('Libs.Public.Function');//公用函数
+
 class IndexController extends Controller {
 	public function test(){
 		header("Content-type:text/html;charset=UTF-8");
@@ -12,16 +16,15 @@ class IndexController extends Controller {
 		$this->display();
 	}
 	//首页加载匹配对阵
-    public function index(){
-        header("Content-type:text/html;charset=UTF-8");  	
+    public function index(){        
+		checklogin();//检测登录	
 		$match = $this->queryMatch(); 
 		$match = $this->array2_sort($match,'rate',SORT_DESC,SORT_STRING); //二维数组排序
         $this->assign('match',$match);
         $this->display('index');
     }	
 	//查询数据库获取匹配match
-	public function queryMatch(){
-		header("Content-type:text/html;charset=UTF-8");   
+	public function queryMatch(){		
 		$p = M('pl');
 		$match = array();
 		$rs = $p->alias('p')->field('m.id,m.matchtime,m.simpleleague,m.homename,m.awayname,p.rq,p.sp,p.fun88,p.uptime,bm.mid')->join('LEFT JOIN __MATCH__ m ON p.id = m.id LEFT JOIN __BANMATCH__ bm ON p.id = bm.mid')->where('p.ismat=1 and p.isend=0 and (bm.isban = 0 or bm.isban is null)')->select();	
@@ -50,8 +53,7 @@ class IndexController extends Controller {
 		return $match;
 	}
 	//计算匹配
-    public function getMatch(){
-		header("Content-type:text/html;charset=UTF-8");
+    public function getMatch(){		
 		import('Libs.Trade.Jcpublic');
 		$jc = new \Jcpublic();
 		$irate = I('param.rnrate','','htmlspecialchars'); //用户设置赔率
@@ -112,7 +114,7 @@ class IndexController extends Controller {
     }
 	//加载匹配对阵
 	public function matching(){
-		header("Content-type:text/html;charset=UTF-8");
+		checklogin();//检测登录
 		$irate = I('param.rnrate','','htmlspecialchars'); //用户设置赔率
 		$betmoney = I('param.betmoney','','htmlspecialchars'); //用户下注金额
 		$rebate = I('param.rebate','','htmlspecialchars'); //用户返还金额
@@ -124,8 +126,7 @@ class IndexController extends Controller {
 		$this->display('matching');
 	}
 	//ajax加载匹配对阵
-	public function getAjaxMatch(){
-		header("Content-type:text/html;charset=UTF-8");
+	public function getAjaxMatch(){		
 		$comMatchArr = $this->getMatch(); //获取对阵数据
 		echo json_encode($comMatchArr);
 	}	
