@@ -1,8 +1,8 @@
 <?php
+header("content-type:text/html; charset=utf-8");
 class Jcpublic{	
-	//获取竞彩xml
+	//获取500竞彩xml
 	public function getMatchData($playtype='spf',$ggtype='2'){
-		header("content-type:text/html; charset=utf-8");
 		$ret = array('match'=>array(), 'league'=>array());
 		$count_end  = 0; //已截止场数
 		$count_rq   = 0; //让球场数
@@ -69,6 +69,72 @@ class Jcpublic{
 		$today = date("Y-m-d",time());
 		ksort($ret['match']);
 		return $ret;
+	}	
+	//获取竞彩xml
+	public function getJcMatchData($playtype='spf',$ggtype='2'){
+		$ret = array();
+		$host = 'i.sporttery.cn';
+		$url = 'http://i.sporttery.cn/odds_calculator/get_odds?i_format=json&poolcode[]=hhad&_='.time();		
+		$content = $this->curl($url,$host);
+		$content = json_decode($content);
+		if($content->data){
+			$i = 0;
+			foreach($content->data as $da){
+				$id = isset($da->id)?strval($da->id):'';
+				$isshow = isset($da->show)?strval($da->show):'';
+				if($isshow){					
+					$rq = isset($da->hhad->fixedodds)?strval($da->hhad->fixedodds):0;
+					if(abs($rq) != 1) continue; //只获取让1球的比赛
+					$matchnum = isset($da->num)?strval($da->num):'';
+					$league = isset($da->l_cn)?strval($da->l_cn):'';
+					$simpleleague = isset($da->l_cn_abbr)?strval($da->l_cn_abbr):'';
+					$homeid = isset($da->h_id)?strval($da->h_id):''; 
+					$homename = isset($da->h_cn)?strval($da->h_cn):'';
+					$homesxname = isset($da->h_cn_abbr)?strval($da->h_cn_abbr):'';
+					$awayid = isset($da->a_id)?strval($da->a_id):''; 						
+					$awayname = isset($da->a_cn)?strval($da->a_cn):'';
+					$awaysxname = isset($da->a_cn_abbr)?strval($da->a_cn_abbr):'';
+					$processname = $this->changweekstr($matchnum);
+					$matchdate = isset($da->date)?strval($da->date):'';
+					$matchtime = isset($da->time)?strval($da->time):'';
+					$enddate = isset($da->b_date)?strval($da->b_date):'';
+					//赔率
+					$win = isset($da->hhad->h)?strval($da->hhad->h):0;
+					$draw = isset($da->hhad->d)?strval($da->hhad->d):0;
+					$lost = isset($da->hhad->a)?strval($da->hhad->a):0;
+					$ret['match'][$i]['id'] = $id;
+					$ret['match'][$i]['rq'] = $rq;
+					$ret['match'][$i]['isshow'] = $isshow;
+					$ret['match'][$i]['matchnum'] = $matchnum;
+					$ret['match'][$i]['league'] = $league;
+					$ret['match'][$i]['simpleleague'] = $simpleleague;
+					$ret['match'][$i]['homeid'] = $homeid;
+					$ret['match'][$i]['homename'] = $homename;
+					$ret['match'][$i]['homesxname'] = $homesxname;
+					$ret['match'][$i]['awayid'] = $awayid;
+					$ret['match'][$i]['awayname'] = $awayname;
+					$ret['match'][$i]['awaysxname'] = $awaysxname;
+					$ret['match'][$i]['sp'] = $win.','.$draw.','.$lost;
+					$ret['match'][$i]['processname'] = $processname;
+					$ret['match'][$i]['matchdate'] = $matchdate;
+					$ret['match'][$i]['matchtime'] = $matchdate.' '.$matchtime;
+					$ret['match'][$i]['enddate'] = $enddate;
+					$ret['match'][$i]['endtime'] = $matchdate.' '.$matchtime;
+					if(strtotime($ret['match'][$i]['endtime']) < strtotime("+10 minutes")){ //比销售网站提前10分钟截止
+						$ret['match'][$i]['isend'] = 1;
+					}else{
+						$ret['match'][$i]['isend'] = 0;
+					}
+					$ret['match'][$i]['uptime'] = date('Y-m-d H:i:s');
+					$i++;
+	            }
+			    if(!$ret['match']){
+			        unset($ret['match']);
+			    }				
+			}
+			ksort($ret['match']);			
+		}
+		return $ret;		
 	}
 	/**
 	 * 获取所有比赛最新赔率
@@ -320,7 +386,7 @@ class Jcpublic{
 	
 	
 	//curl请求
-	public function curl($url){
+	public function curl($url,$host){
         set_time_limit(0);         
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL,$url); // 要访问的地址
@@ -333,12 +399,11 @@ class Jcpublic{
         curl_setopt($ch,CURLOPT_HTTPHEADER,array(
             "User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; TheWorld)",
             "Accept-Language: en",
-            "Host: sports1.im.fun166.com"
+            "Host:".$host
         ));
-        curl_setopt($ch, CURLOPT_REFERER, "http://sports1.im.fun166.com");
+        curl_setopt($ch, CURLOPT_REFERER, $host);
         $content = curl_exec($ch);
         curl_close($ch);
-		var_dump($content);
         return $content;
     }		
 	
@@ -402,8 +467,8 @@ class Jcpublic{
 		curl_close($ch);
 	}
 	
-	//乐天堂体育赛事 curl批量查询
-	public function curlMulti($urls){
+	//乐天堂体育赛事 curl批量查询 (乐天堂体育和IM体育区分查询，所用cookie不同)
+	public function curlMultiOdds($urls){
 		$cookie_file = dirname(dirname(dirname(dirname(__FILE__))))."/match.cookie"; 
 		//加载一个多进程CURL实例
 		ini_set('max_execution_time', '100');
@@ -463,8 +528,8 @@ class Jcpublic{
 		return $output;
 	}	
 	
-	//乐天堂IM体育赛事 curl批量查询
-	public function curlMultiIM($urls){
+	//乐天堂IM体育赛事 curl批量查询 (乐天堂体育和IM体育区分查询，所用cookie不同)
+	public function curlMultiOddsIM($urls){
 		//加载一个多进程CURL实例
 		ini_set('max_execution_time', '100');
 		$mh = curl_multi_init();

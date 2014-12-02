@@ -1,0 +1,30 @@
+* */1 * * * /usr/bin/curl -o getxml.txt http://115.28.85.182/Home/Match/getXml.html > /dev/null 2>&1
+* * * * * sleep 5; /usr/bin/curl -o getPl.txt http://115.28.85.182/Home/Match/getPl.html > /dev/null 2>&1
+* * * * * sleep 10; /usr/bin/curl -o getPl.txt http://115.28.85.182/Home/Match/getPl.html > /dev/null 2>&1
+* * * * * sleep 15; /usr/bin/curl -o getPl.txt http://115.28.85.182/Home/Match/getPl.html > /dev/null 2>&1
+* * * * * sleep 20; /usr/bin/curl -o getPl.txt http://115.28.85.182/Home/Match/getPl.html > /dev/null 2>&1
+* * * * * sleep 25; /usr/bin/curl -o getPl.txt http://115.28.85.182/Home/Match/getPl.html > /dev/null 2>&1
+* * * * * sleep 30; /usr/bin/curl -o getPl.txt http://115.28.85.182/Home/Match/getPl.html > /dev/null 2>&1
+* * * * * sleep 35; /usr/bin/curl -o getPl.txt http://115.28.85.182/Home/Match/getPl.html > /dev/null 2>&1
+* * * * * sleep 40; /usr/bin/curl -o getPl.txt http://115.28.85.182/Home/Match/getPl.html > /dev/null 2>&1
+* * * * * sleep 45; /usr/bin/curl -o getPl.txt http://115.28.85.182/Home/Match/getPl.html > /dev/null 2>&1
+* * * * * sleep 50; /usr/bin/curl -o getPl.txt http://115.28.85.182/Home/Match/getPl.html > /dev/null 2>&1
+* * * * * sleep 55; /usr/bin/curl -o getPl.txt http://115.28.85.182/Home/Match/getPl.html > /dev/null 2>&1
+* * * * * sleep 5; /usr/bin/curl -o getPl.txt http://115.28.85.182/Home/Match/getPl.html > /dev/null 2>&1
+* * * * * sleep 5; /usr/bin/curl -o getPl.txt http://115.28.85.182/Home/Match/getPl.html > /dev/null 2>&1
+* * * * * sleep 5; /usr/bin/curl -o getPl.txt http://115.28.85.182/Home/Match/getPl.html > /dev/null 2>&1
+* * * * * /usr/bin/curl -o getOdds.txt http://115.28.85.182/Home/Match/getOdds.html > /dev/null 2>&1
+* * * * * sleep 5; /usr/bin/curl -o getOdds.txt http://115.28.85.182/Home/Match/getOdds.html > /dev/null 2>&1
+* * * * * sleep 10; /usr/bin/curl -o getOdds.txt http://115.28.85.182/Home/Match/getOdds.html > /dev/null 2>&1
+* * * * * sleep 15; /usr/bin/curl -o getOdds.txt http://115.28.85.182/Home/Match/getOdds.html > /dev/null 2>&1
+* * * * * sleep 20; /usr/bin/curl -o getOdds.txt http://115.28.85.182/Home/Match/getOdds.html > /dev/null 2>&1
+* * * * * sleep 25; /usr/bin/curl -o getOdds.txt http://115.28.85.182/Home/Match/getOdds.html > /dev/null 2>&1
+* * * * * sleep 30; /usr/bin/curl -o getOdds.txt http://115.28.85.182/Home/Match/getOdds.html > /dev/null 2>&1
+* * * * * sleep 35; /usr/bin/curl -o getOdds.txt http://115.28.85.182/Home/Match/getOdds.html > /dev/null 2>&1
+* * * * * sleep 40; /usr/bin/curl -o getOdds.txt http://115.28.85.182/Home/Match/getOdds.html > /dev/null 2>&1
+* * * * * sleep 45; /usr/bin/curl -o getOdds.txt http://115.28.85.182/Home/Match/getOdds.html > /dev/null 2>&1
+* * * * * sleep 50; /usr/bin/curl -o getOdds.txt http://115.28.85.182/Home/Match/getOdds.html > /dev/null 2>&1
+* * * * * sleep 55; /usr/bin/curl -o getOdds.txt http://115.28.85.182/Home/Match/getOdds.html > /dev/null 2>&1
+* * * * * sleep 5; /usr/bin/curl -o getOdds.txt http://115.28.85.182/Home/Match/getOdds.html > /dev/null 2>&1
+* * * * * sleep 5; /usr/bin/curl -o getOdds.txt http://115.28.85.182/Home/Match/getOdds.html > /dev/null 2>&1
+* * * * * sleep 5; /usr/bin/curl -o getOdds.txt http://115.28.85.182/Home/Match/getOdds.html > /dev/null 2>&1

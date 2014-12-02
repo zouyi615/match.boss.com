@@ -5,10 +5,10 @@
 		<title>外围赔率数据对阵表</title>
 		<meta name="description" content="">
 		<meta name="author" content="">
+		<link rel="shortcut icon" href="/Public/img/favicon.png">
 		<link href="/Public/css/bootstrap.css" rel="stylesheet">
 		<link href="/Public/css/public.css" rel="stylesheet">
 		<link href="/Public/css/adipoli.css" rel="stylesheet">
-		<link rel="shortcut icon" href="/Public/img/favicon.png">
 		<script type="text/javascript" src="/Public/js/jquery.min.js"></script>
 		<script type="text/javascript" src="/Public/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="/Public/js/jquery.cookie.js"></script>		
